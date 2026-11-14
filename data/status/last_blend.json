@@ -6,43 +6,43 @@
    "flatline_long": 182,
    "from_flagged_conductance": 0,
    "missing": 0,
-   "neighbor": 75,
+   "neighbor": 76,
    "provider": 0,
    "range": 0,
    "range_suspect": 0,
-   "spike": 8,
+   "spike": 6,
    "time": 0
   },
   "files_changed": {
-   "data/clean/2026/11/2026-11-14.csv": 2994,
+   "data/clean/2026/11/2026-11-14.csv": 3155,
    "data/clean/stations.csv": 88,
-   "data/qc/2026/11/2026-11-14_flags.csv": 72
+   "data/qc/2026/11/2026-11-14_flags.csv": 71
   },
-  "good": 34710,
-  "hourly_values": 10803,
+  "good": 35207,
+  "hourly_values": 10964,
   "neighbor_flags": {
    "erddap-secoora:gov-nps-ever-hcef1": {
-    "hours": 75,
-    "median_offset_c": 3.47
+    "hours": 76,
+    "median_offset_c": 3.46
    }
   },
-  "raw_readings": 33226,
-  "seconds": 1.5,
+  "raw_readings": 33698,
+  "seconds": 1.3,
   "stale_stations": [],
-  "suspect": 168
+  "suspect": 167
  },
  "errors": {},
- "finished": "2026-11-14T21:45:43Z",
- "hours_blended": 4,
+ "finished": "2026-11-14T22:47:04Z",
+ "hours_blended": 6,
  "hours_considered": 121,
- "hours_to_blend": 4,
- "now": "2026-11-14T21:45:26Z",
+ "hours_to_blend": 6,
+ "now": "2026-11-14T22:46:43Z",
  "out_of_time": false,
- "seconds": 17.6,
- "started": "2026-11-14T21:45:26Z",
+ "seconds": 21.7,
+ "started": "2026-11-14T22:46:43Z",
  "store": "release",
  "window": [
-  "2026-11-09T21:00:00Z",
-  "2026-11-14T21:00:00Z"
+  "2026-11-09T22:00:00Z",
+  "2026-11-14T22:00:00Z"
  ]
 }

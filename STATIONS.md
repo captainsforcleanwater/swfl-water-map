@@ -138,7 +138,7 @@ These are outside the area polygon (mostly the Atlantic side of the Keys). Add a
 
 | Station | Provider | ID | Lat | Lon | Active |
 |---|---|---|---:|---:|---|
-| SCCF 52 - SCCF RECON Moore Haven | SCCF RECON | `erddap-gcoos:SCCF_52` | 26.8343 | -81.0883 | yes |
+| SCCF 52 - SCCF RECON Moore Haven | SCCF RECON | `erddap-gcoos:SCCF_52` | 26.8343 | -81.0883 | no |
 | Wetland 500S Blw S-631 In Wca-3B Nr Coopertown,Fl | USGS | `usgs:255325080355201` | 25.8904 | -80.5977 | yes |
 | Snapper Creek No.5 Abv Water Pipe Nr S. Miami, Fl | USGS | `usgs:254157080213800` | 25.6991 | -80.3606 | yes |
 | Sw 122 Ave Canal At Sw 202Nd St Nr Goulds, Fl | USGS | `usgs:0229070834` | 25.5790 | -80.3878 | yes |
