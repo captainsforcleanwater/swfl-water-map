@@ -1,9 +1,12 @@
-"""Physical stations: one entry per sensor location, even when two services carry it.
+"""Physical stations: one entry per sensor, even when two services carry it.
 
-Stations flagged `possible_duplicate_of` in the inventory, and stations at the same spot
-(within SAME_SPOT_M) that measure the same thing, are grouped. The group takes the ID of its
-highest-priority member (the order in collector/inventory.py), and each hourly value comes from
-one member only: the highest-priority member that has a good reading for that hour.
+Candidates for merging are stations flagged `possible_duplicate_of` in the inventory and stations
+within merge.max_distance_m of each other that measure the same thing. A candidate pair is merged
+only when the readings agree (clean.agreement: median difference over shared hours within
+merge.water_temp_c / merge.salinity_psu); two different sensors that happen to sit close together,
+like Trout Cove and Trout Creek, stay separate. A merged station takes the ID of its
+highest-priority member (the order in collector/inventory.py), and each hourly value comes from one
+member only: the highest-priority member with a good reading for that hour.
 """
 
 from __future__ import annotations
@@ -14,8 +17,6 @@ from dataclasses import dataclass, field
 from collector.common import DATA, distance_m
 from collector.inventory import SYSTEM_PRIORITY
 from collector.tags import setting
-
-SAME_SPOT_M = 50
 
 
 @dataclass
@@ -40,8 +41,28 @@ def _priority(st: dict) -> tuple:
     return (pri.get(st["system"], 99), st["uid"])
 
 
-def physical_stations(raw: list[dict] | None = None) -> tuple[list[PhysStation], dict[str, str]]:
-    """Group collected stations. Returns the groups and a member uid -> group id map."""
+def candidate_pairs(raw: list[dict], max_distance_m: float) -> list[tuple[str, str]]:
+    """Pairs of collected stations that might be one sensor: flagged duplicates, or close together
+    and measuring at least one of the same variables. Higher-priority station first."""
+    raw = sorted(raw, key=_priority)
+    by_uid = {s["uid"]: s for s in raw}
+    pairs = set()
+    for s in raw:
+        d = s.get("possible_duplicate_of")
+        if d and d in by_uid and d != s["uid"]:
+            pairs.add(tuple(sorted((d, s["uid"]), key=lambda u: _priority(by_uid[u]))))
+    for i, a in enumerate(raw):
+        for b in raw[i + 1:]:
+            if (set(a["variables"]) & set(b["variables"])
+                    and distance_m(a["lat"], a["lon"], b["lat"], b["lon"]) <= max_distance_m):
+                pairs.add((a["uid"], b["uid"]))
+    return sorted(pairs)
+
+
+def physical_stations(raw: list[dict] | None = None, agree: set[frozenset] | None = None
+                      ) -> tuple[list[PhysStation], dict[str, str]]:
+    """Group collected stations, merging only the pairs in `agree`. Returns the groups and a
+    member uid -> group id map."""
     raw = [s for s in (raw if raw is not None else load_raw_stations()) if s.get("collect")]
     by_uid = {s["uid"]: s for s in raw}
     parent = {u: u for u in by_uid}
@@ -52,20 +73,12 @@ def physical_stations(raw: list[dict] | None = None) -> tuple[list[PhysStation],
             u = parent[u]
         return u
 
-    def union(a, b):
-        ra, rb = find(a), find(b)
-        if ra != rb:
-            parent[rb] = ra
-
-    for s in raw:
-        d = s.get("possible_duplicate_of")
-        if d and d in by_uid:
-            union(d, s["uid"])
-    for i, a in enumerate(raw):
-        for b in raw[i + 1:]:
-            if (set(a["variables"]) & set(b["variables"])
-                    and distance_m(a["lat"], a["lon"], b["lat"], b["lon"]) <= SAME_SPOT_M):
-                union(a["uid"], b["uid"])
+    for pair in agree or set():
+        a, b = tuple(pair)
+        if a in parent and b in parent:
+            ra, rb = find(a), find(b)
+            if ra != rb:
+                parent[rb] = ra
     groups: dict[str, list[dict]] = {}
     for s in raw:
         groups.setdefault(find(s["uid"]), []).append(s)

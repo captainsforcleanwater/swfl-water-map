@@ -1,0 +1,657 @@
+{
+ "_comment": "Deepest NOAA Coastal Relief Model cell within 300 m of each station (processing/depths.py). depth_m null means no model water nearby: a narrow creek, treated as shallow.",
+ "source": "https://www.ngdc.noaa.gov/thredds/dodsC/crm/crm_vol3.nc",
+ "stations": {
+  "coops:8723970": {
+   "lat": 24.711,
+   "lon": -81.1065,
+   "depth_m": 2.5,
+   "note": "",
+   "checked": "2026-11-14T19:45:29Z"
+  },
+  "coops:8724580": {
+   "lat": 24.5557,
+   "lon": -81.8079,
+   "depth_m": 7.5,
+   "note": "",
+   "checked": "2026-11-14T19:45:29Z"
+  },
+  "coops:8725520": {
+   "lat": 26.64778,
+   "lon": -81.87111,
+   "depth_m": 0.1,
+   "note": "",
+   "checked": "2026-11-14T19:45:28Z"
+  },
+  "erddap-gcoos:SCCF_11": {
+   "lat": 26.46791,
+   "lon": -82.0631,
+   "depth_m": 1.3,
+   "note": "",
+   "checked": "2026-11-14T19:45:29Z"
+  },
+  "erddap-gcoos:SCCF_1111": {
+   "lat": 26.72,
+   "lon": -81.6546,
+   "depth_m": null,
+   "note": "no relief-model water within 300 m: creek narrower than the model, treated as shallow",
+   "checked": "2026-11-14T19:45:29Z"
+  },
+  "erddap-gcoos:SCCF_13": {
+   "lat": 26.52548,
+   "lon": -82.17147,
+   "depth_m": 1.5,
+   "note": "",
+   "checked": "2026-11-14T19:45:29Z"
+  },
+  "erddap-gcoos:SCCF_18": {
+   "lat": 26.69549,
+   "lon": -81.81381,
+   "depth_m": 0.1,
+   "note": "",
+   "checked": "2026-11-14T19:45:29Z"
+  },
+  "erddap-gcoos:SCCF_51": {
+   "lat": 26.55448,
+   "lon": -82.17147,
+   "depth_m": 2.9,
+   "note": "",
+   "checked": "2026-11-14T19:45:29Z"
+  },
+  "erddap-gcoos:SCCF_53": {
+   "lat": 26.64934,
+   "lon": -81.88097,
+   "depth_m": 0.1,
+   "note": "",
+   "checked": "2026-11-14T19:45:29Z"
+  },
+  "erddap-gcoos:SCCF_56": {
+   "lat": 26.46449,
+   "lon": -82.10437,
+   "depth_m": 1.6,
+   "note": "",
+   "checked": "2026-11-14T19:45:29Z"
+  },
+  "erddap-gcoos:USF_COMPS_C10": {
+   "lat": 27.169,
+   "lon": -82.926,
+   "depth_m": 25.8,
+   "note": "",
+   "checked": "2026-11-14T19:45:30Z"
+  },
+  "erddap-gcoos:USF_COMPS_C12": {
+   "lat": 27.498,
+   "lon": -83.736,
+   "depth_m": 49.8,
+   "note": "",
+   "checked": "2026-11-14T19:45:30Z"
+  },
+  "erddap-gcoos:USF_COMPS_C13": {
+   "lat": 26.012,
+   "lon": -83.085,
+   "depth_m": 49.3,
+   "note": "",
+   "checked": "2026-11-14T19:45:30Z"
+  },
+  "erddap-gcoos:USF_COMPS_C22": {
+   "lat": 25.172,
+   "lon": -83.475,
+   "depth_m": 69.0,
+   "note": "",
+   "checked": "2026-11-14T19:45:30Z"
+  },
+  "erddap-secoora:42023-c13-wfs-south-buoy-50m-": {
+   "lat": 26.01,
+   "lon": -83.086,
+   "depth_m": 49.4,
+   "note": "",
+   "checked": "2026-11-14T19:45:32Z"
+  },
+  "erddap-secoora:42026-c22-loop-current-pressu": {
+   "lat": 25.171,
+   "lon": -83.475,
+   "depth_m": 69.1,
+   "note": "",
+   "checked": "2026-11-14T19:45:32Z"
+  },
+  "erddap-secoora:c13-water-velocity-wfs-south-buo": {
+   "lat": 26.01,
+   "lon": -83.086,
+   "depth_m": 49.4,
+   "note": "",
+   "checked": "2026-11-14T19:45:32Z"
+  },
+  "erddap-secoora:c27-water-velocity-wfs-south-buo": {
+   "lat": 25.854,
+   "lon": -82.339,
+   "depth_m": 25.8,
+   "note": "",
+   "checked": "2026-11-14T19:45:32Z"
+  },
+  "erddap-secoora:c27-wfs-south-buoy-inner-shelf-2": {
+   "lat": 25.854,
+   "lon": -82.339,
+   "depth_m": 25.8,
+   "note": "",
+   "checked": "2026-11-14T19:45:32Z"
+  },
+  "erddap-secoora:gov-ndbc-lonf1": {
+   "lat": 24.844,
+   "lon": -80.864,
+   "depth_m": 2.1,
+   "note": "",
+   "checked": "2026-11-14T19:45:29Z"
+  },
+  "erddap-secoora:gov-nps-ever-bdvf1": {
+   "lat": 25.47833,
+   "lon": -80.98925,
+   "depth_m": 1.4,
+   "note": "",
+   "checked": "2026-11-14T19:45:28Z"
+  },
+  "erddap-secoora:gov-nps-ever-bkyf1": {
+   "lat": 25.12111,
+   "lon": -80.83356,
+   "depth_m": 0.1,
+   "note": "",
+   "checked": "2026-11-14T19:45:25Z"
+  },
+  "erddap-secoora:gov-nps-ever-bnkf1": {
+   "lat": 25.08668,
+   "lon": -80.51904,
+   "depth_m": 1.6,
+   "note": "",
+   "checked": "2026-11-14T19:45:25Z"
+  },
+  "erddap-secoora:gov-nps-ever-bobf1": {
+   "lat": 25.02663,
+   "lon": -80.68137,
+   "depth_m": 0.1,
+   "note": "",
+   "checked": "2026-11-14T19:45:25Z"
+  },
+  "erddap-secoora:gov-nps-ever-bskf1": {
+   "lat": 25.26617,
+   "lon": -81.16228,
+   "depth_m": null,
+   "note": "no relief-model water within 300 m: creek narrower than the model, treated as shallow",
+   "checked": "2026-11-14T19:45:25Z"
+  },
+  "erddap-secoora:gov-nps-ever-bwsf1": {
+   "lat": 25.17834,
+   "lon": -80.43838,
+   "depth_m": 1.8,
+   "note": "",
+   "checked": "2026-11-14T19:45:25Z"
+  },
+  "erddap-secoora:gov-nps-ever-canf1": {
+   "lat": 25.42213,
+   "lon": -80.942,
+   "depth_m": null,
+   "note": "no relief-model water within 300 m: creek narrower than the model, treated as shallow",
+   "checked": "2026-11-14T19:45:25Z"
+  },
+  "erddap-secoora:gov-nps-ever-cnbf1": {
+   "lat": 25.70185,
+   "lon": -81.1856,
+   "depth_m": 1.3,
+   "note": "",
+   "checked": "2026-11-14T19:45:25Z"
+  },
+  "erddap-secoora:gov-nps-ever-cwaf1": {
+   "lat": 25.29669,
+   "lon": -81.0132,
+   "depth_m": 1.4,
+   "note": "",
+   "checked": "2026-11-14T19:45:25Z"
+  },
+  "erddap-secoora:gov-nps-ever-dkkf1": {
+   "lat": 25.18009,
+   "lon": -80.49001,
+   "depth_m": 1.5,
+   "note": "",
+   "checked": "2026-11-14T19:45:26Z"
+  },
+  "erddap-secoora:gov-nps-ever-gbif1": {
+   "lat": 25.37806,
+   "lon": -81.02953,
+   "depth_m": 2.4,
+   "note": "",
+   "checked": "2026-11-14T19:45:26Z"
+  },
+  "erddap-secoora:gov-nps-ever-gbtf1": {
+   "lat": 25.16723,
+   "lon": -80.8013,
+   "depth_m": 0.1,
+   "note": "",
+   "checked": "2026-11-14T19:45:26Z"
+  },
+  "erddap-secoora:gov-nps-ever-hcef1": {
+   "lat": 25.25416,
+   "lon": -80.44427,
+   "depth_m": null,
+   "note": "no relief-model water within 300 m: creek narrower than the model, treated as shallow",
+   "checked": "2026-11-14T19:45:26Z"
+  },
+  "erddap-secoora:gov-nps-ever-href1": {
+   "lat": 25.42456,
+   "lon": -81.06012,
+   "depth_m": 2.2,
+   "note": "",
+   "checked": "2026-11-14T19:45:26Z"
+  },
+  "erddap-secoora:gov-nps-ever-jbyf1": {
+   "lat": 25.22451,
+   "lon": -80.54101,
+   "depth_m": null,
+   "note": "no relief-model water within 300 m: creek narrower than the model, treated as shallow",
+   "checked": "2026-11-14T19:45:26Z"
+  },
+  "erddap-secoora:gov-nps-ever-jkyf1": {
+   "lat": 25.05254,
+   "lon": -80.90448,
+   "depth_m": 0.1,
+   "note": "",
+   "checked": "2026-11-14T19:45:26Z"
+  },
+  "erddap-secoora:gov-nps-ever-lbsf1": {
+   "lat": 25.21434,
+   "lon": -80.43221,
+   "depth_m": 1.4,
+   "note": "",
+   "checked": "2026-11-14T19:45:26Z"
+  },
+  "erddap-secoora:gov-nps-ever-lmdf1": {
+   "lat": 25.1758,
+   "lon": -80.63269,
+   "depth_m": 0.1,
+   "note": "",
+   "checked": "2026-11-14T19:45:26Z"
+  },
+  "erddap-secoora:gov-nps-ever-lmrf1": {
+   "lat": 25.55583,
+   "lon": -81.1689,
+   "depth_m": 3.5,
+   "note": "",
+   "checked": "2026-11-14T19:45:27Z"
+  },
+  "erddap-secoora:gov-nps-ever-lrif1": {
+   "lat": 25.28438,
+   "lon": -80.89384,
+   "depth_m": null,
+   "note": "no relief-model water within 300 m: creek narrower than the model, treated as shallow",
+   "checked": "2026-11-14T19:45:26Z"
+  },
+  "erddap-secoora:gov-nps-ever-lrkf1": {
+   "lat": 24.98158,
+   "lon": -80.8257,
+   "depth_m": 0.1,
+   "note": "",
+   "checked": "2026-11-14T19:45:26Z"
+  },
+  "erddap-secoora:gov-nps-ever-lsnf1": {
+   "lat": 25.23516,
+   "lon": -80.4568,
+   "depth_m": 1.3,
+   "note": "",
+   "checked": "2026-11-14T19:45:27Z"
+  },
+  "erddap-secoora:gov-nps-ever-mdkf1": {
+   "lat": 25.28932,
+   "lon": -80.39642,
+   "depth_m": 0.6,
+   "note": "",
+   "checked": "2026-11-14T19:45:27Z"
+  },
+  "erddap-secoora:gov-nps-ever-mnbf1": {
+   "lat": 25.23945,
+   "lon": -80.42179,
+   "depth_m": 1.5,
+   "note": "",
+   "checked": "2026-11-14T19:45:27Z"
+  },
+  "erddap-secoora:gov-nps-ever-mukf1": {
+   "lat": 25.10613,
+   "lon": -80.94232,
+   "depth_m": 0.1,
+   "note": "",
+   "checked": "2026-11-14T19:45:27Z"
+  },
+  "erddap-secoora:gov-nps-ever-nrrf1": {
+   "lat": 25.34023,
+   "lon": -80.91113,
+   "depth_m": null,
+   "note": "no relief-model water within 300 m: creek narrower than the model, treated as shallow",
+   "checked": "2026-11-14T19:45:27Z"
+  },
+  "erddap-secoora:gov-nps-ever-pkyf1": {
+   "lat": 24.91806,
+   "lon": -80.7468,
+   "depth_m": 1.3,
+   "note": "",
+   "checked": "2026-11-14T19:45:27Z"
+  },
+  "erddap-secoora:gov-nps-ever-sref1": {
+   "lat": 25.35412,
+   "lon": -81.10003,
+   "depth_m": 2.6,
+   "note": "",
+   "checked": "2026-11-14T19:45:27Z"
+  },
+  "erddap-secoora:gov-nps-ever-tbyf1": {
+   "lat": 25.15734,
+   "lon": -80.72479,
+   "depth_m": 0.1,
+   "note": "",
+   "checked": "2026-11-14T19:45:28Z"
+  },
+  "erddap-secoora:gov-nps-ever-tcvf1": {
+   "lat": 25.21275,
+   "lon": -80.53339,
+   "depth_m": 0.1,
+   "note": "",
+   "checked": "2026-11-14T19:45:28Z"
+  },
+  "erddap-secoora:gov-nps-ever-thrf1": {
+   "lat": 25.20338,
+   "lon": -80.37232,
+   "depth_m": 2.1,
+   "note": "",
+   "checked": "2026-11-14T19:45:28Z"
+  },
+  "erddap-secoora:gov-nps-ever-tpef1": {
+   "lat": 25.41012,
+   "lon": -80.96395,
+   "depth_m": 1.2,
+   "note": "",
+   "checked": "2026-11-14T19:45:27Z"
+  },
+  "erddap-secoora:gov-nps-ever-trrf1": {
+   "lat": 25.21712,
+   "lon": -80.64957,
+   "depth_m": null,
+   "note": "no relief-model water within 300 m: creek narrower than the model, treated as shallow",
+   "checked": "2026-11-14T19:45:27Z"
+  },
+  "erddap-secoora:gov-nps-ever-wiwf1": {
+   "lat": 25.58749,
+   "lon": -81.04364,
+   "depth_m": null,
+   "note": "no relief-model water within 300 m: creek narrower than the model, treated as shallow",
+   "checked": "2026-11-14T19:45:28Z"
+  },
+  "erddap-secoora:gov-nps-ever-wplf1": {
+   "lat": 25.70967,
+   "lon": -81.24907,
+   "depth_m": 2.2,
+   "note": "",
+   "checked": "2026-11-14T19:45:28Z"
+  },
+  "erddap-secoora:gov-nps-ever-wrbf1": {
+   "lat": 25.07209,
+   "lon": -80.73511,
+   "depth_m": 0.1,
+   "note": "",
+   "checked": "2026-11-14T19:45:28Z"
+  },
+  "erddap-secoora:gov-nps-ever-wwef1": {
+   "lat": 25.23166,
+   "lon": -80.93823,
+   "depth_m": 1.2,
+   "note": "",
+   "checked": "2026-11-14T19:45:28Z"
+  },
+  "erddap-secoora:gulf-star-marina": {
+   "lat": 26.4595,
+   "lon": -81.9518,
+   "depth_m": 3.4,
+   "note": "",
+   "checked": "2026-11-14T19:45:29Z"
+  },
+  "erddap-secoora:key-largo-fl": {
+   "lat": 25.08647,
+   "lon": -80.45305,
+   "depth_m": 1.2,
+   "note": "",
+   "checked": "2026-11-14T19:45:28Z"
+  },
+  "erddap-secoora:new-pass-bridge": {
+   "lat": 26.37803,
+   "lon": -81.86088,
+   "depth_m": 3.5,
+   "note": "",
+   "checked": "2026-11-14T19:45:30Z"
+  },
+  "erddap-secoora:ramrod-1": {
+   "lat": 24.65985,
+   "lon": -81.40577,
+   "depth_m": null,
+   "note": "no relief-model water within 300 m: creek narrower than the model, treated as shallow",
+   "checked": "2026-11-14T19:45:28Z"
+  },
+  "erddap-secoora:sanibel-dock": {
+   "lat": 26.45343,
+   "lon": -82.03554,
+   "depth_m": 0.1,
+   "note": "",
+   "checked": "2026-11-14T19:45:30Z"
+  },
+  "erddap-secoora:vester-field-station": {
+   "lat": 26.33088,
+   "lon": -81.83719,
+   "depth_m": 2.1,
+   "note": "",
+   "checked": "2026-11-14T19:45:30Z"
+  },
+  "ndbc:RKQF1": {
+   "lat": 26.027,
+   "lon": -81.734,
+   "depth_m": 1.2,
+   "note": "",
+   "checked": "2026-11-14T19:45:29Z"
+  },
+  "ndbc:RKXF1": {
+   "lat": 26.05,
+   "lon": -81.701,
+   "depth_m": 1.5,
+   "note": "",
+   "checked": "2026-11-14T19:45:29Z"
+  },
+  "usgs:022908295": {
+   "lat": 25.46798,
+   "lon": -80.85453,
+   "depth_m": null,
+   "note": "no relief-model water within 300 m: creek narrower than the model, treated as shallow",
+   "checked": "2026-11-14T19:45:30Z"
+  },
+  "usgs:02290878": {
+   "lat": 25.50139,
+   "lon": -81.07694,
+   "depth_m": 2.4,
+   "note": "",
+   "checked": "2026-11-14T19:45:30Z"
+  },
+  "usgs:02290930": {
+   "lat": 25.82861,
+   "lon": -81.34167,
+   "depth_m": 3.2,
+   "note": "",
+   "checked": "2026-11-14T19:45:32Z"
+  },
+  "usgs:02292900": {
+   "lat": 26.72173,
+   "lon": -81.69318,
+   "depth_m": null,
+   "note": "no relief-model water within 300 m: creek narrower than the model, treated as shallow",
+   "checked": "2026-11-14T19:45:30Z"
+  },
+  "usgs:02297460": {
+   "lat": 26.98756,
+   "lon": -81.9943,
+   "depth_m": 3.9,
+   "note": "",
+   "checked": "2026-11-14T19:45:31Z"
+  },
+  "usgs:02298202": {
+   "lat": 26.98478,
+   "lon": -81.93569,
+   "depth_m": null,
+   "note": "no relief-model water within 300 m: creek narrower than the model, treated as shallow",
+   "checked": "2026-11-14T19:45:31Z"
+  },
+  "usgs:250802081035500": {
+   "lat": 25.13697,
+   "lon": -81.06438,
+   "depth_m": null,
+   "note": "no relief-model water within 300 m: creek narrower than the model, treated as shallow",
+   "checked": "2026-11-14T19:45:30Z"
+  },
+  "usgs:251003080435500": {
+   "lat": 25.16819,
+   "lon": -80.73359,
+   "depth_m": null,
+   "note": "no relief-model water within 300 m: creek narrower than the model, treated as shallow",
+   "checked": "2026-11-14T19:45:31Z"
+  },
+  "usgs:251032080432200": {
+   "lat": 25.17464,
+   "lon": -80.72311,
+   "depth_m": null,
+   "note": "no relief-model water within 300 m: creek narrower than the model, treated as shallow",
+   "checked": "2026-11-14T19:45:31Z"
+  },
+  "usgs:251127080382100": {
+   "lat": 25.19059,
+   "lon": -80.63905,
+   "depth_m": 0.1,
+   "note": "",
+   "checked": "2026-11-14T19:45:31Z"
+  },
+  "usgs:251209080350100": {
+   "lat": 25.2033,
+   "lon": -80.58411,
+   "depth_m": 0.1,
+   "note": "",
+   "checked": "2026-11-14T19:45:31Z"
+  },
+  "usgs:251241080385300": {
+   "lat": 25.2103,
+   "lon": -80.64767,
+   "depth_m": null,
+   "note": "no relief-model water within 300 m: creek narrower than the model, treated as shallow",
+   "checked": "2026-11-14T19:45:32Z"
+  },
+  "usgs:251253080320100": {
+   "lat": 25.2149,
+   "lon": -80.53351,
+   "depth_m": 0.1,
+   "note": "",
+   "checked": "2026-11-14T19:45:32Z"
+  },
+  "usgs:251355080312800": {
+   "lat": 25.23262,
+   "lon": -80.52487,
+   "depth_m": null,
+   "note": "no relief-model water within 300 m: creek narrower than the model, treated as shallow",
+   "checked": "2026-11-14T19:45:31Z"
+  },
+  "usgs:251433080265000": {
+   "lat": 25.24211,
+   "lon": -80.44757,
+   "depth_m": 0.9,
+   "note": "",
+   "checked": "2026-11-14T19:45:32Z"
+  },
+  "usgs:251457080395800": {
+   "lat": 25.25254,
+   "lon": -80.68287,
+   "depth_m": null,
+   "note": "no relief-model water within 300 m: creek narrower than the model, treated as shallow",
+   "checked": "2026-11-14T19:45:31Z"
+  },
+  "usgs:252653080273001": {
+   "lat": 25.44796,
+   "lon": -80.45839,
+   "depth_m": null,
+   "note": "no relief-model water within 300 m: creek narrower than the model, treated as shallow",
+   "checked": "2026-11-14T19:45:31Z"
+  },
+  "usgs:252654080220201": {
+   "lat": 25.4484,
+   "lon": -80.3673,
+   "depth_m": null,
+   "note": "no relief-model water within 300 m: creek narrower than the model, treated as shallow",
+   "checked": "2026-11-14T19:45:31Z"
+  },
+  "usgs:254729080393601": {
+   "lat": 25.79126,
+   "lon": -80.65993,
+   "depth_m": null,
+   "note": "no relief-model water within 300 m: creek narrower than the model, treated as shallow",
+   "checked": "2026-11-14T19:45:32Z"
+  },
+  "usgs:254760080395601": {
+   "lat": 25.7998,
+   "lon": -80.66565,
+   "depth_m": null,
+   "note": "no relief-model water within 300 m: creek narrower than the model, treated as shallow",
+   "checked": "2026-11-14T19:45:32Z"
+  },
+  "usgs:254923080384901": {
+   "lat": 25.82304,
+   "lon": -80.64708,
+   "depth_m": null,
+   "note": "no relief-model water within 300 m: creek narrower than the model, treated as shallow",
+   "checked": "2026-11-14T19:45:32Z"
+  },
+  "usgs:255138081321701": {
+   "lat": 25.86052,
+   "lon": -81.53795,
+   "depth_m": 2.6,
+   "note": "",
+   "checked": "2026-11-14T19:45:30Z"
+  },
+  "usgs:255151080371501": {
+   "lat": 25.86415,
+   "lon": -80.62083,
+   "depth_m": null,
+   "note": "no relief-model water within 300 m: creek narrower than the model, treated as shallow",
+   "checked": "2026-11-14T19:45:32Z"
+  },
+  "usgs:255327081275900": {
+   "lat": 25.89539,
+   "lon": -81.4555,
+   "depth_m": null,
+   "note": "no relief-model water within 300 m: creek narrower than the model, treated as shallow",
+   "checked": "2026-11-14T19:45:30Z"
+  },
+  "usgs:255432081303900": {
+   "lat": 25.90881,
+   "lon": -81.51092,
+   "depth_m": null,
+   "note": "no relief-model water within 300 m: creek narrower than the model, treated as shallow",
+   "checked": "2026-11-14T19:45:31Z"
+  },
+  "usgs:255534081324000": {
+   "lat": 25.926,
+   "lon": -81.54431,
+   "depth_m": null,
+   "note": "no relief-model water within 300 m: creek narrower than the model, treated as shallow",
+   "checked": "2026-11-14T19:45:31Z"
+  },
+  "usgs:255654081350200": {
+   "lat": 25.95236,
+   "lon": -81.58442,
+   "depth_m": 2.4,
+   "note": "",
+   "checked": "2026-11-14T19:45:30Z"
+  },
+  "usgs:255726081303700": {
+   "lat": 25.957,
+   "lon": -81.51091,
+   "depth_m": null,
+   "note": "no relief-model water within 300 m: creek narrower than the model, treated as shallow",
+   "checked": "2026-11-14T19:45:31Z"
+  }
+ }
+}

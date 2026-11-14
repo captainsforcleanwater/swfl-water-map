@@ -56,8 +56,7 @@ def prepare(start: datetime, end: datetime, now: datetime):
     D = graph.distances([nodes[i] for i in ids])
     Dss = D[:, [nodes[i] for i in ids]]
     arc = goes.load(start - timedelta(days=bc["goes_persistence_days"]), end)
-    h = cres.hourly
-    h = h[(h["layer"] == "surface") & h["station"].isin(nodes)]
+    h = cres.grid
     hours = []
     for H in hours_between(start, end):
         hh = h[h["time"] == pd.Timestamp(H)]

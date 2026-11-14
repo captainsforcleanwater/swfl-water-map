@@ -38,6 +38,8 @@ run summary on the Actions page.
 | Blended hourly grids | GitHub Releases tagged `blend-hourly-YYYY-MM`, one file per UTC day | gzip, format in `processing/gridfile.py` |
 | Blended grid index | `data/blend/index.json` | which hours are saved, input signatures, download URLs |
 | Water mask | `data/grid/water_fine.png`, `data/grid/grid.json` | 100 m, from USGS NHD and the NOAA Coastal Relief Model |
+| Map coastline | `data/grid/display_100m.bin.gz`, `data/grid/land_100m.geojson` | 100 m water pieces and land polygons; the map draws from these, not the 500 m cells |
+| Station depths | `data/grid/station_depth.json` | NOAA Coastal Relief Model depth near each station |
 
 Variables: `water_temp_c` (degrees C), `salinity_psu` (PSU), `spec_cond_us_cm` (specific conductance at
 25 C, microsiemens per cm). All times are UTC. The map converts temperature to degrees F for display.
@@ -48,7 +50,8 @@ Readings in `data/sensors/` are raw and never changed; QC flags and cleaned valu
 
 `python -m processing.run` runs after the collector in the same workflow. It flags bad readings (range,
 spike, stuck sensor, disagreement with nearby stations, stale stations), computes salinity from conductance
-where a station has none, keeps one series per physical station, and writes hourly cleaned values. Then it
+where a station has none (or where USGS reports only whole PSU), merges duplicate feeds only when their
+readings agree, and writes hourly cleaned values. Then it
 blends hourly grids at about 500 m: GOES-19 sets the temperature pattern and the sensors correct it; salinity
 comes from the sensors alone. Both are interpolated by distance through water, so readings never cross land,
 and each has a confidence grid. Hours in the last 24 whose inputs changed are blended again. Method, file
@@ -57,7 +60,7 @@ format and leave-one-out results: [docs/processing.md](docs/processing.md). Samp
 ## Running locally
 
 ```bash
-pip install -r requirements.txt
+pip install -r requirements.txt               # exact versions, same as the workflow
 python -m collector.run --goes-store local    # GOES-19 files go to build/goes19 instead of a release
 python -m collector.run --discover --lookback-hours 6 --goes-store off
 python -m processing.run --store local        # blended day files go to build/blend instead of a release

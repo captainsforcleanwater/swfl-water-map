@@ -27,10 +27,15 @@ INLAND_USGS_TYPES = {
 
 
 @lru_cache(maxsize=1)
-def overrides() -> dict:
+def overrides_file() -> dict:
+    """The whole of config/station_tags.json (setting tags and QC holds)."""
     if not TAGS_PATH.exists():
         return {}
-    return json.loads(TAGS_PATH.read_text()).get("setting", {})
+    return json.loads(TAGS_PATH.read_text())
+
+
+def overrides() -> dict:
+    return overrides_file().get("setting", {})
 
 
 def setting(uid: str, extra: dict | None) -> tuple[str, str]:

@@ -9,8 +9,8 @@ Each run:
 2. Works out, for every hour in the last reblend_hours, a signature of its inputs (the hourly
    sensor values and the GOES-19 frames available for it). Hours whose signature changed are
    re-blended: Everglades data lands 6 to 8 hours late and GOES-19 frames 4 to 5 hours late, so
-   recent hours get redone as their inputs arrive. Hours missing from the last backfill_days
-   are blended too.
+   recent hours get redone as their inputs arrive. Hours missing from the last backfill_days, or
+   blended there by an older BLEND_VERSION, are blended too.
 3. Writes one file per UTC day (gridfile.py format) to a monthly GitHub Release
    blend-hourly-YYYY-MM and records hours and signatures in data/blend/index.json.
 
@@ -37,11 +37,11 @@ from collector.goes19 import FAILED, OK, LocalStore, ReleaseStore
 from . import blend, clean, goes, gridfile
 from .config import BLEND_DIR, area_config, proc_config
 from .grid import Grid, polygon_mask
-from .waterpaths import WaterGraph
+from .waterpaths import WaterGraph, display_pieces
 
 log = logging.getLogger("processing.run")
 
-BLEND_VERSION = 1   # bump when the method changes so every hour in the window is redone
+BLEND_VERSION = 2   # bump when the method changes so every hour in the window is redone
 TEMP_SCALE = 0.05   # stored to 0.05 C (0.09 F); sensors are good to about 0.1 C
 SAL_SCALE = 0.05
 NODATA16 = -32768
@@ -130,7 +130,9 @@ def persistence_at(arc: goes.GoesArchive, t: datetime, max_age_h: float):
 
 
 class Targets:
-    """Output cells that get values: water cells inside the area polygon."""
+    """Output cells that get values: water cells inside the area polygon (their main water piece),
+    plus the secondary water pieces of cells split by an island or point (the *_extra layers, which
+    the map colours through data/grid/display_100m.bin.gz)."""
 
     def __init__(self, grid: Grid, graph: WaterGraph):
         rs, cs = grid.out_slice()
@@ -138,10 +140,24 @@ class Targets:
         poly = polygon_mask(grid, area_config()["polygon"])[rs, cs]
         self.mask = (prim >= 0) & poly
         self.nodes = prim[self.mask]
+        _, self.extra_nodes = display_pieces(graph, self.mask)
+        self.all_nodes = np.concatenate([self.nodes, self.extra_nodes])
+        self.pieces_key = graph.key
         self.shape = (grid.out_ny, grid.out_nx)
         self.water_pct = np.where(self.mask, np.rint(100 * graph.water_frac[rs, cs]), NODATA8).astype(np.uint8)
 
-    def to_grid(self, v: np.ndarray, scale: float | None, dtype) -> np.ndarray:
+    def split(self, v: np.ndarray) -> tuple[np.ndarray, np.ndarray]:
+        n = len(self.nodes)
+        return v[:n], v[n:]
+
+    @staticmethod
+    def to_values(v: np.ndarray, scale: float | None) -> np.ndarray:
+        if scale is None:
+            return np.asarray(v, np.uint8)
+        q = np.rint(np.asarray(v, "f8") / scale)
+        return np.where(np.isfinite(q), np.clip(q, -32767, 32767), NODATA16).astype(np.int16)
+
+    def to_grid(self, v: np.ndarray, scale: float | None, dtype=None) -> np.ndarray:
         if scale is None:   # uint8 confidence
             out = np.full(self.shape, NODATA8, np.uint8)
             out[self.mask] = v
@@ -180,22 +196,24 @@ def blend_hour(H, obs_t, obs_s, arc, graph, grid, targets, D, row_of, node_of, c
                          np.array([row_of[i] for i in ids], int))
 
     ot, os_ = mk(obs_t), mk(obs_s)
-    at = blend.analyse_temperature(ot, D, targets.nodes, B, sb, ext, bc["temperature"])
-    as_ = blend.analyse_salinity(os_, D, targets.nodes, graph, bc["salinity"])
+    at = blend.analyse_temperature(ot, D, targets.all_nodes, B, sb, ext, bc["temperature"])
+    as_ = blend.analyse_salinity(os_, D, targets.all_nodes, graph, bc["salinity"])
     info["stations"] = {
         "temp": [[i, round(float(v), 2), None if not np.isfinite(b) else round(float(b), 2)]
                  for i, v, b in zip(ot.ids, ot.values, at.obs_background)],
         "sal": [[i, round(float(v), 2)] for i, v in zip(os_.ids, os_.values)],
     }
-    layers = {
-        "temp_c": targets.to_grid(at.value, TEMP_SCALE, np.int16),
-        "temp_conf": targets.to_grid(at.confidence, None, np.uint8),
-        "sal_psu": targets.to_grid(as_.value, SAL_SCALE, np.int16),
-        "sal_conf": targets.to_grid(as_.confidence, None, np.uint8),
-    }
+    layers = {}
+    for name, arr, scale in (("temp_c", at.value, TEMP_SCALE), ("temp_conf", at.confidence, None),
+                             ("sal_psu", as_.value, SAL_SCALE), ("sal_conf", as_.confidence, None)):
+        main, extra = targets.split(arr)
+        layers[name] = targets.to_grid(main, scale, None)
+        layers[name + "_extra"] = targets.to_values(extra, scale)
     if len(os_.values) == 0:
         layers["sal_psu"][:] = NODATA16
         layers["sal_conf"][targets.mask] = 0
+        layers["sal_psu_extra"][:] = NODATA16
+        layers["sal_conf_extra"][:] = 0
     return layers, info
 
 
@@ -210,6 +228,8 @@ LAYER_ATTRS = {
                  "long_name": "Salinity confidence, 0-100"},
 }
 VALUE_LAYERS = ("temp_c", "sal_psu")
+EXTRA_ATTRS = {name + "_extra": dict(a, long_name=a["long_name"] + ", secondary water pieces (see data/grid/display_100m.bin.gz)")
+               for name, a in LAYER_ATTRS.items()}
 
 
 def write_day(path: Path, day: str, frames: dict[datetime, tuple[dict, dict]], grid: Grid, targets: Targets) -> int:
@@ -232,11 +252,15 @@ def write_day(path: Path, day: str, frames: dict[datetime, tuple[dict, dict]], g
                    "Everglades National Park, FGCU, FIU). Satellite: NOAA CoastWatch GOES-19 hourly SST. "
                    "Water mask: USGS NHD and NOAA Coastal Relief Model.",
         "created": iso(utcnow()), "blend_version": BLEND_VERSION,
+        "pieces_key": targets.pieces_key, "n_extra": int(len(targets.extra_nodes)),
+        "extra_layers": "Layers ending _extra hold values for secondary water pieces, in the order of "
+                        "data/grid/display_100m.bin.gz (piece k >= 2 is element k - 2). Use them only when "
+                        "pieces_key matches that file's; where an extra value is missing, use the cell's value.",
     }
     layers = {}
-    for name, attrs in LAYER_ATTRS.items():
+    for name, attrs in list(LAYER_ATTRS.items()) + list(EXTRA_ATTRS.items()):
         a = np.stack([frames[t][0][name] for t in times])
-        if name in VALUE_LAYERS:
+        if name.removesuffix("_extra") in VALUE_LAYERS:
             a = np.where(a == NODATA16, 0, a).astype(np.int16)   # masked by water_pct and has[] on read
         layers[name] = (a, attrs)
     layers["water_pct"] = (targets.water_pct, {
@@ -245,20 +269,35 @@ def write_day(path: Path, day: str, frames: dict[datetime, tuple[dict, dict]], g
     return gridfile.write(path, header, layers)
 
 
-def read_day(path: Path) -> dict[datetime, tuple[dict, dict]]:
-    """Frames of a day file with nodata restored (NODATA16 / NODATA8), as blend_hour returns them."""
+def read_day(path: Path, n_extra: int | None = None, pieces_key: str | None = None
+             ) -> dict[datetime, tuple[dict, dict]]:
+    """Frames of a day file with nodata restored (NODATA16 / NODATA8), as blend_hour returns them.
+    Extra-piece layers missing from older files, or made for another mask, come back as nodata."""
     head, arr = gridfile.read(path)
     invalid = arr["water_pct"] == NODATA8
+    n_extra = head.get("n_extra", 0) if n_extra is None else n_extra
+    extras_ok = all(k in arr for k in EXTRA_ATTRS) and head.get("n_extra") == n_extra and (
+        pieces_key is None or head.get("pieces_key") == pieces_key)
     out = {}
     for i, (t, info) in enumerate(zip(head["times"], head["hours"])):
         layers = {}
+        has = info.get("has", {})
         for k in LAYER_ATTRS:
             a = arr[k][i].copy()
             if k in VALUE_LAYERS:
-                a[invalid | (not info.get("has", {}).get(k, True))] = NODATA16
+                a[invalid | (not has.get(k, True))] = NODATA16
             else:
                 a[invalid] = NODATA8
             layers[k] = a
+            ek = k + "_extra"
+            if extras_ok:
+                e = arr[ek][i].copy()
+                if k in VALUE_LAYERS and not has.get(k, True):
+                    e[:] = NODATA16
+            else:
+                e = np.full(n_extra, NODATA16 if k in VALUE_LAYERS else 0,
+                            np.int16 if k in VALUE_LAYERS else np.uint8)
+            layers[ek] = e
         out[parse_time(t)] = (layers, {kk: vv for kk, vv in info.items() if kk != "has"})
     return out
 
@@ -309,8 +348,7 @@ def main(argv=None) -> int:
     log.info("clean: %s", {k: v for k, v in st.items() if k not in ("files_changed", "by_test")})
 
     # ---- inputs per hour
-    h = cres.hourly
-    h = h[(h["layer"] == "surface") & h["station"].isin(nodes)]
+    h = cres.grid   # near-surface values, or bottom temperature in shallow water
     obs = {}
     for (t, var), g in h.groupby(["time", "variable"]):
         g = g.sort_values("station")
@@ -330,8 +368,10 @@ def main(argv=None) -> int:
             continue
         sig = signature(ot, os_, frames, chash)
         day, hh = H.strftime("%Y-%m-%d"), H.strftime("%H")
-        old = days_idx.get(day, {}).get("hours", {}).get(hh, {}).get("sig")
-        if args.force or old is None or (H >= reblend_from and old != sig):
+        prev = days_idx.get(day, {}).get("hours", {}).get(hh, {})
+        old = prev.get("sig")
+        outdated = prev.get("v", 1) < BLEND_VERSION   # blended by an older method: redo within the window
+        if args.force or old is None or outdated or (H >= reblend_from and old != sig):
             todo.append((H, sig, ot, os_))
     status["hours_considered"] = len(candidates)
     status["hours_to_blend"] = len(todo)
@@ -353,7 +393,7 @@ def main(argv=None) -> int:
             got = store.get(asset, path, tag)
             if got == OK:
                 try:
-                    frames = read_day(path)
+                    frames = read_day(path, len(targets.extra_nodes), targets.pieces_key)
                 except Exception as e:  # noqa: BLE001
                     got = FAILED
                     log.warning("day file %s unreadable: %s", asset, e)
@@ -374,7 +414,7 @@ def main(argv=None) -> int:
                 continue
             info["sig"] = sig
             frames[H] = (layers, info)
-            hours_info[H.strftime("%H")] = {"sig": sig, "n_temp": len(ot[0]), "n_sal": len(os_[0]),
+            hours_info[H.strftime("%H")] = {"sig": sig, "v": BLEND_VERSION, "n_temp": len(ot[0]), "n_sal": len(os_[0]),
                                             "goes_newest": info.get("goes_newest"), "blended": iso(utcnow())}
             done += 1
         if not done:
@@ -386,7 +426,8 @@ def main(argv=None) -> int:
                          "hours": {k: hours_info[k] for k in sorted(hours_info)}}
         blended += done
         index.update({"format": f"{gridfile.FORMAT} v{gridfile.VERSION}", "grid": grid.describe(),
-                      "layers": list(LAYER_ATTRS) + ["water_pct"]})
+                      "layers": list(LAYER_ATTRS) + list(EXTRA_ATTRS) + ["water_pct"],
+                      "display_mask": "data/grid/display_100m.bin.gz", "pieces_key": targets.pieces_key})
         index_path.parent.mkdir(parents=True, exist_ok=True)
         index_path.write_text(json.dumps(index, indent=1, sort_keys=True) + "\n")
         log.info("wrote %s: %d hours (%d new), %.1f MB", asset, len(frames), done, size / 1e6)
