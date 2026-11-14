@@ -1,0 +1,5 @@
+# Only for rebuilding the water mask (python -m processing.shoreline), quick-look images and tests.
+-r requirements.txt
+pyshp>=2.3
+matplotlib>=3.8
+pytest>=8.0

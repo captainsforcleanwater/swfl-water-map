@@ -1,0 +1,45 @@
+"""Station setting tag: coastal (tidal water) or inland (fresh, not tidal).
+
+The salinity and temperature grids use coastal stations only. Tags come from
+config/station_tags.json when a station is listed there, otherwise from the rule below.
+Kept in the collector so the inventory files show the tag; the processing step uses the
+same function.
+"""
+
+from __future__ import annotations
+
+import json
+from functools import lru_cache
+
+from .common import ROOT
+
+TAGS_PATH = ROOT / "config" / "station_tags.json"
+
+# USGS site type codes that mean fresh, non-tidal water.
+INLAND_USGS_TYPES = {
+    "WE": "USGS site type wetland",
+    "ST-CA": "USGS site type canal",
+    "ST-DCH": "USGS site type ditch",
+    "LK": "USGS site type lake",
+    "GW": "USGS site type groundwater well",
+    "SP": "USGS site type spring",
+}
+
+
+@lru_cache(maxsize=1)
+def overrides() -> dict:
+    if not TAGS_PATH.exists():
+        return {}
+    return json.loads(TAGS_PATH.read_text()).get("setting", {})
+
+
+def setting(uid: str, extra: dict | None) -> tuple[str, str]:
+    """(setting, reason) for a station. setting is 'coastal' or 'inland'."""
+    o = overrides().get(uid)
+    if o:
+        return o["setting"], o.get("reason", "set in config/station_tags.json")
+    site_type = (extra or {}).get("site_type", "")
+    for code, why in INLAND_USGS_TYPES.items():
+        if site_type == code or site_type.startswith(code + "-"):
+            return "inland", why
+    return "coastal", ""

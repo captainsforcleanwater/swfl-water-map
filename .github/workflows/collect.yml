@@ -13,6 +13,10 @@ on:
         description: "Force station rediscovery"
         type: boolean
         default: false
+      reblend_from:
+        description: "Re-blend every hour from this UTC time (e.g. 2026-11-09T11), even if unchanged (blank = normal run)"
+        required: false
+        default: ""
 
 permissions:
   contents: write   # commit sensor files and create GOES-19 release assets
@@ -24,7 +28,8 @@ concurrency:
 jobs:
   collect:
     runs-on: ubuntu-latest
-    timeout-minutes: 30
+    # Collect (20 min) + clean and blend (15 min) + commit, with room to spare.
+    timeout-minutes: 45
     steps:
       - uses: actions/checkout@v4
         with:
@@ -53,6 +58,48 @@ jobs:
           if [ "${{ inputs.discover }}" = "true" ]; then args+=(--discover); fi
           python -m collector.run "${args[@]}"
 
+      # Clean and blend run after collection and before the commit, in their own step with their
+      # own time limit, so a blend failure or timeout never stops the raw data from being saved.
+      - name: Restore water-path cache
+        id: wp_cache
+        continue-on-error: true
+        uses: actions/cache/restore@v4
+        with:
+          path: |
+            build/cache/graph
+            build/cache/distance
+          key: water-paths-${{ hashFiles('data/grid/grid.json', 'processing/waterpaths.py') }}-none
+          restore-keys: water-paths-${{ hashFiles('data/grid/grid.json', 'processing/waterpaths.py') }}-
+
+      - name: Clean and blend
+        id: blend
+        continue-on-error: true
+        timeout-minutes: 15
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          args=(--max-minutes 12)
+          if [ -n "${{ inputs.reblend_from }}" ]; then args+=(--start "${{ inputs.reblend_from }}" --force); fi
+          python -m processing.run "${args[@]}"
+
+      - name: Water-path cache key
+        id: wp_key
+        if: always()
+        continue-on-error: true
+        run: |
+          list=$(ls build/cache/distance/*/ 2>/dev/null | sort | sha1sum | cut -c1-12)
+          echo "key=water-paths-${{ hashFiles('data/grid/grid.json', 'processing/waterpaths.py') }}-${list}" >> "$GITHUB_OUTPUT"
+
+      - name: Save water-path cache
+        if: always() && steps.wp_key.outputs.key != '' && steps.wp_key.outputs.key != steps.wp_cache.outputs.cache-matched-key
+        continue-on-error: true
+        uses: actions/cache/save@v4
+        with:
+          path: |
+            build/cache/graph
+            build/cache/distance
+          key: ${{ steps.wp_key.outputs.key }}
+
       - name: Commit results
         run: |
           git config user.name "swfl-collector[bot]"
@@ -75,4 +122,10 @@ jobs:
         if: steps.collect.outcome == 'failure'
         run: |
           echo "The collector reported a failure. See data/status/last_run.json for details." >&2
+          exit 1
+
+      - name: Report blend failure
+        if: steps.blend.outcome == 'failure'
+        run: |
+          echo "The clean and blend step failed or timed out. Raw data was still committed. See data/status/last_blend.json." >&2
           exit 1
