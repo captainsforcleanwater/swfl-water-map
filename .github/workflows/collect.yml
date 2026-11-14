@@ -41,6 +41,9 @@ jobs:
       - name: Collect
         id: collect
         continue-on-error: true
+        # Its own limit, well under the job's 30 minutes, so a slow source cannot stop the commit step.
+        # GOES-19 runs first and saves its index after each day, so its work survives a timeout.
+        timeout-minutes: 20
         env:
           GH_TOKEN: ${{ github.token }}
           USGS_API_KEY: ${{ secrets.USGS_API_KEY }}   # optional; leave unset if you have none
