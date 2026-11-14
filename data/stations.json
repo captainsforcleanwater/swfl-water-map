@@ -1,0 +1,7162 @@
+{
+ "discovered": "2026-11-14T16:24:31Z",
+ "skipped_mirrors": [
+  {
+   "system": "erddap-secoora",
+   "id": "gov_usgs_nwis_02276877",
+   "title": "ST. LUCIE CANAL BLW S-308, NR PORT MAYACA (AUX) FL (USGS 02276877)"
+  },
+  {
+   "system": "erddap-secoora",
+   "id": "gov_usgs_nwis_022907085",
+   "title": "BLACK CREEK CANAL WEST OF U.S. 1 NR  GOULDS, FL (USGS 022907085)"
+  },
+  {
+   "system": "erddap-secoora",
+   "id": "gov_usgs_nwis_02290709",
+   "title": "10B BLACK CR CANAL AT OLD CUTLER RD NR GOU (USGS 02290709)"
+  },
+  {
+   "system": "erddap-secoora",
+   "id": "gov_usgs_nwis_022908205",
+   "title": "NORTH RIVER UPSTREAM OF CUTOFF NEAR FLAMINGO, FL (USGS 022908205)"
+  },
+  {
+   "system": "erddap-secoora",
+   "id": "gov_usgs_nwis_022908295",
+   "title": "BOTTLE CREEK AT ROOKERY BRANCH NEAR HOMESTEAD, FL (USGS 022908295)"
+  },
+  {
+   "system": "erddap-secoora",
+   "id": "gov_usgs_nwis_02290878",
+   "title": "BROAD RIVER NEAR THE CUTOFF, FL (USGS 02290878)"
+  },
+  {
+   "system": "erddap-secoora",
+   "id": "gov_usgs_nwis_02290928",
+   "title": "BARRON RIVER AT EVERGLADES CITY, FL (USGS 02290928)"
+  },
+  {
+   "system": "erddap-secoora",
+   "id": "gov_usgs_nwis_02290930",
+   "title": "TURNER RIVER NR CHOKOLOSKEE ISLAND, FL (USGS 02290930)"
+  },
+  {
+   "system": "erddap-secoora",
+   "id": "gov_usgs_nwis_02298202",
+   "title": "SHELL CREEK NEAR PUNTA GORDA FL (USGS 02298202)"
+  },
+  {
+   "system": "erddap-secoora",
+   "id": "gov_usgs_nwis_250802081035500",
+   "title": "EAST SIDE CREEK NEAR LAKE INGRAHAM, FL (USGS 250802081035500)"
+  },
+  {
+   "system": "erddap-secoora",
+   "id": "gov_usgs_nwis_251127080382100",
+   "title": "TAYLOR RIVER AT MOUTH NEAR HOMESTEAD, FL (USGS 251127080382100)"
+  },
+  {
+   "system": "erddap-secoora",
+   "id": "gov_usgs_nwis_251209080350100",
+   "title": "MUD CREEK AT MOUTH NR HOMESTEAD, FL (USGS 251209080350100)"
+  },
+  {
+   "system": "erddap-secoora",
+   "id": "gov_usgs_nwis_251355080312800",
+   "title": "JOE BAY 2E, NEAR KEY LARGO, FL (USGS 251355080312800)"
+  },
+  {
+   "system": "erddap-secoora",
+   "id": "gov_usgs_nwis_251433080265000",
+   "title": "WEST HIGHWAY CREEK NEAR HOMESTEAD, FL (USGS 251433080265000)"
+  },
+  {
+   "system": "erddap-secoora",
+   "id": "gov_usgs_nwis_251457080395800",
+   "title": "TAYLOR SLOUGH WETLAND AT E146 NR HOMESTEAD, FL (USGS 251457080395800)"
+  },
+  {
+   "system": "erddap-secoora",
+   "id": "gov_usgs_nwis_254157080213800",
+   "title": "SNAPPER CREEK NO.5 ABV WATER PIPE NR S. MIAMI, FL (USGS 254157080213800)"
+  },
+  {
+   "system": "erddap-secoora",
+   "id": "gov_usgs_nwis_255151080371501",
+   "title": "WETLAND AT S-152 OUTFLOW NEAR COOPERTOWN, FL (USGS 255151080371501)"
+  },
+  {
+   "system": "erddap-secoora",
+   "id": "gov_usgs_nwis_255327081275900",
+   "title": "EAST RIVER NEAR EVERGLADES CITY, FL (USGS 255327081275900)"
+  },
+  {
+   "system": "erddap-secoora",
+   "id": "gov_usgs_nwis_255432081303900",
+   "title": "FAKA-UNION RIVER NEAR THE MOUTH (USGS 255432081303900)"
+  },
+  {
+   "system": "erddap-secoora",
+   "id": "gov_usgs_nwis_255534081324000",
+   "title": "PUMPKIN RIVER NEAR GOODLAND, FL (USGS 255534081324000)"
+  },
+  {
+   "system": "erddap-secoora",
+   "id": "gov_usgs_nwis_255654081350200",
+   "title": "BLACKWATER RIVER NEAR GOODLAND, FL (USGS 255654081350200)"
+  },
+  {
+   "system": "erddap-secoora",
+   "id": "gov_usgs_nwis_255726081303700",
+   "title": "FAKA UNION CANAL BOAT BASIN AT PORT OF ISLES,FL (USGS 255726081303700)"
+  },
+  {
+   "system": "erddap-secoora",
+   "id": "noaa_nos_co_ops_8723970",
+   "title": "Vaca Key, Florida Bay, FL Real-time (VCAF1)"
+  },
+  {
+   "system": "erddap-secoora",
+   "id": "noaa_nos_co_ops_8724580",
+   "title": "Key West, FL Real-time (KYWF1)"
+  },
+  {
+   "system": "erddap-secoora",
+   "id": "noaa_nos_co_ops_8725110",
+   "title": "Naples, Gulf Of Mexico, FL Real-time"
+  },
+  {
+   "system": "erddap-secoora",
+   "id": "noaa_nos_co_ops_8725520",
+   "title": "Fort Myers, FL Real-time (FMRF1)"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "gov_usgs_nwis_02276877",
+   "title": "ST. LUCIE CANAL BLW S-308, NR PORT MAYACA (AUX) FL (USGS 02276877)"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "gov_usgs_nwis_022907085",
+   "title": "BLACK CREEK CANAL WEST OF U.S. 1 NR  GOULDS, FL (USGS 022907085)"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "gov_usgs_nwis_02290709",
+   "title": "10B BLACK CR CANAL AT OLD CUTLER RD NR GOU (USGS 02290709)"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "gov_usgs_nwis_022908205",
+   "title": "NORTH RIVER UPSTREAM OF CUTOFF NEAR FLAMINGO, FL (USGS 022908205)"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "gov_usgs_nwis_022908295",
+   "title": "BOTTLE CREEK AT ROOKERY BRANCH NEAR HOMESTEAD, FL (USGS 022908295)"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "gov_usgs_nwis_02290878",
+   "title": "BROAD RIVER NEAR THE CUTOFF, FL (USGS 02290878)"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "gov_usgs_nwis_02290928",
+   "title": "BARRON RIVER AT EVERGLADES CITY, FL (USGS 02290928)"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "gov_usgs_nwis_02290930",
+   "title": "TURNER RIVER NR CHOKOLOSKEE ISLAND, FL (USGS 02290930)"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "gov_usgs_nwis_02298202",
+   "title": "SHELL CREEK NEAR PUNTA GORDA FL (USGS 02298202)"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "gov_usgs_nwis_250802081035500",
+   "title": "EAST SIDE CREEK NEAR LAKE INGRAHAM, FL (USGS 250802081035500)"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "gov_usgs_nwis_251127080382100",
+   "title": "TAYLOR RIVER AT MOUTH NEAR HOMESTEAD, FL (USGS 251127080382100)"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "gov_usgs_nwis_251209080350100",
+   "title": "MUD CREEK AT MOUTH NR HOMESTEAD, FL (USGS 251209080350100)"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "gov_usgs_nwis_251355080312800",
+   "title": "JOE BAY 2E, NEAR KEY LARGO, FL (USGS 251355080312800)"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "gov_usgs_nwis_251433080265000",
+   "title": "WEST HIGHWAY CREEK NEAR HOMESTEAD, FL (USGS 251433080265000)"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "gov_usgs_nwis_251457080395800",
+   "title": "TAYLOR SLOUGH WETLAND AT E146 NR HOMESTEAD, FL (USGS 251457080395800)"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "gov_usgs_nwis_254157080213800",
+   "title": "SNAPPER CREEK NO.5 ABV WATER PIPE NR S. MIAMI, FL (USGS 254157080213800)"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "gov_usgs_nwis_255151080371501",
+   "title": "WETLAND AT S-152 OUTFLOW NEAR COOPERTOWN, FL (USGS 255151080371501)"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "gov_usgs_nwis_255327081275900",
+   "title": "EAST RIVER NEAR EVERGLADES CITY, FL (USGS 255327081275900)"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "gov_usgs_nwis_255432081303900",
+   "title": "FAKA-UNION RIVER NEAR THE MOUTH (USGS 255432081303900)"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "gov_usgs_nwis_255534081324000",
+   "title": "PUMPKIN RIVER NEAR GOODLAND, FL (USGS 255534081324000)"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "gov_usgs_nwis_255654081350200",
+   "title": "BLACKWATER RIVER NEAR GOODLAND, FL (USGS 255654081350200)"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "gov_usgs_nwis_255726081303700",
+   "title": "FAKA UNION CANAL BOAT BASIN AT PORT OF ISLES,FL (USGS 255726081303700)"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-gcoos-sccf_11",
+   "title": "SCCF 11 - SCCF RECON Tarpon Bay"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-gcoos-sccf_1111",
+   "title": "SCCF 1111 - SCCF RECON Alva"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-gcoos-sccf_12",
+   "title": "SCCF 12 - SCCF RECON Blind Pass"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-gcoos-sccf_13",
+   "title": "SCCF 13 - SCCF RECON Shell Point"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-gcoos-sccf_16",
+   "title": "SCCF 16 - SCCF RECON Gulf of Mexico"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-gcoos-sccf_18",
+   "title": "SCCF 18 - SCCF RECON Beautiful Island"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-gcoos-sccf_51",
+   "title": "SCCF 51 - SCCF RECON Redfish Pass"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-gcoos-sccf_52",
+   "title": "SCCF 52 - SCCF RECON Moore Haven"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-gcoos-sccf_53",
+   "title": "SCCF 53 - SCCF RECON Fort Myers"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-gcoos-sccf_56",
+   "title": "SCCF 56 - SCCF RECON McIntyre Creek"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-gcoos-wmo_42095",
+   "title": "42095 - Satan Shoal, FL (CDIP 244)"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-42023-c13-wfs-south-",
+   "title": "C13 \\u2013 WFS South Buoy, 50m Isobath (NBDC: 42023)"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-42026-c22-loop-curre",
+   "title": "C22 \\u2013 Loop Current Pressure Point Buoy (NDBC: 42026)"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-biscayne-bay-coastal",
+   "title": "Biscayne Bay Coastal Wetlands 10 (BBSF1)"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-biscayne-bay-coastal-1",
+   "title": "Biscayne Bay Coastal Wetlands 8 (BBNF1)"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-c13-historic-current",
+   "title": "C13 Historic Currents, Water Temperature, Salinity, MET, and Wind \\u2013 WFS South Buoy, 50m Isobath (NBDC: 42023)"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-c13-water-velocity-w",
+   "title": "C13 Water Velocity \\u2013 WFS South Buoy, 50m Isobath (NBDC: 42023)"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-c17-historic-current",
+   "title": "C17 Historic Currents, Water Temperature, Salinity, MET, and Wind \\u2013 West Florida Sea-Coos (NBDC: 42014)"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-c19-historic-current",
+   "title": "C19 Historic Currents and Water Temperature"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-c22-historic-current",
+   "title": "C22 Historic Currents, Water Temperature, Salinity, MET, and Wind \\u2013 Loop Current Pressure Point Buoy, 70m Isobath (NBDC: 42026)"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-c27-water-velocity-w",
+   "title": "C27 Water Velocity - WFS South Buoy \\u2013 Inner Shelf, 25m isobath (WMO ID 42029)"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-c27-wfs-south-buoy-i",
+   "title": "C27 - WFS South Buoy \\u2013 Inner Shelf, 25m isobath (NDBC: 42029)"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-edu_ucsd_cdip_237",
+   "title": "237 - Big Pine Key, FL (42078)"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-edu_ucsd_cdip_242",
+   "title": "242 - Bahia Honda Key, FL (42079)"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-edu_ucsd_cdip_244",
+   "title": "244 - Satan Shoal, FL (42095)"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-edu_usf_marine_comps",
+   "title": "Big Carlos Pass Shorebased Tower (NDBC: BGCF1)"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-gov-ndbc-lonf1",
+   "title": "LONF1 - Long Key, FL (gov-ndbc-lonf1)"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-gov-ndbc-mlrf1",
+   "title": "MLRF1 - Molasses Reef, FL (gov-ndbc-mlrf1)"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-gov-nps-ever-bdvf1",
+   "title": "Upper Broad River, FL (BDVF1)"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-gov-nps-ever-bkyf1",
+   "title": "Buoy Key, FL (BKYF1)"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-gov-nps-ever-bnkf1",
+   "title": "Butternut Key, FL (BNKF1)"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-gov-nps-ever-bobf1",
+   "title": "Bob Allen Keys, FL (BOBF1)"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-gov-nps-ever-bskf1",
+   "title": "Big Sable Creek, FL (BSKF1)"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-gov-nps-ever-bwsf1",
+   "title": "Blackwater Sound, FL (BWSF1)"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-gov-nps-ever-canf1",
+   "title": "Cane Patch, FL (CANF1)"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-gov-nps-ever-cnbf1",
+   "title": "Cannon Bay, FL (CNBF1)"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-gov-nps-ever-cwaf1",
+   "title": "Clear Water Pass, FL (CWAF1)"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-gov-nps-ever-dkkf1",
+   "title": "Duck Key, FL (DKKF1)"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-gov-nps-ever-gbif1",
+   "title": "Gunboat Island, FL (GBIF1)"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-gov-nps-ever-gbtf1",
+   "title": "Garfield Bight, FL  (GBTF1)"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-gov-nps-ever-gkyf1",
+   "title": "Garden Key, FL (GKYF1)"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-gov-nps-ever-hcef1",
+   "title": "Highway Creek, FL (HCEF1)"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-gov-nps-ever-href1",
+   "title": "Harney River, FL (HREF1)"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-gov-nps-ever-jbyf1",
+   "title": "Joe Bay, FL (JBYF1)"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-gov-nps-ever-jkyf1",
+   "title": "Johnson Key, FL (JKYF1)"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-gov-nps-ever-lbrf1",
+   "title": "Broad River Lower, FL (LBRF1)"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-gov-nps-ever-lbsf1",
+   "title": "Little Blackwater Sound, FL (LBSF1)"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-gov-nps-ever-lmdf1",
+   "title": "Little Madeira Bay, FL (LMDF1)"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-gov-nps-ever-lmrf1",
+   "title": "Lostmans River, FL (LMRF1)"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-gov-nps-ever-lrif1",
+   "title": "Lane River, FL (LRIF1)"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-gov-nps-ever-lrkf1",
+   "title": "Little Rabbit Key, FL (LRKF1)"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-gov-nps-ever-lsnf1",
+   "title": "Long Sound, FL (LSNF1)"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-gov-nps-ever-mdkf1",
+   "title": "Middle Key, FL (MDKF1)"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-gov-nps-ever-mnbf1",
+   "title": "Manatee Bay, FL (MNBF1)"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-gov-nps-ever-mukf1",
+   "title": "Murray Key, FL (MUKF1)"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-gov-nps-ever-nrrf1",
+   "title": "North River, FL (NRRF1)"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-gov-nps-ever-pkyf1",
+   "title": "Peterson Key, FL (PKYF1)"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-gov-nps-ever-sref1",
+   "title": "Shark River, FL (SREF1)"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-gov-nps-ever-tbyf1",
+   "title": "Terrapin Bay, FL (TBYF1)"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-gov-nps-ever-tcvf1",
+   "title": "Trout Cove, FL (TCVF1)"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-gov-nps-ever-thrf1",
+   "title": "Thursday Point, FL (THRF1)"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-gov-nps-ever-tpef1",
+   "title": "Tarpon Bay East, FL (TPEF1)"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-gov-nps-ever-trrf1",
+   "title": "Taylor River, FL (TRRF1)"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-gov-nps-ever-wiwf1",
+   "title": "Willy Willy, FL (WIWF1)"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-gov-nps-ever-wplf1",
+   "title": "Watson Place, FL (WPLF1)"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-gov-nps-ever-wrbf1",
+   "title": "Whipray Basin, FL (WRBF1)"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-gov-nps-ever-wwef1",
+   "title": "Whitewater East, FL (WWEF1)"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-gov_ornl_cdiac_cheec",
+   "title": "Cheeca Rocks Historic MAPCO2"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-gov_usgs_nwis_022768",
+   "title": "ST. LUCIE CANAL BLW S-308, NR PORT MAYACA (AUX) FL (USGS 02276877)"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-gov_usgs_nwis_022907",
+   "title": "10B BLACK CR CANAL AT OLD CUTLER RD NR GOU (USGS 02290709)"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-gov_usgs_nwis_022907-7",
+   "title": "BLACK CREEK CANAL WEST OF U.S. 1 NR  GOULDS, FL (USGS 022907085)"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-gov_usgs_nwis_022908",
+   "title": "BOTTLE CREEK AT ROOKERY BRANCH NEAR HOMESTEAD, FL (USGS 022908295)"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-gov_usgs_nwis_022908-1",
+   "title": "BROAD RIVER NEAR THE CUTOFF, FL (USGS 02290878)"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-gov_usgs_nwis_022908-3",
+   "title": "NORTH RIVER UPSTREAM OF CUTOFF NEAR FLAMINGO, FL (USGS 022908205)"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-gov_usgs_nwis_022909",
+   "title": "BARRON RIVER AT EVERGLADES CITY, FL (USGS 02290928)"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-gov_usgs_nwis_022909-2",
+   "title": "TURNER RIVER NR CHOKOLOSKEE ISLAND, FL (USGS 02290930)"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-gov_usgs_nwis_022982",
+   "title": "SHELL CREEK NEAR PUNTA GORDA FL (USGS 02298202)"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-gov_usgs_nwis_250802",
+   "title": "EAST SIDE CREEK NEAR LAKE INGRAHAM, FL (USGS 250802081035500)"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-gov_usgs_nwis_251127",
+   "title": "TAYLOR RIVER AT MOUTH NEAR HOMESTEAD, FL (USGS 251127080382100)"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-gov_usgs_nwis_251209",
+   "title": "MUD CREEK AT MOUTH NR HOMESTEAD, FL (USGS 251209080350100)"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-gov_usgs_nwis_251355",
+   "title": "JOE BAY 2E, NEAR KEY LARGO, FL (USGS 251355080312800)"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-gov_usgs_nwis_251433",
+   "title": "WEST HIGHWAY CREEK NEAR HOMESTEAD, FL (USGS 251433080265000)"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-gov_usgs_nwis_251457",
+   "title": "TAYLOR SLOUGH WETLAND AT E146 NR HOMESTEAD, FL (USGS 251457080395800)"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-gov_usgs_nwis_254157",
+   "title": "SNAPPER CREEK NO.5 ABV WATER PIPE NR S. MIAMI, FL (USGS 254157080213800)"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-gov_usgs_nwis_255151",
+   "title": "WETLAND AT S-152 OUTFLOW NEAR COOPERTOWN, FL (USGS 255151080371501)"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-gov_usgs_nwis_255327",
+   "title": "EAST RIVER NEAR EVERGLADES CITY, FL (USGS 255327081275900)"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-gov_usgs_nwis_255432",
+   "title": "FAKA-UNION RIVER NEAR THE MOUTH (USGS 255432081303900)"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-gov_usgs_nwis_255534",
+   "title": "PUMPKIN RIVER NEAR GOODLAND, FL (USGS 255534081324000)"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-gov_usgs_nwis_255654",
+   "title": "BLACKWATER RIVER NEAR GOODLAND, FL (USGS 255654081350200)"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-gov_usgs_nwis_255726",
+   "title": "FAKA UNION CANAL BOAT BASIN AT PORT OF ISLES,FL (USGS 255726081303700)"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-gulf-star-marina",
+   "title": "Gulf Star Marina"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-key-largo-fl",
+   "title": "Key Largo, FL"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-looe-key-fl",
+   "title": "Looe Key, FL"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-new-pass-bridge",
+   "title": "New Pass Bridge"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-noaa_nos_co_ops_8723-1",
+   "title": "Vaca Key, Florida Bay, FL Real-time (VCAF1)"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-noaa_nos_co_ops_8724",
+   "title": "Key West, FL Real-time (KYWF1)"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-noaa_nos_co_ops_8725",
+   "title": "Naples, Gulf Of Mexico, FL Real-time"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-noaa_nos_co_ops_8725-1",
+   "title": "Fort Myers, FL Real-time (FMRF1)"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-org_secoora_bttbfa_m",
+   "title": "BTTBFA Array, Station ML4, Bottom Temperature"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-org_secoora_bttbfa_r",
+   "title": "BTTBFA Array, Station RL19, Bottom Temperature"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-org_secoora_bttbfa_r-1",
+   "title": "BTTBFA Array, Station RL9, Bottom Temperature"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-org_secoora_bttperta-1",
+   "title": "BTTPERTAR Array, Station RODRIGUEZ 3, Bottom Temperature"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-org_secoora_bttperta-3",
+   "title": "BTTPERTAR Array, Station WHITMORE 3, Bottom Temperature"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-org_secoora_ffca_1ff",
+   "title": "FFCA Array, Station 1FFC, Bottom Temperature"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-org_secoora_ffca_2ff",
+   "title": "FFCA Array, Station 2FFC, Bottom Temperature"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-org_secoora_ffca_3ff",
+   "title": "FFCA Array, Station 3FFC, Bottom Temperature"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-org_secoora_ffca_4ff",
+   "title": "FFCA Array, Station 4FFC, Bottom Temperature"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-org_secoora_flkeys_e",
+   "title": "FLKEYS Array, Station ESHYD, Bottom Temperature"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-org_secoora_flkeys_h",
+   "title": "FLKEYS Array, Station HFA01, Bottom Temperature"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-org_secoora_flkeys_h-1",
+   "title": "FLKEYS Array, Station HFA02, Bottom Temperature"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-org_secoora_flkeys_h-10",
+   "title": "FLKEYS Array, Station HFA11, Bottom Temperature"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-org_secoora_flkeys_h-11",
+   "title": "FLKEYS Array, Station HFA12, Bottom Temperature"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-org_secoora_flkeys_h-12",
+   "title": "FLKEYS Array, Station HFA13, Bottom Temperature"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-org_secoora_flkeys_h-13",
+   "title": "FLKEYS Array, Station HFA14, Bottom Temperature"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-org_secoora_flkeys_h-14",
+   "title": "FLKEYS Array, Station HFA15, Bottom Temperature"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-org_secoora_flkeys_h-15",
+   "title": "FLKEYS Array, Station HFA16, Bottom Temperature"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-org_secoora_flkeys_h-16",
+   "title": "FLKEYS Array, Station HFA17, Bottom Temperature"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-org_secoora_flkeys_h-17",
+   "title": "FLKEYS Array, Station HFA18, Bottom Temperature"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-org_secoora_flkeys_h-18",
+   "title": "FLKEYS Array, Station HFA19, Bottom Temperature"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-org_secoora_flkeys_h-19",
+   "title": "FLKEYS Array, Station HFA20, Bottom Temperature"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-org_secoora_flkeys_h-2",
+   "title": "FLKEYS Array, Station HFA03, Bottom Temperature"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-org_secoora_flkeys_h-20",
+   "title": "FLKEYS Array, Station HFA21, Bottom Temperature"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-org_secoora_flkeys_h-21",
+   "title": "FLKEYS Array, Station HFA22, Bottom Temperature"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-org_secoora_flkeys_h-22",
+   "title": "FLKEYS Array, Station HFA23, Bottom Temperature"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-org_secoora_flkeys_h-23",
+   "title": "FLKEYS Array, Station HFA24, Bottom Temperature"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-org_secoora_flkeys_h-24",
+   "title": "FLKEYS Array, Station HFA25, Bottom Temperature"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-org_secoora_flkeys_h-25",
+   "title": "FLKEYS Array, Station HFA26, Bottom Temperature"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-org_secoora_flkeys_h-26",
+   "title": "FLKEYS Array, Station HFA27, Bottom Temperature"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-org_secoora_flkeys_h-27",
+   "title": "FLKEYS Array, Station HFA28, Bottom Temperature"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-org_secoora_flkeys_h-28",
+   "title": "FLKEYS Array, Station HFA29, Bottom Temperature"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-org_secoora_flkeys_h-29",
+   "title": "FLKEYS Array, Station HFA30, Bottom Temperature"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-org_secoora_flkeys_h-3",
+   "title": "FLKEYS Array, Station HFA04, Bottom Temperature"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-org_secoora_flkeys_h-30",
+   "title": "FLKEYS Array, Station HFA30A, Bottom Temperature"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-org_secoora_flkeys_h-31",
+   "title": "FLKEYS Array, Station HFA31, Bottom Temperature"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-org_secoora_flkeys_h-32",
+   "title": "FLKEYS Array, Station HFA32, Bottom Temperature"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-org_secoora_flkeys_h-33",
+   "title": "FLKEYS Array, Station HFA33, Bottom Temperature"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-org_secoora_flkeys_h-34",
+   "title": "FLKEYS Array, Station HFA34, Bottom Temperature"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-org_secoora_flkeys_h-35",
+   "title": "FLKEYS Array, Station HFA34A, Bottom Temperature"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-org_secoora_flkeys_h-36",
+   "title": "FLKEYS Array, Station HFA35, Bottom Temperature"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-org_secoora_flkeys_h-37",
+   "title": "FLKEYS Array, Station HFA36, Bottom Temperature"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-org_secoora_flkeys_h-38",
+   "title": "FLKEYS Array, Station HFA37, Bottom Temperature"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-org_secoora_flkeys_h-39",
+   "title": "FLKEYS Array, Station HFA38, Bottom Temperature"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-org_secoora_flkeys_h-4",
+   "title": "FLKEYS Array, Station HFA05, Bottom Temperature"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-org_secoora_flkeys_h-40",
+   "title": "FLKEYS Array, Station HFA38A, Bottom Temperature"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-org_secoora_flkeys_h-41",
+   "title": "FLKEYS Array, Station HFA39, Bottom Temperature"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-org_secoora_flkeys_h-42",
+   "title": "FLKEYS Array, Station HFA40, Bottom Temperature"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-org_secoora_flkeys_h-43",
+   "title": "FLKEYS Array, Station HFA41, Bottom Temperature"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-org_secoora_flkeys_h-44",
+   "title": "FLKEYS Array, Station HFA41A, Bottom Temperature"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-org_secoora_flkeys_h-45",
+   "title": "FLKEYS Array, Station HFA42, Bottom Temperature"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-org_secoora_flkeys_h-46",
+   "title": "FLKEYS Array, Station HFA43, Bottom Temperature"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-org_secoora_flkeys_h-47",
+   "title": "FLKEYS Array, Station HFA44, Bottom Temperature"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-org_secoora_flkeys_h-48",
+   "title": "FLKEYS Array, Station HFA45, Bottom Temperature"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-org_secoora_flkeys_h-49",
+   "title": "FLKEYS Array, Station HFA46, Bottom Temperature"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-org_secoora_flkeys_h-5",
+   "title": "FLKEYS Array, Station HFA06, Bottom Temperature"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-org_secoora_flkeys_h-50",
+   "title": "FLKEYS Array, Station HFA47, Bottom Temperature"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-org_secoora_flkeys_h-51",
+   "title": "FLKEYS Array, Station HFAS06, Bottom Temperature"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-org_secoora_flkeys_h-52",
+   "title": "FLKEYS Array, Station HFAS07, Bottom Temperature"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-org_secoora_flkeys_h-53",
+   "title": "FLKEYS Array, Station HFAS09, Bottom Temperature"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-org_secoora_flkeys_h-54",
+   "title": "FLKEYS Array, Station HFAS10, Bottom Temperature"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-org_secoora_flkeys_h-55",
+   "title": "FLKEYS Array, Station HFAS11, Bottom Temperature"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-org_secoora_flkeys_h-56",
+   "title": "FLKEYS Array, Station HFAS12, Bottom Temperature"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-org_secoora_flkeys_h-57",
+   "title": "FLKEYS Array, Station HFAS13, Bottom Temperature"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-org_secoora_flkeys_h-58",
+   "title": "FLKEYS Array, Station HFAS14, Bottom Temperature"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-org_secoora_flkeys_h-6",
+   "title": "FLKEYS Array, Station HFA07, Bottom Temperature"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-org_secoora_flkeys_h-7",
+   "title": "FLKEYS Array, Station HFA08, Bottom Temperature"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-org_secoora_flkeys_h-8",
+   "title": "FLKEYS Array, Station HFA09, Bottom Temperature"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-org_secoora_flkeys_h-9",
+   "title": "FLKEYS Array, Station HFA10, Bottom Temperature"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-org_secoora_flkeys_l",
+   "title": "FLKEYS Array, Station LKA01, Bottom Temperature"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-org_secoora_flkeys_l-1",
+   "title": "FLKEYS Array, Station LKA02, Bottom Temperature"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-org_secoora_flkeys_l-10",
+   "title": "FLKEYS Array, Station LKA19A, Bottom Temperature"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-org_secoora_flkeys_l-11",
+   "title": "FLKEYS Array, Station LKA24, Bottom Temperature"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-org_secoora_flkeys_l-12",
+   "title": "FLKEYS Array, Station LKA26, Bottom Temperature"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-org_secoora_flkeys_l-13",
+   "title": "FLKEYS Array, Station LKA30, Bottom Temperature"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-org_secoora_flkeys_l-14",
+   "title": "FLKEYS Array, Station LKA34, Bottom Temperature"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-org_secoora_flkeys_l-15",
+   "title": "FLKEYS Array, Station LKA35, Bottom Temperature"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-org_secoora_flkeys_l-16",
+   "title": "FLKEYS Array, Station LKA37, Bottom Temperature"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-org_secoora_flkeys_l-17",
+   "title": "FLKEYS Array, Station LKA40, Bottom Temperature"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-org_secoora_flkeys_l-18",
+   "title": "FLKEYS Array, Station LKA42, Bottom Temperature"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-org_secoora_flkeys_l-19",
+   "title": "FLKEYS Array, Station LKA46, Bottom Temperature"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-org_secoora_flkeys_l-2",
+   "title": "FLKEYS Array, Station LKA03, Bottom Temperature"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-org_secoora_flkeys_l-20",
+   "title": "FLKEYS Array, Station LKA48, Bottom Temperature"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-org_secoora_flkeys_l-21",
+   "title": "FLKEYS Array, Station LKA49, Bottom Temperature"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-org_secoora_flkeys_l-22",
+   "title": "FLKEYS Array, Station LKA53, Bottom Temperature"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-org_secoora_flkeys_l-23",
+   "title": "FLKEYS Array, Station LKA54, Bottom Temperature"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-org_secoora_flkeys_l-24",
+   "title": "FLKEYS Array, Station LKA56, Bottom Temperature"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-org_secoora_flkeys_l-25",
+   "title": "FLKEYS Array, Station LKA57, Bottom Temperature"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-org_secoora_flkeys_l-26",
+   "title": "FLKEYS Array, Station LKA59, Bottom Temperature"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-org_secoora_flkeys_l-27",
+   "title": "FLKEYS Array, Station LKA60, Bottom Temperature"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-org_secoora_flkeys_l-28",
+   "title": "FLKEYS Array, Station LKA61, Bottom Temperature"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-org_secoora_flkeys_l-29",
+   "title": "FLKEYS Array, Station LKA64, Bottom Temperature"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-org_secoora_flkeys_l-3",
+   "title": "FLKEYS Array, Station LKA04, Bottom Temperature"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-org_secoora_flkeys_l-30",
+   "title": "FLKEYS Array, Station LKACG, Bottom Temperature"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-org_secoora_flkeys_l-31",
+   "title": "FLKEYS Array, Station LKACM, Bottom Temperature"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-org_secoora_flkeys_l-32",
+   "title": "FLKEYS Array, Station LKAEB, Bottom Temperature"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-org_secoora_flkeys_l-33",
+   "title": "FLKEYS Array, Station LKA05, Bottom Temperature"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-org_secoora_flkeys_l-34",
+   "title": "FLKEYS Array, Station LKA10, Bottom Temperature"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-org_secoora_flkeys_l-35",
+   "title": "FLKEYS Array, Station LKA12, Bottom Temperature"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-org_secoora_flkeys_l-36",
+   "title": "FLKEYS Array, Station LKA17, Bottom Temperature"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-org_secoora_flkeys_l-37",
+   "title": "FLKEYS Array, Station LKA22, Bottom Temperature"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-org_secoora_flkeys_l-38",
+   "title": "FLKEYS Array, Station LKA23, Bottom Temperature"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-org_secoora_flkeys_l-39",
+   "title": "FLKEYS Array, Station LKA33, Bottom Temperature"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-org_secoora_flkeys_l-4",
+   "title": "FLKEYS Array, Station LKA06, Bottom Temperature"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-org_secoora_flkeys_l-40",
+   "title": "FLKEYS Array, Station LKA41, Bottom Temperature"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-org_secoora_flkeys_l-41",
+   "title": "FLKEYS Array, Station LKA43, Bottom Temperature"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-org_secoora_flkeys_l-42",
+   "title": "FLKEYS Array, Station LKA45, Bottom Temperature"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-org_secoora_flkeys_l-43",
+   "title": "FLKEYS Array, Station LKA51, Bottom Temperature"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-org_secoora_flkeys_l-44",
+   "title": "FLKEYS Array, Station LKAEB2, Bottom Temperature"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-org_secoora_flkeys_l-45",
+   "title": "FLKEYS Array, Station LKAAR2, Bottom Temperature"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-org_secoora_flkeys_l-5",
+   "title": "FLKEYS Array, Station LKA08, Bottom Temperature"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-org_secoora_flkeys_l-6",
+   "title": "FLKEYS Array, Station LKA13, Bottom Temperature"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-org_secoora_flkeys_l-7",
+   "title": "FLKEYS Array, Station LKA14, Bottom Temperature"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-org_secoora_flkeys_l-8",
+   "title": "FLKEYS Array, Station LKA16, Bottom Temperature"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-org_secoora_flkeys_l-9",
+   "title": "FLKEYS Array, Station LKA18, Bottom Temperature"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-org_secoora_flkeys_m",
+   "title": "FLKEYS Array, Station MRQ02A, Bottom Temperature"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-org_secoora_flkeys_m-1",
+   "title": "FLKEYS Array, Station MRQ01A, Bottom Temperature"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-org_secoora_flkeys_m-2",
+   "title": "FLKEYS Array, Station MRQ03A, Bottom Temperature"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-org_secoora_flkeys_m-3",
+   "title": "FLKEYS Array, Station MRQ04A, Bottom Temperature"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-org_secoora_flkeys_r",
+   "title": "FLKEYS Array, Station RHA01, Bottom Temperature"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-org_secoora_flkeys_r-1",
+   "title": "FLKEYS Array, Station RHA02, Bottom Temperature"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-org_secoora_flkeys_r-10",
+   "title": "FLKEYS Array, Station RHA57, Bottom Temperature"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-org_secoora_flkeys_r-11",
+   "title": "FLKEYS Array, Station RHAB, Bottom Temperature"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-org_secoora_flkeys_r-2",
+   "title": "FLKEYS Array, Station RHACE, Bottom Temperature"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-org_secoora_flkeys_r-3",
+   "title": "FLKEYS Array, Station RHA04, Bottom Temperature"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-org_secoora_flkeys_r-4",
+   "title": "FLKEYS Array, Station RHA48, Bottom Temperature"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-org_secoora_flkeys_r-5",
+   "title": "FLKEYS Array, Station RHA49, Bottom Temperature"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-org_secoora_flkeys_r-6",
+   "title": "FLKEYS Array, Station RHA50, Bottom Temperature"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-org_secoora_flkeys_r-7",
+   "title": "FLKEYS Array, Station RHA53, Bottom Temperature"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-org_secoora_flkeys_r-8",
+   "title": "FLKEYS Array, Station RHA54, Bottom Temperature"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-org_secoora_flkeys_r-9",
+   "title": "FLKEYS Array, Station RHA55, Bottom Temperature"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-org_secoora_flkeys_s",
+   "title": "FLKEYS Array, Station SOHYD, Bottom Temperature"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-org_secoora_fscapea_",
+   "title": "FSCAPEA Array, Station YAPS_00, Bottom Temperature"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-org_secoora_fscapea_-1",
+   "title": "FSCAPEA Array, Station YAPS_02, Bottom Temperature"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-org_secoora_fscapea_-10",
+   "title": "FSCAPEA Array, Station LY00, Bottom Temperature"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-org_secoora_fscapea_-11",
+   "title": "FSCAPEA Array, Station LY02, Bottom Temperature"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-org_secoora_fscapea_-12",
+   "title": "FSCAPEA Array, Station LY03, Bottom Temperature"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-org_secoora_fscapea_-13",
+   "title": "FSCAPEA Array, Station LY07, Bottom Temperature"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-org_secoora_fscapea_-14",
+   "title": "FSCAPEA Array, Station LY08, Bottom Temperature"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-org_secoora_fscapea_-15",
+   "title": "FSCAPEA Array, Station LY10, Bottom Temperature"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-org_secoora_fscapea_-16",
+   "title": "FSCAPEA Array, Station LY12, Bottom Temperature"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-org_secoora_fscapea_-17",
+   "title": "FSCAPEA Array, Station LY13, Bottom Temperature"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-org_secoora_fscapea_-18",
+   "title": "FSCAPEA Array, Station LY15, Bottom Temperature"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-org_secoora_fscapea_-19",
+   "title": "FSCAPEA Array, Station MY00, Bottom Temperature"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-org_secoora_fscapea_-2",
+   "title": "FSCAPEA Array, Station YAPS_03, Bottom Temperature"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-org_secoora_fscapea_-20",
+   "title": "FSCAPEA Array, Station MY02, Bottom Temperature"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-org_secoora_fscapea_-21",
+   "title": "FSCAPEA Array, Station MY03, Bottom Temperature"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-org_secoora_fscapea_-22",
+   "title": "FSCAPEA Array, Station MY05, Bottom Temperature"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-org_secoora_fscapea_-23",
+   "title": "FSCAPEA Array, Station MY07, Bottom Temperature"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-org_secoora_fscapea_-24",
+   "title": "FSCAPEA Array, Station MY08, Bottom Temperature"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-org_secoora_fscapea_-25",
+   "title": "FSCAPEA Array, Station MY10, Bottom Temperature"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-org_secoora_fscapea_-26",
+   "title": "FSCAPEA Array, Station MY12, Bottom Temperature"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-org_secoora_fscapea_-27",
+   "title": "FSCAPEA Array, Station MY13, Bottom Temperature"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-org_secoora_fscapea_-28",
+   "title": "FSCAPEA Array, Station MY15, Bottom Temperature"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-org_secoora_fscapea_-3",
+   "title": "FSCAPEA Array, Station YAPS_05, Bottom Temperature"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-org_secoora_fscapea_-4",
+   "title": "FSCAPEA Array, Station YAPS_07, Bottom Temperature"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-org_secoora_fscapea_-5",
+   "title": "FSCAPEA Array, Station YAPS_08, Bottom Temperature"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-org_secoora_fscapea_-6",
+   "title": "FSCAPEA Array, Station YAPS_10, Bottom Temperature"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-org_secoora_fscapea_-7",
+   "title": "FSCAPEA Array, Station YAPS_12, Bottom Temperature"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-org_secoora_fscapea_-8",
+   "title": "FSCAPEA Array, Station YAPS_13, Bottom Temperature"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-org_secoora_fscapea_-9",
+   "title": "FSCAPEA Array, Station YAPS_15, Bottom Temperature"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-org_secoora_lka07",
+   "title": "FLKEYS Array, Station LKA07, Bottom Temperature"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-org_secoora_lka11",
+   "title": "FLKEYS Array, Station LKA11, Bottom Temperature"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-org_secoora_lka15",
+   "title": "FLKEYS Array, Station LKA15, Bottom Temperature"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-org_secoora_lka20a",
+   "title": "FLKEYS Array, Station LKA20A, Bottom Temperature"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-org_secoora_lka25",
+   "title": "FLKEYS Array, Station LKA25, Bottom Temperature"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-org_secoora_lka38",
+   "title": "FLKEYS Array, Station LKA38, Bottom Temperature"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-org_secoora_scan_sca",
+   "title": "SCAN Array, Station SCAMP_1, Bottom Temperature"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-org_secoora_srfcea_k",
+   "title": "SRFCEA Array, Station KC1, Bottom Temperature"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-org_secoora_srfcea_r",
+   "title": "SRFCEA Array, Station RBC2, Bottom Temperature"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-org_secoora_srfcea_r-1",
+   "title": "SRFCEA Array, Station RBE1, Bottom Temperature"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-org_secoora_srfcea_r-2",
+   "title": "SRFCEA Array, Station RBE2, Bottom Temperature"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-org_secoora_srfcea_r-3",
+   "title": "SRFCEA Array, Station RBE3, Bottom Temperature"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-org_secoora_srfcea_r-4",
+   "title": "SRFCEA Array, Station RBHW2, Bottom Temperature"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-org_secoora_srfcea_r-5",
+   "title": "SRFCEA Array, Station RBHW3, Bottom Temperature"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-org_secoora_srfcea_r-6",
+   "title": "SRFCEA Array, Station RBHW4, Bottom Temperature"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-org_secoora_srfcea_r-7",
+   "title": "SRFCEA Array, Station RBW2, Bottom Temperature"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-org_secoora_srfcea_s",
+   "title": "SRFCEA Array, Station SR1B, Bottom Temperature"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-org_secoora_srfcea_t",
+   "title": "SRFCEA Array, Station TBE2, Bottom Temperature"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-org_secoora_srfcea_t-1",
+   "title": "SRFCEA Array, Station TBM2, Bottom Temperature"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-org_secoora_srfcea_t-2",
+   "title": "SRFCEA Array, Station TBM5, Bottom Temperature"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-org_secoora_srfcea_t-3",
+   "title": "SRFCEA Array, Station TBN4, Bottom Temperature"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-org_secoora_srfcea_t-4",
+   "title": "SRFCEA Array, Station TBW1, Bottom Temperature"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-org_secoora_srfcea_t-5",
+   "title": "SRFCEA Array, Station TBW3, Bottom Temperature"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-org_secoora_tboff_co-4",
+   "title": "TBOFF Array, Station COB_DOC, Bottom Temperature"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-org_secoora_tboff_co-5",
+   "title": "TBOFF Array, Station COB_GH, Bottom Temperature"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-org_secoora_tboff_co-6",
+   "title": "TBOFF Array, Station COB_MUD, Bottom Temperature"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-org_secoora_tboff_co-7",
+   "title": "TBOFF Array, Station COB_WIG, Bottom Temperature"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-ramrod-1",
+   "title": "Ramrod Key, FL"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-sanibel-dock",
+   "title": "Sanibel Dock"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-station-10-south-flo",
+   "title": "Station 10, South Florida Program Survey Cruises"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-station-11-south-flo",
+   "title": "Station 11, South Florida Program Survey Cruises"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-station-12-south-flo",
+   "title": "Station 12, South Florida Program Survey Cruises"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-station-13-south-flo",
+   "title": "Station 13, South Florida Program Survey Cruises"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-station-14-south-flo",
+   "title": "Station 14, South Florida Program Survey Cruises"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-station-15-5-south-f",
+   "title": "Station 15.5, South Florida Program Survey Cruises"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-station-15-south-flo",
+   "title": "Station 15, South Florida Program Survey Cruises"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-station-16-south-flo",
+   "title": "Station 16, South Florida Program Survey Cruises"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-station-17-south-flo",
+   "title": "Station 17, South Florida Program Survey Cruises"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-station-18-south-flo",
+   "title": "Station 18, South Florida Program Survey Cruises"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-station-19-south-flo",
+   "title": "Station 19, South Florida Program Survey Cruises"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-station-20-south-flo",
+   "title": "Station 20, South Florida Program Survey Cruises"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-station-21-5-south-f",
+   "title": "Station 21.5, South Florida Program Survey Cruises"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-station-21-lk-south-",
+   "title": "Station 21/LK, South Florida Program Survey Cruises"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-station-21-south-flo",
+   "title": "Station 21, South Florida Program Survey Cruises"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-station-22-south-flo",
+   "title": "Station 22, South Florida Program Survey Cruises"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-station-23-south-flo",
+   "title": "Station 23, South Florida Program Survey Cruises"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-station-24-south-flo",
+   "title": "Station 24, South Florida Program Survey Cruises"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-station-26-south-flo",
+   "title": "Station 26, South Florida Program Survey Cruises"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-station-27-south-flo",
+   "title": "Station 27, South Florida Program Survey Cruises"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-station-28-5-south-f",
+   "title": "Station 28.5, South Florida Program Survey Cruises"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-station-28-south-flo",
+   "title": "Station 28, South Florida Program Survey Cruises"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-station-29-5-south-f",
+   "title": "Station 29.5, South Florida Program Survey Cruises"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-station-29-south-flo",
+   "title": "Station 29, South Florida Program Survey Cruises"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-station-30-5-south-f",
+   "title": "Station 30.5, South Florida Program Survey Cruises"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-station-30-south-flo",
+   "title": "Station 30, South Florida Program Survey Cruises"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-station-31-south-flo",
+   "title": "Station 31, South Florida Program Survey Cruises"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-station-32-south-flo",
+   "title": "Station 32, South Florida Program Survey Cruises"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-station-33-south-flo",
+   "title": "Station 33, South Florida Program Survey Cruises"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-station-34-south-flo",
+   "title": "Station 34, South Florida Program Survey Cruises"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-station-35-south-flo",
+   "title": "Station 35, South Florida Program Survey Cruises"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-station-36-south-flo",
+   "title": "Station 36, South Florida Program Survey Cruises"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-station-37-south-flo",
+   "title": "Station 37, South Florida Program Survey Cruises"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-station-38-5-south-f",
+   "title": "Station 38.5, South Florida Program Survey Cruises"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-station-38-south-flo",
+   "title": "Station 38, South Florida Program Survey Cruises"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-station-39-south-flo",
+   "title": "Station 39, South Florida Program Survey Cruises"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-station-4-south-flor",
+   "title": "Station 4, South Florida Program Survey Cruises"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-station-40-south-flo",
+   "title": "Station 40, South Florida Program Survey Cruises"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-station-41-south-flo",
+   "title": "Station 41, South Florida Program Survey Cruises"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-station-42-south-flo",
+   "title": "Station 42, South Florida Program Survey Cruises"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-station-43-south-flo",
+   "title": "Station 43, South Florida Program Survey Cruises"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-station-44-south-flo",
+   "title": "Station 44, South Florida Program Survey Cruises"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-station-45-south-flo",
+   "title": "Station 45, South Florida Program Survey Cruises"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-station-46-south-flo",
+   "title": "Station 46, South Florida Program Survey Cruises"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-station-47-south-flo",
+   "title": "Station 47, South Florida Program Survey Cruises"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-station-48-south-flo",
+   "title": "Station 48, South Florida Program Survey Cruises"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-station-49-south-flo",
+   "title": "Station 49, South Florida Program Survey Cruises"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-station-5-5-south-fl",
+   "title": "Station 5.5, South Florida Program Survey Cruises"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-station-5-south-flor",
+   "title": "Station 5, South Florida Program Survey Cruises"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-station-50-south-flo",
+   "title": "Station 50, South Florida Program Survey Cruises"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-station-51-south-flo",
+   "title": "Station 51, South Florida Program Survey Cruises"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-station-52-south-flo",
+   "title": "Station 52, South Florida Program Survey Cruises"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-station-53-south-flo",
+   "title": "Station 53, South Florida Program Survey Cruises"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-station-54-south-flo",
+   "title": "Station 54, South Florida Program Survey Cruises"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-station-54b-south-fl",
+   "title": "Station 54b, South Florida Program Survey Cruises"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-station-55-south-flo",
+   "title": "Station 55, South Florida Program Survey Cruises"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-station-55b-south-fl",
+   "title": "Station 55b, South Florida Program Survey Cruises"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-station-56-south-flo",
+   "title": "Station 56, South Florida Program Survey Cruises"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-station-56b-south-fl",
+   "title": "Station 56b, South Florida Program Survey Cruises"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-station-57-1-south-f",
+   "title": "Station 57.1, South Florida Program Survey Cruises"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-station-57-1b-south-",
+   "title": "Station 57.1b, South Florida Program Survey Cruises"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-station-57-2-south-f",
+   "title": "Station 57.2, South Florida Program Survey Cruises"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-station-57-2b-south-",
+   "title": "Station 57.2b, South Florida Program Survey Cruises"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-station-57-3-south-f",
+   "title": "Station 57.3, South Florida Program Survey Cruises"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-station-57-3b-south-",
+   "title": "Station 57.3b, South Florida Program Survey Cruises"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-station-57-south-flo",
+   "title": "Station 57, South Florida Program Survey Cruises"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-station-57b-south-fl",
+   "title": "Station 57b, South Florida Program Survey Cruises"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-station-58-south-flo",
+   "title": "Station 58, South Florida Program Survey Cruises"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-station-59-south-flo",
+   "title": "Station 59, South Florida Program Survey Cruises"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-station-6-south-flor",
+   "title": "Station 6, South Florida Program Survey Cruises"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-station-60-south-flo",
+   "title": "Station 60, South Florida Program Survey Cruises"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-station-61-south-flo",
+   "title": "Station 61, South Florida Program Survey Cruises"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-station-62-south-flo",
+   "title": "Station 62, South Florida Program Survey Cruises"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-station-63-south-flo",
+   "title": "Station 63, South Florida Program Survey Cruises"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-station-64-south-flo",
+   "title": "Station 64, South Florida Program Survey Cruises"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-station-65-south-flo",
+   "title": "Station 65, South Florida Program Survey Cruises"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-station-66-south-flo",
+   "title": "Station 66, South Florida Program Survey Cruises"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-station-67-south-flo",
+   "title": "Station 67, South Florida Program Survey Cruises"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-station-68-south-flo",
+   "title": "Station 68, South Florida Program Survey Cruises"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-station-69-south-flo",
+   "title": "Station 69, South Florida Program Survey Cruises"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-station-7-south-flor",
+   "title": "Station 7, South Florida Program Survey Cruises"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-station-70-south-flo",
+   "title": "Station 70, South Florida Program Survey Cruises"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-station-71-south-flo",
+   "title": "Station 71, South Florida Program Survey Cruises"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-station-8-south-flor",
+   "title": "Station 8, South Florida Program Survey Cruises"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-station-9-5-south-fl",
+   "title": "Station 9.5, South Florida Program Survey Cruises"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-station-9-south-flor",
+   "title": "Station 9, South Florida Program Survey Cruises"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-station-bg2-south-fl",
+   "title": "Station BG2, South Florida Program Survey Cruises"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-station-bg3-south-fl",
+   "title": "Station BG3, South Florida Program Survey Cruises"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-station-bg4-south-fl",
+   "title": "Station BG4, South Florida Program Survey Cruises"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-station-cal1-south-f",
+   "title": "Station CAL1, South Florida Program Survey Cruises"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-station-cal2-south-f",
+   "title": "Station CAL2, South Florida Program Survey Cruises"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-station-cal3-south-f",
+   "title": "Station CAL3, South Florida Program Survey Cruises"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-station-cal4-south-f",
+   "title": "Station CAL4, South Florida Program Survey Cruises"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-station-cal5-south-f",
+   "title": "Station CAL5, South Florida Program Survey Cruises"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-station-cal6-south-f",
+   "title": "Station CAL6, South Florida Program Survey Cruises"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-station-ch1-south-fl",
+   "title": "Station CH1, South Florida Program Survey Cruises"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-station-ch2-south-fl",
+   "title": "Station CH2, South Florida Program Survey Cruises"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-station-ch3-south-fl",
+   "title": "Station CH3, South Florida Program Survey Cruises"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-station-ch4-south-fl",
+   "title": "Station CH4, South Florida Program Survey Cruises"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-station-ch5-south-fl",
+   "title": "Station CH5, South Florida Program Survey Cruises"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-station-dt1-south-fl",
+   "title": "Station DT1, South Florida Program Survey Cruises"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-station-dt10-south-f",
+   "title": "Station DT10, South Florida Program Survey Cruises"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-station-dt11-south-f",
+   "title": "Station DT11, South Florida Program Survey Cruises"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-station-dt12-south-f",
+   "title": "Station DT12, South Florida Program Survey Cruises"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-station-dt13-south-f",
+   "title": "Station DT13, South Florida Program Survey Cruises"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-station-dt14-south-f",
+   "title": "Station DT14, South Florida Program Survey Cruises"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-station-dt2-south-fl",
+   "title": "Station DT2, South Florida Program Survey Cruises"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-station-dt3-south-fl",
+   "title": "Station DT3, South Florida Program Survey Cruises"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-station-dt4-south-fl",
+   "title": "Station DT4, South Florida Program Survey Cruises"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-station-dt5-south-fl",
+   "title": "Station DT5, South Florida Program Survey Cruises"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-station-dt6-south-fl",
+   "title": "Station DT6, South Florida Program Survey Cruises"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-station-dt9-south-fl",
+   "title": "Station DT9, South Florida Program Survey Cruises"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-station-e1-south-flo",
+   "title": "Station E1, South Florida Program Survey Cruises"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-station-e2-south-flo",
+   "title": "Station E2, South Florida Program Survey Cruises"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-station-gp1-south-fl",
+   "title": "Station GP1, South Florida Program Survey Cruises"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-station-gp2-south-fl",
+   "title": "Station GP2, South Florida Program Survey Cruises"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-station-gp3-south-fl",
+   "title": "Station GP3, South Florida Program Survey Cruises"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-station-gp4-south-fl",
+   "title": "Station GP4, South Florida Program Survey Cruises"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-station-gp5-south-fl",
+   "title": "Station GP5, South Florida Program Survey Cruises"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-station-kw1-south-fl",
+   "title": "Station KW1, South Florida Program Survey Cruises"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-station-kw2-south-fl",
+   "title": "Station KW2, South Florida Program Survey Cruises"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-station-kw3-south-fl",
+   "title": "Station KW3, South Florida Program Survey Cruises"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-station-kw4-south-fl",
+   "title": "Station KW4, South Florida Program Survey Cruises"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-station-mr-south-flo",
+   "title": "Station MR, South Florida Program Survey Cruises"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-station-p1-south-flo",
+   "title": "Station P1, South Florida Program Survey Cruises"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-station-p2-south-flo",
+   "title": "Station P2, South Florida Program Survey Cruises"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-station-p3-south-flo",
+   "title": "Station P3, South Florida Program Survey Cruises"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-station-p4-south-flo",
+   "title": "Station P4, South Florida Program Survey Cruises"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-station-rp1-south-fl",
+   "title": "Station RP1, South Florida Program Survey Cruises"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-station-rp2-south-fl",
+   "title": "Station RP2, South Florida Program Survey Cruises"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-station-rp3-south-fl",
+   "title": "Station RP3, South Florida Program Survey Cruises"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-station-rp4-south-fl",
+   "title": "Station RP4, South Florida Program Survey Cruises"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-station-uk_in-south-",
+   "title": "Station UK_IN, South Florida Program Survey Cruises"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-station-uk_mid-south",
+   "title": "Station UK_MID, South Florida Program Survey Cruises"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-station-uk_off-south",
+   "title": "Station UK_OFF, South Florida Program Survey Cruises"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-station-v4-south-flo",
+   "title": "Station V4, South Florida Program Survey Cruises"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-station-v5-south-flo",
+   "title": "Station V5, South Florida Program Survey Cruises"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-station-v6-south-flo",
+   "title": "Station V6, South Florida Program Survey Cruises"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-station-v7-south-flo",
+   "title": "Station V7, South Florida Program Survey Cruises"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-station-v8-south-flo",
+   "title": "Station V8, South Florida Program Survey Cruises"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-station-v9-south-flo",
+   "title": "Station V9, South Florida Program Survey Cruises"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-station-ws-south-flo",
+   "title": "Station WS, South Florida Program Survey Cruises"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-ufk14-ufk14aqua",
+   "title": "UFK14 - UFK14Aqua"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-ufk14-ufk14s1",
+   "title": "UFK14 - UFK14S1"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-ufk14-ufk14s2",
+   "title": "UFK14 - UFK14S2"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "ism-secoora-vester-field-station",
+   "title": "Vester Field Station"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "noaa_nos_co_ops_8723970",
+   "title": "Vaca Key, Florida Bay, FL Real-time (VCAF1)"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "noaa_nos_co_ops_8724580",
+   "title": "Key West, FL Real-time (KYWF1)"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "noaa_nos_co_ops_8725110",
+   "title": "Naples, Gulf Of Mexico, FL Real-time"
+  },
+  {
+   "system": "erddap-ioos",
+   "id": "noaa_nos_co_ops_8725520",
+   "title": "Fort Myers, FL Real-time (FMRF1)"
+  },
+  {
+   "system": "ndbc",
+   "id": "42023",
+   "title": "C13 - WFS South Buoy, 50m Isobath"
+  },
+  {
+   "system": "ndbc",
+   "id": "42026",
+   "title": "C22 - Loop Current Pressure Point Buoy, 70m Isobath"
+  },
+  {
+   "system": "ndbc",
+   "id": "42095",
+   "title": "Satan Shoal, FL (244)"
+  },
+  {
+   "system": "ndbc",
+   "id": "BDVF1",
+   "title": "Broad River, FL"
+  },
+  {
+   "system": "ndbc",
+   "id": "BKYF1",
+   "title": "Buoy Key, FL"
+  },
+  {
+   "system": "ndbc",
+   "id": "BNKF1",
+   "title": "Butternut Key, FL"
+  },
+  {
+   "system": "ndbc",
+   "id": "BOBF1",
+   "title": "Bob Allen, FL"
+  },
+  {
+   "system": "ndbc",
+   "id": "BSKF1",
+   "title": "Big Sable Creek, FL"
+  },
+  {
+   "system": "ndbc",
+   "id": "BWSF1",
+   "title": "Blackwater Sound, FL"
+  },
+  {
+   "system": "ndbc",
+   "id": "CANF1",
+   "title": "Cane Patch, FL"
+  },
+  {
+   "system": "ndbc",
+   "id": "CNBF1",
+   "title": "Cannon Bay, FL"
+  },
+  {
+   "system": "ndbc",
+   "id": "CWAF1",
+   "title": "Clear Water Pass, FL"
+  },
+  {
+   "system": "ndbc",
+   "id": "DKKF1",
+   "title": "Duck Key, FL"
+  },
+  {
+   "system": "ndbc",
+   "id": "FMRF1",
+   "title": "8725520 - Fort Myers, FL"
+  },
+  {
+   "system": "ndbc",
+   "id": "GBIF1",
+   "title": "Gunboat Island, FL"
+  },
+  {
+   "system": "ndbc",
+   "id": "GBTF1",
+   "title": "Garfield Bight, FL"
+  },
+  {
+   "system": "ndbc",
+   "id": "HCEF1",
+   "title": "Highway Creek, FL"
+  },
+  {
+   "system": "ndbc",
+   "id": "HREF1",
+   "title": "Harney River, FL"
+  },
+  {
+   "system": "ndbc",
+   "id": "JBYF1",
+   "title": "Joe Bay, FL"
+  },
+  {
+   "system": "ndbc",
+   "id": "JKYF1",
+   "title": "Johnson Key, FL"
+  },
+  {
+   "system": "ndbc",
+   "id": "KYWF1",
+   "title": "8724580 - Key West, FL"
+  },
+  {
+   "system": "ndbc",
+   "id": "LBSF1",
+   "title": "Little Blackwater, FL"
+  },
+  {
+   "system": "ndbc",
+   "id": "LMDF1",
+   "title": "Little Madeira, FL"
+  },
+  {
+   "system": "ndbc",
+   "id": "LMRF1",
+   "title": "Lostmans River, FL"
+  },
+  {
+   "system": "ndbc",
+   "id": "LONF1",
+   "title": "Long Key, FL"
+  },
+  {
+   "system": "ndbc",
+   "id": "LRIF1",
+   "title": "Lane River, FL"
+  },
+  {
+   "system": "ndbc",
+   "id": "LRKF1",
+   "title": "Little Rabbit Key, FL"
+  },
+  {
+   "system": "ndbc",
+   "id": "LSNF1",
+   "title": "Long Sound, FL"
+  },
+  {
+   "system": "ndbc",
+   "id": "MDKF1",
+   "title": "Middle Key, FL"
+  },
+  {
+   "system": "ndbc",
+   "id": "MNBF1",
+   "title": "Manatee Bay, FL"
+  },
+  {
+   "system": "ndbc",
+   "id": "MUKF1",
+   "title": "Murray Key, FL"
+  },
+  {
+   "system": "ndbc",
+   "id": "NRRF1",
+   "title": "North River, FL"
+  },
+  {
+   "system": "ndbc",
+   "id": "PKYF1",
+   "title": "Peterson Key, FL"
+  },
+  {
+   "system": "ndbc",
+   "id": "SREF1",
+   "title": "Shark River, FL"
+  },
+  {
+   "system": "ndbc",
+   "id": "TBYF1",
+   "title": "Terrapin Bay, FL"
+  },
+  {
+   "system": "ndbc",
+   "id": "TCVF1",
+   "title": "Trout Cove, FL"
+  },
+  {
+   "system": "ndbc",
+   "id": "THRF1",
+   "title": "Thursday Point, FL"
+  },
+  {
+   "system": "ndbc",
+   "id": "TPEF1",
+   "title": "Tarpon Bay East, FL"
+  },
+  {
+   "system": "ndbc",
+   "id": "TRRF1",
+   "title": "Taylor River, FL"
+  },
+  {
+   "system": "ndbc",
+   "id": "VCAF1",
+   "title": "8723970 - Vaca Key, FL"
+  },
+  {
+   "system": "ndbc",
+   "id": "WIWF1",
+   "title": "Willy Willy, FL"
+  },
+  {
+   "system": "ndbc",
+   "id": "WPLF1",
+   "title": "Watson Place, FL"
+  },
+  {
+   "system": "ndbc",
+   "id": "WRBF1",
+   "title": "Whipray Basin, FL"
+  },
+  {
+   "system": "ndbc",
+   "id": "WWEF1",
+   "title": "Whitewater Bay-East, FL"
+  }
+ ],
+ "discovery_errors": {},
+ "active_within_days": 14,
+ "stations": [
+  {
+   "uid": "erddap-secoora:gov-nps-ever-bskf1",
+   "provider": "Everglades National Park",
+   "system": "erddap-secoora",
+   "station_id": "gov-nps-ever-bskf1",
+   "name": "Big Sable Creek, FL (BSKF1)",
+   "lat": 25.26617,
+   "lon": -81.16228,
+   "variables": [
+    "water_temp_c"
+   ],
+   "depths": [],
+   "last_obs": "2026-11-14T07:54:00Z",
+   "url": "https://erddap.secoora.org/erddap/tabledap/gov-nps-ever-bskf1.html",
+   "notes": "Dataset vertical range 0.0 to 0.0 m",
+   "extra": {
+    "server": "secoora",
+    "measure": {
+     "sea_water_temperature": {
+      "variable": "water_temp_c",
+      "standard_name": "sea_water_temperature",
+      "units": "degree_Celsius"
+     }
+    },
+    "depth_var": "z",
+    "depth_positive": "up",
+    "depth_sn": "altitude"
+   },
+   "in_area": true,
+   "edge_anchor": false,
+   "collect": true,
+   "active": true,
+   "possible_duplicate_of": "",
+   "cadence_min": null
+  },
+  {
+   "uid": "erddap-secoora:gov-nps-ever-bwsf1",
+   "provider": "Everglades National Park",
+   "system": "erddap-secoora",
+   "station_id": "gov-nps-ever-bwsf1",
+   "name": "Blackwater Sound, FL (BWSF1)",
+   "lat": 25.17834,
+   "lon": -80.43838,
+   "variables": [
+    "salinity_psu",
+    "water_temp_c"
+   ],
+   "depths": [
+    "surface 0 m"
+   ],
+   "last_obs": "2026-11-14T14:00:00Z",
+   "url": "https://erddap.secoora.org/erddap/tabledap/gov-nps-ever-bwsf1.html",
+   "notes": "Dataset vertical range 0.0 to 0.0 m",
+   "extra": {
+    "server": "secoora",
+    "measure": {
+     "sea_water_practical_salinity": {
+      "variable": "salinity_psu",
+      "standard_name": "sea_water_practical_salinity",
+      "units": "1e-3"
+     },
+     "sea_water_temperature": {
+      "variable": "water_temp_c",
+      "standard_name": "sea_water_temperature",
+      "units": "degree_Celsius"
+     }
+    },
+    "depth_var": "z",
+    "depth_positive": "up",
+    "depth_sn": "altitude"
+   },
+   "in_area": true,
+   "edge_anchor": false,
+   "collect": true,
+   "active": true,
+   "possible_duplicate_of": "",
+   "cadence_min": 60.0
+  },
+  {
+   "uid": "erddap-secoora:gov-nps-ever-bobf1",
+   "provider": "Everglades National Park",
+   "system": "erddap-secoora",
+   "station_id": "gov-nps-ever-bobf1",
+   "name": "Bob Allen Keys, FL (BOBF1)",
+   "lat": 25.02663,
+   "lon": -80.68137,
+   "variables": [
+    "salinity_psu",
+    "water_temp_c"
+   ],
+   "depths": [
+    "surface 0 m"
+   ],
+   "last_obs": "2026-11-14T14:00:00Z",
+   "url": "https://erddap.secoora.org/erddap/tabledap/gov-nps-ever-bobf1.html",
+   "notes": "Dataset vertical range 0.0 to 0.0 m",
+   "extra": {
+    "server": "secoora",
+    "measure": {
+     "sea_water_practical_salinity": {
+      "variable": "salinity_psu",
+      "standard_name": "sea_water_practical_salinity",
+      "units": "1e-3"
+     },
+     "sea_water_temperature": {
+      "variable": "water_temp_c",
+      "standard_name": "sea_water_temperature",
+      "units": "degree_Celsius"
+     }
+    },
+    "depth_var": "z",
+    "depth_positive": "up",
+    "depth_sn": "altitude"
+   },
+   "in_area": true,
+   "edge_anchor": false,
+   "collect": true,
+   "active": true,
+   "possible_duplicate_of": "",
+   "cadence_min": 60.0
+  },
+  {
+   "uid": "erddap-secoora:gov-nps-ever-bkyf1",
+   "provider": "Everglades National Park",
+   "system": "erddap-secoora",
+   "station_id": "gov-nps-ever-bkyf1",
+   "name": "Buoy Key, FL (BKYF1)",
+   "lat": 25.12111,
+   "lon": -80.83356,
+   "variables": [
+    "salinity_psu",
+    "water_temp_c"
+   ],
+   "depths": [
+    "surface 0 m"
+   ],
+   "last_obs": "2026-11-14T14:00:00Z",
+   "url": "https://erddap.secoora.org/erddap/tabledap/gov-nps-ever-bkyf1.html",
+   "notes": "Dataset vertical range 0.0 to 0.0 m",
+   "extra": {
+    "server": "secoora",
+    "measure": {
+     "sea_water_practical_salinity": {
+      "variable": "salinity_psu",
+      "standard_name": "sea_water_practical_salinity",
+      "units": "1e-3"
+     },
+     "sea_water_temperature": {
+      "variable": "water_temp_c",
+      "standard_name": "sea_water_temperature",
+      "units": "degree_Celsius"
+     }
+    },
+    "depth_var": "z",
+    "depth_positive": "up",
+    "depth_sn": "altitude"
+   },
+   "in_area": true,
+   "edge_anchor": false,
+   "collect": true,
+   "active": true,
+   "possible_duplicate_of": "",
+   "cadence_min": 60.0
+  },
+  {
+   "uid": "erddap-secoora:gov-nps-ever-bnkf1",
+   "provider": "Everglades National Park",
+   "system": "erddap-secoora",
+   "station_id": "gov-nps-ever-bnkf1",
+   "name": "Butternut Key, FL (BNKF1)",
+   "lat": 25.08668,
+   "lon": -80.51904,
+   "variables": [
+    "salinity_psu",
+    "water_temp_c"
+   ],
+   "depths": [
+    "surface 0 m"
+   ],
+   "last_obs": "2026-11-14T14:00:00Z",
+   "url": "https://erddap.secoora.org/erddap/tabledap/gov-nps-ever-bnkf1.html",
+   "notes": "Dataset vertical range 0.0 to 0.0 m",
+   "extra": {
+    "server": "secoora",
+    "measure": {
+     "sea_water_practical_salinity": {
+      "variable": "salinity_psu",
+      "standard_name": "sea_water_practical_salinity",
+      "units": "1e-3"
+     },
+     "sea_water_temperature": {
+      "variable": "water_temp_c",
+      "standard_name": "sea_water_temperature",
+      "units": "degree_Celsius"
+     }
+    },
+    "depth_var": "z",
+    "depth_positive": "up",
+    "depth_sn": "altitude"
+   },
+   "in_area": true,
+   "edge_anchor": false,
+   "collect": true,
+   "active": true,
+   "possible_duplicate_of": "",
+   "cadence_min": 60.0
+  },
+  {
+   "uid": "erddap-secoora:gov-nps-ever-canf1",
+   "provider": "Everglades National Park",
+   "system": "erddap-secoora",
+   "station_id": "gov-nps-ever-canf1",
+   "name": "Cane Patch, FL (CANF1)",
+   "lat": 25.422131,
+   "lon": -80.941997,
+   "variables": [
+    "salinity_psu",
+    "water_temp_c"
+   ],
+   "depths": [
+    "surface 0 m"
+   ],
+   "last_obs": "2026-11-14T14:00:00Z",
+   "url": "https://erddap.secoora.org/erddap/tabledap/gov-nps-ever-canf1.html",
+   "notes": "Dataset vertical range 0.0 to 0.0 m",
+   "extra": {
+    "server": "secoora",
+    "measure": {
+     "sea_water_practical_salinity": {
+      "variable": "salinity_psu",
+      "standard_name": "sea_water_practical_salinity",
+      "units": "1e-3"
+     },
+     "sea_water_temperature": {
+      "variable": "water_temp_c",
+      "standard_name": "sea_water_temperature",
+      "units": "degree_Celsius"
+     }
+    },
+    "depth_var": "z",
+    "depth_positive": "up",
+    "depth_sn": "altitude"
+   },
+   "in_area": true,
+   "edge_anchor": false,
+   "collect": true,
+   "active": true,
+   "possible_duplicate_of": "",
+   "cadence_min": 60.0
+  },
+  {
+   "uid": "erddap-secoora:gov-nps-ever-cnbf1",
+   "provider": "Everglades National Park",
+   "system": "erddap-secoora",
+   "station_id": "gov-nps-ever-cnbf1",
+   "name": "Cannon Bay, FL (CNBF1)",
+   "lat": 25.70185,
+   "lon": -81.1856,
+   "variables": [
+    "salinity_psu",
+    "water_temp_c"
+   ],
+   "depths": [
+    "surface 0 m"
+   ],
+   "last_obs": "2026-11-14T14:00:00Z",
+   "url": "https://erddap.secoora.org/erddap/tabledap/gov-nps-ever-cnbf1.html",
+   "notes": "Dataset vertical range 0.0 to 0.0 m",
+   "extra": {
+    "server": "secoora",
+    "measure": {
+     "sea_water_practical_salinity": {
+      "variable": "salinity_psu",
+      "standard_name": "sea_water_practical_salinity",
+      "units": "1e-3"
+     },
+     "sea_water_temperature": {
+      "variable": "water_temp_c",
+      "standard_name": "sea_water_temperature",
+      "units": "degree_Celsius"
+     }
+    },
+    "depth_var": "z",
+    "depth_positive": "up",
+    "depth_sn": "altitude"
+   },
+   "in_area": true,
+   "edge_anchor": false,
+   "collect": true,
+   "active": true,
+   "possible_duplicate_of": "",
+   "cadence_min": 60.0
+  },
+  {
+   "uid": "erddap-secoora:gov-nps-ever-cwaf1",
+   "provider": "Everglades National Park",
+   "system": "erddap-secoora",
+   "station_id": "gov-nps-ever-cwaf1",
+   "name": "Clear Water Pass, FL (CWAF1)",
+   "lat": 25.29669,
+   "lon": -81.0132,
+   "variables": [
+    "salinity_psu",
+    "water_temp_c"
+   ],
+   "depths": [
+    "surface 0 m"
+   ],
+   "last_obs": "2026-11-14T13:00:00Z",
+   "url": "https://erddap.secoora.org/erddap/tabledap/gov-nps-ever-cwaf1.html",
+   "notes": "Dataset vertical range 0.0 to 0.0 m",
+   "extra": {
+    "server": "secoora",
+    "measure": {
+     "sea_water_practical_salinity": {
+      "variable": "salinity_psu",
+      "standard_name": "sea_water_practical_salinity",
+      "units": "1e-3"
+     },
+     "sea_water_temperature": {
+      "variable": "water_temp_c",
+      "standard_name": "sea_water_temperature",
+      "units": "degree_Celsius"
+     }
+    },
+    "depth_var": "z",
+    "depth_positive": "up",
+    "depth_sn": "altitude"
+   },
+   "in_area": true,
+   "edge_anchor": false,
+   "collect": true,
+   "active": true,
+   "possible_duplicate_of": "",
+   "cadence_min": 60.0
+  },
+  {
+   "uid": "erddap-secoora:gov-nps-ever-dkkf1",
+   "provider": "Everglades National Park",
+   "system": "erddap-secoora",
+   "station_id": "gov-nps-ever-dkkf1",
+   "name": "Duck Key, FL (DKKF1)",
+   "lat": 25.18009,
+   "lon": -80.49001,
+   "variables": [
+    "salinity_psu",
+    "water_temp_c"
+   ],
+   "depths": [
+    "surface 0 m"
+   ],
+   "last_obs": "2026-11-14T14:00:00Z",
+   "url": "https://erddap.secoora.org/erddap/tabledap/gov-nps-ever-dkkf1.html",
+   "notes": "Dataset vertical range 0.0 to 0.0 m",
+   "extra": {
+    "server": "secoora",
+    "measure": {
+     "sea_water_practical_salinity": {
+      "variable": "salinity_psu",
+      "standard_name": "sea_water_practical_salinity",
+      "units": "1e-3"
+     },
+     "sea_water_temperature": {
+      "variable": "water_temp_c",
+      "standard_name": "sea_water_temperature",
+      "units": "degree_Celsius"
+     }
+    },
+    "depth_var": "z",
+    "depth_positive": "up",
+    "depth_sn": "altitude"
+   },
+   "in_area": true,
+   "edge_anchor": false,
+   "collect": true,
+   "active": true,
+   "possible_duplicate_of": "",
+   "cadence_min": 60.0
+  },
+  {
+   "uid": "erddap-secoora:gov-nps-ever-gbtf1",
+   "provider": "Everglades National Park",
+   "system": "erddap-secoora",
+   "station_id": "gov-nps-ever-gbtf1",
+   "name": "Garfield Bight, FL  (GBTF1)",
+   "lat": 25.16723,
+   "lon": -80.8013,
+   "variables": [
+    "salinity_psu",
+    "water_temp_c"
+   ],
+   "depths": [
+    "surface 0 m"
+   ],
+   "last_obs": "2026-11-14T14:00:00Z",
+   "url": "https://erddap.secoora.org/erddap/tabledap/gov-nps-ever-gbtf1.html",
+   "notes": "Dataset vertical range 0.0 to 0.0 m",
+   "extra": {
+    "server": "secoora",
+    "measure": {
+     "sea_water_practical_salinity": {
+      "variable": "salinity_psu",
+      "standard_name": "sea_water_practical_salinity",
+      "units": "1e-3"
+     },
+     "sea_water_temperature": {
+      "variable": "water_temp_c",
+      "standard_name": "sea_water_temperature",
+      "units": "degree_Celsius"
+     }
+    },
+    "depth_var": "z",
+    "depth_positive": "up",
+    "depth_sn": "altitude"
+   },
+   "in_area": true,
+   "edge_anchor": false,
+   "collect": true,
+   "active": true,
+   "possible_duplicate_of": "",
+   "cadence_min": 60.0
+  },
+  {
+   "uid": "erddap-secoora:gov-nps-ever-gbif1",
+   "provider": "Everglades National Park",
+   "system": "erddap-secoora",
+   "station_id": "gov-nps-ever-gbif1",
+   "name": "Gunboat Island, FL (GBIF1)",
+   "lat": 25.37806,
+   "lon": -81.02953,
+   "variables": [
+    "salinity_psu",
+    "water_temp_c"
+   ],
+   "depths": [
+    "surface 0 m"
+   ],
+   "last_obs": "2026-11-14T14:00:00Z",
+   "url": "https://erddap.secoora.org/erddap/tabledap/gov-nps-ever-gbif1.html",
+   "notes": "Dataset vertical range 0.0 to 0.0 m",
+   "extra": {
+    "server": "secoora",
+    "measure": {
+     "sea_water_practical_salinity": {
+      "variable": "salinity_psu",
+      "standard_name": "sea_water_practical_salinity",
+      "units": "1e-3"
+     },
+     "sea_water_temperature": {
+      "variable": "water_temp_c",
+      "standard_name": "sea_water_temperature",
+      "units": "degree_Celsius"
+     }
+    },
+    "depth_var": "z",
+    "depth_positive": "up",
+    "depth_sn": "altitude"
+   },
+   "in_area": true,
+   "edge_anchor": false,
+   "collect": true,
+   "active": true,
+   "possible_duplicate_of": "",
+   "cadence_min": 60.0
+  },
+  {
+   "uid": "erddap-secoora:gov-nps-ever-href1",
+   "provider": "Everglades National Park",
+   "system": "erddap-secoora",
+   "station_id": "gov-nps-ever-href1",
+   "name": "Harney River, FL (HREF1)",
+   "lat": 25.42456,
+   "lon": -81.06012,
+   "variables": [
+    "salinity_psu",
+    "water_temp_c"
+   ],
+   "depths": [
+    "surface 0 m"
+   ],
+   "last_obs": "2026-11-14T14:00:00Z",
+   "url": "https://erddap.secoora.org/erddap/tabledap/gov-nps-ever-href1.html",
+   "notes": "Dataset vertical range 0.0 to 0.0 m",
+   "extra": {
+    "server": "secoora",
+    "measure": {
+     "sea_water_practical_salinity": {
+      "variable": "salinity_psu",
+      "standard_name": "sea_water_practical_salinity",
+      "units": "1e-3"
+     },
+     "sea_water_temperature": {
+      "variable": "water_temp_c",
+      "standard_name": "sea_water_temperature",
+      "units": "degree_Celsius"
+     }
+    },
+    "depth_var": "z",
+    "depth_positive": "up",
+    "depth_sn": "altitude"
+   },
+   "in_area": true,
+   "edge_anchor": false,
+   "collect": true,
+   "active": true,
+   "possible_duplicate_of": "",
+   "cadence_min": 60.0
+  },
+  {
+   "uid": "erddap-secoora:gov-nps-ever-hcef1",
+   "provider": "Everglades National Park",
+   "system": "erddap-secoora",
+   "station_id": "gov-nps-ever-hcef1",
+   "name": "Highway Creek, FL (HCEF1)",
+   "lat": 25.25416,
+   "lon": -80.44427,
+   "variables": [
+    "salinity_psu",
+    "water_temp_c"
+   ],
+   "depths": [
+    "surface 0 m"
+   ],
+   "last_obs": "2026-11-14T14:00:00Z",
+   "url": "https://erddap.secoora.org/erddap/tabledap/gov-nps-ever-hcef1.html",
+   "notes": "Dataset vertical range 0.0 to 0.0 m",
+   "extra": {
+    "server": "secoora",
+    "measure": {
+     "sea_water_practical_salinity": {
+      "variable": "salinity_psu",
+      "standard_name": "sea_water_practical_salinity",
+      "units": "1e-3"
+     },
+     "sea_water_temperature": {
+      "variable": "water_temp_c",
+      "standard_name": "sea_water_temperature",
+      "units": "degree_Celsius"
+     }
+    },
+    "depth_var": "z",
+    "depth_positive": "up",
+    "depth_sn": "altitude"
+   },
+   "in_area": true,
+   "edge_anchor": false,
+   "collect": true,
+   "active": true,
+   "possible_duplicate_of": "",
+   "cadence_min": 60.0
+  },
+  {
+   "uid": "erddap-secoora:gov-nps-ever-jbyf1",
+   "provider": "Everglades National Park",
+   "system": "erddap-secoora",
+   "station_id": "gov-nps-ever-jbyf1",
+   "name": "Joe Bay, FL (JBYF1)",
+   "lat": 25.22451,
+   "lon": -80.54101,
+   "variables": [
+    "salinity_psu",
+    "water_temp_c"
+   ],
+   "depths": [
+    "surface 0 m"
+   ],
+   "last_obs": "2026-11-14T14:00:00Z",
+   "url": "https://erddap.secoora.org/erddap/tabledap/gov-nps-ever-jbyf1.html",
+   "notes": "Dataset vertical range 0.0 to 0.0 m",
+   "extra": {
+    "server": "secoora",
+    "measure": {
+     "sea_water_practical_salinity": {
+      "variable": "salinity_psu",
+      "standard_name": "sea_water_practical_salinity",
+      "units": "1e-3"
+     },
+     "sea_water_temperature": {
+      "variable": "water_temp_c",
+      "standard_name": "sea_water_temperature",
+      "units": "degree_Celsius"
+     }
+    },
+    "depth_var": "z",
+    "depth_positive": "up",
+    "depth_sn": "altitude"
+   },
+   "in_area": true,
+   "edge_anchor": false,
+   "collect": true,
+   "active": true,
+   "possible_duplicate_of": "",
+   "cadence_min": 60.0
+  },
+  {
+   "uid": "erddap-secoora:gov-nps-ever-jkyf1",
+   "provider": "Everglades National Park",
+   "system": "erddap-secoora",
+   "station_id": "gov-nps-ever-jkyf1",
+   "name": "Johnson Key, FL (JKYF1)",
+   "lat": 25.05254,
+   "lon": -80.90448,
+   "variables": [
+    "salinity_psu",
+    "water_temp_c"
+   ],
+   "depths": [
+    "surface 0 m"
+   ],
+   "last_obs": "2026-11-14T14:00:00Z",
+   "url": "https://erddap.secoora.org/erddap/tabledap/gov-nps-ever-jkyf1.html",
+   "notes": "Dataset vertical range 0.0 to 0.0 m",
+   "extra": {
+    "server": "secoora",
+    "measure": {
+     "sea_water_practical_salinity": {
+      "variable": "salinity_psu",
+      "standard_name": "sea_water_practical_salinity",
+      "units": "1e-3"
+     },
+     "sea_water_temperature": {
+      "variable": "water_temp_c",
+      "standard_name": "sea_water_temperature",
+      "units": "degree_Celsius"
+     }
+    },
+    "depth_var": "z",
+    "depth_positive": "up",
+    "depth_sn": "altitude"
+   },
+   "in_area": true,
+   "edge_anchor": false,
+   "collect": true,
+   "active": true,
+   "possible_duplicate_of": "",
+   "cadence_min": 60.0
+  },
+  {
+   "uid": "erddap-secoora:gov-nps-ever-lrif1",
+   "provider": "Everglades National Park",
+   "system": "erddap-secoora",
+   "station_id": "gov-nps-ever-lrif1",
+   "name": "Lane River, FL (LRIF1)",
+   "lat": 25.28438,
+   "lon": -80.89384,
+   "variables": [
+    "salinity_psu",
+    "water_temp_c"
+   ],
+   "depths": [
+    "surface 0 m"
+   ],
+   "last_obs": "2026-11-14T14:00:00Z",
+   "url": "https://erddap.secoora.org/erddap/tabledap/gov-nps-ever-lrif1.html",
+   "notes": "Dataset vertical range 0.0 to 0.0 m",
+   "extra": {
+    "server": "secoora",
+    "measure": {
+     "sea_water_practical_salinity": {
+      "variable": "salinity_psu",
+      "standard_name": "sea_water_practical_salinity",
+      "units": "1e-3"
+     },
+     "sea_water_temperature": {
+      "variable": "water_temp_c",
+      "standard_name": "sea_water_temperature",
+      "units": "degree_Celsius"
+     }
+    },
+    "depth_var": "z",
+    "depth_positive": "up",
+    "depth_sn": "altitude"
+   },
+   "in_area": true,
+   "edge_anchor": false,
+   "collect": true,
+   "active": true,
+   "possible_duplicate_of": "",
+   "cadence_min": 60.0
+  },
+  {
+   "uid": "erddap-secoora:gov-nps-ever-lbsf1",
+   "provider": "Everglades National Park",
+   "system": "erddap-secoora",
+   "station_id": "gov-nps-ever-lbsf1",
+   "name": "Little Blackwater Sound, FL (LBSF1)",
+   "lat": 25.21434,
+   "lon": -80.43221,
+   "variables": [
+    "salinity_psu",
+    "water_temp_c"
+   ],
+   "depths": [
+    "surface 0 m"
+   ],
+   "last_obs": "2026-11-14T14:00:00Z",
+   "url": "https://erddap.secoora.org/erddap/tabledap/gov-nps-ever-lbsf1.html",
+   "notes": "Dataset vertical range 0.0 to 0.0 m",
+   "extra": {
+    "server": "secoora",
+    "measure": {
+     "sea_water_practical_salinity": {
+      "variable": "salinity_psu",
+      "standard_name": "sea_water_practical_salinity",
+      "units": "1e-3"
+     },
+     "sea_water_temperature": {
+      "variable": "water_temp_c",
+      "standard_name": "sea_water_temperature",
+      "units": "degree_Celsius"
+     }
+    },
+    "depth_var": "z",
+    "depth_positive": "up",
+    "depth_sn": "altitude"
+   },
+   "in_area": true,
+   "edge_anchor": false,
+   "collect": true,
+   "active": true,
+   "possible_duplicate_of": "",
+   "cadence_min": 60.0
+  },
+  {
+   "uid": "erddap-secoora:gov-nps-ever-lmdf1",
+   "provider": "Everglades National Park",
+   "system": "erddap-secoora",
+   "station_id": "gov-nps-ever-lmdf1",
+   "name": "Little Madeira Bay, FL (LMDF1)",
+   "lat": 25.1758,
+   "lon": -80.63269,
+   "variables": [
+    "salinity_psu",
+    "water_temp_c"
+   ],
+   "depths": [
+    "surface 0 m"
+   ],
+   "last_obs": "2026-11-14T14:00:00Z",
+   "url": "https://erddap.secoora.org/erddap/tabledap/gov-nps-ever-lmdf1.html",
+   "notes": "Dataset vertical range 0.0 to 0.0 m",
+   "extra": {
+    "server": "secoora",
+    "measure": {
+     "sea_water_practical_salinity": {
+      "variable": "salinity_psu",
+      "standard_name": "sea_water_practical_salinity",
+      "units": "1e-3"
+     },
+     "sea_water_temperature": {
+      "variable": "water_temp_c",
+      "standard_name": "sea_water_temperature",
+      "units": "degree_Celsius"
+     }
+    },
+    "depth_var": "z",
+    "depth_positive": "up",
+    "depth_sn": "altitude"
+   },
+   "in_area": true,
+   "edge_anchor": false,
+   "collect": true,
+   "active": true,
+   "possible_duplicate_of": "",
+   "cadence_min": 60.0
+  },
+  {
+   "uid": "erddap-secoora:gov-nps-ever-lrkf1",
+   "provider": "Everglades National Park",
+   "system": "erddap-secoora",
+   "station_id": "gov-nps-ever-lrkf1",
+   "name": "Little Rabbit Key, FL (LRKF1)",
+   "lat": 24.98158,
+   "lon": -80.8257,
+   "variables": [
+    "salinity_psu",
+    "water_temp_c"
+   ],
+   "depths": [
+    "surface 0 m"
+   ],
+   "last_obs": "2026-11-14T14:00:00Z",
+   "url": "https://erddap.secoora.org/erddap/tabledap/gov-nps-ever-lrkf1.html",
+   "notes": "Dataset vertical range 0.0 to 0.0 m",
+   "extra": {
+    "server": "secoora",
+    "measure": {
+     "sea_water_practical_salinity": {
+      "variable": "salinity_psu",
+      "standard_name": "sea_water_practical_salinity",
+      "units": "1e-3"
+     },
+     "sea_water_temperature": {
+      "variable": "water_temp_c",
+      "standard_name": "sea_water_temperature",
+      "units": "degree_Celsius"
+     }
+    },
+    "depth_var": "z",
+    "depth_positive": "up",
+    "depth_sn": "altitude"
+   },
+   "in_area": true,
+   "edge_anchor": false,
+   "collect": true,
+   "active": true,
+   "possible_duplicate_of": "",
+   "cadence_min": 60.0
+  },
+  {
+   "uid": "erddap-secoora:gov-nps-ever-lsnf1",
+   "provider": "Everglades National Park",
+   "system": "erddap-secoora",
+   "station_id": "gov-nps-ever-lsnf1",
+   "name": "Long Sound, FL (LSNF1)",
+   "lat": 25.23516,
+   "lon": -80.4568,
+   "variables": [
+    "salinity_psu",
+    "water_temp_c"
+   ],
+   "depths": [
+    "surface 0 m"
+   ],
+   "last_obs": "2026-11-14T14:00:00Z",
+   "url": "https://erddap.secoora.org/erddap/tabledap/gov-nps-ever-lsnf1.html",
+   "notes": "Dataset vertical range 0.0 to 0.0 m",
+   "extra": {
+    "server": "secoora",
+    "measure": {
+     "sea_water_practical_salinity": {
+      "variable": "salinity_psu",
+      "standard_name": "sea_water_practical_salinity",
+      "units": "1e-3"
+     },
+     "sea_water_temperature": {
+      "variable": "water_temp_c",
+      "standard_name": "sea_water_temperature",
+      "units": "degree_Celsius"
+     }
+    },
+    "depth_var": "z",
+    "depth_positive": "up",
+    "depth_sn": "altitude"
+   },
+   "in_area": true,
+   "edge_anchor": false,
+   "collect": true,
+   "active": true,
+   "possible_duplicate_of": "",
+   "cadence_min": 60.0
+  },
+  {
+   "uid": "erddap-secoora:gov-nps-ever-lmrf1",
+   "provider": "Everglades National Park",
+   "system": "erddap-secoora",
+   "station_id": "gov-nps-ever-lmrf1",
+   "name": "Lostmans River, FL (LMRF1)",
+   "lat": 25.55583,
+   "lon": -81.1689,
+   "variables": [
+    "salinity_psu",
+    "water_temp_c"
+   ],
+   "depths": [
+    "surface 0 m"
+   ],
+   "last_obs": "2026-11-14T14:00:00Z",
+   "url": "https://erddap.secoora.org/erddap/tabledap/gov-nps-ever-lmrf1.html",
+   "notes": "Dataset vertical range 0.0 to 0.0 m",
+   "extra": {
+    "server": "secoora",
+    "measure": {
+     "sea_water_practical_salinity": {
+      "variable": "salinity_psu",
+      "standard_name": "sea_water_practical_salinity",
+      "units": "1e-3"
+     },
+     "sea_water_temperature": {
+      "variable": "water_temp_c",
+      "standard_name": "sea_water_temperature",
+      "units": "degree_Celsius"
+     }
+    },
+    "depth_var": "z",
+    "depth_positive": "up",
+    "depth_sn": "altitude"
+   },
+   "in_area": true,
+   "edge_anchor": false,
+   "collect": true,
+   "active": true,
+   "possible_duplicate_of": "",
+   "cadence_min": 60.0
+  },
+  {
+   "uid": "erddap-secoora:gov-nps-ever-mnbf1",
+   "provider": "Everglades National Park",
+   "system": "erddap-secoora",
+   "station_id": "gov-nps-ever-mnbf1",
+   "name": "Manatee Bay, FL (MNBF1)",
+   "lat": 25.23945,
+   "lon": -80.42179,
+   "variables": [
+    "salinity_psu",
+    "water_temp_c"
+   ],
+   "depths": [
+    "surface 0 m"
+   ],
+   "last_obs": "2026-11-14T14:00:00Z",
+   "url": "https://erddap.secoora.org/erddap/tabledap/gov-nps-ever-mnbf1.html",
+   "notes": "Dataset vertical range 0.0 to 0.0 m",
+   "extra": {
+    "server": "secoora",
+    "measure": {
+     "sea_water_practical_salinity": {
+      "variable": "salinity_psu",
+      "standard_name": "sea_water_practical_salinity",
+      "units": "1e-3"
+     },
+     "sea_water_temperature": {
+      "variable": "water_temp_c",
+      "standard_name": "sea_water_temperature",
+      "units": "degree_Celsius"
+     }
+    },
+    "depth_var": "z",
+    "depth_positive": "up",
+    "depth_sn": "altitude"
+   },
+   "in_area": true,
+   "edge_anchor": false,
+   "collect": true,
+   "active": true,
+   "possible_duplicate_of": "",
+   "cadence_min": 60.0
+  },
+  {
+   "uid": "erddap-secoora:gov-nps-ever-mdkf1",
+   "provider": "Everglades National Park",
+   "system": "erddap-secoora",
+   "station_id": "gov-nps-ever-mdkf1",
+   "name": "Middle Key, FL (MDKF1)",
+   "lat": 25.28932,
+   "lon": -80.39642,
+   "variables": [
+    "salinity_psu",
+    "water_temp_c"
+   ],
+   "depths": [
+    "surface 0 m"
+   ],
+   "last_obs": "2026-11-14T14:00:00Z",
+   "url": "https://erddap.secoora.org/erddap/tabledap/gov-nps-ever-mdkf1.html",
+   "notes": "Dataset vertical range 0.0 to 0.0 m",
+   "extra": {
+    "server": "secoora",
+    "measure": {
+     "sea_water_practical_salinity": {
+      "variable": "salinity_psu",
+      "standard_name": "sea_water_practical_salinity",
+      "units": "1e-3"
+     },
+     "sea_water_temperature": {
+      "variable": "water_temp_c",
+      "standard_name": "sea_water_temperature",
+      "units": "degree_Celsius"
+     }
+    },
+    "depth_var": "z",
+    "depth_positive": "up",
+    "depth_sn": "altitude"
+   },
+   "in_area": true,
+   "edge_anchor": false,
+   "collect": true,
+   "active": true,
+   "possible_duplicate_of": "",
+   "cadence_min": 60.0
+  },
+  {
+   "uid": "erddap-secoora:gov-nps-ever-mukf1",
+   "provider": "Everglades National Park",
+   "system": "erddap-secoora",
+   "station_id": "gov-nps-ever-mukf1",
+   "name": "Murray Key, FL (MUKF1)",
+   "lat": 25.10613,
+   "lon": -80.94232,
+   "variables": [
+    "salinity_psu",
+    "water_temp_c"
+   ],
+   "depths": [
+    "surface 0 m"
+   ],
+   "last_obs": "2026-11-14T14:00:00Z",
+   "url": "https://erddap.secoora.org/erddap/tabledap/gov-nps-ever-mukf1.html",
+   "notes": "Dataset vertical range 0.0 to 0.0 m",
+   "extra": {
+    "server": "secoora",
+    "measure": {
+     "sea_water_practical_salinity": {
+      "variable": "salinity_psu",
+      "standard_name": "sea_water_practical_salinity",
+      "units": "1e-3"
+     },
+     "sea_water_temperature": {
+      "variable": "water_temp_c",
+      "standard_name": "sea_water_temperature",
+      "units": "degree_Celsius"
+     }
+    },
+    "depth_var": "z",
+    "depth_positive": "up",
+    "depth_sn": "altitude"
+   },
+   "in_area": true,
+   "edge_anchor": false,
+   "collect": true,
+   "active": true,
+   "possible_duplicate_of": "",
+   "cadence_min": 60.0
+  },
+  {
+   "uid": "erddap-secoora:gov-nps-ever-nrrf1",
+   "provider": "Everglades National Park",
+   "system": "erddap-secoora",
+   "station_id": "gov-nps-ever-nrrf1",
+   "name": "North River, FL (NRRF1)",
+   "lat": 25.34023,
+   "lon": -80.91113,
+   "variables": [
+    "salinity_psu",
+    "water_temp_c"
+   ],
+   "depths": [
+    "surface 0 m"
+   ],
+   "last_obs": "2026-11-14T14:00:00Z",
+   "url": "https://erddap.secoora.org/erddap/tabledap/gov-nps-ever-nrrf1.html",
+   "notes": "Dataset vertical range 0.0 to 0.0 m",
+   "extra": {
+    "server": "secoora",
+    "measure": {
+     "sea_water_practical_salinity": {
+      "variable": "salinity_psu",
+      "standard_name": "sea_water_practical_salinity",
+      "units": "1e-3"
+     },
+     "sea_water_temperature": {
+      "variable": "water_temp_c",
+      "standard_name": "sea_water_temperature",
+      "units": "degree_Celsius"
+     }
+    },
+    "depth_var": "z",
+    "depth_positive": "up",
+    "depth_sn": "altitude"
+   },
+   "in_area": true,
+   "edge_anchor": false,
+   "collect": true,
+   "active": true,
+   "possible_duplicate_of": "",
+   "cadence_min": 60.0
+  },
+  {
+   "uid": "erddap-secoora:gov-nps-ever-pkyf1",
+   "provider": "Everglades National Park",
+   "system": "erddap-secoora",
+   "station_id": "gov-nps-ever-pkyf1",
+   "name": "Peterson Key, FL (PKYF1)",
+   "lat": 24.91806,
+   "lon": -80.7468,
+   "variables": [
+    "salinity_psu",
+    "water_temp_c"
+   ],
+   "depths": [
+    "surface 0 m"
+   ],
+   "last_obs": "2026-11-14T14:00:00Z",
+   "url": "https://erddap.secoora.org/erddap/tabledap/gov-nps-ever-pkyf1.html",
+   "notes": "Dataset vertical range 0.0 to 0.0 m",
+   "extra": {
+    "server": "secoora",
+    "measure": {
+     "sea_water_practical_salinity": {
+      "variable": "salinity_psu",
+      "standard_name": "sea_water_practical_salinity",
+      "units": "1e-3"
+     },
+     "sea_water_temperature": {
+      "variable": "water_temp_c",
+      "standard_name": "sea_water_temperature",
+      "units": "degree_Celsius"
+     }
+    },
+    "depth_var": "z",
+    "depth_positive": "up",
+    "depth_sn": "altitude"
+   },
+   "in_area": true,
+   "edge_anchor": false,
+   "collect": true,
+   "active": true,
+   "possible_duplicate_of": "",
+   "cadence_min": 60.0
+  },
+  {
+   "uid": "erddap-secoora:gov-nps-ever-sref1",
+   "provider": "Everglades National Park",
+   "system": "erddap-secoora",
+   "station_id": "gov-nps-ever-sref1",
+   "name": "Shark River, FL (SREF1)",
+   "lat": 25.35412,
+   "lon": -81.10003,
+   "variables": [
+    "salinity_psu",
+    "water_temp_c"
+   ],
+   "depths": [
+    "surface 0 m"
+   ],
+   "last_obs": "2026-11-14T14:00:00Z",
+   "url": "https://erddap.secoora.org/erddap/tabledap/gov-nps-ever-sref1.html",
+   "notes": "Dataset vertical range 0.0 to 0.0 m",
+   "extra": {
+    "server": "secoora",
+    "measure": {
+     "sea_water_practical_salinity": {
+      "variable": "salinity_psu",
+      "standard_name": "sea_water_practical_salinity",
+      "units": "1e-3"
+     },
+     "sea_water_temperature": {
+      "variable": "water_temp_c",
+      "standard_name": "sea_water_temperature",
+      "units": "degree_Celsius"
+     }
+    },
+    "depth_var": "z",
+    "depth_positive": "up",
+    "depth_sn": "altitude"
+   },
+   "in_area": true,
+   "edge_anchor": false,
+   "collect": true,
+   "active": true,
+   "possible_duplicate_of": "",
+   "cadence_min": 60.0
+  },
+  {
+   "uid": "erddap-secoora:gov-nps-ever-tpef1",
+   "provider": "Everglades National Park",
+   "system": "erddap-secoora",
+   "station_id": "gov-nps-ever-tpef1",
+   "name": "Tarpon Bay East, FL (TPEF1)",
+   "lat": 25.41012,
+   "lon": -80.96395,
+   "variables": [
+    "salinity_psu",
+    "water_temp_c"
+   ],
+   "depths": [
+    "surface 0 m"
+   ],
+   "last_obs": "2026-11-14T14:00:00Z",
+   "url": "https://erddap.secoora.org/erddap/tabledap/gov-nps-ever-tpef1.html",
+   "notes": "Dataset vertical range 0.0 to 0.0 m",
+   "extra": {
+    "server": "secoora",
+    "measure": {
+     "sea_water_practical_salinity": {
+      "variable": "salinity_psu",
+      "standard_name": "sea_water_practical_salinity",
+      "units": "1e-3"
+     },
+     "sea_water_temperature": {
+      "variable": "water_temp_c",
+      "standard_name": "sea_water_temperature",
+      "units": "degree_Celsius"
+     }
+    },
+    "depth_var": "z",
+    "depth_positive": "up",
+    "depth_sn": "altitude"
+   },
+   "in_area": true,
+   "edge_anchor": false,
+   "collect": true,
+   "active": true,
+   "possible_duplicate_of": "",
+   "cadence_min": 60.0
+  },
+  {
+   "uid": "erddap-secoora:gov-nps-ever-trrf1",
+   "provider": "Everglades National Park",
+   "system": "erddap-secoora",
+   "station_id": "gov-nps-ever-trrf1",
+   "name": "Taylor River, FL (TRRF1)",
+   "lat": 25.21712,
+   "lon": -80.64957,
+   "variables": [
+    "salinity_psu",
+    "water_temp_c"
+   ],
+   "depths": [
+    "surface 0 m"
+   ],
+   "last_obs": "2026-11-14T14:00:00Z",
+   "url": "https://erddap.secoora.org/erddap/tabledap/gov-nps-ever-trrf1.html",
+   "notes": "Dataset vertical range 0.0 to 0.0 m",
+   "extra": {
+    "server": "secoora",
+    "measure": {
+     "sea_water_practical_salinity": {
+      "variable": "salinity_psu",
+      "standard_name": "sea_water_practical_salinity",
+      "units": "1e-3"
+     },
+     "sea_water_temperature": {
+      "variable": "water_temp_c",
+      "standard_name": "sea_water_temperature",
+      "units": "degree_Celsius"
+     }
+    },
+    "depth_var": "z",
+    "depth_positive": "up",
+    "depth_sn": "altitude"
+   },
+   "in_area": true,
+   "edge_anchor": false,
+   "collect": true,
+   "active": true,
+   "possible_duplicate_of": "",
+   "cadence_min": 60.0
+  },
+  {
+   "uid": "erddap-secoora:gov-nps-ever-tbyf1",
+   "provider": "Everglades National Park",
+   "system": "erddap-secoora",
+   "station_id": "gov-nps-ever-tbyf1",
+   "name": "Terrapin Bay, FL (TBYF1)",
+   "lat": 25.15734,
+   "lon": -80.72479,
+   "variables": [
+    "salinity_psu",
+    "water_temp_c"
+   ],
+   "depths": [
+    "surface 0 m"
+   ],
+   "last_obs": "2026-11-14T14:00:00Z",
+   "url": "https://erddap.secoora.org/erddap/tabledap/gov-nps-ever-tbyf1.html",
+   "notes": "Dataset vertical range 0.0 to 0.0 m",
+   "extra": {
+    "server": "secoora",
+    "measure": {
+     "sea_water_practical_salinity": {
+      "variable": "salinity_psu",
+      "standard_name": "sea_water_practical_salinity",
+      "units": "1e-3"
+     },
+     "sea_water_temperature": {
+      "variable": "water_temp_c",
+      "standard_name": "sea_water_temperature",
+      "units": "degree_Celsius"
+     }
+    },
+    "depth_var": "z",
+    "depth_positive": "up",
+    "depth_sn": "altitude"
+   },
+   "in_area": true,
+   "edge_anchor": false,
+   "collect": true,
+   "active": true,
+   "possible_duplicate_of": "",
+   "cadence_min": 60.0
+  },
+  {
+   "uid": "erddap-secoora:gov-nps-ever-thrf1",
+   "provider": "Everglades National Park",
+   "system": "erddap-secoora",
+   "station_id": "gov-nps-ever-thrf1",
+   "name": "Thursday Point, FL (THRF1)",
+   "lat": 25.20338,
+   "lon": -80.37232,
+   "variables": [
+    "salinity_psu",
+    "water_temp_c"
+   ],
+   "depths": [
+    "surface 0 m"
+   ],
+   "last_obs": "2026-11-14T14:00:00Z",
+   "url": "https://erddap.secoora.org/erddap/tabledap/gov-nps-ever-thrf1.html",
+   "notes": "Dataset vertical range 0.0 to 0.0 m",
+   "extra": {
+    "server": "secoora",
+    "measure": {
+     "sea_water_practical_salinity": {
+      "variable": "salinity_psu",
+      "standard_name": "sea_water_practical_salinity",
+      "units": "1e-3"
+     },
+     "sea_water_temperature": {
+      "variable": "water_temp_c",
+      "standard_name": "sea_water_temperature",
+      "units": "degree_Celsius"
+     }
+    },
+    "depth_var": "z",
+    "depth_positive": "up",
+    "depth_sn": "altitude"
+   },
+   "in_area": true,
+   "edge_anchor": false,
+   "collect": true,
+   "active": true,
+   "possible_duplicate_of": "",
+   "cadence_min": 60.0
+  },
+  {
+   "uid": "erddap-secoora:gov-nps-ever-tcvf1",
+   "provider": "Everglades National Park",
+   "system": "erddap-secoora",
+   "station_id": "gov-nps-ever-tcvf1",
+   "name": "Trout Cove, FL (TCVF1)",
+   "lat": 25.21275,
+   "lon": -80.53339,
+   "variables": [
+    "salinity_psu",
+    "water_temp_c"
+   ],
+   "depths": [
+    "surface 0 m"
+   ],
+   "last_obs": "2026-11-14T14:00:00Z",
+   "url": "https://erddap.secoora.org/erddap/tabledap/gov-nps-ever-tcvf1.html",
+   "notes": "Dataset vertical range 0.0 to 0.0 m",
+   "extra": {
+    "server": "secoora",
+    "measure": {
+     "sea_water_practical_salinity": {
+      "variable": "salinity_psu",
+      "standard_name": "sea_water_practical_salinity",
+      "units": "1e-3"
+     },
+     "sea_water_temperature": {
+      "variable": "water_temp_c",
+      "standard_name": "sea_water_temperature",
+      "units": "degree_Celsius"
+     }
+    },
+    "depth_var": "z",
+    "depth_positive": "up",
+    "depth_sn": "altitude"
+   },
+   "in_area": true,
+   "edge_anchor": false,
+   "collect": true,
+   "active": true,
+   "possible_duplicate_of": "usgs:251253080320100",
+   "cadence_min": 60.0
+  },
+  {
+   "uid": "erddap-secoora:gov-nps-ever-bdvf1",
+   "provider": "Everglades National Park",
+   "system": "erddap-secoora",
+   "station_id": "gov-nps-ever-bdvf1",
+   "name": "Upper Broad River, FL (BDVF1)",
+   "lat": 25.47833,
+   "lon": -80.98925,
+   "variables": [
+    "salinity_psu",
+    "water_temp_c"
+   ],
+   "depths": [
+    "surface 0 m"
+   ],
+   "last_obs": "2026-11-14T14:00:00Z",
+   "url": "https://erddap.secoora.org/erddap/tabledap/gov-nps-ever-bdvf1.html",
+   "notes": "Dataset vertical range 0.0 to 0.0 m",
+   "extra": {
+    "server": "secoora",
+    "measure": {
+     "sea_water_practical_salinity": {
+      "variable": "salinity_psu",
+      "standard_name": "sea_water_practical_salinity",
+      "units": "1e-3"
+     },
+     "sea_water_temperature": {
+      "variable": "water_temp_c",
+      "standard_name": "sea_water_temperature",
+      "units": "degree_Celsius"
+     }
+    },
+    "depth_var": "z",
+    "depth_positive": "up",
+    "depth_sn": "altitude"
+   },
+   "in_area": true,
+   "edge_anchor": false,
+   "collect": true,
+   "active": true,
+   "possible_duplicate_of": "",
+   "cadence_min": 60.0
+  },
+  {
+   "uid": "erddap-secoora:gov-nps-ever-wplf1",
+   "provider": "Everglades National Park",
+   "system": "erddap-secoora",
+   "station_id": "gov-nps-ever-wplf1",
+   "name": "Watson Place, FL (WPLF1)",
+   "lat": 25.709667,
+   "lon": -81.249068,
+   "variables": [
+    "salinity_psu",
+    "water_temp_c"
+   ],
+   "depths": [
+    "surface 0 m"
+   ],
+   "last_obs": "2026-11-14T14:00:00Z",
+   "url": "https://erddap.secoora.org/erddap/tabledap/gov-nps-ever-wplf1.html",
+   "notes": "Dataset vertical range 0.0 to 0.0 m",
+   "extra": {
+    "server": "secoora",
+    "measure": {
+     "sea_water_practical_salinity": {
+      "variable": "salinity_psu",
+      "standard_name": "sea_water_practical_salinity",
+      "units": "1e-3"
+     },
+     "sea_water_temperature": {
+      "variable": "water_temp_c",
+      "standard_name": "sea_water_temperature",
+      "units": "degree_Celsius"
+     }
+    },
+    "depth_var": "z",
+    "depth_positive": "up",
+    "depth_sn": "altitude"
+   },
+   "in_area": true,
+   "edge_anchor": false,
+   "collect": true,
+   "active": true,
+   "possible_duplicate_of": "",
+   "cadence_min": 60.0
+  },
+  {
+   "uid": "erddap-secoora:gov-nps-ever-wrbf1",
+   "provider": "Everglades National Park",
+   "system": "erddap-secoora",
+   "station_id": "gov-nps-ever-wrbf1",
+   "name": "Whipray Basin, FL (WRBF1)",
+   "lat": 25.07209,
+   "lon": -80.73511,
+   "variables": [
+    "salinity_psu",
+    "water_temp_c"
+   ],
+   "depths": [
+    "surface 0 m"
+   ],
+   "last_obs": "2026-11-14T14:00:00Z",
+   "url": "https://erddap.secoora.org/erddap/tabledap/gov-nps-ever-wrbf1.html",
+   "notes": "Dataset vertical range 0.0 to 0.0 m",
+   "extra": {
+    "server": "secoora",
+    "measure": {
+     "sea_water_practical_salinity": {
+      "variable": "salinity_psu",
+      "standard_name": "sea_water_practical_salinity",
+      "units": "1e-3"
+     },
+     "sea_water_temperature": {
+      "variable": "water_temp_c",
+      "standard_name": "sea_water_temperature",
+      "units": "degree_Celsius"
+     }
+    },
+    "depth_var": "z",
+    "depth_positive": "up",
+    "depth_sn": "altitude"
+   },
+   "in_area": true,
+   "edge_anchor": false,
+   "collect": true,
+   "active": true,
+   "possible_duplicate_of": "",
+   "cadence_min": 60.0
+  },
+  {
+   "uid": "erddap-secoora:gov-nps-ever-wwef1",
+   "provider": "Everglades National Park",
+   "system": "erddap-secoora",
+   "station_id": "gov-nps-ever-wwef1",
+   "name": "Whitewater East, FL (WWEF1)",
+   "lat": 25.23166,
+   "lon": -80.93823,
+   "variables": [
+    "salinity_psu",
+    "water_temp_c"
+   ],
+   "depths": [
+    "surface 0 m"
+   ],
+   "last_obs": "2026-11-14T13:00:00Z",
+   "url": "https://erddap.secoora.org/erddap/tabledap/gov-nps-ever-wwef1.html",
+   "notes": "Dataset vertical range 0.0 to 0.0 m",
+   "extra": {
+    "server": "secoora",
+    "measure": {
+     "sea_water_practical_salinity": {
+      "variable": "salinity_psu",
+      "standard_name": "sea_water_practical_salinity",
+      "units": "1e-3"
+     },
+     "sea_water_temperature": {
+      "variable": "water_temp_c",
+      "standard_name": "sea_water_temperature",
+      "units": "degree_Celsius"
+     }
+    },
+    "depth_var": "z",
+    "depth_positive": "up",
+    "depth_sn": "altitude"
+   },
+   "in_area": true,
+   "edge_anchor": false,
+   "collect": true,
+   "active": true,
+   "possible_duplicate_of": "",
+   "cadence_min": 60.0
+  },
+  {
+   "uid": "erddap-secoora:gov-nps-ever-wiwf1",
+   "provider": "Everglades National Park",
+   "system": "erddap-secoora",
+   "station_id": "gov-nps-ever-wiwf1",
+   "name": "Willy Willy, FL (WIWF1)",
+   "lat": 25.58749,
+   "lon": -81.04364,
+   "variables": [
+    "salinity_psu",
+    "water_temp_c"
+   ],
+   "depths": [
+    "surface 0 m"
+   ],
+   "last_obs": "2026-11-14T14:00:00Z",
+   "url": "https://erddap.secoora.org/erddap/tabledap/gov-nps-ever-wiwf1.html",
+   "notes": "Dataset vertical range 0.0 to 0.0 m",
+   "extra": {
+    "server": "secoora",
+    "measure": {
+     "sea_water_practical_salinity": {
+      "variable": "salinity_psu",
+      "standard_name": "sea_water_practical_salinity",
+      "units": "1e-3"
+     },
+     "sea_water_temperature": {
+      "variable": "water_temp_c",
+      "standard_name": "sea_water_temperature",
+      "units": "degree_Celsius"
+     }
+    },
+    "depth_var": "z",
+    "depth_positive": "up",
+    "depth_sn": "altitude"
+   },
+   "in_area": true,
+   "edge_anchor": false,
+   "collect": true,
+   "active": true,
+   "possible_duplicate_of": "",
+   "cadence_min": 60.0
+  },
+  {
+   "uid": "erddap-secoora:key-largo-fl",
+   "provider": "Florida International University (FIU)",
+   "system": "erddap-secoora",
+   "station_id": "key-largo-fl",
+   "name": "Key Largo, FL",
+   "lat": 25.08647,
+   "lon": -80.45305,
+   "variables": [
+    "salinity_psu",
+    "water_temp_c"
+   ],
+   "depths": [
+    "surface 0 m"
+   ],
+   "last_obs": "2026-11-14T16:00:00Z",
+   "url": "https://erddap.secoora.org/erddap/tabledap/key-largo-fl.html",
+   "notes": "Dataset vertical range 0.0 to 0.0 m",
+   "extra": {
+    "server": "secoora",
+    "measure": {
+     "sea_water_practical_salinity": {
+      "variable": "salinity_psu",
+      "standard_name": "sea_water_practical_salinity",
+      "units": "1e-3"
+     },
+     "sea_water_temperature": {
+      "variable": "water_temp_c",
+      "standard_name": "sea_water_temperature",
+      "units": "degree_Celsius"
+     }
+    },
+    "depth_var": "z",
+    "depth_positive": "up",
+    "depth_sn": "altitude"
+   },
+   "in_area": true,
+   "edge_anchor": false,
+   "collect": true,
+   "active": true,
+   "possible_duplicate_of": "",
+   "cadence_min": 6.0
+  },
+  {
+   "uid": "erddap-secoora:ramrod-1",
+   "provider": "Florida International University (FIU)",
+   "system": "erddap-secoora",
+   "station_id": "ramrod-1",
+   "name": "Ramrod Key, FL",
+   "lat": 24.65985,
+   "lon": -81.40577,
+   "variables": [
+    "salinity_psu",
+    "water_temp_c"
+   ],
+   "depths": [],
+   "last_obs": "2025-11-21T08:00:00Z",
+   "url": "https://erddap.secoora.org/erddap/tabledap/ramrod-1.html",
+   "notes": "Dataset vertical range 0.0 to 0.0 m",
+   "extra": {
+    "server": "secoora",
+    "measure": {
+     "sea_water_practical_salinity": {
+      "variable": "salinity_psu",
+      "standard_name": "sea_water_practical_salinity",
+      "units": "1e-3"
+     },
+     "sea_water_temperature": {
+      "variable": "water_temp_c",
+      "standard_name": "sea_water_temperature",
+      "units": "degree_Celsius"
+     }
+    },
+    "depth_var": "z",
+    "depth_positive": "up",
+    "depth_sn": "altitude"
+   },
+   "in_area": true,
+   "edge_anchor": false,
+   "collect": true,
+   "active": false,
+   "possible_duplicate_of": "",
+   "cadence_min": null
+  },
+  {
+   "uid": "coops:8725520",
+   "provider": "NOAA CO-OPS",
+   "system": "coops",
+   "station_id": "8725520",
+   "name": "Fort Myers",
+   "lat": 26.647778,
+   "lon": -81.87111,
+   "variables": [
+    "water_temp_c"
+   ],
+   "depths": [
+    "surface"
+   ],
+   "last_obs": "2026-11-14T16:18:00Z",
+   "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8725520",
+   "notes": "Sensor depth not published in the API; treated as near-surface.",
+   "extra": {},
+   "in_area": true,
+   "edge_anchor": false,
+   "collect": true,
+   "active": true,
+   "possible_duplicate_of": "",
+   "cadence_min": 6.0
+  },
+  {
+   "uid": "coops:8724580",
+   "provider": "NOAA CO-OPS",
+   "system": "coops",
+   "station_id": "8724580",
+   "name": "Key West",
+   "lat": 24.5557,
+   "lon": -81.8079,
+   "variables": [
+    "water_temp_c"
+   ],
+   "depths": [
+    "surface"
+   ],
+   "last_obs": "2026-11-14T16:18:00Z",
+   "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8724580",
+   "notes": "Sensor depth not published in the API; treated as near-surface.",
+   "extra": {},
+   "in_area": false,
+   "edge_anchor": true,
+   "collect": true,
+   "active": true,
+   "possible_duplicate_of": "",
+   "cadence_min": 6.0
+  },
+  {
+   "uid": "coops:8723970",
+   "provider": "NOAA CO-OPS",
+   "system": "coops",
+   "station_id": "8723970",
+   "name": "Vaca Key, Florida Bay",
+   "lat": 24.711,
+   "lon": -81.1065,
+   "variables": [
+    "water_temp_c"
+   ],
+   "depths": [
+    "surface"
+   ],
+   "last_obs": "2026-11-14T16:18:00Z",
+   "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8723970",
+   "notes": "Sensor depth not published in the API; treated as near-surface.",
+   "extra": {},
+   "in_area": true,
+   "edge_anchor": false,
+   "collect": true,
+   "active": true,
+   "possible_duplicate_of": "",
+   "cadence_min": 6.0
+  },
+  {
+   "uid": "erddap-secoora:gov-ndbc-lonf1",
+   "provider": "NOAA National Data Buoy Center (NDBC)",
+   "system": "erddap-secoora",
+   "station_id": "gov-ndbc-lonf1",
+   "name": "LONF1 - Long Key, FL",
+   "lat": 24.844,
+   "lon": -80.864,
+   "variables": [
+    "water_temp_c"
+   ],
+   "depths": [],
+   "last_obs": "2026-11-14T05:50:00Z",
+   "url": "https://erddap.secoora.org/erddap/tabledap/gov-ndbc-lonf1.html",
+   "notes": "Dataset vertical range 0.0 to 0.0 m",
+   "extra": {
+    "server": "secoora",
+    "measure": {
+     "sea_surface_temperature": {
+      "variable": "water_temp_c",
+      "standard_name": "sea_surface_temperature",
+      "units": "degree_Celsius"
+     }
+    },
+    "depth_var": "z",
+    "depth_positive": "up",
+    "depth_sn": "altitude"
+   },
+   "in_area": true,
+   "edge_anchor": false,
+   "collect": true,
+   "active": true,
+   "possible_duplicate_of": "",
+   "cadence_min": null
+  },
+  {
+   "uid": "ndbc:RKQF1",
+   "provider": "National Estuarine Research Reserve System",
+   "system": "ndbc",
+   "station_id": "RKQF1",
+   "name": "Lower Henderson Creek, Rookery Bay Reserve, FL",
+   "lat": 26.027,
+   "lon": -81.734,
+   "variables": [
+    "water_temp_c",
+    "salinity_psu"
+   ],
+   "depths": [
+    "mid 0.8 m",
+    "mid 0.9 m",
+    "mid 1 m",
+    "mid 1.1 m",
+    "mid 1.2 m",
+    "mid 1.3 m",
+    "mid 1.4 m",
+    "mid 1.5 m",
+    "mid 1.6 m",
+    "mid 1.7 m"
+   ],
+   "last_obs": "2026-11-14T15:00:00Z",
+   "url": "https://www.ndbc.noaa.gov/station_page.php?station=rkqf1",
+   "notes": "NDBC program: NERRS; type fixed",
+   "extra": {
+    "owner": "National Estuarine Research Reserve System",
+    "pgm": "NERRS"
+   },
+   "in_area": true,
+   "edge_anchor": false,
+   "collect": true,
+   "active": true,
+   "possible_duplicate_of": "",
+   "cadence_min": 15.0
+  },
+  {
+   "uid": "ndbc:RKXF1",
+   "provider": "National Estuarine Research Reserve System",
+   "system": "ndbc",
+   "station_id": "RKXF1",
+   "name": "Upper Henderson Creek, Rookery Bay Reserve, FL",
+   "lat": 26.05,
+   "lon": -81.701,
+   "variables": [
+    "water_temp_c"
+   ],
+   "depths": [
+    "surface"
+   ],
+   "last_obs": "",
+   "url": "https://www.ndbc.noaa.gov/station_page.php?station=rkxf1",
+   "notes": "NDBC program: NERRS; type fixed",
+   "extra": {
+    "owner": "National Estuarine Research Reserve System",
+    "pgm": "NERRS"
+   },
+   "in_area": true,
+   "edge_anchor": false,
+   "collect": true,
+   "active": false,
+   "possible_duplicate_of": "",
+   "cadence_min": null
+  },
+  {
+   "uid": "erddap-gcoos:SCCF_11",
+   "provider": "SCCF RECON",
+   "system": "erddap-gcoos",
+   "station_id": "SCCF_11",
+   "name": "SCCF 11 - SCCF RECON Tarpon Bay",
+   "lat": 26.46791,
+   "lon": -82.0631,
+   "variables": [
+    "salinity_psu",
+    "water_temp_c"
+   ],
+   "depths": [
+    "surface 0 m"
+   ],
+   "last_obs": "2026-11-14T15:00:00Z",
+   "url": "https://erddap.gcoos.org/erddap/tabledap/SCCF_11.html",
+   "notes": "Dataset vertical range 0.0 to 0.0 m",
+   "extra": {
+    "server": "gcoos",
+    "measure": {
+     "sea_surface_temperature_1": {
+      "variable": "water_temp_c",
+      "standard_name": "sea_surface_temperature",
+      "units": "degree_Celsius"
+     },
+     "sea_water_practical_salinity_1": {
+      "variable": "salinity_psu",
+      "standard_name": "sea_water_practical_salinity",
+      "units": "1e-3"
+     }
+    },
+    "depth_var": "depth",
+    "depth_positive": "down",
+    "depth_sn": "depth"
+   },
+   "in_area": true,
+   "edge_anchor": false,
+   "collect": true,
+   "active": true,
+   "possible_duplicate_of": "",
+   "cadence_min": 60.0
+  },
+  {
+   "uid": "erddap-gcoos:SCCF_1111",
+   "provider": "SCCF RECON",
+   "system": "erddap-gcoos",
+   "station_id": "SCCF_1111",
+   "name": "SCCF 1111 - SCCF RECON Alva",
+   "lat": 26.72,
+   "lon": -81.6546,
+   "variables": [
+    "salinity_psu",
+    "water_temp_c"
+   ],
+   "depths": [
+    "surface 0 m"
+   ],
+   "last_obs": "2026-11-14T15:00:00Z",
+   "url": "https://erddap.gcoos.org/erddap/tabledap/SCCF_1111.html",
+   "notes": "Dataset vertical range 0.0 to 0.0 m",
+   "extra": {
+    "server": "gcoos",
+    "measure": {
+     "sea_surface_temperature_1": {
+      "variable": "water_temp_c",
+      "standard_name": "sea_surface_temperature",
+      "units": "degree_Celsius"
+     },
+     "sea_water_practical_salinity_1": {
+      "variable": "salinity_psu",
+      "standard_name": "sea_water_practical_salinity",
+      "units": "1e-3"
+     }
+    },
+    "depth_var": "depth",
+    "depth_positive": "down",
+    "depth_sn": "depth"
+   },
+   "in_area": true,
+   "edge_anchor": false,
+   "collect": true,
+   "active": true,
+   "possible_duplicate_of": "",
+   "cadence_min": 60.0
+  },
+  {
+   "uid": "erddap-gcoos:SCCF_13",
+   "provider": "SCCF RECON",
+   "system": "erddap-gcoos",
+   "station_id": "SCCF_13",
+   "name": "SCCF 13 - SCCF RECON Shell Point",
+   "lat": 26.52548,
+   "lon": -82.17147,
+   "variables": [
+    "salinity_psu",
+    "water_temp_c"
+   ],
+   "depths": [
+    "surface 0 m"
+   ],
+   "last_obs": "2026-11-14T15:00:00Z",
+   "url": "https://erddap.gcoos.org/erddap/tabledap/SCCF_13.html",
+   "notes": "Dataset vertical range 0.0 to 0.0 m",
+   "extra": {
+    "server": "gcoos",
+    "measure": {
+     "sea_surface_temperature_1": {
+      "variable": "water_temp_c",
+      "standard_name": "sea_surface_temperature",
+      "units": "degree_Celsius"
+     },
+     "sea_water_practical_salinity_1": {
+      "variable": "salinity_psu",
+      "standard_name": "sea_water_practical_salinity",
+      "units": "1e-3"
+     }
+    },
+    "depth_var": "depth",
+    "depth_positive": "down",
+    "depth_sn": "depth"
+   },
+   "in_area": true,
+   "edge_anchor": false,
+   "collect": true,
+   "active": true,
+   "possible_duplicate_of": "",
+   "cadence_min": 60.0
+  },
+  {
+   "uid": "erddap-gcoos:SCCF_18",
+   "provider": "SCCF RECON",
+   "system": "erddap-gcoos",
+   "station_id": "SCCF_18",
+   "name": "SCCF 18 - SCCF RECON Beautiful Island",
+   "lat": 26.69549,
+   "lon": -81.81381,
+   "variables": [
+    "salinity_psu",
+    "water_temp_c"
+   ],
+   "depths": [
+    "surface 0 m"
+   ],
+   "last_obs": "2026-11-14T15:00:00Z",
+   "url": "https://erddap.gcoos.org/erddap/tabledap/SCCF_18.html",
+   "notes": "Dataset vertical range 0.0 to 0.0 m",
+   "extra": {
+    "server": "gcoos",
+    "measure": {
+     "sea_surface_temperature_1": {
+      "variable": "water_temp_c",
+      "standard_name": "sea_surface_temperature",
+      "units": "degree_Celsius"
+     },
+     "sea_water_practical_salinity_1": {
+      "variable": "salinity_psu",
+      "standard_name": "sea_water_practical_salinity",
+      "units": "1e-3"
+     }
+    },
+    "depth_var": "depth",
+    "depth_positive": "down",
+    "depth_sn": "depth"
+   },
+   "in_area": true,
+   "edge_anchor": false,
+   "collect": true,
+   "active": true,
+   "possible_duplicate_of": "",
+   "cadence_min": 60.0
+  },
+  {
+   "uid": "erddap-gcoos:SCCF_51",
+   "provider": "SCCF RECON",
+   "system": "erddap-gcoos",
+   "station_id": "SCCF_51",
+   "name": "SCCF 51 - SCCF RECON Redfish Pass",
+   "lat": 26.55448,
+   "lon": -82.17147,
+   "variables": [
+    "salinity_psu",
+    "water_temp_c"
+   ],
+   "depths": [],
+   "last_obs": "2026-11-14T15:00:00Z",
+   "url": "https://erddap.gcoos.org/erddap/tabledap/SCCF_51.html",
+   "notes": "Dataset vertical range 0.0 to 0.0 m",
+   "extra": {
+    "server": "gcoos",
+    "measure": {
+     "sea_surface_temperature_1": {
+      "variable": "water_temp_c",
+      "standard_name": "sea_surface_temperature",
+      "units": "degree_Celsius"
+     },
+     "sea_water_practical_salinity_1": {
+      "variable": "salinity_psu",
+      "standard_name": "sea_water_practical_salinity",
+      "units": "1e-3"
+     }
+    },
+    "depth_var": "depth",
+    "depth_positive": "down",
+    "depth_sn": "depth"
+   },
+   "in_area": true,
+   "edge_anchor": false,
+   "collect": true,
+   "active": true,
+   "possible_duplicate_of": "",
+   "cadence_min": null
+  },
+  {
+   "uid": "erddap-gcoos:SCCF_53",
+   "provider": "SCCF RECON",
+   "system": "erddap-gcoos",
+   "station_id": "SCCF_53",
+   "name": "SCCF 53 - SCCF RECON Fort Myers",
+   "lat": 26.64934,
+   "lon": -81.88097,
+   "variables": [
+    "salinity_psu",
+    "water_temp_c"
+   ],
+   "depths": [
+    "surface 0 m"
+   ],
+   "last_obs": "2026-11-14T15:00:00Z",
+   "url": "https://erddap.gcoos.org/erddap/tabledap/SCCF_53.html",
+   "notes": "Dataset vertical range 0.0 to 0.0 m",
+   "extra": {
+    "server": "gcoos",
+    "measure": {
+     "sea_surface_temperature_1": {
+      "variable": "water_temp_c",
+      "standard_name": "sea_surface_temperature",
+      "units": "degree_Celsius"
+     },
+     "sea_water_practical_salinity_1": {
+      "variable": "salinity_psu",
+      "standard_name": "sea_water_practical_salinity",
+      "units": "1e-3"
+     }
+    },
+    "depth_var": "depth",
+    "depth_positive": "down",
+    "depth_sn": "depth"
+   },
+   "in_area": true,
+   "edge_anchor": false,
+   "collect": true,
+   "active": true,
+   "possible_duplicate_of": "",
+   "cadence_min": 60.0
+  },
+  {
+   "uid": "erddap-gcoos:SCCF_56",
+   "provider": "SCCF RECON",
+   "system": "erddap-gcoos",
+   "station_id": "SCCF_56",
+   "name": "SCCF 56 - SCCF RECON McIntyre Creek",
+   "lat": 26.46449,
+   "lon": -82.10437,
+   "variables": [
+    "salinity_psu",
+    "water_temp_c"
+   ],
+   "depths": [
+    "surface 0 m"
+   ],
+   "last_obs": "2026-11-14T15:00:00Z",
+   "url": "https://erddap.gcoos.org/erddap/tabledap/SCCF_56.html",
+   "notes": "Dataset vertical range 0.0 to 0.0 m",
+   "extra": {
+    "server": "gcoos",
+    "measure": {
+     "sea_surface_temperature_1": {
+      "variable": "water_temp_c",
+      "standard_name": "sea_surface_temperature",
+      "units": "degree_Celsius"
+     },
+     "sea_water_practical_salinity_1": {
+      "variable": "salinity_psu",
+      "standard_name": "sea_water_practical_salinity",
+      "units": "1e-3"
+     }
+    },
+    "depth_var": "depth",
+    "depth_positive": "down",
+    "depth_sn": "depth"
+   },
+   "in_area": true,
+   "edge_anchor": false,
+   "collect": true,
+   "active": true,
+   "possible_duplicate_of": "",
+   "cadence_min": 60.0
+  },
+  {
+   "uid": "erddap-secoora:gulf-star-marina",
+   "provider": "The Water School at Florida Gulf Coast University (FGCU)",
+   "system": "erddap-secoora",
+   "station_id": "gulf-star-marina",
+   "name": "Gulf Star Marina",
+   "lat": 26.4595,
+   "lon": -81.9518,
+   "variables": [
+    "salinity_psu",
+    "water_temp_c"
+   ],
+   "depths": [
+    "surface 0 m"
+   ],
+   "last_obs": "2026-11-14T16:00:00Z",
+   "url": "https://erddap.secoora.org/erddap/tabledap/gulf-star-marina.html",
+   "notes": "Dataset vertical range 0.0 to 0.0 m",
+   "extra": {
+    "server": "secoora",
+    "measure": {
+     "sea_water_practical_salinity": {
+      "variable": "salinity_psu",
+      "standard_name": "sea_water_practical_salinity",
+      "units": "1e-3"
+     },
+     "sea_water_temperature": {
+      "variable": "water_temp_c",
+      "standard_name": "sea_water_temperature",
+      "units": "degree_Celsius"
+     }
+    },
+    "depth_var": "z",
+    "depth_positive": "up",
+    "depth_sn": "altitude"
+   },
+   "in_area": true,
+   "edge_anchor": false,
+   "collect": true,
+   "active": true,
+   "possible_duplicate_of": "",
+   "cadence_min": 10.0
+  },
+  {
+   "uid": "erddap-secoora:new-pass-bridge",
+   "provider": "The Water School at Florida Gulf Coast University (FGCU)",
+   "system": "erddap-secoora",
+   "station_id": "new-pass-bridge",
+   "name": "New Pass Bridge",
+   "lat": 26.37803,
+   "lon": -81.86088,
+   "variables": [
+    "salinity_psu",
+    "water_temp_c"
+   ],
+   "depths": [
+    "surface 0 m"
+   ],
+   "last_obs": "2026-11-14T16:10:00Z",
+   "url": "https://erddap.secoora.org/erddap/tabledap/new-pass-bridge.html",
+   "notes": "Dataset vertical range 0.0 to 0.0 m",
+   "extra": {
+    "server": "secoora",
+    "measure": {
+     "sea_water_practical_salinity": {
+      "variable": "salinity_psu",
+      "standard_name": "sea_water_practical_salinity",
+      "units": "1e-3"
+     },
+     "sea_water_temperature": {
+      "variable": "water_temp_c",
+      "standard_name": "sea_water_temperature",
+      "units": "degree_Celsius"
+     }
+    },
+    "depth_var": "z",
+    "depth_positive": "up",
+    "depth_sn": "altitude"
+   },
+   "in_area": true,
+   "edge_anchor": false,
+   "collect": true,
+   "active": true,
+   "possible_duplicate_of": "",
+   "cadence_min": 10.0
+  },
+  {
+   "uid": "erddap-secoora:sanibel-dock",
+   "provider": "The Water School at Florida Gulf Coast University (FGCU)",
+   "system": "erddap-secoora",
+   "station_id": "sanibel-dock",
+   "name": "Sanibel Dock",
+   "lat": 26.453428,
+   "lon": -82.035537,
+   "variables": [
+    "salinity_psu",
+    "water_temp_c"
+   ],
+   "depths": [],
+   "last_obs": "2026-11-05T18:10:00Z",
+   "url": "https://erddap.secoora.org/erddap/tabledap/sanibel-dock.html",
+   "notes": "Dataset vertical range 0.0 to 0.0 m",
+   "extra": {
+    "server": "secoora",
+    "measure": {
+     "sea_water_practical_salinity": {
+      "variable": "salinity_psu",
+      "standard_name": "sea_water_practical_salinity",
+      "units": "1e-3"
+     },
+     "sea_water_temperature": {
+      "variable": "water_temp_c",
+      "standard_name": "sea_water_temperature",
+      "units": "degree_Celsius"
+     }
+    },
+    "depth_var": "z",
+    "depth_positive": "up",
+    "depth_sn": "altitude"
+   },
+   "in_area": true,
+   "edge_anchor": false,
+   "collect": true,
+   "active": true,
+   "possible_duplicate_of": "",
+   "cadence_min": null
+  },
+  {
+   "uid": "erddap-secoora:vester-field-station",
+   "provider": "The Water School at Florida Gulf Coast University (FGCU)",
+   "system": "erddap-secoora",
+   "station_id": "vester-field-station",
+   "name": "Vester Field Station",
+   "lat": 26.330882,
+   "lon": -81.837193,
+   "variables": [
+    "salinity_psu",
+    "water_temp_c"
+   ],
+   "depths": [],
+   "last_obs": "2026-08-26T18:00:00Z",
+   "url": "https://erddap.secoora.org/erddap/tabledap/vester-field-station.html",
+   "notes": "Dataset vertical range 0.0 to 0.0 m",
+   "extra": {
+    "server": "secoora",
+    "measure": {
+     "sea_water_practical_salinity": {
+      "variable": "salinity_psu",
+      "standard_name": "sea_water_practical_salinity",
+      "units": "1e-3"
+     },
+     "sea_water_temperature": {
+      "variable": "water_temp_c",
+      "standard_name": "sea_water_temperature",
+      "units": "degree_Celsius"
+     }
+    },
+    "depth_var": "z",
+    "depth_positive": "up",
+    "depth_sn": "altitude"
+   },
+   "in_area": true,
+   "edge_anchor": false,
+   "collect": true,
+   "active": false,
+   "possible_duplicate_of": "",
+   "cadence_min": null
+  },
+  {
+   "uid": "erddap-gcoos:USF_COMPS_C22",
+   "provider": "USF COMPS",
+   "system": "erddap-gcoos",
+   "station_id": "USF_COMPS_C22",
+   "name": "C22 - Loop Current Pressure Point Buoy",
+   "lat": 25.172,
+   "lon": -83.475,
+   "variables": [
+    "salinity_psu",
+    "water_temp_c"
+   ],
+   "depths": [
+    "surface"
+   ],
+   "last_obs": "2026-11-14T14:35:00Z",
+   "url": "https://erddap.gcoos.org/erddap/tabledap/USF_COMPS_C22.html",
+   "notes": "Dataset vertical range 3.8 to 52.8 m",
+   "extra": {
+    "server": "gcoos",
+    "measure": {
+     "sea_surface_temperature_1": {
+      "variable": "water_temp_c",
+      "standard_name": "sea_surface_temperature",
+      "units": "degree_Celsius"
+     },
+     "sea_water_practical_salinity_1": {
+      "variable": "salinity_psu",
+      "standard_name": "sea_water_practical_salinity",
+      "units": "1e-3"
+     }
+    },
+    "depth_var": "depth",
+    "depth_positive": "down",
+    "depth_sn": "depth"
+   },
+   "in_area": true,
+   "edge_anchor": false,
+   "collect": true,
+   "active": true,
+   "possible_duplicate_of": "",
+   "cadence_min": 30.0
+  },
+  {
+   "uid": "erddap-gcoos:USF_COMPS_C10",
+   "provider": "USF COMPS",
+   "system": "erddap-gcoos",
+   "station_id": "USF_COMPS_C10",
+   "name": "Navy-2",
+   "lat": 27.169,
+   "lon": -82.926,
+   "variables": [
+    "salinity_psu",
+    "water_temp_c"
+   ],
+   "depths": [
+    "surface"
+   ],
+   "last_obs": "2026-11-14T14:57:00Z",
+   "url": "https://erddap.gcoos.org/erddap/tabledap/USF_COMPS_C10.html",
+   "notes": "Dataset vertical range 0.0 to 20.8 m",
+   "extra": {
+    "server": "gcoos",
+    "measure": {
+     "sea_surface_temperature_1": {
+      "variable": "water_temp_c",
+      "standard_name": "sea_surface_temperature",
+      "units": "degree_Celsius"
+     },
+     "sea_water_practical_salinity_1": {
+      "variable": "salinity_psu",
+      "standard_name": "sea_water_practical_salinity",
+      "units": "1e-3"
+     }
+    },
+    "depth_var": "depth",
+    "depth_positive": "down",
+    "depth_sn": "depth"
+   },
+   "in_area": false,
+   "edge_anchor": true,
+   "collect": true,
+   "active": true,
+   "possible_duplicate_of": "",
+   "cadence_min": 30.0
+  },
+  {
+   "uid": "erddap-gcoos:USF_COMPS_C12",
+   "provider": "USF COMPS",
+   "system": "erddap-gcoos",
+   "station_id": "USF_COMPS_C12",
+   "name": "West Florida Central Buoy",
+   "lat": 27.498,
+   "lon": -83.736,
+   "variables": [
+    "salinity_psu",
+    "water_temp_c"
+   ],
+   "depths": [
+    "surface"
+   ],
+   "last_obs": "2026-11-14T14:35:00Z",
+   "url": "https://erddap.gcoos.org/erddap/tabledap/USF_COMPS_C12.html",
+   "notes": "Dataset vertical range 0.0 to 42.8 m",
+   "extra": {
+    "server": "gcoos",
+    "measure": {
+     "sea_surface_temperature_1": {
+      "variable": "water_temp_c",
+      "standard_name": "sea_surface_temperature",
+      "units": "degree_Celsius"
+     },
+     "sea_water_practical_salinity_1": {
+      "variable": "salinity_psu",
+      "standard_name": "sea_water_practical_salinity",
+      "units": "1e-3"
+     }
+    },
+    "depth_var": "depth",
+    "depth_positive": "down",
+    "depth_sn": "depth"
+   },
+   "in_area": false,
+   "edge_anchor": true,
+   "collect": true,
+   "active": true,
+   "possible_duplicate_of": "",
+   "cadence_min": 30.0
+  },
+  {
+   "uid": "erddap-gcoos:USF_COMPS_C13",
+   "provider": "USF COMPS",
+   "system": "erddap-gcoos",
+   "station_id": "USF_COMPS_C13",
+   "name": "West Florida South Buoy",
+   "lat": 26.012,
+   "lon": -83.085,
+   "variables": [
+    "salinity_psu",
+    "water_temp_c"
+   ],
+   "depths": [
+    "surface"
+   ],
+   "last_obs": "2026-11-14T14:35:00Z",
+   "url": "https://erddap.gcoos.org/erddap/tabledap/USF_COMPS_C13.html",
+   "notes": "Dataset vertical range 0.0 to 42.8 m",
+   "extra": {
+    "server": "gcoos",
+    "measure": {
+     "sea_surface_temperature_1": {
+      "variable": "water_temp_c",
+      "standard_name": "sea_surface_temperature",
+      "units": "degree_Celsius"
+     },
+     "sea_water_practical_salinity_1": {
+      "variable": "salinity_psu",
+      "standard_name": "sea_water_practical_salinity",
+      "units": "1e-3"
+     }
+    },
+    "depth_var": "depth",
+    "depth_positive": "down",
+    "depth_sn": "depth"
+   },
+   "in_area": true,
+   "edge_anchor": false,
+   "collect": true,
+   "active": true,
+   "possible_duplicate_of": "",
+   "cadence_min": 30.0
+  },
+  {
+   "uid": "usgs:255654081350200",
+   "provider": "USGS",
+   "system": "usgs",
+   "station_id": "255654081350200",
+   "name": "Blackwater River Near Goodland, Fl",
+   "lat": 25.9523611111111,
+   "lon": -81.5844222222222,
+   "variables": [
+    "salinity_psu",
+    "water_temp_c",
+    "spec_cond_us_cm"
+   ],
+   "depths": [
+    "bottom"
+   ],
+   "last_obs": "2026-11-14T16:00:00Z",
+   "url": "https://waterdata.usgs.gov/monitoring-location/255654081350200/",
+   "notes": "USGS site type ST (Stream)",
+   "extra": {
+    "time_series": {
+     "1753f048f9f0473f8b86ed63ba077fbb": {
+      "variable": "salinity_psu",
+      "depth_tag": "bottom",
+      "sublocation": "Near Bottom",
+      "unit": "ppt"
+     },
+     "8ad0cadd47af4a019b79fc1c67bfe6ca": {
+      "variable": "water_temp_c",
+      "depth_tag": "bottom",
+      "sublocation": "Near Bottom",
+      "unit": "degC"
+     },
+     "9a30ac7283a641aa990db23f86db5cd3": {
+      "variable": "spec_cond_us_cm",
+      "depth_tag": "bottom",
+      "sublocation": "Near Bottom",
+      "unit": "uS/cm"
+     }
+    },
+    "site_type": "ST"
+   },
+   "in_area": true,
+   "edge_anchor": false,
+   "collect": true,
+   "active": true,
+   "possible_duplicate_of": "",
+   "cadence_min": 15.0
+  },
+  {
+   "uid": "usgs:022908295",
+   "provider": "USGS",
+   "system": "usgs",
+   "station_id": "022908295",
+   "name": "Bottle Creek At Rookery Branch Near Homestead, Fl",
+   "lat": 25.4679777777778,
+   "lon": -80.8545277777778,
+   "variables": [
+    "spec_cond_us_cm",
+    "salinity_psu",
+    "water_temp_c"
+   ],
+   "depths": [
+    "surface"
+   ],
+   "last_obs": "2026-11-14T15:30:00Z",
+   "url": "https://waterdata.usgs.gov/monitoring-location/022908295/",
+   "notes": "USGS site type ST (Stream)",
+   "extra": {
+    "time_series": {
+     "b5d760b70ccd4f9aa9965da5261bef53": {
+      "variable": "spec_cond_us_cm",
+      "depth_tag": "surface",
+      "sublocation": "",
+      "unit": "uS/cm"
+     },
+     "cbcd610e2d924665ab74fef744909819": {
+      "variable": "salinity_psu",
+      "depth_tag": "surface",
+      "sublocation": "",
+      "unit": "ppt"
+     },
+     "cfcd0ff5b0e74f6b812c83b665f3c296": {
+      "variable": "water_temp_c",
+      "depth_tag": "surface",
+      "sublocation": "",
+      "unit": "degC"
+     }
+    },
+    "site_type": "ST"
+   },
+   "in_area": true,
+   "edge_anchor": false,
+   "collect": true,
+   "active": true,
+   "possible_duplicate_of": "",
+   "cadence_min": 15.0
+  },
+  {
+   "uid": "usgs:02290878",
+   "provider": "USGS",
+   "system": "usgs",
+   "station_id": "02290878",
+   "name": "Broad River Near The Cutoff, Fl",
+   "lat": 25.5013888888889,
+   "lon": -81.0769444444444,
+   "variables": [
+    "salinity_psu",
+    "spec_cond_us_cm",
+    "water_temp_c"
+   ],
+   "depths": [
+    "mid"
+   ],
+   "last_obs": "2026-11-14T15:30:00Z",
+   "url": "https://waterdata.usgs.gov/monitoring-location/02290878/",
+   "notes": "USGS site type ST-TS (Tidal stream)",
+   "extra": {
+    "time_series": {
+     "3ed16661a9ec466da60dd6625ea973f8": {
+      "variable": "salinity_psu",
+      "depth_tag": "mid",
+      "sublocation": "MIDDLE",
+      "unit": "ppt"
+     },
+     "588b2cb3dec14b2889b2a5ac7a707641": {
+      "variable": "spec_cond_us_cm",
+      "depth_tag": "mid",
+      "sublocation": "MIDDLE",
+      "unit": "uS/cm"
+     },
+     "a7f7b775886340f4b575ca6c11c0bfef": {
+      "variable": "water_temp_c",
+      "depth_tag": "mid",
+      "sublocation": "MIDDLE",
+      "unit": "degC"
+     }
+    },
+    "site_type": "ST-TS"
+   },
+   "in_area": true,
+   "edge_anchor": false,
+   "collect": true,
+   "active": true,
+   "possible_duplicate_of": "",
+   "cadence_min": 15.0
+  },
+  {
+   "uid": "usgs:02292900",
+   "provider": "USGS",
+   "system": "usgs",
+   "station_id": "02292900",
+   "name": "Caloosahatchee River At S-79, Nr.Olga, Fla",
+   "lat": 26.72173357028381,
+   "lon": -81.69318057209861,
+   "variables": [
+    "water_temp_c",
+    "spec_cond_us_cm"
+   ],
+   "depths": [
+    "surface"
+   ],
+   "last_obs": "2025-12-10T17:00:00Z",
+   "url": "https://waterdata.usgs.gov/monitoring-location/02292900/",
+   "notes": "USGS site type ST (Stream)",
+   "extra": {
+    "time_series": {},
+    "site_type": "ST"
+   },
+   "in_area": true,
+   "edge_anchor": false,
+   "collect": true,
+   "active": false,
+   "possible_duplicate_of": "",
+   "cadence_min": null
+  },
+  {
+   "uid": "usgs:255327081275900",
+   "provider": "USGS",
+   "system": "usgs",
+   "station_id": "255327081275900",
+   "name": "East River Near Everglades City, Fl",
+   "lat": 25.8953888888889,
+   "lon": -81.4555,
+   "variables": [
+    "water_temp_c",
+    "spec_cond_us_cm",
+    "salinity_psu"
+   ],
+   "depths": [
+    "bottom"
+   ],
+   "last_obs": "2026-11-14T15:45:00Z",
+   "url": "https://waterdata.usgs.gov/monitoring-location/255327081275900/",
+   "notes": "USGS site type ST-TS (Tidal stream)",
+   "extra": {
+    "time_series": {
+     "37240605ba244fca856b4f17dd14e505": {
+      "variable": "water_temp_c",
+      "depth_tag": "bottom",
+      "sublocation": "Near Bottom",
+      "unit": "degC"
+     },
+     "3b1ea25505ec44249aebed47876e5857": {
+      "variable": "spec_cond_us_cm",
+      "depth_tag": "bottom",
+      "sublocation": "Near Bottom",
+      "unit": "uS/cm"
+     },
+     "d9f792a38cdb4309869d9534e1c9a293": {
+      "variable": "salinity_psu",
+      "depth_tag": "bottom",
+      "sublocation": "Near Bottom",
+      "unit": "ppt"
+     }
+    },
+    "site_type": "ST-TS"
+   },
+   "in_area": true,
+   "edge_anchor": false,
+   "collect": true,
+   "active": true,
+   "possible_duplicate_of": "",
+   "cadence_min": 15.0
+  },
+  {
+   "uid": "usgs:250802081035500",
+   "provider": "USGS",
+   "system": "usgs",
+   "station_id": "250802081035500",
+   "name": "East Side Creek Near Lake Ingraham, Fl",
+   "lat": 25.136969,
+   "lon": -81.064381,
+   "variables": [
+    "water_temp_c",
+    "salinity_psu",
+    "spec_cond_us_cm"
+   ],
+   "depths": [
+    "surface"
+   ],
+   "last_obs": "2026-11-14T15:15:00Z",
+   "url": "https://waterdata.usgs.gov/monitoring-location/250802081035500/",
+   "notes": "USGS site type ST-TS (Tidal stream)",
+   "extra": {
+    "time_series": {
+     "27c1caea95c24c5fb2e5f37df2fcd9b6": {
+      "variable": "water_temp_c",
+      "depth_tag": "surface",
+      "sublocation": "",
+      "unit": "degC"
+     },
+     "3cc1772d85be46b2803bd5d6b66a5990": {
+      "variable": "salinity_psu",
+      "depth_tag": "surface",
+      "sublocation": "",
+      "unit": "ppt"
+     },
+     "f3e41b2f24ac42359daf17d6df293c8b": {
+      "variable": "spec_cond_us_cm",
+      "depth_tag": "surface",
+      "sublocation": "",
+      "unit": "uS/cm"
+     }
+    },
+    "site_type": "ST-TS"
+   },
+   "in_area": true,
+   "edge_anchor": false,
+   "collect": true,
+   "active": true,
+   "possible_duplicate_of": "",
+   "cadence_min": 15.0
+  },
+  {
+   "uid": "usgs:255138081321701",
+   "provider": "USGS",
+   "system": "usgs",
+   "station_id": "255138081321701",
+   "name": "Faka Union Boundary Near Panther Key Fl",
+   "lat": 25.8605166666667,
+   "lon": -81.53795,
+   "variables": [
+    "water_temp_c",
+    "salinity_psu",
+    "spec_cond_us_cm"
+   ],
+   "depths": [
+    "bottom",
+    "surface"
+   ],
+   "last_obs": "2026-11-14T15:30:00Z",
+   "url": "https://waterdata.usgs.gov/monitoring-location/255138081321701/",
+   "notes": "USGS site type ST (Stream)",
+   "extra": {
+    "time_series": {
+     "1d57025214794037bf4d94557de2fea3": {
+      "variable": "water_temp_c",
+      "depth_tag": "bottom",
+      "sublocation": "BOTTOM",
+      "unit": "degC"
+     },
+     "7f9c613c1a5d42c2b3a4d0432bef11cf": {
+      "variable": "salinity_psu",
+      "depth_tag": "surface",
+      "sublocation": "",
+      "unit": "ppt"
+     },
+     "b2d378d26fdc4dc48a0e79e1f2807d79": {
+      "variable": "spec_cond_us_cm",
+      "depth_tag": "bottom",
+      "sublocation": "BOTTOM",
+      "unit": "uS/cm"
+     }
+    },
+    "site_type": "ST"
+   },
+   "in_area": true,
+   "edge_anchor": false,
+   "collect": true,
+   "active": true,
+   "possible_duplicate_of": "",
+   "cadence_min": 15.0
+  },
+  {
+   "uid": "usgs:255726081303700",
+   "provider": "USGS",
+   "system": "usgs",
+   "station_id": "255726081303700",
+   "name": "Faka Union Canal Boat Basin At Port Of Isles,Fl",
+   "lat": 25.9569972222222,
+   "lon": -81.5109083333333,
+   "variables": [
+    "water_temp_c",
+    "salinity_psu",
+    "spec_cond_us_cm"
+   ],
+   "depths": [
+    "bottom",
+    "surface"
+   ],
+   "last_obs": "2026-11-14T15:15:00Z",
+   "url": "https://waterdata.usgs.gov/monitoring-location/255726081303700/",
+   "notes": "USGS site type ST (Stream)",
+   "extra": {
+    "time_series": {
+     "134c037cde164417a44435024ac88aaf": {
+      "variable": "water_temp_c",
+      "depth_tag": "surface",
+      "sublocation": "Therm 3 (4.5ft abv sbstrate)",
+      "unit": "degC"
+     },
+     "1bf04a5b78f04a348185d7a38a72bf29": {
+      "variable": "water_temp_c",
+      "depth_tag": "surface",
+      "sublocation": "Therm 8 (0.5ft blw substrate)",
+      "unit": "degC"
+     },
+     "1cf43ebc43dd4a3d8374ab4970a83732": {
+      "variable": "salinity_psu",
+      "depth_tag": "bottom",
+      "sublocation": "Near Bottom",
+      "unit": "ppt"
+     },
+     "27a8c559d8e34948a23b0a7a8b43ace5": {
+      "variable": "water_temp_c",
+      "depth_tag": "surface",
+      "sublocation": "Therm 2 (5.5ft abv substrate)",
+      "unit": "degC"
+     },
+     "36b340165a444d278cf9acfa3f16e43d": {
+      "variable": "salinity_psu",
+      "depth_tag": "surface",
+      "sublocation": "Near Surface",
+      "unit": "ppt"
+     },
+     "39712566fa5b4690ae269dd5fde937d6": {
+      "variable": "water_temp_c",
+      "depth_tag": "surface",
+      "sublocation": "Therm 6 (1.5ft abv substrate)",
+      "unit": "degC"
+     },
+     "87dbdfd61ffa469589bf3f67746830d0": {
+      "variable": "spec_cond_us_cm",
+      "depth_tag": "surface",
+      "sublocation": "Near Surface",
+      "unit": "uS/cm"
+     },
+     "9fbc4c245df74e9d9e858af50d76adfc": {
+      "variable": "water_temp_c",
+      "depth_tag": "surface",
+      "sublocation": "Therm 7 (0.5ft abv substrate)",
+      "unit": "degC"
+     },
+     "a2f7b786081a4bffa6c308530b4327e4": {
+      "variable": "water_temp_c",
+      "depth_tag": "surface",
+      "sublocation": "Therm 4 (3.5ft abv substrate)",
+      "unit": "degC"
+     },
+     "a7774a74ebcc4579bbfc8e1a852bb18c": {
+      "variable": "water_temp_c",
+      "depth_tag": "surface",
+      "sublocation": "Near Surface",
+      "unit": "degC"
+     },
+     "c7cef8248d574569a481f1879aa56ed4": {
+      "variable": "water_temp_c",
+      "depth_tag": "bottom",
+      "sublocation": "Near Bottom",
+      "unit": "degC"
+     },
+     "fa4267803dbd45bfba012faae8599245": {
+      "variable": "water_temp_c",
+      "depth_tag": "surface",
+      "sublocation": "Therm 5 (2.5ft abv substrate)",
+      "unit": "degC"
+     },
+     "fa5c72332c0543e2950a55324fcad9dd": {
+      "variable": "spec_cond_us_cm",
+      "depth_tag": "bottom",
+      "sublocation": "Near Bottom",
+      "unit": "uS/cm"
+     }
+    },
+    "site_type": "ST"
+   },
+   "in_area": true,
+   "edge_anchor": false,
+   "collect": true,
+   "active": true,
+   "possible_duplicate_of": "",
+   "cadence_min": 15.0
+  },
+  {
+   "uid": "usgs:255432081303900",
+   "provider": "USGS",
+   "system": "usgs",
+   "station_id": "255432081303900",
+   "name": "Faka-Union River Near The Mouth",
+   "lat": 25.9088055555556,
+   "lon": -81.5109166666667,
+   "variables": [
+    "spec_cond_us_cm",
+    "water_temp_c",
+    "salinity_psu"
+   ],
+   "depths": [
+    "bottom"
+   ],
+   "last_obs": "2026-11-14T15:45:00Z",
+   "url": "https://waterdata.usgs.gov/monitoring-location/255432081303900/",
+   "notes": "USGS site type ST-TS (Tidal stream)",
+   "extra": {
+    "time_series": {
+     "21e498a46941417f88ff8abc416d9188": {
+      "variable": "spec_cond_us_cm",
+      "depth_tag": "bottom",
+      "sublocation": "Near Bottom",
+      "unit": "uS/cm"
+     },
+     "8126af5d68bd492c8179bdb2b380d4ed": {
+      "variable": "water_temp_c",
+      "depth_tag": "bottom",
+      "sublocation": "Near Bottom",
+      "unit": "degC"
+     },
+     "fdd8020bf80f435585a724c31e3cd3ac": {
+      "variable": "salinity_psu",
+      "depth_tag": "bottom",
+      "sublocation": "Near Bottom",
+      "unit": "ppt"
+     }
+    },
+    "site_type": "ST-TS"
+   },
+   "in_area": true,
+   "edge_anchor": false,
+   "collect": true,
+   "active": true,
+   "possible_duplicate_of": "",
+   "cadence_min": 15.0
+  },
+  {
+   "uid": "usgs:252653080273001",
+   "provider": "USGS",
+   "system": "usgs",
+   "station_id": "252653080273001",
+   "name": "Florida City Canal Nr Fire Station In Homestead,Fl",
+   "lat": 25.447964,
+   "lon": -80.458389,
+   "variables": [
+    "salinity_psu",
+    "spec_cond_us_cm",
+    "water_temp_c"
+   ],
+   "depths": [
+    "surface"
+   ],
+   "last_obs": "2026-11-14T15:00:00Z",
+   "url": "https://waterdata.usgs.gov/monitoring-location/252653080273001/",
+   "notes": "USGS site type ST-CA (Canal)",
+   "extra": {
+    "time_series": {
+     "6c4a588e12ad470aa92860fdc11f06e1": {
+      "variable": "salinity_psu",
+      "depth_tag": "surface",
+      "sublocation": "",
+      "unit": "ppt"
+     },
+     "de3afba7cae7496c9acf235eb849a042": {
+      "variable": "spec_cond_us_cm",
+      "depth_tag": "surface",
+      "sublocation": "",
+      "unit": "uS/cm"
+     },
+     "f66f5a08c8a24bc59d51bc2b80b337a7": {
+      "variable": "water_temp_c",
+      "depth_tag": "surface",
+      "sublocation": "",
+      "unit": "degC"
+     }
+    },
+    "site_type": "ST-CA"
+   },
+   "in_area": true,
+   "edge_anchor": false,
+   "collect": true,
+   "active": true,
+   "possible_duplicate_of": "",
+   "cadence_min": 15.0
+  },
+  {
+   "uid": "usgs:252654080220201",
+   "provider": "USGS",
+   "system": "usgs",
+   "station_id": "252654080220201",
+   "name": "Florida City Canal Nr Sw 117Th Ave In Homestead,Fl",
+   "lat": 25.4484,
+   "lon": -80.3673,
+   "variables": [
+    "salinity_psu",
+    "water_temp_c",
+    "spec_cond_us_cm"
+   ],
+   "depths": [
+    "surface"
+   ],
+   "last_obs": "2026-11-14T15:00:00Z",
+   "url": "https://waterdata.usgs.gov/monitoring-location/252654080220201/",
+   "notes": "USGS site type ST-CA (Canal)",
+   "extra": {
+    "time_series": {
+     "4de651dea6574b15b400f5976afdf6f0": {
+      "variable": "salinity_psu",
+      "depth_tag": "surface",
+      "sublocation": "",
+      "unit": "ppt"
+     },
+     "736753c96d884a6d8e814b69caaf1af2": {
+      "variable": "water_temp_c",
+      "depth_tag": "surface",
+      "sublocation": "",
+      "unit": "degC"
+     },
+     "ca8b57078f2c447a98aea1c0bff7e435": {
+      "variable": "spec_cond_us_cm",
+      "depth_tag": "surface",
+      "sublocation": "",
+      "unit": "uS/cm"
+     }
+    },
+    "site_type": "ST-CA"
+   },
+   "in_area": true,
+   "edge_anchor": false,
+   "collect": true,
+   "active": true,
+   "possible_duplicate_of": "",
+   "cadence_min": 15.0
+  },
+  {
+   "uid": "usgs:251355080312800",
+   "provider": "USGS",
+   "system": "usgs",
+   "station_id": "251355080312800",
+   "name": "Joe Bay 2E, Near Key Largo, Fl",
+   "lat": 25.232625,
+   "lon": -80.524867,
+   "variables": [
+    "spec_cond_us_cm",
+    "salinity_psu",
+    "water_temp_c"
+   ],
+   "depths": [
+    "surface"
+   ],
+   "last_obs": "2025-12-02T17:45:00Z",
+   "url": "https://waterdata.usgs.gov/monitoring-location/251355080312800/",
+   "notes": "USGS site type ST (Stream)",
+   "extra": {
+    "time_series": {},
+    "site_type": "ST"
+   },
+   "in_area": true,
+   "edge_anchor": false,
+   "collect": true,
+   "active": false,
+   "possible_duplicate_of": "",
+   "cadence_min": null
+  },
+  {
+   "uid": "usgs:251003080435500",
+   "provider": "USGS",
+   "system": "usgs",
+   "station_id": "251003080435500",
+   "name": "Mccormick Creek At Mouth Near Key Largo, Fl",
+   "lat": 25.1681944444444,
+   "lon": -80.7335888888889,
+   "variables": [
+    "spec_cond_us_cm",
+    "salinity_psu",
+    "water_temp_c"
+   ],
+   "depths": [
+    "bottom"
+   ],
+   "last_obs": "2026-11-14T16:00:00Z",
+   "url": "https://waterdata.usgs.gov/monitoring-location/251003080435500/",
+   "notes": "USGS site type ST (Stream)",
+   "extra": {
+    "time_series": {
+     "339abd476e5f416d9343ffdada52555b": {
+      "variable": "spec_cond_us_cm",
+      "depth_tag": "bottom",
+      "sublocation": "BOTTOM",
+      "unit": "uS/cm"
+     },
+     "9647cac49f7b4a41ae9264ce4d051548": {
+      "variable": "salinity_psu",
+      "depth_tag": "bottom",
+      "sublocation": "BOTTOM",
+      "unit": "ppt"
+     },
+     "a5e9670447a64e5999dbfa51030350bc": {
+      "variable": "water_temp_c",
+      "depth_tag": "bottom",
+      "sublocation": "BOTTOM",
+      "unit": "degC"
+     }
+    },
+    "site_type": "ST"
+   },
+   "in_area": true,
+   "edge_anchor": false,
+   "collect": true,
+   "active": true,
+   "possible_duplicate_of": "",
+   "cadence_min": 15.0
+  },
+  {
+   "uid": "usgs:251209080350100",
+   "provider": "USGS",
+   "system": "usgs",
+   "station_id": "251209080350100",
+   "name": "Mud Creek At Mouth Nr Homestead, Fl",
+   "lat": 25.203303,
+   "lon": -80.584111,
+   "variables": [
+    "spec_cond_us_cm",
+    "water_temp_c",
+    "salinity_psu"
+   ],
+   "depths": [
+    "surface"
+   ],
+   "last_obs": "2025-11-18T17:15:00Z",
+   "url": "https://waterdata.usgs.gov/monitoring-location/251209080350100/",
+   "notes": "USGS site type ST (Stream)",
+   "extra": {
+    "time_series": {},
+    "site_type": "ST"
+   },
+   "in_area": true,
+   "edge_anchor": false,
+   "collect": true,
+   "active": false,
+   "possible_duplicate_of": "",
+   "cadence_min": null
+  },
+  {
+   "uid": "usgs:02297460",
+   "provider": "USGS",
+   "system": "usgs",
+   "station_id": "02297460",
+   "name": "Peace River At Harbour Heights Fl",
+   "lat": 26.987558024338394,
+   "lon": -81.99429977110398,
+   "variables": [
+    "spec_cond_us_cm",
+    "water_temp_c"
+   ],
+   "depths": [
+    "bottom",
+    "surface"
+   ],
+   "last_obs": "2026-11-14T16:00:00Z",
+   "url": "https://waterdata.usgs.gov/monitoring-location/02297460/",
+   "notes": "USGS site type ST (Stream)",
+   "extra": {
+    "time_series": {
+     "7a9e03595c1a48719544ee5968a3d6d5": {
+      "variable": "spec_cond_us_cm",
+      "depth_tag": "surface",
+      "sublocation": "TOP",
+      "unit": "uS/cm"
+     },
+     "7cde8566293b46e084215d6d8214ca7b": {
+      "variable": "water_temp_c",
+      "depth_tag": "surface",
+      "sublocation": "TOP",
+      "unit": "degC"
+     },
+     "8ff2cfb8f489490e81642c51c1e6c16f": {
+      "variable": "spec_cond_us_cm",
+      "depth_tag": "bottom",
+      "sublocation": "BOTTOM",
+      "unit": "uS/cm"
+     },
+     "a981c2fe8daa4a0d8629a0fc0a0413cc": {
+      "variable": "water_temp_c",
+      "depth_tag": "bottom",
+      "sublocation": "BOTTOM",
+      "unit": "degC"
+     }
+    },
+    "site_type": "ST"
+   },
+   "in_area": true,
+   "edge_anchor": false,
+   "collect": true,
+   "active": true,
+   "possible_duplicate_of": "",
+   "cadence_min": 15.0
+  },
+  {
+   "uid": "usgs:255534081324000",
+   "provider": "USGS",
+   "system": "usgs",
+   "station_id": "255534081324000",
+   "name": "Pumpkin River Near Goodland, Fl",
+   "lat": 25.926,
+   "lon": -81.5443055555556,
+   "variables": [
+    "salinity_psu",
+    "spec_cond_us_cm",
+    "water_temp_c"
+   ],
+   "depths": [
+    "bottom"
+   ],
+   "last_obs": "2026-11-14T15:15:00Z",
+   "url": "https://waterdata.usgs.gov/monitoring-location/255534081324000/",
+   "notes": "USGS site type ST-TS (Tidal stream)",
+   "extra": {
+    "time_series": {
+     "3bd014d490894b038c4db7a190dc2901": {
+      "variable": "salinity_psu",
+      "depth_tag": "bottom",
+      "sublocation": "Near Bottom",
+      "unit": "ppt"
+     },
+     "964b9620fb72432d91ba463d6ac4eae0": {
+      "variable": "spec_cond_us_cm",
+      "depth_tag": "bottom",
+      "sublocation": "Near Bottom",
+      "unit": "uS/cm"
+     },
+     "ca158b49dc5d45ffa4d735eea4f4b9e7": {
+      "variable": "water_temp_c",
+      "depth_tag": "bottom",
+      "sublocation": "Near Bottom",
+      "unit": "degC"
+     }
+    },
+    "site_type": "ST-TS"
+   },
+   "in_area": true,
+   "edge_anchor": false,
+   "collect": true,
+   "active": true,
+   "possible_duplicate_of": "",
+   "cadence_min": 15.0
+  },
+  {
+   "uid": "usgs:251032080432200",
+   "provider": "USGS",
+   "system": "usgs",
+   "station_id": "251032080432200",
+   "name": "Seven Palm Lake Near Flamingo, Fl",
+   "lat": 25.174642,
+   "lon": -80.723111,
+   "variables": [
+    "salinity_psu",
+    "water_temp_c",
+    "spec_cond_us_cm"
+   ],
+   "depths": [
+    "surface"
+   ],
+   "last_obs": "2025-12-04T13:00:08Z",
+   "url": "https://waterdata.usgs.gov/monitoring-location/251032080432200/",
+   "notes": "USGS site type ST (Stream)",
+   "extra": {
+    "time_series": {},
+    "site_type": "ST"
+   },
+   "in_area": true,
+   "edge_anchor": false,
+   "collect": true,
+   "active": false,
+   "possible_duplicate_of": "",
+   "cadence_min": null
+  },
+  {
+   "uid": "usgs:02298202",
+   "provider": "USGS",
+   "system": "usgs",
+   "station_id": "02298202",
+   "name": "Shell Creek Near Punta Gorda Fl",
+   "lat": 26.98478028159469,
+   "lon": -81.93568701940177,
+   "variables": [
+    "spec_cond_us_cm",
+    "water_temp_c"
+   ],
+   "depths": [
+    "bottom"
+   ],
+   "last_obs": "2025-11-20T15:30:00Z",
+   "url": "https://waterdata.usgs.gov/monitoring-location/02298202/",
+   "notes": "USGS site type ST (Stream)",
+   "extra": {
+    "time_series": {},
+    "site_type": "ST"
+   },
+   "in_area": true,
+   "edge_anchor": false,
+   "collect": true,
+   "active": false,
+   "possible_duplicate_of": "",
+   "cadence_min": null
+  },
+  {
+   "uid": "usgs:251127080382100",
+   "provider": "USGS",
+   "system": "usgs",
+   "station_id": "251127080382100",
+   "name": "Taylor River At Mouth Near Homestead, Fl",
+   "lat": 25.190594,
+   "lon": -80.639053,
+   "variables": [
+    "salinity_psu",
+    "spec_cond_us_cm",
+    "water_temp_c"
+   ],
+   "depths": [
+    "surface"
+   ],
+   "last_obs": "2025-11-20T20:15:00Z",
+   "url": "https://waterdata.usgs.gov/monitoring-location/251127080382100/",
+   "notes": "USGS site type ST (Stream)",
+   "extra": {
+    "time_series": {},
+    "site_type": "ST"
+   },
+   "in_area": true,
+   "edge_anchor": false,
+   "collect": true,
+   "active": false,
+   "possible_duplicate_of": "",
+   "cadence_min": null
+  },
+  {
+   "uid": "usgs:251457080395800",
+   "provider": "USGS",
+   "system": "usgs",
+   "station_id": "251457080395800",
+   "name": "Taylor Slough Wetland At E146 Nr Homestead, Fl",
+   "lat": 25.252542,
+   "lon": -80.682867,
+   "variables": [
+    "salinity_psu",
+    "spec_cond_us_cm",
+    "water_temp_c"
+   ],
+   "depths": [
+    "surface"
+   ],
+   "last_obs": "2025-12-11T17:45:00Z",
+   "url": "https://waterdata.usgs.gov/monitoring-location/251457080395800/",
+   "notes": "USGS site type WE (Wetland)",
+   "extra": {
+    "time_series": {},
+    "site_type": "WE"
+   },
+   "in_area": true,
+   "edge_anchor": false,
+   "collect": true,
+   "active": false,
+   "possible_duplicate_of": "",
+   "cadence_min": null
+  },
+  {
+   "uid": "usgs:251253080320100",
+   "provider": "USGS",
+   "system": "usgs",
+   "station_id": "251253080320100",
+   "name": "Trout Creek At Mouth Near Key Largo, Fl",
+   "lat": 25.2148972222222,
+   "lon": -80.5335055555555,
+   "variables": [
+    "water_temp_c",
+    "spec_cond_us_cm",
+    "salinity_psu"
+   ],
+   "depths": [
+    "bottom"
+   ],
+   "last_obs": "2026-11-14T15:45:00Z",
+   "url": "https://waterdata.usgs.gov/monitoring-location/251253080320100/",
+   "notes": "USGS site type ST (Stream)",
+   "extra": {
+    "time_series": {
+     "09e5c216ad034ff1b4f9b3bb1ecd4632": {
+      "variable": "water_temp_c",
+      "depth_tag": "bottom",
+      "sublocation": "BOTTOM",
+      "unit": "degC"
+     },
+     "21b526424b5d45d18e3ce296f0e32988": {
+      "variable": "spec_cond_us_cm",
+      "depth_tag": "bottom",
+      "sublocation": "BOTTOM",
+      "unit": "uS/cm"
+     },
+     "c9be7f404a6f4ae785bf75256d94c746": {
+      "variable": "salinity_psu",
+      "depth_tag": "bottom",
+      "sublocation": "BOTTOM",
+      "unit": "ppt"
+     }
+    },
+    "site_type": "ST"
+   },
+   "in_area": true,
+   "edge_anchor": false,
+   "collect": true,
+   "active": true,
+   "possible_duplicate_of": "",
+   "cadence_min": 15.0
+  },
+  {
+   "uid": "usgs:02290930",
+   "provider": "USGS",
+   "system": "usgs",
+   "station_id": "02290930",
+   "name": "Turner River Nr Chokoloskee Island, Fl",
+   "lat": 25.8286111111111,
+   "lon": -81.3416666666667,
+   "variables": [
+    "spec_cond_us_cm",
+    "salinity_psu",
+    "water_temp_c"
+   ],
+   "depths": [
+    "surface"
+   ],
+   "last_obs": "2026-11-14T15:45:00Z",
+   "url": "https://waterdata.usgs.gov/monitoring-location/02290930/",
+   "notes": "USGS site type ST (Stream)",
+   "extra": {
+    "time_series": {
+     "03c5065d23f449feb134fa22969ef945": {
+      "variable": "spec_cond_us_cm",
+      "depth_tag": "surface",
+      "sublocation": "",
+      "unit": "uS/cm"
+     },
+     "0b54b4390be743028c2571f0aed79142": {
+      "variable": "salinity_psu",
+      "depth_tag": "surface",
+      "sublocation": "",
+      "unit": "ppt"
+     },
+     "36a364edc33f4f90a7d63153df05ac21": {
+      "variable": "water_temp_c",
+      "depth_tag": "surface",
+      "sublocation": "",
+      "unit": "degC"
+     }
+    },
+    "site_type": "ST"
+   },
+   "in_area": true,
+   "edge_anchor": false,
+   "collect": true,
+   "active": true,
+   "possible_duplicate_of": "",
+   "cadence_min": 15.0
+  },
+  {
+   "uid": "usgs:251241080385300",
+   "provider": "USGS",
+   "system": "usgs",
+   "station_id": "251241080385300",
+   "name": "Upstream Taylor River Near Homestead, Fl",
+   "lat": 25.210297,
+   "lon": -80.647667,
+   "variables": [
+    "spec_cond_us_cm",
+    "salinity_psu",
+    "water_temp_c"
+   ],
+   "depths": [
+    "bottom"
+   ],
+   "last_obs": "2025-12-05T14:45:00Z",
+   "url": "https://waterdata.usgs.gov/monitoring-location/251241080385300/",
+   "notes": "USGS site type ST (Stream)",
+   "extra": {
+    "time_series": {},
+    "site_type": "ST"
+   },
+   "in_area": true,
+   "edge_anchor": false,
+   "collect": true,
+   "active": false,
+   "possible_duplicate_of": "",
+   "cadence_min": null
+  },
+  {
+   "uid": "usgs:251433080265000",
+   "provider": "USGS",
+   "system": "usgs",
+   "station_id": "251433080265000",
+   "name": "West Highway Creek Near Homestead, Fl",
+   "lat": 25.242108,
+   "lon": -80.447572,
+   "variables": [
+    "water_temp_c",
+    "spec_cond_us_cm",
+    "salinity_psu"
+   ],
+   "depths": [
+    "surface"
+   ],
+   "last_obs": "2025-11-19T18:30:00Z",
+   "url": "https://waterdata.usgs.gov/monitoring-location/251433080265000/",
+   "notes": "USGS site type ST-TS (Tidal stream)",
+   "extra": {
+    "time_series": {},
+    "site_type": "ST-TS"
+   },
+   "in_area": true,
+   "edge_anchor": false,
+   "collect": true,
+   "active": false,
+   "possible_duplicate_of": "",
+   "cadence_min": null
+  },
+  {
+   "uid": "usgs:254729080393601",
+   "provider": "USGS",
+   "system": "usgs",
+   "station_id": "254729080393601",
+   "name": "Wetland 1600 Blw S-633 In Wca-3B Nr Coopertown,Fl",
+   "lat": 25.791263888888892,
+   "lon": -80.65993055555556,
+   "variables": [
+    "water_temp_c",
+    "spec_cond_us_cm"
+   ],
+   "depths": [
+    "surface"
+   ],
+   "last_obs": "2026-11-14T15:15:00Z",
+   "url": "https://waterdata.usgs.gov/monitoring-location/254729080393601/",
+   "notes": "USGS site type WE (Wetland)",
+   "extra": {
+    "time_series": {
+     "5b59b686327e4bf19f8260b826fe3b2e": {
+      "variable": "water_temp_c",
+      "depth_tag": "surface",
+      "sublocation": "",
+      "unit": "degC"
+     },
+     "6e1e481c9aa241bbbd3c9e13a8639621": {
+      "variable": "spec_cond_us_cm",
+      "depth_tag": "surface",
+      "sublocation": "",
+      "unit": "uS/cm"
+     }
+    },
+    "site_type": "WE"
+   },
+   "in_area": true,
+   "edge_anchor": false,
+   "collect": true,
+   "active": true,
+   "possible_duplicate_of": "",
+   "cadence_min": 15.0
+  },
+  {
+   "uid": "usgs:254923080384901",
+   "provider": "USGS",
+   "system": "usgs",
+   "station_id": "254923080384901",
+   "name": "Wetland 500S Blw S-632 In Wca-3B Nr Coopertown,Fl",
+   "lat": 25.823044444444445,
+   "lon": -80.64707777777778,
+   "variables": [
+    "water_temp_c",
+    "spec_cond_us_cm"
+   ],
+   "depths": [
+    "surface"
+   ],
+   "last_obs": "2026-11-14T16:00:00Z",
+   "url": "https://waterdata.usgs.gov/monitoring-location/254923080384901/",
+   "notes": "USGS site type WE (Wetland)",
+   "extra": {
+    "time_series": {
+     "abe9b92ad65d485c8c944e4ea9a5324a": {
+      "variable": "water_temp_c",
+      "depth_tag": "surface",
+      "sublocation": "",
+      "unit": "degC"
+     },
+     "da33a6b719574d8dab65f4a4a2ab5f94": {
+      "variable": "spec_cond_us_cm",
+      "depth_tag": "surface",
+      "sublocation": "",
+      "unit": "uS/cm"
+     }
+    },
+    "site_type": "WE"
+   },
+   "in_area": true,
+   "edge_anchor": false,
+   "collect": true,
+   "active": true,
+   "possible_duplicate_of": "",
+   "cadence_min": 15.0
+  },
+  {
+   "uid": "usgs:254760080395601",
+   "provider": "USGS",
+   "system": "usgs",
+   "station_id": "254760080395601",
+   "name": "Wetland 500S Blw S-633 In Wca-3B Nr Coopertown,Fl",
+   "lat": 25.7998,
+   "lon": -80.66565,
+   "variables": [
+    "spec_cond_us_cm",
+    "water_temp_c"
+   ],
+   "depths": [
+    "surface"
+   ],
+   "last_obs": "2026-11-14T15:15:00Z",
+   "url": "https://waterdata.usgs.gov/monitoring-location/254760080395601/",
+   "notes": "USGS site type WE (Wetland)",
+   "extra": {
+    "time_series": {
+     "291f231ce3b14f939f1b915e261addab": {
+      "variable": "spec_cond_us_cm",
+      "depth_tag": "surface",
+      "sublocation": "",
+      "unit": "uS/cm"
+     },
+     "b76cfa2a99f84d4b84a329903021f5b9": {
+      "variable": "water_temp_c",
+      "depth_tag": "surface",
+      "sublocation": "",
+      "unit": "degC"
+     }
+    },
+    "site_type": "WE"
+   },
+   "in_area": true,
+   "edge_anchor": false,
+   "collect": true,
+   "active": true,
+   "possible_duplicate_of": "",
+   "cadence_min": 15.0
+  },
+  {
+   "uid": "usgs:255151080371501",
+   "provider": "USGS",
+   "system": "usgs",
+   "station_id": "255151080371501",
+   "name": "Wetland At S-152 Outflow Near Coopertown, Fl",
+   "lat": 25.86415,
+   "lon": -80.6208333333333,
+   "variables": [
+    "spec_cond_us_cm",
+    "salinity_psu",
+    "water_temp_c"
+   ],
+   "depths": [
+    "surface"
+   ],
+   "last_obs": "2026-11-14T15:45:00Z",
+   "url": "https://waterdata.usgs.gov/monitoring-location/255151080371501/",
+   "notes": "USGS site type ST-CA (Canal)",
+   "extra": {
+    "time_series": {
+     "2f2aefc157b24da299432e73707f82d3": {
+      "variable": "spec_cond_us_cm",
+      "depth_tag": "surface",
+      "sublocation": "",
+      "unit": "uS/cm"
+     },
+     "38a91e22cb3a4cd3bc1ce86356261f40": {
+      "variable": "salinity_psu",
+      "depth_tag": "surface",
+      "sublocation": "",
+      "unit": "ppt"
+     },
+     "e37b992a94f84e9ebd3414d22da13fcf": {
+      "variable": "water_temp_c",
+      "depth_tag": "surface",
+      "sublocation": "",
+      "unit": "degC"
+     }
+    },
+    "site_type": "ST-CA"
+   },
+   "in_area": true,
+   "edge_anchor": false,
+   "collect": true,
+   "active": true,
+   "possible_duplicate_of": "",
+   "cadence_min": 15.0
+  },
+  {
+   "uid": "erddap-secoora:c13-water-velocity-wfs-south-buo",
+   "provider": "University of South Florida",
+   "system": "erddap-secoora",
+   "station_id": "c13-water-velocity-wfs-south-buo",
+   "name": "C13 Water Velocity \u2013 WFS South Buoy, 50m Isobath (NBDC: 42023)",
+   "lat": 26.01,
+   "lon": -83.086,
+   "variables": [
+    "salinity_psu",
+    "water_temp_c"
+   ],
+   "depths": [],
+   "last_obs": "2026-11-03T13:35:00Z",
+   "url": "https://erddap.secoora.org/erddap/tabledap/c13-water-velocity-wfs-south-buo.html",
+   "notes": "Dataset vertical range 4 to -50 m",
+   "extra": {
+    "server": "secoora",
+    "measure": {
+     "sea_water_practical_salinity": {
+      "variable": "salinity_psu",
+      "standard_name": "sea_water_practical_salinity",
+      "units": "1e-3"
+     },
+     "sea_water_temperature": {
+      "variable": "water_temp_c",
+      "standard_name": "sea_water_temperature",
+      "units": "degree_Celsius"
+     }
+    },
+    "depth_var": "z",
+    "depth_positive": "up",
+    "depth_sn": "altitude"
+   },
+   "in_area": true,
+   "edge_anchor": false,
+   "collect": true,
+   "active": true,
+   "possible_duplicate_of": "erddap-gcoos:USF_COMPS_C13",
+   "cadence_min": null
+  },
+  {
+   "uid": "erddap-secoora:42023-c13-wfs-south-buoy-50m-",
+   "provider": "University of South Florida",
+   "system": "erddap-secoora",
+   "station_id": "42023-c13-wfs-south-buoy-50m-",
+   "name": "C13 \u2013 WFS South Buoy, 50m Isobath (NBDC: 42023)",
+   "lat": 26.01,
+   "lon": -83.086,
+   "variables": [
+    "salinity_psu",
+    "water_temp_c"
+   ],
+   "depths": [],
+   "last_obs": "2026-11-03T13:35:00Z",
+   "url": "https://erddap.secoora.org/erddap/tabledap/42023-c13-wfs-south-buoy-50m-.html",
+   "notes": "Dataset vertical range 4 to -50 m",
+   "extra": {
+    "server": "secoora",
+    "measure": {
+     "sea_water_practical_salinity": {
+      "variable": "salinity_psu",
+      "standard_name": "sea_water_practical_salinity",
+      "units": "1e-3"
+     },
+     "sea_water_temperature": {
+      "variable": "water_temp_c",
+      "standard_name": "sea_water_temperature",
+      "units": "degree_Celsius"
+     }
+    },
+    "depth_var": "z",
+    "depth_positive": "up",
+    "depth_sn": "altitude"
+   },
+   "in_area": true,
+   "edge_anchor": false,
+   "collect": true,
+   "active": true,
+   "possible_duplicate_of": "erddap-gcoos:USF_COMPS_C13",
+   "cadence_min": null
+  },
+  {
+   "uid": "erddap-secoora:42026-c22-loop-current-pressu",
+   "provider": "University of South Florida",
+   "system": "erddap-secoora",
+   "station_id": "42026-c22-loop-current-pressu",
+   "name": "C22 \u2013 Loop Current Pressure Point Buoy (NDBC: 42026)",
+   "lat": 25.171,
+   "lon": -83.475,
+   "variables": [
+    "salinity_psu",
+    "water_temp_c"
+   ],
+   "depths": [],
+   "last_obs": "2026-11-03T13:35:00Z",
+   "url": "https://erddap.secoora.org/erddap/tabledap/42026-c22-loop-current-pressu.html",
+   "notes": "Dataset vertical range 4 to -70 m",
+   "extra": {
+    "server": "secoora",
+    "measure": {
+     "sea_water_practical_salinity": {
+      "variable": "salinity_psu",
+      "standard_name": "sea_water_practical_salinity",
+      "units": "1e-3"
+     },
+     "sea_water_temperature": {
+      "variable": "water_temp_c",
+      "standard_name": "sea_water_temperature",
+      "units": "degree_Celsius"
+     }
+    },
+    "depth_var": "z",
+    "depth_positive": "up",
+    "depth_sn": "altitude"
+   },
+   "in_area": true,
+   "edge_anchor": false,
+   "collect": true,
+   "active": true,
+   "possible_duplicate_of": "erddap-gcoos:USF_COMPS_C22",
+   "cadence_min": null
+  },
+  {
+   "uid": "erddap-secoora:c27-wfs-south-buoy-inner-shelf-2",
+   "provider": "University of South Florida Coastal Ocean Monitoring and Prediction System (COMPS)",
+   "system": "erddap-secoora",
+   "station_id": "c27-wfs-south-buoy-inner-shelf-2",
+   "name": "C27 - WFS South Buoy \u2013 Inner Shelf, 25m isobath (NDBC: 42029)",
+   "lat": 25.854,
+   "lon": -82.339,
+   "variables": [
+    "salinity_psu",
+    "water_temp_c"
+   ],
+   "depths": [],
+   "last_obs": "2026-11-03T13:35:00Z",
+   "url": "https://erddap.secoora.org/erddap/tabledap/c27-wfs-south-buoy-inner-shelf-2.html",
+   "notes": "Dataset vertical range 0.0 to 0.0 m",
+   "extra": {
+    "server": "secoora",
+    "measure": {
+     "sea_water_practical_salinity": {
+      "variable": "salinity_psu",
+      "standard_name": "sea_water_practical_salinity",
+      "units": "1e-3"
+     },
+     "sea_water_temperature": {
+      "variable": "water_temp_c",
+      "standard_name": "sea_water_temperature",
+      "units": "degree_Celsius"
+     }
+    },
+    "depth_var": "z",
+    "depth_positive": "up",
+    "depth_sn": "altitude"
+   },
+   "in_area": true,
+   "edge_anchor": false,
+   "collect": true,
+   "active": true,
+   "possible_duplicate_of": "",
+   "cadence_min": null
+  },
+  {
+   "uid": "erddap-secoora:c27-water-velocity-wfs-south-buo",
+   "provider": "University of South Florida Coastal Ocean Monitoring and Prediction System (COMPS)",
+   "system": "erddap-secoora",
+   "station_id": "c27-water-velocity-wfs-south-buo",
+   "name": "C27 Water Velocity - WFS South Buoy \u2013 Inner Shelf, 25m isobath (WMO ID 42029)",
+   "lat": 25.854,
+   "lon": -82.339,
+   "variables": [
+    "salinity_psu",
+    "water_temp_c"
+   ],
+   "depths": [],
+   "last_obs": "2026-11-03T13:35:00Z",
+   "url": "https://erddap.secoora.org/erddap/tabledap/c27-water-velocity-wfs-south-buo.html",
+   "notes": "Dataset vertical range -20.4 to -1.0 m",
+   "extra": {
+    "server": "secoora",
+    "measure": {
+     "sea_water_practical_salinity": {
+      "variable": "salinity_psu",
+      "standard_name": "sea_water_practical_salinity",
+      "units": "1e-3"
+     },
+     "sea_water_temperature": {
+      "variable": "water_temp_c",
+      "standard_name": "sea_water_temperature",
+      "units": "degree_Celsius"
+     }
+    },
+    "depth_var": "z",
+    "depth_positive": "up",
+    "depth_sn": "altitude"
+   },
+   "in_area": true,
+   "edge_anchor": false,
+   "collect": true,
+   "active": true,
+   "possible_duplicate_of": "",
+   "cadence_min": null
+  },
+  {
+   "uid": "erddap-secoora:edu_ucsd_cdip_244",
+   "provider": "Coastal Data Information Program (CDIP)",
+   "system": "erddap-secoora",
+   "station_id": "edu_ucsd_cdip_244",
+   "name": "244 - Satan Shoal, FL (42095)",
+   "lat": 24.407167,
+   "lon": -81.966833,
+   "variables": [
+    "water_temp_c"
+   ],
+   "depths": [],
+   "last_obs": "2026-11-14T09:15:00Z",
+   "url": "https://erddap.secoora.org/erddap/tabledap/edu_ucsd_cdip_244.html",
+   "notes": "Dataset vertical range 0.0 to 0.0 m",
+   "extra": {
+    "server": "secoora",
+    "measure": {
+     "sea_water_temperature": {
+      "variable": "water_temp_c",
+      "standard_name": "sea_water_temperature",
+      "units": "degree_Celsius"
+     }
+    },
+    "depth_var": "z",
+    "depth_positive": "up",
+    "depth_sn": "altitude"
+   },
+   "in_area": false,
+   "edge_anchor": false,
+   "collect": false,
+   "active": true,
+   "possible_duplicate_of": "erddap-gcoos:wmo_42095",
+   "cadence_min": null
+  },
+  {
+   "uid": "erddap-secoora:looe-key-fl",
+   "provider": "Mote Marine Laboratory",
+   "system": "erddap-secoora",
+   "station_id": "looe-key-fl",
+   "name": "Looe Key, FL",
+   "lat": 24.54629,
+   "lon": -81.40135,
+   "variables": [
+    "salinity_psu",
+    "water_temp_c"
+   ],
+   "depths": [],
+   "last_obs": "2025-11-18T20:30:00Z",
+   "url": "https://erddap.secoora.org/erddap/tabledap/looe-key-fl.html",
+   "notes": "Dataset vertical range -9.0 to -9.0 m",
+   "extra": {
+    "server": "secoora",
+    "measure": {
+     "sea_water_practical_salinity": {
+      "variable": "salinity_psu",
+      "standard_name": "sea_water_practical_salinity",
+      "units": "1e-3"
+     },
+     "sea_water_temperature": {
+      "variable": "water_temp_c",
+      "standard_name": "sea_water_temperature",
+      "units": "degree_Celsius"
+     }
+    },
+    "depth_var": "z",
+    "depth_positive": "up",
+    "depth_sn": "altitude"
+   },
+   "in_area": false,
+   "edge_anchor": false,
+   "collect": false,
+   "active": false,
+   "possible_duplicate_of": "",
+   "cadence_min": null
+  },
+  {
+   "uid": "ndbc:SANF1",
+   "provider": "NDBC",
+   "system": "ndbc",
+   "station_id": "SANF1",
+   "name": "Sand Key, FL",
+   "lat": 24.456,
+   "lon": -81.877,
+   "variables": [
+    "water_temp_c"
+   ],
+   "depths": [
+    "surface"
+   ],
+   "last_obs": "",
+   "url": "https://www.ndbc.noaa.gov/station_page.php?station=sanf1",
+   "notes": "NDBC program: NDBC Meteorological/Ocean; type fixed",
+   "extra": {
+    "owner": "NDBC",
+    "pgm": "NDBC Meteorological/Ocean"
+   },
+   "in_area": false,
+   "edge_anchor": false,
+   "collect": false,
+   "active": false,
+   "possible_duplicate_of": "",
+   "cadence_min": null
+  },
+  {
+   "uid": "ndbc:SMKF1",
+   "provider": "NDBC",
+   "system": "ndbc",
+   "station_id": "SMKF1",
+   "name": "Sombrero Key, FL",
+   "lat": 24.628,
+   "lon": -81.109,
+   "variables": [
+    "water_temp_c"
+   ],
+   "depths": [
+    "surface"
+   ],
+   "last_obs": "",
+   "url": "https://www.ndbc.noaa.gov/station_page.php?station=smkf1",
+   "notes": "NDBC program: NDBC Meteorological/Ocean; type fixed",
+   "extra": {
+    "owner": "NDBC",
+    "pgm": "NDBC Meteorological/Ocean"
+   },
+   "in_area": false,
+   "edge_anchor": false,
+   "collect": false,
+   "active": false,
+   "possible_duplicate_of": "",
+   "cadence_min": null
+  },
+  {
+   "uid": "erddap-gcoos:SCCF_52",
+   "provider": "SCCF RECON",
+   "system": "erddap-gcoos",
+   "station_id": "SCCF_52",
+   "name": "SCCF 52 - SCCF RECON Moore Haven",
+   "lat": 26.8343,
+   "lon": -81.0883,
+   "variables": [
+    "salinity_psu",
+    "water_temp_c"
+   ],
+   "depths": [],
+   "last_obs": "2026-10-31T22:00:00Z",
+   "url": "https://erddap.gcoos.org/erddap/tabledap/SCCF_52.html",
+   "notes": "Dataset vertical range 0.0 to 0.0 m",
+   "extra": {
+    "server": "gcoos",
+    "measure": {
+     "sea_surface_temperature_1": {
+      "variable": "water_temp_c",
+      "standard_name": "sea_surface_temperature",
+      "units": "degree_Celsius"
+     },
+     "sea_water_practical_salinity_1": {
+      "variable": "salinity_psu",
+      "standard_name": "sea_water_practical_salinity",
+      "units": "1e-3"
+     }
+    },
+    "depth_var": "depth",
+    "depth_positive": "down",
+    "depth_sn": "depth"
+   },
+   "in_area": false,
+   "edge_anchor": false,
+   "collect": false,
+   "active": true,
+   "possible_duplicate_of": "",
+   "cadence_min": null
+  },
+  {
+   "uid": "erddap-gcoos:wmo_42095",
+   "provider": "Texas AM Corpus Christi",
+   "system": "erddap-gcoos",
+   "station_id": "wmo_42095",
+   "name": "42095 - Satan Shoal, FL (CDIP 244)",
+   "lat": 24.40717,
+   "lon": -81.96684,
+   "variables": [
+    "water_temp_c"
+   ],
+   "depths": [],
+   "last_obs": "2026-11-14T14:30:00Z",
+   "url": "https://erddap.gcoos.org/erddap/tabledap/wmo_42095.html",
+   "notes": "Dataset vertical range 0.0 to 0.0 m",
+   "extra": {
+    "server": "gcoos",
+    "measure": {
+     "sea_surface_temperature_1": {
+      "variable": "water_temp_c",
+      "standard_name": "sea_surface_temperature",
+      "units": "degree_Celsius"
+     }
+    },
+    "depth_var": "depth",
+    "depth_positive": "down",
+    "depth_sn": "depth"
+   },
+   "in_area": false,
+   "edge_anchor": false,
+   "collect": false,
+   "active": true,
+   "possible_duplicate_of": "",
+   "cadence_min": null
+  },
+  {
+   "uid": "usgs:02290709",
+   "provider": "USGS",
+   "system": "usgs",
+   "station_id": "02290709",
+   "name": "10B Black Creek Canal At Old Cutler Rd Nr Goulds",
+   "lat": 25.55986111111111,
+   "lon": -80.35955555555554,
+   "variables": [
+    "salinity_psu",
+    "water_temp_c",
+    "spec_cond_us_cm"
+   ],
+   "depths": [
+    "surface",
+    "bottom"
+   ],
+   "last_obs": "2026-11-14T08:30:00Z",
+   "url": "https://waterdata.usgs.gov/monitoring-location/02290709/",
+   "notes": "USGS site type ST-CA (Canal)",
+   "extra": {
+    "time_series": {
+     "51e313f0976c47f29df314626c35d929": {
+      "variable": "salinity_psu",
+      "depth_tag": "surface",
+      "sublocation": "TOP",
+      "unit": "ppt"
+     },
+     "57f8f0f4bd56416d96c998d62832c0d3": {
+      "variable": "salinity_psu",
+      "depth_tag": "bottom",
+      "sublocation": "BOTTOM",
+      "unit": "ppt"
+     },
+     "5d1d11a5e9d240f69c4aaec6b1dd44a5": {
+      "variable": "water_temp_c",
+      "depth_tag": "surface",
+      "sublocation": "TOP",
+      "unit": "degC"
+     },
+     "790aac9702de426fbe30f7e60f033296": {
+      "variable": "spec_cond_us_cm",
+      "depth_tag": "bottom",
+      "sublocation": "BOTTOM",
+      "unit": "uS/cm"
+     },
+     "acdf1997caee4a218971f9ec28345038": {
+      "variable": "water_temp_c",
+      "depth_tag": "bottom",
+      "sublocation": "BOTTOM",
+      "unit": "degC"
+     },
+     "e9eb94103abb49a2a43866967c09dea1": {
+      "variable": "spec_cond_us_cm",
+      "depth_tag": "surface",
+      "sublocation": "TOP",
+      "unit": "uS/cm"
+     }
+    },
+    "site_type": "ST-CA"
+   },
+   "in_area": false,
+   "edge_anchor": false,
+   "collect": false,
+   "active": true,
+   "possible_duplicate_of": "",
+   "cadence_min": null
+  },
+  {
+   "uid": "usgs:0229070854",
+   "provider": "USGS",
+   "system": "usgs",
+   "station_id": "0229070854",
+   "name": "Black Creek Canal East Of Us1 Nr Goulds, Fl",
+   "lat": 25.57,
+   "lon": -80.3747777777778,
+   "variables": [
+    "water_temp_c",
+    "salinity_psu",
+    "spec_cond_us_cm"
+   ],
+   "depths": [
+    "surface"
+   ],
+   "last_obs": "2026-11-14T07:15:00Z",
+   "url": "https://waterdata.usgs.gov/monitoring-location/0229070854/",
+   "notes": "USGS site type ST-CA (Canal)",
+   "extra": {
+    "time_series": {
+     "b5fd5be861a34facbc5d7d9cd4d170f7": {
+      "variable": "water_temp_c",
+      "depth_tag": "surface",
+      "sublocation": "",
+      "unit": "degC"
+     },
+     "c9c34fbfdd304d76818bd7d4d5d40019": {
+      "variable": "salinity_psu",
+      "depth_tag": "surface",
+      "sublocation": "",
+      "unit": "ppt"
+     },
+     "eb95d8b4b33b4dd7a400ad6b7565b403": {
+      "variable": "spec_cond_us_cm",
+      "depth_tag": "surface",
+      "sublocation": "",
+      "unit": "uS/cm"
+     }
+    },
+    "site_type": "ST-CA"
+   },
+   "in_area": false,
+   "edge_anchor": false,
+   "collect": false,
+   "active": true,
+   "possible_duplicate_of": "",
+   "cadence_min": null
+  },
+  {
+   "uid": "usgs:253256080205103",
+   "provider": "USGS",
+   "system": "usgs",
+   "station_id": "253256080205103",
+   "name": "Black Creek Canal Upstream Of S-21 At Miami, Fl",
+   "lat": 25.5488,
+   "lon": -80.3476,
+   "variables": [
+    "water_temp_c",
+    "spec_cond_us_cm",
+    "salinity_psu"
+   ],
+   "depths": [
+    "surface"
+   ],
+   "last_obs": "2026-11-14T07:00:00Z",
+   "url": "https://waterdata.usgs.gov/monitoring-location/253256080205103/",
+   "notes": "USGS site type ST-CA (Canal)",
+   "extra": {
+    "time_series": {
+     "2912e456c40f4238b39cc392e27acf39": {
+      "variable": "water_temp_c",
+      "depth_tag": "surface",
+      "sublocation": "",
+      "unit": "degC"
+     },
+     "8c0e55c2396e4d519df6f0d6dda7976d": {
+      "variable": "spec_cond_us_cm",
+      "depth_tag": "surface",
+      "sublocation": "",
+      "unit": "uS/cm"
+     },
+     "c031b9e044b440368a938b27233b015c": {
+      "variable": "salinity_psu",
+      "depth_tag": "surface",
+      "sublocation": "",
+      "unit": "ppt"
+     }
+    },
+    "site_type": "ST-CA"
+   },
+   "in_area": false,
+   "edge_anchor": false,
+   "collect": false,
+   "active": true,
+   "possible_duplicate_of": "",
+   "cadence_min": null
+  },
+  {
+   "uid": "usgs:0229070825",
+   "provider": "USGS",
+   "system": "usgs",
+   "station_id": "0229070825",
+   "name": "Black Creek Canal West Of 127 Ave Nr Goulds, Fl",
+   "lat": 25.5770833333333,
+   "lon": -80.4001666666667,
+   "variables": [
+    "water_temp_c"
+   ],
+   "depths": [
+    "surface"
+   ],
+   "last_obs": "2026-11-14T07:15:00Z",
+   "url": "https://waterdata.usgs.gov/monitoring-location/0229070825/",
+   "notes": "USGS site type ST-CA (Canal)",
+   "extra": {
+    "time_series": {
+     "ae510f832d0a4aa690e632402a8d967b": {
+      "variable": "water_temp_c",
+      "depth_tag": "surface",
+      "sublocation": "",
+      "unit": "degC"
+     }
+    },
+    "site_type": "ST-CA"
+   },
+   "in_area": false,
+   "edge_anchor": false,
+   "collect": false,
+   "active": true,
+   "possible_duplicate_of": "",
+   "cadence_min": null
+  },
+  {
+   "uid": "usgs:254157080213800",
+   "provider": "USGS",
+   "system": "usgs",
+   "station_id": "254157080213800",
+   "name": "Snapper Creek No.5 Abv Water Pipe Nr S. Miami, Fl",
+   "lat": 25.6990555555556,
+   "lon": -80.3606111111111,
+   "variables": [
+    "salinity_psu",
+    "spec_cond_us_cm",
+    "water_temp_c"
+   ],
+   "depths": [
+    "bottom"
+   ],
+   "last_obs": "2026-11-14T05:30:00Z",
+   "url": "https://waterdata.usgs.gov/monitoring-location/254157080213800/",
+   "notes": "USGS site type ST-CA (Canal)",
+   "extra": {
+    "time_series": {
+     "11907be9ef694a34b161c27a865a53b2": {
+      "variable": "salinity_psu",
+      "depth_tag": "bottom",
+      "sublocation": "LOWER",
+      "unit": "ppt"
+     },
+     "1f8efbaf9c1f4650a93c09ec26dba258": {
+      "variable": "spec_cond_us_cm",
+      "depth_tag": "bottom",
+      "sublocation": "LOWER",
+      "unit": "uS/cm"
+     },
+     "75374a87e8a54078a6fabd75e2fc46b8": {
+      "variable": "water_temp_c",
+      "depth_tag": "bottom",
+      "sublocation": "LOWER",
+      "unit": "degC"
+     }
+    },
+    "site_type": "ST-CA"
+   },
+   "in_area": false,
+   "edge_anchor": false,
+   "collect": false,
+   "active": true,
+   "possible_duplicate_of": "",
+   "cadence_min": null
+  },
+  {
+   "uid": "usgs:0229070834",
+   "provider": "USGS",
+   "system": "usgs",
+   "station_id": "0229070834",
+   "name": "Sw 122 Ave Canal At Sw 202Nd St Nr Goulds, Fl",
+   "lat": 25.5789527777778,
+   "lon": -80.3878472222222,
+   "variables": [
+    "water_temp_c"
+   ],
+   "depths": [
+    "surface"
+   ],
+   "last_obs": "2026-11-14T04:30:00Z",
+   "url": "https://waterdata.usgs.gov/monitoring-location/0229070834/",
+   "notes": "USGS site type ST-CA (Canal)",
+   "extra": {
+    "time_series": {
+     "97287e562d8b4f21a1057ba5a558b6a8": {
+      "variable": "water_temp_c",
+      "depth_tag": "surface",
+      "sublocation": "",
+      "unit": "degC"
+     }
+    },
+    "site_type": "ST-CA"
+   },
+   "in_area": false,
+   "edge_anchor": false,
+   "collect": false,
+   "active": true,
+   "possible_duplicate_of": "",
+   "cadence_min": null
+  },
+  {
+   "uid": "usgs:0229070836",
+   "provider": "USGS",
+   "system": "usgs",
+   "station_id": "0229070836",
+   "name": "Sw 122 Ave Canal At Sw 208Th St Nr Goulds, Fl",
+   "lat": 25.5735805555556,
+   "lon": -80.3877361111111,
+   "variables": [
+    "water_temp_c"
+   ],
+   "depths": [
+    "surface"
+   ],
+   "last_obs": "2026-11-14T07:00:00Z",
+   "url": "https://waterdata.usgs.gov/monitoring-location/0229070836/",
+   "notes": "USGS site type ST-CA (Canal)",
+   "extra": {
+    "time_series": {
+     "068d04de5a674cdaae82501ad8937397": {
+      "variable": "water_temp_c",
+      "depth_tag": "surface",
+      "sublocation": "",
+      "unit": "degC"
+     }
+    },
+    "site_type": "ST-CA"
+   },
+   "in_area": false,
+   "edge_anchor": false,
+   "collect": false,
+   "active": true,
+   "possible_duplicate_of": "",
+   "cadence_min": null
+  },
+  {
+   "uid": "usgs:255325080355201",
+   "provider": "USGS",
+   "system": "usgs",
+   "station_id": "255325080355201",
+   "name": "Wetland 500S Blw S-631 In Wca-3B Nr Coopertown,Fl",
+   "lat": 25.890369444444445,
+   "lon": -80.59769444444444,
+   "variables": [
+    "spec_cond_us_cm",
+    "water_temp_c"
+   ],
+   "depths": [
+    "surface"
+   ],
+   "last_obs": "2026-11-14T08:00:00Z",
+   "url": "https://waterdata.usgs.gov/monitoring-location/255325080355201/",
+   "notes": "USGS site type WE (Wetland)",
+   "extra": {
+    "time_series": {
+     "5d2b5ed39ab7465dbe1e5eea731c4685": {
+      "variable": "spec_cond_us_cm",
+      "depth_tag": "surface",
+      "sublocation": "",
+      "unit": "uS/cm"
+     },
+     "eb894416812443f1a8200da2971fee95": {
+      "variable": "water_temp_c",
+      "depth_tag": "surface",
+      "sublocation": "",
+      "unit": "degC"
+     }
+    },
+    "site_type": "WE"
+   },
+   "in_area": false,
+   "edge_anchor": false,
+   "collect": false,
+   "active": true,
+   "possible_duplicate_of": "",
+   "cadence_min": null
+  }
+ ]
+}

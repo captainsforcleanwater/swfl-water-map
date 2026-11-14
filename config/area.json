@@ -1,0 +1,26 @@
+{
+  "_comment": "Study area and collector settings. Edit this file to widen or narrow the area. Coordinates are decimal degrees, longitude negative for west.",
+  "name": "SWFL Gulf coast, Englewood to the Keys",
+  "bbox": {"lat_min": 24.4, "lat_max": 27.0, "lon_min": -83.6, "lon_max": -80.3},
+  "_polygon_comment": "Stations must fall inside this polygon (lon, lat). It follows the bounding box but cuts along the Florida Keys so the Atlantic side is left out, and trims Lake Okeechobee and the Miami side. Florida Bay is inside.",
+  "polygon": [
+    [-83.6, 27.0], [-81.3, 27.0], [-81.3, 26.55], [-80.9, 26.2], [-80.5, 25.75],
+    [-80.3, 25.3], [-80.3, 25.25], [-80.38, 25.15], [-80.47, 25.06], [-80.62, 24.94],
+    [-80.78, 24.85], [-80.95, 24.765], [-81.1, 24.7], [-81.3, 24.66], [-81.55, 24.63],
+    [-81.75, 24.585], [-82.1, 24.56], [-83.6, 24.4]
+  ],
+  "_edge_anchors_comment": "Stations outside the polygon that are still collected as edge anchors. Key West is on the Atlantic side; keeping it is an open question for CFCW. COMPS C10 and C12 sit north of Englewood and anchor the offshore edge. Format: station_uid as written in data/stations.csv.",
+  "edge_anchors": [
+    "coops:8724580",
+    "erddap-gcoos:USF_COMPS_C10",
+    "erddap-gcoos:USF_COMPS_C12"
+  ],
+  "_lookback_comment": "Everglades National Park data on SECOORA arrives 6 to 8 hours late, so the sensor window is 24 hours.",
+  "sensor_lookback_hours": 24,
+  "first_run_lookback_hours": 72,
+  "goes19_lookback_days": 5,
+  "discovery_max_age_hours": 24,
+  "active_within_days": 14,
+  "_inventory_max_age_comment": "Stations with no data in this many days are left out of discovery (old deployments, past cruises).",
+  "inventory_max_age_days": 365
+}
