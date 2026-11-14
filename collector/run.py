@@ -119,6 +119,22 @@ def main(argv=None) -> int:
     meta["active_within_days"] = cfg["active_within_days"]
     classify(stations, area, cfg)
 
+    # ---- GOES-19 first: its 5-day server window makes it the one source we cannot catch up on later.
+    goes_mode = args.goes_store or ("release" if os.environ.get("GITHUB_ACTIONS") == "true" else "local")
+    if goes_mode != "off" and (not only or "goes19" in only):
+        t0 = time.time()
+        try:
+            st_obj = (goes19.ReleaseStore(os.environ["GITHUB_REPOSITORY"]) if goes_mode == "release"
+                      else goes19.LocalStore())
+            g = goes19.archive(s, area, cfg["goes19_lookback_days"], st_obj)
+        except Exception as e:  # noqa: BLE001
+            log.exception("GOES-19 archive failed")
+            g = {"fatal": str(e)[:300]}
+        g["seconds"] = round(time.time() - t0, 1)
+        g["store"] = goes_mode
+        status["sources"]["goes19"] = g
+        log.info("goes19: %s", {k: v for k, v in g.items() if k != "errors"})
+
     # ---- sensors
     lookback = args.lookback_hours or (cfg["sensor_lookback_hours"] if store.has_any_data()
                                        else cfg["first_run_lookback_hours"])
@@ -169,22 +185,6 @@ def main(argv=None) -> int:
             st.active = True
     if rediscovered or reporting:
         inventory.save(stations, meta)
-
-    # ---- GOES-19
-    goes_mode = args.goes_store or ("release" if os.environ.get("GITHUB_ACTIONS") == "true" else "local")
-    if goes_mode != "off" and (not only or "goes19" in only):
-        t0 = time.time()
-        try:
-            st_obj = (goes19.ReleaseStore(os.environ["GITHUB_REPOSITORY"]) if goes_mode == "release"
-                      else goes19.LocalStore())
-            g = goes19.archive(s, area, cfg["goes19_lookback_days"], st_obj)
-        except Exception as e:  # noqa: BLE001
-            log.exception("GOES-19 archive failed")
-            g = {"fatal": str(e)[:300]}
-        g["seconds"] = round(time.time() - t0, 1)
-        g["store"] = goes_mode
-        status["sources"]["goes19"] = g
-        log.info("goes19: %s", {k: v for k, v in g.items() if k != "errors"})
 
     status["finished"] = iso(utcnow())
     status["total_readings"] = len(all_readings)

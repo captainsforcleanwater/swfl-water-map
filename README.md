@@ -11,13 +11,16 @@ the Actions tab). Each run:
 1. Rediscovers stations once a day by bounding box (CO-OPS Metadata API, USGS Water Data API, GCOOS,
    SECOORA and IOOS ERDDAP, NDBC active stations list). Stations must fall inside the area polygon in
    `config/area.json`, which leaves out the Atlantic side of the Keys, plus any `edge_anchors` listed there.
-2. Pulls the last 24 hours from every active station and merges into daily files, replacing older copies
+2. Checks the last 5 days of GOES-19 hourly SST and archives any hour not yet saved. This runs first because
+   the server keeps only 5 days, so it is the one source that cannot be caught up later.
+3. Pulls the last 24 hours from every active station and merges into daily files, replacing older copies
    of the same reading. GitHub's cron can skip runs, so the overlap keeps gaps from forming. The first run
    pulls 72 hours.
-3. Checks the last 5 days of GOES-19 hourly SST and archives any hour not yet saved.
 4. Commits new data, the inventory, and `data/status/last_run.json`.
 
-One source failing does not stop the others. Errors are listed in `data/status/last_run.json` and in the
+One source failing does not stop the others. The collect step has a 20 minute limit so the commit step
+always runs. If a saved GOES-19 day file cannot be downloaded, that day is skipped and retried next run;
+it is rebuilt from the server only when the file is truly missing from the release. Errors are listed in `data/status/last_run.json` and in the
 run summary on the Actions page.
 
 ## Where the data goes

@@ -12,12 +12,17 @@ A live map of water temperature and salinity along Florida's Gulf coast from Eng
 |---|---|
 | Area | Gulf side only for now, Englewood to the Keys. The Atlantic side of the Keys is excluded. Build the area as one setting so it can be widened later. |
 | Florida Bay | Included (assumed, not yet confirmed). |
+| Area boundary | Approved 2026-11-14: the polygon in `config/area.json` as drawn (Barnes Sound, Manatee Bay and Ramrod Key in; Looe Key and Sombrero Key out). |
+| Key West | Kept as an edge anchor (CO-OPS 8724580), decided 2026-11-14. |
 | Captain-sourced data | No. |
 | Salinity layer | Yes. |
 | History feature | Yes. Retention plan is *proposed* (see History plan). |
 | Readings | As many per day as possible. |
 | Hosting | Collector and archiving run on GitHub Actions in this public repo. The map runs on GitHub Pages and should be embeddable on the CFCW site. |
 | Development | Claude Code cloud sessions. Sessions push to a branch and open a pull request; CFCW merges. |
+| Raw sensor readings | Plain, uncompressed CSV daily files in git (`data/sensors/`), decided 2026-11-14, even though this is about 350 MB a year before git compression. |
+| GOES-19 storage | GitHub Releases, one NetCDF file per UTC day in a monthly release `goes19-sst-hourly-YYYY-MM`, confirmed 2026-11-14. |
+| USGS API key | CFCW adds `USGS_API_KEY` as a repository secret; the workflow already passes it to the collector. |
 
 ## How this repo works
 
@@ -34,7 +39,7 @@ A live map of water temperature and salinity along Florida's Gulf coast from Eng
 - Schedule at an off-peak minute (for example `17 * * * *`) and include `workflow_dispatch` so runs can be started by hand.
 - The workflow needs `permissions: contents: write` to commit outputs.
 - GitHub disables scheduled workflows in public repos after 60 days with no repository activity. The collector's commits should count as activity, but confirm.
-- Keep large grids out of git history. *Proposed* until object storage is chosen: pack each day's hourly satellite subset into one compressed file and attach it to a GitHub Release. Raw sensor readings are small and can live in the repo as daily files.
+- Keep large grids out of git history. Each day's hourly GOES-19 subset is one compressed NetCDF file attached to a GitHub Release (confirmed). Raw sensor readings live in the repo as plain CSV daily files (confirmed).
 - Convert everything to UTC and consistent units. Display temperature in °F.
 - Style for docs, UI text, code comments and commit messages: plain language, no em dashes.
 
@@ -45,6 +50,7 @@ A live map of water temperature and salinity along Florida's Gulf coast from Eng
 3. **Blend into a grid:**
    - Temperature: the satellite field is the background. At each sensor, compute sensor minus satellite, interpolate those corrections across the grid and add them back. When clouds block an hour, fall back to the last clear frame corrected by sensors.
    - Interpolate through water, not across land. Use a coastline mask with water-path (cost) distance, so Caloosahatchee readings don't bleed across Sanibel into the Gulf.
+   - Count each physical station once. Some stations are collected from two services and are flagged in `data/stations.csv` (`possible_duplicate_of`): USF COMPS C13 (three series: GCOOS `USF_COMPS_C13` plus two SECOORA datasets), C22 (GCOOS and SECOORA) and Trout Cove (Everglades National Park TCVF1 on SECOORA and USGS 251253080320100). Use one series per physical station, or merge them, so a duplicate does not get double weight in the corrections.
    - Salinity: sensor-only. Satellite salinity is far too coarse near shore. It will be strongest in the estuaries and shaded as low-confidence elsewhere.
    - A confidence layer shades areas far from any sensor or under cloud.
 4. **Live map** (GitHub Pages): hourly frames on a time slider, isotherms in °F, a thermal fronts layer, confidence shading, temperature/salinity toggle, and tap-a-sensor charts.
@@ -55,7 +61,7 @@ A live map of water temperature and salinity along Florida's Gulf coast from Eng
 
 | Source | What it gives | Cadence | Access notes |
 |---|---|---|---|
-| NOAA CO-OPS tide stations | Water temp; conductivity/salinity at some stations | 6 min | Data API `api.tidesandcurrents.noaa.gov/api/prod/datagetter`, product `water_temperature`. 6-minute data is limited to 1 month per request. Use the Metadata API for station discovery. Verified 2026-11-14: Fort Myers 8725520, Vaca Key 8723970 and Key West 8724580 report water temperature; Naples 8725110 does not, and no CO-OPS station in the area reports conductivity or salinity. Key West sits on the Atlantic side; whether it stays as an edge anchor is an open question. Also mirrored on CoastWatch ERDDAP as dataset `nosCoopsMWT`. |
+| NOAA CO-OPS tide stations | Water temp; conductivity/salinity at some stations | 6 min | Data API `api.tidesandcurrents.noaa.gov/api/prod/datagetter`, product `water_temperature`. 6-minute data is limited to 1 month per request. Use the Metadata API for station discovery. Verified 2026-11-14: Fort Myers 8725520, Vaca Key 8723970 and Key West 8724580 report water temperature; Naples 8725110 does not, and no CO-OPS station in the area reports conductivity or salinity. Key West sits on the Atlantic side and is kept as an edge anchor (decided 2026-11-14). Also mirrored on CoastWatch ERDDAP as dataset `nosCoopsMWT`. |
 | USGS gages | Water temp (param 00010), salinity (00480), specific conductance (00095) | 15 min | Charlotte Harbor, Estero Bay, tidal Caloosahatchee, Ten Thousand Islands, Florida Bay. The collector uses the Water Data OGC API v1 (`api.waterdata.usgs.gov/ogcapi/v1`, collections `time-series-metadata`, `monitoring-locations`, `continuous`). Many estuarine gages are typed "Stream" or "Lake", so filtering by site type does not separate fresh from salt water. As of 2026-11-14, Port Boca Grande 02293332, Cape Haze transect 264420082100000 and Estero Bay 262620081523700 have no current temperature or salinity series in either the new or legacy service. |
 | SCCF RECON | Temp, salinity, DO, chlorophyll, more | Hourly | On GCOOS ERDDAP as datasets `SCCF_<n>` (found 2026-11-14; 7 active in the area). Running since 2007; sensors replaced in the RECON 2.0 upgrade (2021 onward). |
 | USF COMPS buoys | Temp, salinity | Near real time | C10 off Sarasota (NDBC 42013) and C12 (NDBC 42022) sit north of Englewood but anchor the offshore edge (listed as edge anchors in `config/area.json`). C13 West Florida South Buoy is at 26.01 N, 83.086 W. Current data is on GCOOS ERDDAP (`USF_COMPS_C10`, `C12`, `C13`, `C22`), which carries one near-surface temperature and salinity sensor per buoy, repeated across the current-meter depth bins. NDBC's copy of C13 (42023) stopped updating on 2026-11-03. |
@@ -73,7 +79,7 @@ A live map of water temperature and salinity along Florida's Gulf coast from Eng
 
 ## History plan (*proposed*)
 
-- **Raw sensor readings:** keep forever (tens of MB a year).
+- **Raw sensor readings:** keep forever, as plain CSV in git (decided). Expect about 350 MB a year before git compression.
 - **Hourly blended maps (temp and salinity):** rolling 2 years at full detail, then thin to daily low, average and high.
 - **Event days** (cold snaps, discharge pulses, heat waves): keep hourly forever.
 - **Daily maps:** keep forever, backfilled to 2012 from ACSPO L3S plus sensor archives. This covers the 2016 and 2018 benchmark years and gives about 14 years for a "normal for this date" baseline.
@@ -85,14 +91,14 @@ History features: scrub any day back to 2012 or any hour in the last 2 years; a 
 ## Next steps
 
 1. Done: repository created (`captainsforcleanwater/swfl-water-map`).
-2. Done (pending merge): the collector in `collector/`, inventory in `STATIONS.md`. Write the collector. **Its first run produces the station inventory:** every sensor in the area with ID, provider, location, cadence, depth and whether it measures salinity. Commit it as a readable file.
-3. Done (pending merge): `.github/workflows/collect.yml`. Start the hourly collector and archiving immediately, before the map is polished. GOES-19 hourly history older than about 5 days can't be recovered later.
+2. Done: the collector in `collector/`, inventory in `STATIONS.md`. Write the collector. **Its first run produces the station inventory:** every sensor in the area with ID, provider, location, cadence, depth and whether it measures salinity. Commit it as a readable file.
+3. Done: `.github/workflows/collect.yml`, first run 2026-11-14. Start the hourly collector and archiving immediately, before the map is polished. GOES-19 hourly history older than about 5 days can't be recovered later.
 4. Backfill daily history to 2012.
 5. Ship the v1 map with the salinity layer and history.
 
 ## Open questions for CFCW
 
 - Approve or adjust the history plan.
-- Confirm Florida Bay is in, and decide whether Key West's Atlantic-side station stays as an edge anchor.
+- Confirm Florida Bay is in.
 - Is the map public from day one, or internal first?
 - SCCF RECON access: is there a contact at SCCF who could provide a data feed if needed?

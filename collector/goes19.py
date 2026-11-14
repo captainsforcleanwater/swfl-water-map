@@ -27,6 +27,9 @@ from .common import DATA, ROOT, Area, iso, log, parse_time, utcnow
 
 ERDDAP = "https://cwcgom.aoml.noaa.gov/erddap/griddap/goes19SSThourly"
 FILL = -32768
+
+# Results of fetching an existing day file from the store
+OK, MISSING, FAILED = "ok", "missing", "failed"
 SCALE = 0.01
 
 
@@ -40,12 +43,12 @@ class LocalStore:
         self.root.mkdir(parents=True, exist_ok=True)
         self.index_path = self.root / "index.json"
 
-    def get(self, asset: str, dest: Path, tag: str = "") -> bool:
+    def get(self, asset: str, dest: Path, tag: str = "") -> str:
         src = self.root / asset
-        if src.exists():
-            shutil.copy(src, dest)
-            return True
-        return False
+        if not src.exists():
+            return MISSING
+        shutil.copy(src, dest)
+        return OK
 
     def put(self, asset: str, src: Path, tag: str) -> None:
         shutil.copy(src, self.root / asset)
@@ -76,15 +79,24 @@ class ReleaseStore:
                      "CoastWatch Caribbean/Gulf node, dataset goes19SSThourly.", "--latest=false")
         self._known_tags.add(tag)
 
-    def get(self, asset: str, dest: Path, tag: str) -> bool:
-        r = self._gh("release", "download", tag, "--pattern", asset, "--dir", str(dest.parent),
-                     "--clobber", check=False)
-        got = dest.parent / asset
-        if r.returncode == 0 and got.exists():
-            if got != dest:
-                got.rename(dest)
-            return True
-        return False
+    def get(self, asset: str, dest: Path, tag: str) -> str:
+        """OK if downloaded, MISSING only if the release or asset truly does not exist, else FAILED."""
+        # REST calls only (not "gh release view/download"), so a missing release is a plain HTTP 404.
+        view = subprocess.run(["gh", "api", f"repos/{self.repo}/releases/tags/{tag}",
+                               "--jq", '.assets[] | "\\(.id) \\(.name)"'],
+                              capture_output=True, text=True, check=False)
+        if view.returncode != 0:
+            return MISSING if "HTTP 404" in (view.stderr or "") else FAILED
+        ids = dict(reversed(line.split(" ", 1)) for line in view.stdout.splitlines() if " " in line)
+        if asset not in ids:
+            return MISSING
+        with open(dest, "wb") as out:
+            r = subprocess.run(["gh", "api", "-H", "Accept: application/octet-stream",
+                                f"repos/{self.repo}/releases/assets/{ids[asset]}"],
+                               stdout=out, stderr=subprocess.PIPE, check=False)
+        if r.returncode != 0 or dest.stat().st_size == 0:
+            return FAILED
+        return OK
 
     def put(self, asset: str, src: Path, tag: str) -> None:
         self._ensure_release(tag)
@@ -199,11 +211,22 @@ def archive(s, area: Area, lookback_days: int, store) -> dict:
             path = work / asset
             frames, lat, lon = {}, None, None
             if day in days:
-                ok = store.get(asset, path, tag)
-                if ok:
-                    lat, lon, frames = read_day(path)
-                else:
-                    # Index says we have hours but the file is gone: refetch whatever the server still has.
+                got = store.get(asset, path, tag)
+                if got == OK:
+                    try:
+                        lat, lon, frames = read_day(path)
+                    except Exception as e:  # noqa: BLE001
+                        got = FAILED
+                        log.warning("GOES-19 file for %s could not be read: %s", day, e)
+                if got == FAILED:
+                    # Never overwrite a saved day with a partial rebuild. The hours stay missing
+                    # in the index, so the next run tries again.
+                    status["errors"][day] = "could not download or read the saved day file; skipped this run"
+                    log.warning("GOES-19 day %s skipped: saved file could not be downloaded", day)
+                    continue
+                if got == MISSING:
+                    # The index lists this day but the file is not in the release: rebuild it
+                    # from whatever the server still has.
                     log.warning("GOES-19 archive file for %s missing; rebuilding from server", day)
                     hours = sorted({*hours, *[t for t in avail if t.strftime("%Y-%m-%d") == day]})
             added = 0
