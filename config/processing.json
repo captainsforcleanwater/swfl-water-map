@@ -1,0 +1,98 @@
+{
+  "_comment": "Settings for the clean and blend steps (python -m processing.run). Temperatures in degrees C, salinity in PSU, distances in km.",
+
+  "grid": {
+    "_comment": "Output grid: the area bbox in config/area.json, in cells of cell_deg_lat x cell_deg_lon (about 500 m x 500 m at 26 N). The compute grid adds pad cells to the north and west so the COMPS C10 and C12 edge anchors connect by water. Water paths are traced on a fine mask fine_factor times finer (about 100 m), so narrow rivers stay open and thin barrier islands stay closed. Stations off the mask snap to mapped tidal water within station_snap_km, or are left out of the grids.",
+    "cell_deg_lat": 0.0045,
+    "cell_deg_lon": 0.005,
+    "fine_factor": 5,
+    "pad_cells": {"north": 134, "west": 40, "south": 0, "east": 0},
+    "station_snap_km": 2.5,
+    "_barriers_comment": "Structures that separate tidal from fresh water. The water mask is cut within radius_m of each point (python -m processing.shoreline), so water above them drops out of the grids.",
+    "barriers": [
+      {"name": "S-79 W.P. Franklin Lock and Dam, Caloosahatchee", "lat": 26.7220, "lon": -81.6930, "radius_m": 400}
+    ]
+  },
+
+  "qc": {
+    "_comment": "Tests follow the IOOS QARTOD manuals. Flags: 1 good, 3 suspect, 4 bad. Suspect and bad readings are left out of the hourly values and the blend. Each run re-checks the last rewrite_days days, reading context_days more before them.",
+    "context_days": 2,
+    "rewrite_days": 3,
+    "near_surface_max_depth_m": 2.0,
+    "gross_range": {
+      "water_temp_c": {"fail": [-2.0, 40.0], "suspect": [5.0, 35.0]},
+      "salinity_psu": {"fail": [0.0, 70.0], "suspect": [0.0, 55.0]},
+      "spec_cond_us_cm": {"fail": [0.0, 90000.0], "suspect": [0.0, 75000.0]}
+    },
+    "spike": {
+      "_comment": "A reading is a spike when it sits further than the threshold from the median of readings within window_minutes either side, and further than mad_factor times their scaled median absolute deviation.",
+      "window_minutes": 90,
+      "mad_factor": 6.0,
+      "water_temp_c": 1.5,
+      "salinity_psu": 4.0,
+      "spec_cond_us_cm": 6000.0
+    },
+    "flatline": {
+      "_comment": "Identical readings for this many hours. Below the surface the hours are multiplied by below_surface_factor; thermistor strings are not tested. Salinity runs below fresh_floor_psu are skipped, and so are runs where the station's conductance keeps changing, because both come from rounding, not a stuck sensor.",
+      "below_surface_factor": 2.0,
+      "water_temp_c": {"suspect_hours": 12, "fail_hours": 24},
+      "salinity_psu": {"suspect_hours": 24, "fail_hours": 48, "fresh_floor_psu": 2.0},
+      "spec_cond_us_cm": {"suspect_hours": 24, "fail_hours": 48}
+    },
+    "neighbor": {
+      "_comment": "Temperature only. A station whose hourly readings stay more than this many degrees from the median of stations within max_km by water path, over a rolling window_hours window, is flagged suspect. Salinity is skipped: real salinity differences between nearby estuary sites are large.",
+      "max_km": 15.0,
+      "min_neighbors": 3,
+      "window_hours": 48,
+      "min_hours": 18,
+      "water_temp_c": 2.5
+    },
+    "stale": {
+      "_comment": "A station is stale when its newest reading is older than default_hours plus the provider's normal delay plus two reporting intervals.",
+      "default_hours": 6,
+      "provider_delay_hours": {"Everglades National Park": 10}
+    }
+  },
+
+  "hourly": {
+    "_comment": "Hourly value = mean of good readings within half_window_minutes of the hour.",
+    "half_window_minutes": 30
+  },
+
+  "blend": {
+    "_comment": "Each run re-blends any hour in the last reblend_hours whose inputs changed, and fills any hour missing from the last backfill_days. GOES-19 values are carried forward up to goes_persistence_days.",
+    "reblend_hours": 24,
+    "backfill_days": 5,
+    "goes_persistence_days": 7,
+    "temperature": {
+      "_comment": "Optimal interpolation of sensor-minus-satellite corrections. Correlation falls off as (1 + d/L) exp(-d/L) with water-path distance d and L = length_km. Background error grows with the age of the satellite value and with water-path distance from the nearest satellite pixel (sqrt(sat_error^2 + (age_error_per_hour * age)^2 + (extension_error_per_km * km)^2), capped). Water the satellite never sees fades from the nearest satellite value into a regional mean of the sensors over extension_blend_km of water path (regional mean as for salinity). Values fitted to the Nov 11-14 2026 data by leave-one-out (processing/validate.py). Confidence is 100 * (1 - error / confidence_error_scale), floored at 0.",
+      "length_km": 30.0,
+      "obs_error": 0.6,
+      "sat_error": 0.7,
+      "age_error_per_hour": 0.025,
+      "extension_error_per_km": 0.08,
+      "max_background_error": 2.5,
+      "extension_blend_km": 10.0,
+      "regional_length_km": 30.0,
+      "declutter_km": 5.0,
+      "confidence_error_scale": 2.0
+    },
+    "salinity": {
+      "_comment": "Sensors only. Background: Gulf salinity (median of stations at least offshore_km from land, else gulf_default_psu) in open water, fading over sea_blend_km of water path into a regional field (Gaussian weights over regional_length_km; stations closer than declutter_km to each other share weight). Optimal interpolation then adds detail within about length_km of each sensor. Confidence is 100 * (1 - error / confidence_error_scale).",
+      "offshore_km": 10.0,
+      "gulf_default_psu": 36.0,
+      "sea_blend_km": 10.0,
+      "regional_length_km": 15.0,
+      "declutter_km": 5.0,
+      "length_km": 12.0,
+      "obs_error": 1.0,
+      "background_error": 6.0,
+      "confidence_error_scale": 6.0
+    }
+  },
+
+  "output": {
+    "release_prefix": "blend-hourly",
+    "asset_prefix": "swfl_blend_hourly"
+  }
+}

@@ -8,6 +8,7 @@ from dataclasses import asdict
 from statistics import median
 
 from .common import DATA, ROOT, SAL, SPCOND, TEMP, Station, distance_m, iso
+from .tags import setting
 
 JSON_PATH = DATA / "stations.json"
 CSV_PATH = DATA / "stations.csv"
@@ -79,7 +80,8 @@ def save(stations: list[Station], meta: dict) -> None:
 
     cols = ["station_uid", "provider", "source_system", "station_id", "name", "lat", "lon",
             "in_area", "edge_anchor", "collected", "active", "last_obs_utc", "cadence_min", "depths",
-            "measures_temp", "measures_salinity", "measures_spec_cond", "possible_duplicate_of", "url", "notes"]
+            "measures_temp", "measures_salinity", "measures_spec_cond", "possible_duplicate_of",
+            "setting", "setting_reason", "url", "notes"]
     with open(CSV_PATH, "w", newline="") as f:
         w = csv.writer(f, lineterminator="\n")
         w.writerow(cols)
@@ -88,7 +90,7 @@ def save(stations: list[Station], meta: dict) -> None:
                         yn(s.in_area), yn(s.edge_anchor), yn(s.collect), yn(s.active), s.last_obs,
                         "" if s.cadence_min is None else s.cadence_min, "; ".join(map(str, s.depths)),
                         yn(TEMP in s.variables), yn(SAL in s.variables), yn(SPCOND in s.variables),
-                        s.possible_duplicate_of, s.url, s.notes])
+                        s.possible_duplicate_of, *setting(s.uid, s.extra), s.url, s.notes])
     write_markdown(stations, meta)
 
 
@@ -116,6 +118,10 @@ def write_markdown(stations: list[Station], meta: dict) -> None:
         "gap between readings in the latest pull, in minutes. Temperature is stored in degrees C and salinity",
         "in PSU; the map converts temperature to degrees F for display.",
         "",
+        "Setting: `coastal` stations (tidal water) feed the temperature and salinity grids; `inland` stations",
+        "(fresh, non-tidal water such as wetlands, canals and rivers above locks) do not. Tags come from",
+        "`config/station_tags.json` or, failing that, from the USGS site type.",
+        "",
     ]
     by_provider: dict[str, list[Station]] = {}
     for s in collected:
@@ -125,8 +131,8 @@ def write_markdown(stations: list[Station], meta: dict) -> None:
         a = [s for s in ss if s.active]
         lines.append(f"| {p} | {len(ss)} | {len(a)} | {sum(1 for s in a if SAL in s.variables or SPCOND in s.variables)} |")
     lines += ["", "## Collected stations", "",
-              "| Station | Provider | ID | Lat | Lon | Active | Cadence (min) | Depths | Temp | Salinity | Note |",
-              "|---|---|---|---:|---:|---|---:|---|---|---|---|"]
+              "| Station | Provider | ID | Lat | Lon | Active | Cadence (min) | Depths | Temp | Salinity | Setting | Note |",
+              "|---|---|---|---:|---:|---|---:|---|---|---|---|---|"]
     for s in sorted(collected, key=lambda s: (-s.lat)):
         note = []
         if s.edge_anchor:
@@ -134,10 +140,13 @@ def write_markdown(stations: list[Station], meta: dict) -> None:
         if s.possible_duplicate_of:
             note.append(f"possible duplicate of {s.possible_duplicate_of}")
         salinity = "yes" if SAL in s.variables else ("conductance" if SPCOND in s.variables else "no")
+        tag, why = setting(s.uid, s.extra)
+        if tag == "inland" and why:
+            note.append(why)
         lines.append(
             f"| [{esc(s.name)}]({s.url}) | {esc(s.provider)} | `{s.uid}` | {s.lat:.4f} | {s.lon:.4f} | "
             f"{yn(s.active)} | {'' if s.cadence_min is None else s.cadence_min} | {esc(', '.join(map(str, s.depths)))} | "
-            f"{yn(TEMP in s.variables)} | {salinity} | {'; '.join(note)} |")
+            f"{yn(TEMP in s.variables)} | {salinity} | {tag} | {esc('; '.join(note))} |")
     outside = [s for s in stations if not s.collect]
     if outside:
         lines += ["", "## Found in the bounding box but not collected", "",

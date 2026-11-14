@@ -1,0 +1,52 @@
+{
+ "_comment": "Written by python -m processing.shoreline. The fine water mask is water_fine.png (white = water), on the compute grid below at fine resolution.",
+ "built": "2026-11-14T18:48:28Z",
+ "source": "USGS National Hydrography Dataset (NHD), high resolution, subregions 0309, 0310; gaps filled from NOAA Coastal Relief Model vol. 3 where deeper than 1 m",
+ "source_url": [
+  "https://prd-tnm.s3.amazonaws.com/StagedProducts/Hydrography/NHD/HU4/Shape/NHD_H_<HU4>_HU4_Shape.zip",
+  "https://www.ngdc.noaa.gov/thredds/dodsC/crm/crm_vol3.nc"
+ ],
+ "water_feature_types": [
+  "BayInlet",
+  "Estuary",
+  "Foreshore",
+  "LakePond",
+  "SeaOcean",
+  "StreamRiver"
+ ],
+ "mask_sha256_16": "391141eadf73e5cf",
+ "compute_grid": {
+  "top": 27.603,
+  "left": -83.8,
+  "dlat": 0.0045,
+  "dlon": 0.005,
+  "rows": 712,
+  "cols": 700,
+  "fine_factor": 5
+ },
+ "output_grid": {
+  "rows": 578,
+  "cols": 660,
+  "lat_top_edge": 27.0,
+  "lon_left_edge": -83.6,
+  "dlat": 0.0045,
+  "dlon": 0.005,
+  "lat_first_row_center": 26.99775,
+  "lon_first_col_center": -83.5975,
+  "row_order": "north_to_south",
+  "crs": "EPSG:4326"
+ },
+ "water_fraction_fine": 0.6584,
+ "features": {
+  "BayInlet": 487,
+  "Foreshore": 194,
+  "StreamRiver": 410,
+  "SeaOcean": 19,
+  "LakePond": 19330
+ },
+ "barriers_cut": [
+  "S-79 W.P. Franklin Lock and Dam, Caloosahatchee"
+ ],
+ "cells_water_from_relief_model_only": 6903911,
+ "dropped_inland_water_cells": 214012
+}

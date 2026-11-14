@@ -1,0 +1,9 @@
+{
+  "_comment": "Hand-set station tags. 'setting' is coastal (tidal water: Gulf, bays, tidal rivers, Florida Bay) or inland (fresh, not tidal: wetlands, canals behind structures, rivers above locks). Inland stations stay in the clean layer but are left out of the temperature and salinity grids. Stations not listed here are tagged by rule: USGS wetland, canal, ditch, lake and groundwater site types are inland; everything else is coastal. Keys are station_uid values from data/stations.csv.",
+  "setting": {
+    "erddap-gcoos:SCCF_1111": {
+      "setting": "inland",
+      "reason": "Caloosahatchee at Alva, upstream of the S-79 Franklin Lock: fresh river, not tidal"
+    }
+  }
+}

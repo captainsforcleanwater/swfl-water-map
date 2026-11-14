@@ -11,7 +11,7 @@ A live map of water temperature and salinity along Florida's Gulf coast from Eng
 | Topic | Decision |
 |---|---|
 | Area | Gulf side only for now, Englewood to the Keys. The Atlantic side of the Keys is excluded. Build the area as one setting so it can be widened later. |
-| Florida Bay | Included (assumed, not yet confirmed). |
+| Florida Bay | Included, confirmed by CFCW 2026-11-14. |
 | Area boundary | Approved 2026-11-14: the polygon in `config/area.json` as drawn (Barnes Sound, Manatee Bay and Ramrod Key in; Looe Key and Sombrero Key out). |
 | Key West | Kept as an edge anchor (CO-OPS 8724580), decided 2026-11-14. |
 | Captain-sourced data | No. |
@@ -23,6 +23,10 @@ A live map of water temperature and salinity along Florida's Gulf coast from Eng
 | Raw sensor readings | Plain, uncompressed CSV daily files in git (`data/sensors/`), decided 2026-11-14, even though this is about 350 MB a year before git compression. |
 | GOES-19 storage | GitHub Releases, one NetCDF file per UTC day in a monthly release `goes19-sst-hourly-YYYY-MM`, confirmed 2026-11-14. |
 | USGS API key | CFCW adds `USGS_API_KEY` as a repository secret; the workflow already passes it to the collector. |
+| Depth | Near-surface only for now (2026-11-14). Depth layers stay in the clean files so a bottom layer can be added later. |
+| Inland stations | Fresh, non-tidal sites stay out of the grids, using the inventory's `setting` tag (2026-11-14). |
+| Clean layer | *Proposed*: QC flags and hourly cleaned values as CSV in git (`data/qc/`, `data/clean/`), about 100 MB a year. |
+| Blended grids | *Proposed*: 500 m grid, one gzip file per UTC day on monthly releases `blend-hourly-YYYY-MM`, about 0.9 GB a year. Format in `processing/gridfile.py`. |
 
 ## How this repo works
 
@@ -30,6 +34,7 @@ A live map of water temperature and salinity along Florida's Gulf coast from Eng
 - The scheduled workflow only runs from `main`. The hourly collector starts once its pull request is merged.
 - The Claude Code session environment should allow these domains so sources can be tested from the session:
   `*.noaa.gov`, `*.usgs.gov`, `erddap.secoora.org`, `erddap.gcoos.org`, `erddap.sensors.ioos.us`, `recon.sccf.org`.
+  Rebuilding the water mask also needs `prd-tnm.s3.amazonaws.com` (USGS National Hydrography Dataset downloads).
   A 403 with `x-deny-reason: host_not_allowed` means the session allowlist blocked it, not the source.
 
 ## Build rules
@@ -41,9 +46,13 @@ A live map of water temperature and salinity along Florida's Gulf coast from Eng
 - GitHub disables scheduled workflows in public repos after 60 days with no repository activity. The collector's commits should count as activity, but confirm.
 - Keep large grids out of git history. Each day's hourly GOES-19 subset is one compressed NetCDF file attached to a GitHub Release (confirmed). Raw sensor readings live in the repo as plain CSV daily files (confirmed).
 - Convert everything to UTC and consistent units. Display temperature in °F.
+- Never change the raw files in `data/sensors/`. QC flags and cleaned values are a separate layer.
+- The water mask (`data/grid/water_fine.png`) is rebuilt by hand with `python -m processing.shoreline`, only when the grid or the list of barriers changes. The water-path distance cache keys on its hash.
 - Style for docs, UI text, code comments and commit messages: plain language, no em dashes.
 
 ## Pipeline
+
+Steps 2 and 3 are in `processing/` and run in the hourly workflow right after collection; details and the leave-one-out results are in `docs/processing.md`.
 
 1. **Hourly collector** (scheduled GitHub Actions job): pulls every source inside the area.
 2. **Clean and tag:** range checks, spike removal, flatline/stuck-sensor and stale-data detection. Tag depth: buoys report several depths, and the main map uses near-surface, with an optional bottom toggle.
@@ -93,12 +102,15 @@ History features: scrub any day back to 2012 or any hour in the last 2 years; a 
 1. Done: repository created (`captainsforcleanwater/swfl-water-map`).
 2. Done: the collector in `collector/`, inventory in `STATIONS.md`. Write the collector. **Its first run produces the station inventory:** every sensor in the area with ID, provider, location, cadence, depth and whether it measures salinity. Commit it as a readable file.
 3. Done: `.github/workflows/collect.yml`, first run 2026-11-14. Start the hourly collector and archiving immediately, before the map is polished. GOES-19 hourly history older than about 5 days can't be recovered later.
-4. Backfill daily history to 2012.
-5. Ship the v1 map with the salinity layer and history.
+4. Done: clean and blend (`processing/`, `docs/processing.md`). Runs after each collection; hourly grids go to releases `blend-hourly-YYYY-MM`.
+5. Backfill daily history to 2012.
+6. Ship the v1 map with the salinity layer and history. Its style is chosen separately. Release files cannot be fetched by a browser directly (no CORS headers), so the map step must pick how to serve the grids.
 
 ## Open questions for CFCW
 
 - Approve or adjust the history plan.
-- Confirm Florida Bay is in.
+- Bottom-only gauges (six USGS sites in the Ten Thousand Islands and Florida Bay creeks, and Broad River's mid-depth sensor) are left out of the near-surface grids. Use them as near-surface stand-ins where the water is shallow and well mixed?
+- USGS reports salinity in whole PSU at several sites, though conductance is reported more finely. Use PSS-78 from conductance at every USGS site instead?
+- How should the map serve the hourly grid files: copy recent days to GitHub Pages, a small CORS proxy, or object storage?
 - Is the map public from day one, or internal first?
 - SCCF RECON access: is there a contact at SCCF who could provide a data feed if needed?
