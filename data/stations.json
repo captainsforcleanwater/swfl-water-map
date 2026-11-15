@@ -4336,7 +4336,7 @@
    "depths": [
     "surface"
    ],
-   "last_obs": "2026-11-15T08:06:00Z",
+   "last_obs": "2026-11-15T08:54:00Z",
    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8725520",
    "notes": "Sensor depth not published in the API; treated as near-surface.",
    "extra": {},
@@ -4361,7 +4361,7 @@
    "depths": [
     "surface"
    ],
-   "last_obs": "2026-11-15T08:06:00Z",
+   "last_obs": "2026-11-15T08:54:00Z",
    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8724580",
    "notes": "Sensor depth not published in the API; treated as near-surface.",
    "extra": {},
@@ -4386,7 +4386,7 @@
    "depths": [
     "surface"
    ],
-   "last_obs": "2026-11-15T08:06:00Z",
+   "last_obs": "2026-11-15T08:54:00Z",
    "url": "https://tidesandcurrents.noaa.gov/stationhome.html?id=8723970",
    "notes": "Sensor depth not published in the API; treated as near-surface.",
    "extra": {},
@@ -4454,7 +4454,7 @@
     "mid 1.4 m",
     "mid 1.5 m"
    ],
-   "last_obs": "2026-11-15T07:00:00Z",
+   "last_obs": "2026-11-15T08:00:00Z",
    "url": "https://www.ndbc.noaa.gov/station_page.php?station=rkqf1",
    "notes": "NDBC program: NERRS; type fixed",
    "extra": {
@@ -4511,7 +4511,7 @@
    "depths": [
     "surface 0 m"
    ],
-   "last_obs": "2026-11-15T07:00:00Z",
+   "last_obs": "2026-11-15T08:00:00Z",
    "url": "https://erddap.gcoos.org/erddap/tabledap/SCCF_11.html",
    "notes": "Dataset vertical range 0.0 to 0.0 m",
    "extra": {
@@ -4554,7 +4554,7 @@
    "depths": [
     "surface 0 m"
    ],
-   "last_obs": "2026-11-15T07:00:00Z",
+   "last_obs": "2026-11-15T08:00:00Z",
    "url": "https://erddap.gcoos.org/erddap/tabledap/SCCF_1111.html",
    "notes": "Dataset vertical range 0.0 to 0.0 m",
    "extra": {
@@ -4597,7 +4597,7 @@
    "depths": [
     "surface 0 m"
    ],
-   "last_obs": "2026-11-15T07:00:00Z",
+   "last_obs": "2026-11-15T08:00:00Z",
    "url": "https://erddap.gcoos.org/erddap/tabledap/SCCF_13.html",
    "notes": "Dataset vertical range 0.0 to 0.0 m",
    "extra": {
@@ -4640,7 +4640,7 @@
    "depths": [
     "surface 0 m"
    ],
-   "last_obs": "2026-11-15T07:00:00Z",
+   "last_obs": "2026-11-15T08:00:00Z",
    "url": "https://erddap.gcoos.org/erddap/tabledap/SCCF_18.html",
    "notes": "Dataset vertical range 0.0 to 0.0 m",
    "extra": {
@@ -4724,7 +4724,7 @@
    "depths": [
     "surface 0 m"
    ],
-   "last_obs": "2026-11-15T07:00:00Z",
+   "last_obs": "2026-11-15T08:00:00Z",
    "url": "https://erddap.gcoos.org/erddap/tabledap/SCCF_53.html",
    "notes": "Dataset vertical range 0.0 to 0.0 m",
    "extra": {
@@ -4767,7 +4767,7 @@
    "depths": [
     "surface 0 m"
    ],
-   "last_obs": "2026-11-15T07:00:00Z",
+   "last_obs": "2026-11-15T08:00:00Z",
    "url": "https://erddap.gcoos.org/erddap/tabledap/SCCF_56.html",
    "notes": "Dataset vertical range 0.0 to 0.0 m",
    "extra": {
@@ -5021,7 +5021,7 @@
    "depths": [
     "surface"
    ],
-   "last_obs": "2026-11-15T06:35:00Z",
+   "last_obs": "2026-11-15T07:35:00Z",
    "url": "https://erddap.gcoos.org/erddap/tabledap/USF_COMPS_C10.html",
    "notes": "Dataset vertical range 0.0 to 20.8 m",
    "extra": {
@@ -5200,7 +5200,7 @@
    "depths": [
     "surface"
    ],
-   "last_obs": "2026-11-15T07:30:00Z",
+   "last_obs": "2026-11-15T08:30:00Z",
    "url": "https://waterdata.usgs.gov/monitoring-location/022908295/",
    "notes": "USGS site type ST (Stream)",
    "extra": {
@@ -5249,7 +5249,7 @@
    "depths": [
     "mid"
    ],
-   "last_obs": "2026-11-15T07:30:00Z",
+   "last_obs": "2026-11-15T08:30:00Z",
    "url": "https://waterdata.usgs.gov/monitoring-location/02290878/",
    "notes": "USGS site type ST-TS (Tidal stream)",
    "extra": {
@@ -5376,7 +5376,7 @@
    "depths": [
     "surface"
    ],
-   "last_obs": "2026-11-15T07:15:00Z",
+   "last_obs": "2026-11-15T08:15:00Z",
    "url": "https://waterdata.usgs.gov/monitoring-location/250802081035500/",
    "notes": "USGS site type ST-TS (Tidal stream)",
    "extra": {
@@ -5426,7 +5426,7 @@
     "bottom",
     "surface"
    ],
-   "last_obs": "2026-11-15T07:30:00Z",
+   "last_obs": "2026-11-15T08:30:00Z",
    "url": "https://waterdata.usgs.gov/monitoring-location/255138081321701/",
    "notes": "USGS site type ST (Stream)",
    "extra": {
@@ -5476,7 +5476,7 @@
     "bottom",
     "surface"
    ],
-   "last_obs": "2026-11-15T07:15:00Z",
+   "last_obs": "2026-11-15T08:15:00Z",
    "url": "https://waterdata.usgs.gov/monitoring-location/255726081303700/",
    "notes": "USGS site type ST (Stream)",
    "extra": {
@@ -5896,7 +5896,7 @@
    "depths": [
     "bottom"
    ],
-   "last_obs": "2026-11-15T07:15:00Z",
+   "last_obs": "2026-11-15T08:15:00Z",
    "url": "https://waterdata.usgs.gov/monitoring-location/255534081324000/",
    "notes": "USGS site type ST-TS (Tidal stream)",
    "extra": {
@@ -6113,7 +6113,7 @@
    "depths": [
     "surface"
    ],
-   "last_obs": "2026-11-15T07:45:00Z",
+   "last_obs": "2026-11-15T08:45:00Z",
    "url": "https://waterdata.usgs.gov/monitoring-location/02290930/",
    "notes": "USGS site type ST (Stream)",
    "extra": {
@@ -6221,7 +6221,7 @@
    "depths": [
     "surface"
    ],
-   "last_obs": "2026-11-15T07:15:00Z",
+   "last_obs": "2026-11-15T08:15:00Z",
    "url": "https://waterdata.usgs.gov/monitoring-location/254729080393601/",
    "notes": "USGS site type WE (Wetland)",
    "extra": {
@@ -6263,7 +6263,7 @@
    "depths": [
     "surface"
    ],
-   "last_obs": "2026-11-15T07:00:00Z",
+   "last_obs": "2026-11-15T08:00:00Z",
    "url": "https://waterdata.usgs.gov/monitoring-location/254923080384901/",
    "notes": "USGS site type WE (Wetland)",
    "extra": {
@@ -6305,7 +6305,7 @@
    "depths": [
     "surface"
    ],
-   "last_obs": "2026-11-15T07:15:00Z",
+   "last_obs": "2026-11-15T08:15:00Z",
    "url": "https://waterdata.usgs.gov/monitoring-location/254760080395601/",
    "notes": "USGS site type WE (Wetland)",
    "extra": {
@@ -6348,7 +6348,7 @@
    "depths": [
     "surface"
    ],
-   "last_obs": "2026-11-15T07:45:00Z",
+   "last_obs": "2026-11-15T08:45:00Z",
    "url": "https://waterdata.usgs.gov/monitoring-location/255151080371501/",
    "notes": "USGS site type ST-CA (Canal)",
    "extra": {
