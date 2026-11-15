@@ -1,108 +1,71 @@
 {
  "files_changed": {
   "data/sensors/2026/11/2026-11-15_coops.csv": {
-   "new": 30,
-   "rows": 66
+   "new": 21,
+   "rows": 87
   },
   "data/sensors/2026/11/2026-11-15_erddap-gcoos.csv": {
    "new": 27,
-   "rows": 38
+   "rows": 65
   },
   "data/sensors/2026/11/2026-11-15_ndbc.csv": {
    "new": 8,
-   "rows": 10
+   "rows": 18
   },
   "data/sensors/2026/11/2026-11-15_usgs.csv": {
-   "new": 268,
-   "rows": 447
+   "new": 164,
+   "rows": 611
   }
  },
- "finished": "2026-11-15T02:32:06Z",
+ "finished": "2026-11-15T03:02:27Z",
  "sensor_window": [
-  "2026-11-14T02:15:15Z",
-  "2026-11-15T02:15:15Z"
+  "2026-11-14T02:59:37Z",
+  "2026-11-15T02:59:37Z"
  ],
  "sources": {
   "coops": {
    "errors": {},
    "readings": 717,
-   "seconds": 0.5,
+   "seconds": 0.4,
    "stations_queried": 3,
    "stations_reporting": 3
   },
   "erddap": {
    "errors": {
-    "erddap-secoora:gov-ndbc-lonf1": "HTTPSConnectionPool(host='erddap.secoora.org', port=443): Max retries exceeded with url: /erddap/tabledap/gov-ndbc-lonf1.csv?time,z,sea_surface_temperature&time%3E=2026-11-14T02%3A15%3A15Z&time%3C=202",
-    "erddap-secoora:gov-nps-ever-bdvf1": "HTTPSConnectionPool(host='erddap.secoora.org', port=443): Max retries exceeded with url: /erddap/tabledap/gov-nps-ever-bdvf1.csv?time,z,sea_water_practical_salinity,sea_water_temperature&time%3E=2026-",
-    "erddap-secoora:gov-nps-ever-bkyf1": "HTTPSConnectionPool(host='erddap.secoora.org', port=443): Max retries exceeded with url: /erddap/tabledap/gov-nps-ever-bkyf1.csv?time,z,sea_water_practical_salinity,sea_water_temperature&time%3E=2026-",
-    "erddap-secoora:gov-nps-ever-bnkf1": "HTTPSConnectionPool(host='erddap.secoora.org', port=443): Max retries exceeded with url: /erddap/tabledap/gov-nps-ever-bnkf1.csv?time,z,sea_water_practical_salinity,sea_water_temperature&time%3E=2026-",
-    "erddap-secoora:gov-nps-ever-bobf1": "HTTPSConnectionPool(host='erddap.secoora.org', port=443): Max retries exceeded with url: /erddap/tabledap/gov-nps-ever-bobf1.csv?time,z,sea_water_practical_salinity,sea_water_temperature&time%3E=2026-",
-    "erddap-secoora:gov-nps-ever-bskf1": "HTTPSConnectionPool(host='erddap.secoora.org', port=443): Max retries exceeded with url: /erddap/tabledap/gov-nps-ever-bskf1.csv?time,z,sea_water_temperature&time%3E=2026-11-14T02%3A15%3A15Z&time%3C=2",
-    "erddap-secoora:gov-nps-ever-bwsf1": "HTTPSConnectionPool(host='erddap.secoora.org', port=443): Max retries exceeded with url: /erddap/tabledap/gov-nps-ever-bwsf1.csv?time,z,sea_water_practical_salinity,sea_water_temperature&time%3E=2026-",
-    "erddap-secoora:gov-nps-ever-canf1": "HTTPSConnectionPool(host='erddap.secoora.org', port=443): Max retries exceeded with url: /erddap/tabledap/gov-nps-ever-canf1.csv?time,z,sea_water_practical_salinity,sea_water_temperature&time%3E=2026-",
-    "erddap-secoora:gov-nps-ever-cnbf1": "HTTPSConnectionPool(host='erddap.secoora.org', port=443): Max retries exceeded with url: /erddap/tabledap/gov-nps-ever-cnbf1.csv?time,z,sea_water_practical_salinity,sea_water_temperature&time%3E=2026-",
-    "erddap-secoora:gov-nps-ever-cwaf1": "HTTPSConnectionPool(host='erddap.secoora.org', port=443): Max retries exceeded with url: /erddap/tabledap/gov-nps-ever-cwaf1.csv?time,z,sea_water_practical_salinity,sea_water_temperature&time%3E=2026-",
-    "erddap-secoora:gov-nps-ever-dkkf1": "HTTPSConnectionPool(host='erddap.secoora.org', port=443): Max retries exceeded with url: /erddap/tabledap/gov-nps-ever-dkkf1.csv?time,z,sea_water_practical_salinity,sea_water_temperature&time%3E=2026-",
-    "erddap-secoora:gov-nps-ever-gbif1": "HTTPSConnectionPool(host='erddap.secoora.org', port=443): Max retries exceeded with url: /erddap/tabledap/gov-nps-ever-gbif1.csv?time,z,sea_water_practical_salinity,sea_water_temperature&time%3E=2026-",
-    "erddap-secoora:gov-nps-ever-gbtf1": "HTTPSConnectionPool(host='erddap.secoora.org', port=443): Max retries exceeded with url: /erddap/tabledap/gov-nps-ever-gbtf1.csv?time,z,sea_water_practical_salinity,sea_water_temperature&time%3E=2026-",
-    "erddap-secoora:gov-nps-ever-hcef1": "HTTPSConnectionPool(host='erddap.secoora.org', port=443): Max retries exceeded with url: /erddap/tabledap/gov-nps-ever-hcef1.csv?time,z,sea_water_practical_salinity,sea_water_temperature&time%3E=2026-",
-    "erddap-secoora:gov-nps-ever-href1": "HTTPSConnectionPool(host='erddap.secoora.org', port=443): Max retries exceeded with url: /erddap/tabledap/gov-nps-ever-href1.csv?time,z,sea_water_practical_salinity,sea_water_temperature&time%3E=2026-",
-    "erddap-secoora:gov-nps-ever-jbyf1": "HTTPSConnectionPool(host='erddap.secoora.org', port=443): Max retries exceeded with url: /erddap/tabledap/gov-nps-ever-jbyf1.csv?time,z,sea_water_practical_salinity,sea_water_temperature&time%3E=2026-",
-    "erddap-secoora:gov-nps-ever-jkyf1": "HTTPSConnectionPool(host='erddap.secoora.org', port=443): Max retries exceeded with url: /erddap/tabledap/gov-nps-ever-jkyf1.csv?time,z,sea_water_practical_salinity,sea_water_temperature&time%3E=2026-",
-    "erddap-secoora:gov-nps-ever-lbsf1": "HTTPSConnectionPool(host='erddap.secoora.org', port=443): Max retries exceeded with url: /erddap/tabledap/gov-nps-ever-lbsf1.csv?time,z,sea_water_practical_salinity,sea_water_temperature&time%3E=2026-",
-    "erddap-secoora:gov-nps-ever-lmdf1": "HTTPSConnectionPool(host='erddap.secoora.org', port=443): Max retries exceeded with url: /erddap/tabledap/gov-nps-ever-lmdf1.csv?time,z,sea_water_practical_salinity,sea_water_temperature&time%3E=2026-",
-    "erddap-secoora:gov-nps-ever-lmrf1": "HTTPSConnectionPool(host='erddap.secoora.org', port=443): Max retries exceeded with url: /erddap/tabledap/gov-nps-ever-lmrf1.csv?time,z,sea_water_practical_salinity,sea_water_temperature&time%3E=2026-",
-    "erddap-secoora:gov-nps-ever-lrif1": "HTTPSConnectionPool(host='erddap.secoora.org', port=443): Max retries exceeded with url: /erddap/tabledap/gov-nps-ever-lrif1.csv?time,z,sea_water_practical_salinity,sea_water_temperature&time%3E=2026-",
-    "erddap-secoora:gov-nps-ever-lrkf1": "HTTPSConnectionPool(host='erddap.secoora.org', port=443): Max retries exceeded with url: /erddap/tabledap/gov-nps-ever-lrkf1.csv?time,z,sea_water_practical_salinity,sea_water_temperature&time%3E=2026-",
-    "erddap-secoora:gov-nps-ever-lsnf1": "HTTPSConnectionPool(host='erddap.secoora.org', port=443): Max retries exceeded with url: /erddap/tabledap/gov-nps-ever-lsnf1.csv?time,z,sea_water_practical_salinity,sea_water_temperature&time%3E=2026-",
-    "erddap-secoora:gov-nps-ever-mdkf1": "HTTPSConnectionPool(host='erddap.secoora.org', port=443): Max retries exceeded with url: /erddap/tabledap/gov-nps-ever-mdkf1.csv?time,z,sea_water_practical_salinity,sea_water_temperature&time%3E=2026-",
-    "erddap-secoora:gov-nps-ever-mnbf1": "HTTPSConnectionPool(host='erddap.secoora.org', port=443): Max retries exceeded with url: /erddap/tabledap/gov-nps-ever-mnbf1.csv?time,z,sea_water_practical_salinity,sea_water_temperature&time%3E=2026-",
-    "erddap-secoora:gov-nps-ever-mukf1": "HTTPSConnectionPool(host='erddap.secoora.org', port=443): Max retries exceeded with url: /erddap/tabledap/gov-nps-ever-mukf1.csv?time,z,sea_water_practical_salinity,sea_water_temperature&time%3E=2026-",
-    "erddap-secoora:gov-nps-ever-nrrf1": "HTTPSConnectionPool(host='erddap.secoora.org', port=443): Max retries exceeded with url: /erddap/tabledap/gov-nps-ever-nrrf1.csv?time,z,sea_water_practical_salinity,sea_water_temperature&time%3E=2026-",
-    "erddap-secoora:gov-nps-ever-pkyf1": "HTTPSConnectionPool(host='erddap.secoora.org', port=443): Max retries exceeded with url: /erddap/tabledap/gov-nps-ever-pkyf1.csv?time,z,sea_water_practical_salinity,sea_water_temperature&time%3E=2026-",
-    "erddap-secoora:gov-nps-ever-sref1": "HTTPSConnectionPool(host='erddap.secoora.org', port=443): Max retries exceeded with url: /erddap/tabledap/gov-nps-ever-sref1.csv?time,z,sea_water_practical_salinity,sea_water_temperature&time%3E=2026-",
-    "erddap-secoora:gov-nps-ever-tbyf1": "HTTPSConnectionPool(host='erddap.secoora.org', port=443): Max retries exceeded with url: /erddap/tabledap/gov-nps-ever-tbyf1.csv?time,z,sea_water_practical_salinity,sea_water_temperature&time%3E=2026-",
-    "erddap-secoora:gov-nps-ever-tcvf1": "HTTPSConnectionPool(host='erddap.secoora.org', port=443): Max retries exceeded with url: /erddap/tabledap/gov-nps-ever-tcvf1.csv?time,z,sea_water_practical_salinity,sea_water_temperature&time%3E=2026-",
-    "erddap-secoora:gov-nps-ever-thrf1": "HTTPSConnectionPool(host='erddap.secoora.org', port=443): Max retries exceeded with url: /erddap/tabledap/gov-nps-ever-thrf1.csv?time,z,sea_water_practical_salinity,sea_water_temperature&time%3E=2026-",
-    "erddap-secoora:gov-nps-ever-tpef1": "HTTPSConnectionPool(host='erddap.secoora.org', port=443): Max retries exceeded with url: /erddap/tabledap/gov-nps-ever-tpef1.csv?time,z,sea_water_practical_salinity,sea_water_temperature&time%3E=2026-",
-    "erddap-secoora:gov-nps-ever-trrf1": "HTTPSConnectionPool(host='erddap.secoora.org', port=443): Max retries exceeded with url: /erddap/tabledap/gov-nps-ever-trrf1.csv?time,z,sea_water_practical_salinity,sea_water_temperature&time%3E=2026-",
-    "erddap-secoora:gov-nps-ever-wiwf1": "HTTPSConnectionPool(host='erddap.secoora.org', port=443): Max retries exceeded with url: /erddap/tabledap/gov-nps-ever-wiwf1.csv?time,z,sea_water_practical_salinity,sea_water_temperature&time%3E=2026-",
-    "erddap-secoora:gov-nps-ever-wplf1": "HTTPSConnectionPool(host='erddap.secoora.org', port=443): Max retries exceeded with url: /erddap/tabledap/gov-nps-ever-wplf1.csv?time,z,sea_water_practical_salinity,sea_water_temperature&time%3E=2026-",
-    "erddap-secoora:gov-nps-ever-wrbf1": "HTTPSConnectionPool(host='erddap.secoora.org', port=443): Max retries exceeded with url: /erddap/tabledap/gov-nps-ever-wrbf1.csv?time,z,sea_water_practical_salinity,sea_water_temperature&time%3E=2026-",
-    "erddap-secoora:gov-nps-ever-wwef1": "HTTPSConnectionPool(host='erddap.secoora.org', port=443): Max retries exceeded with url: /erddap/tabledap/gov-nps-ever-wwef1.csv?time,z,sea_water_practical_salinity,sea_water_temperature&time%3E=2026-",
+    "erddap-secoora:gov-ndbc-lonf1": "HTTPSConnectionPool(host='erddap.secoora.org', port=443): Max retries exceeded with url: /erddap/tabledap/gov-ndbc-lonf1.csv?time,z,sea_surface_temperature&time%3E=2026-11-14T02%3A59%3A37Z&time%3C=202",
     "erddap-secoora:gulf-star-marina": "HTTPSConnectionPool(host='erddap.secoora.org', port=443): Max retries exceeded with url: /erddap/tabledap/gulf-star-marina.csv?time,z,sea_water_practical_salinity,sea_water_temperature&time%3E=2026-11",
     "erddap-secoora:key-largo-fl": "HTTPSConnectionPool(host='erddap.secoora.org', port=443): Max retries exceeded with url: /erddap/tabledap/key-largo-fl.csv?time,z,sea_water_practical_salinity,sea_water_temperature&time%3E=2026-11-14T",
     "erddap-secoora:new-pass-bridge": "HTTPSConnectionPool(host='erddap.secoora.org', port=443): Max retries exceeded with url: /erddap/tabledap/new-pass-bridge.csv?time,z,sea_water_practical_salinity,sea_water_temperature&time%3E=2026-11-"
    },
-   "readings": 595,
-   "seconds": 1008.5,
+   "readings": 2050,
+   "seconds": 167.8,
    "stations_queried": 58,
-   "stations_reporting": 10
+   "stations_reporting": 46
   },
   "goes19": {
-   "added": 2,
+   "added": 0,
    "errors": {},
-   "missing_before_run": 2,
-   "seconds": 4.3,
+   "missing_before_run": 0,
+   "seconds": 0.5,
    "server_first": "2026-11-10T17:00:00Z",
    "server_last": "2026-11-14T22:00:00Z",
    "store": "release"
   },
   "ndbc": {
    "errors": {},
-   "readings": 174,
-   "seconds": 0.6,
+   "readings": 178,
+   "seconds": 0.9,
    "stations_queried": 2,
    "stations_reporting": 1
   },
   "usgs": {
    "errors": {},
-   "readings": 6037,
-   "seconds": 1.5,
+   "readings": 6071,
+   "seconds": 1.0,
    "stations_queried": 28,
    "stations_reporting": 19
   }
  },
- "started": "2026-11-15T02:15:11Z",
- "total_readings": 7523
+ "started": "2026-11-15T02:59:36Z",
+ "total_readings": 9016
 }
