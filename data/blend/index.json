@@ -46,7 +46,7 @@
   },
   "2026-11-10": {
    "asset": "swfl_blend_hourly_2026-11-10.bin.gz",
-   "bytes": 981392,
+   "bytes": 1000862,
    "hours": {
     "00": {
      "blended": "2026-11-14T19:52:50Z",
@@ -63,889 +63,1025 @@
      "sig": "4e6f33912a4b"
     },
     "02": {
-     "blended": "2026-11-14T19:52:50Z",
+     "blended": "2026-11-15T02:35:03Z",
      "goes_newest": "2026-11-10T02:00:00Z",
      "n_sal": 0,
      "n_temp": 0,
-     "sig": "7849aa078c3f"
+     "sig": "fe6e931d9a9a",
+     "v": 2
     },
     "03": {
-     "blended": "2026-11-14T19:52:50Z",
+     "blended": "2026-11-15T02:35:03Z",
      "goes_newest": "2026-11-10T03:00:00Z",
      "n_sal": 0,
      "n_temp": 0,
-     "sig": "e6fd9e4f4511"
+     "sig": "7a8059dd06ae",
+     "v": 2
     },
     "04": {
-     "blended": "2026-11-14T19:52:50Z",
+     "blended": "2026-11-15T02:35:02Z",
      "goes_newest": "2026-11-10T04:00:00Z",
      "n_sal": 0,
      "n_temp": 0,
-     "sig": "5cd84655efd2"
+     "sig": "a857976d4ea7",
+     "v": 2
     },
     "05": {
-     "blended": "2026-11-14T19:52:50Z",
+     "blended": "2026-11-15T02:35:02Z",
      "goes_newest": "2026-11-10T05:00:00Z",
      "n_sal": 0,
      "n_temp": 0,
-     "sig": "f81569995bd7"
+     "sig": "4fb84bfa3161",
+     "v": 2
     },
     "06": {
-     "blended": "2026-11-14T19:52:50Z",
+     "blended": "2026-11-15T02:35:02Z",
      "goes_newest": "2026-11-10T06:00:00Z",
      "n_sal": 0,
      "n_temp": 0,
-     "sig": "18f1543bc433"
+     "sig": "95f4450bc868",
+     "v": 2
     },
     "07": {
-     "blended": "2026-11-14T19:52:49Z",
+     "blended": "2026-11-15T02:35:02Z",
      "goes_newest": "2026-11-10T07:00:00Z",
      "n_sal": 0,
      "n_temp": 0,
-     "sig": "cdd42f90ae86"
+     "sig": "a2c22b57b7e1",
+     "v": 2
     },
     "08": {
-     "blended": "2026-11-14T19:52:49Z",
+     "blended": "2026-11-15T02:35:02Z",
      "goes_newest": "2026-11-10T08:00:00Z",
      "n_sal": 0,
      "n_temp": 0,
-     "sig": "f90d990b0096"
+     "sig": "10634144b375",
+     "v": 2
     },
     "09": {
-     "blended": "2026-11-14T19:52:49Z",
+     "blended": "2026-11-15T02:35:02Z",
      "goes_newest": "2026-11-10T09:00:00Z",
      "n_sal": 0,
      "n_temp": 0,
-     "sig": "79a180cd0d82"
+     "sig": "a4d0329c241f",
+     "v": 2
     },
     "10": {
-     "blended": "2026-11-14T19:52:49Z",
+     "blended": "2026-11-15T02:35:02Z",
      "goes_newest": "2026-11-10T10:00:00Z",
      "n_sal": 0,
      "n_temp": 0,
-     "sig": "26d868c97fc8"
+     "sig": "e7c83b1958cd",
+     "v": 2
     },
     "11": {
-     "blended": "2026-11-14T19:52:49Z",
+     "blended": "2026-11-15T02:35:02Z",
      "goes_newest": "2026-11-10T11:00:00Z",
      "n_sal": 0,
      "n_temp": 0,
-     "sig": "138b3b5f104a"
+     "sig": "faa74a0b4e63",
+     "v": 2
     },
     "12": {
-     "blended": "2026-11-14T19:52:49Z",
+     "blended": "2026-11-15T02:35:02Z",
      "goes_newest": "2026-11-10T12:00:00Z",
      "n_sal": 0,
      "n_temp": 0,
-     "sig": "95341957c39d"
+     "sig": "8780eabf4c6c",
+     "v": 2
     },
     "13": {
-     "blended": "2026-11-14T19:52:49Z",
+     "blended": "2026-11-15T02:35:02Z",
      "goes_newest": "2026-11-10T13:00:00Z",
      "n_sal": 0,
      "n_temp": 0,
-     "sig": "5e30a3ce855c"
+     "sig": "3a37d29dd3f6",
+     "v": 2
     },
     "14": {
-     "blended": "2026-11-14T19:52:49Z",
+     "blended": "2026-11-15T02:35:02Z",
      "goes_newest": "2026-11-10T14:00:00Z",
      "n_sal": 0,
      "n_temp": 0,
-     "sig": "2954e427365d"
+     "sig": "f40eaf15bfa7",
+     "v": 2
     },
     "15": {
-     "blended": "2026-11-14T19:52:49Z",
+     "blended": "2026-11-15T02:35:01Z",
      "goes_newest": "2026-11-10T15:00:00Z",
      "n_sal": 0,
      "n_temp": 0,
-     "sig": "a96300866304"
+     "sig": "ecb2860068ce",
+     "v": 2
     },
     "16": {
-     "blended": "2026-11-14T19:52:49Z",
+     "blended": "2026-11-15T02:35:01Z",
      "goes_newest": "2026-11-10T16:00:00Z",
      "n_sal": 0,
      "n_temp": 0,
-     "sig": "e00e0d198e2f"
+     "sig": "3ecade7cf651",
+     "v": 2
     },
     "17": {
-     "blended": "2026-11-14T19:52:49Z",
+     "blended": "2026-11-15T02:35:01Z",
      "goes_newest": "2026-11-10T17:00:00Z",
      "n_sal": 0,
      "n_temp": 0,
-     "sig": "3f91792b0f1e"
+     "sig": "a09f55425fd5",
+     "v": 2
     },
     "18": {
-     "blended": "2026-11-14T19:52:48Z",
+     "blended": "2026-11-15T02:35:01Z",
      "goes_newest": "2026-11-10T18:00:00Z",
      "n_sal": 0,
      "n_temp": 0,
-     "sig": "26284daf7adb"
+     "sig": "ada368cd413d",
+     "v": 2
     },
     "19": {
-     "blended": "2026-11-14T19:52:48Z",
+     "blended": "2026-11-15T02:35:01Z",
      "goes_newest": "2026-11-10T19:00:00Z",
      "n_sal": 0,
      "n_temp": 0,
-     "sig": "1be6d2b71c3d"
+     "sig": "df366926a07d",
+     "v": 2
     },
     "20": {
-     "blended": "2026-11-14T19:52:48Z",
+     "blended": "2026-11-15T02:35:01Z",
      "goes_newest": "2026-11-10T20:00:00Z",
      "n_sal": 0,
      "n_temp": 0,
-     "sig": "894c26b60f46"
+     "sig": "ff6d423719c8",
+     "v": 2
     },
     "21": {
-     "blended": "2026-11-14T19:52:48Z",
+     "blended": "2026-11-15T02:35:01Z",
      "goes_newest": "2026-11-10T21:00:00Z",
      "n_sal": 0,
      "n_temp": 0,
-     "sig": "b794a0f8dde4"
+     "sig": "6fb82c1ba8fd",
+     "v": 2
     },
     "22": {
-     "blended": "2026-11-14T19:52:48Z",
+     "blended": "2026-11-15T02:35:01Z",
      "goes_newest": "2026-11-10T22:00:00Z",
      "n_sal": 0,
      "n_temp": 0,
-     "sig": "e821815e27c7"
+     "sig": "dfa3853ad588",
+     "v": 2
     },
     "23": {
-     "blended": "2026-11-14T19:52:48Z",
+     "blended": "2026-11-15T02:35:01Z",
      "goes_newest": "2026-11-10T23:00:00Z",
      "n_sal": 0,
      "n_temp": 0,
-     "sig": "eee226166699"
+     "sig": "47dd93ed4729",
+     "v": 2
     }
    },
    "release_tag": "blend-hourly-2026-11",
-   "updated": "2026-11-14T19:52:56Z",
+   "updated": "2026-11-15T02:35:08Z",
    "url": "https://github.com/captainsforcleanwater/swfl-water-map/releases/download/blend-hourly-2026-11/swfl_blend_hourly_2026-11-10.bin.gz"
   },
   "2026-11-11": {
    "asset": "swfl_blend_hourly_2026-11-11.bin.gz",
-   "bytes": 1162201,
+   "bytes": 1197438,
    "hours": {
     "00": {
-     "blended": "2026-11-14T19:52:42Z",
+     "blended": "2026-11-15T02:34:54Z",
      "goes_newest": "2026-11-11T00:00:00Z",
      "n_sal": 0,
      "n_temp": 0,
-     "sig": "11ddebd34765"
+     "sig": "d34228f1bc42",
+     "v": 2
     },
     "01": {
-     "blended": "2026-11-14T19:52:41Z",
+     "blended": "2026-11-15T02:34:54Z",
      "goes_newest": "2026-11-11T01:00:00Z",
      "n_sal": 0,
      "n_temp": 0,
-     "sig": "af076e3ba89b"
+     "sig": "0b579f6a3f7d",
+     "v": 2
     },
     "02": {
-     "blended": "2026-11-14T19:52:41Z",
+     "blended": "2026-11-15T02:34:54Z",
      "goes_newest": "2026-11-11T02:00:00Z",
      "n_sal": 0,
      "n_temp": 0,
-     "sig": "11efa1b07bc5"
+     "sig": "f764c181f7a3",
+     "v": 2
     },
     "03": {
-     "blended": "2026-11-14T19:52:41Z",
+     "blended": "2026-11-15T02:34:53Z",
      "goes_newest": "2026-11-11T03:00:00Z",
      "n_sal": 0,
      "n_temp": 0,
-     "sig": "fe171c1ddfc7"
+     "sig": "356c7761f898",
+     "v": 2
     },
     "04": {
-     "blended": "2026-11-14T19:52:41Z",
+     "blended": "2026-11-15T02:34:53Z",
      "goes_newest": "2026-11-11T04:00:00Z",
      "n_sal": 0,
      "n_temp": 0,
-     "sig": "082e28e1bd76"
+     "sig": "d4f5b3f9e636",
+     "v": 2
     },
     "05": {
-     "blended": "2026-11-14T19:52:41Z",
+     "blended": "2026-11-15T02:34:53Z",
      "goes_newest": "2026-11-11T05:00:00Z",
      "n_sal": 0,
      "n_temp": 0,
-     "sig": "48addbc71ee0"
+     "sig": "2dbe4e35ab78",
+     "v": 2
     },
     "06": {
-     "blended": "2026-11-14T19:52:41Z",
+     "blended": "2026-11-15T02:34:53Z",
      "goes_newest": "2026-11-11T06:00:00Z",
      "n_sal": 0,
      "n_temp": 0,
-     "sig": "b6bda2eee4d3"
+     "sig": "95246ce93257",
+     "v": 2
     },
     "07": {
-     "blended": "2026-11-14T19:52:41Z",
+     "blended": "2026-11-15T02:34:53Z",
      "goes_newest": "2026-11-11T07:00:00Z",
      "n_sal": 0,
      "n_temp": 0,
-     "sig": "c98ad4b94bc1"
+     "sig": "8070e8874d9c",
+     "v": 2
     },
     "08": {
-     "blended": "2026-11-14T19:52:41Z",
+     "blended": "2026-11-15T02:34:53Z",
      "goes_newest": "2026-11-11T08:00:00Z",
      "n_sal": 0,
      "n_temp": 0,
-     "sig": "02e358106e37"
+     "sig": "f895ec646708",
+     "v": 2
     },
     "09": {
-     "blended": "2026-11-14T19:52:41Z",
+     "blended": "2026-11-15T02:34:53Z",
      "goes_newest": "2026-11-11T09:00:00Z",
      "n_sal": 0,
      "n_temp": 0,
-     "sig": "cc4d09388b77"
+     "sig": "b3c5dc234491",
+     "v": 2
     },
     "10": {
-     "blended": "2026-11-14T19:52:41Z",
+     "blended": "2026-11-15T02:34:53Z",
      "goes_newest": "2026-11-11T10:00:00Z",
      "n_sal": 0,
      "n_temp": 0,
-     "sig": "11f6dca51d06"
+     "sig": "be35773aa34d",
+     "v": 2
     },
     "11": {
-     "blended": "2026-11-14T19:52:41Z",
+     "blended": "2026-11-15T02:34:53Z",
      "goes_newest": "2026-11-11T11:00:00Z",
      "n_sal": 0,
      "n_temp": 0,
-     "sig": "73062c5315d5"
+     "sig": "6c1934529201",
+     "v": 2
     },
     "12": {
-     "blended": "2026-11-14T19:52:40Z",
+     "blended": "2026-11-15T02:34:53Z",
      "goes_newest": "2026-11-11T12:00:00Z",
      "n_sal": 0,
      "n_temp": 0,
-     "sig": "41bc8c9b1615"
+     "sig": "d99ae255f236",
+     "v": 2
     },
     "13": {
-     "blended": "2026-11-14T19:52:40Z",
+     "blended": "2026-11-15T02:34:52Z",
      "goes_newest": "2026-11-11T13:00:00Z",
      "n_sal": 0,
      "n_temp": 0,
-     "sig": "dc00a37d2539"
+     "sig": "fd4a17fbccf3",
+     "v": 2
     },
     "14": {
-     "blended": "2026-11-14T19:52:40Z",
+     "blended": "2026-11-15T02:34:52Z",
      "goes_newest": "2026-11-11T14:00:00Z",
      "n_sal": 0,
      "n_temp": 0,
-     "sig": "2801e67194c8"
+     "sig": "717a175ff322",
+     "v": 2
     },
     "15": {
-     "blended": "2026-11-14T19:52:40Z",
+     "blended": "2026-11-15T02:34:52Z",
      "goes_newest": "2026-11-11T15:00:00Z",
      "n_sal": 0,
      "n_temp": 0,
-     "sig": "93661ab72ac3"
+     "sig": "759d6b826455",
+     "v": 2
     },
     "16": {
-     "blended": "2026-11-14T19:52:40Z",
+     "blended": "2026-11-15T02:34:52Z",
      "goes_newest": "2026-11-11T16:00:00Z",
      "n_sal": 0,
      "n_temp": 0,
-     "sig": "bebcd03e37a2"
+     "sig": "c16ee43aa9a9",
+     "v": 2
     },
     "17": {
-     "blended": "2026-11-14T19:52:40Z",
+     "blended": "2026-11-15T02:34:52Z",
      "goes_newest": "2026-11-11T17:00:00Z",
      "n_sal": 49,
-     "n_temp": 50,
-     "sig": "cb4a2c8a5f98"
+     "n_temp": 58,
+     "sig": "3be72ec0e0fe",
+     "v": 2
     },
     "18": {
-     "blended": "2026-11-14T19:52:39Z",
+     "blended": "2026-11-15T02:34:51Z",
      "goes_newest": "2026-11-11T18:00:00Z",
      "n_sal": 49,
-     "n_temp": 50,
-     "sig": "f1260e6a9964"
+     "n_temp": 58,
+     "sig": "efa5ddd0dc30",
+     "v": 2
     },
     "19": {
-     "blended": "2026-11-14T19:52:38Z",
+     "blended": "2026-11-15T02:34:50Z",
      "goes_newest": "2026-11-11T19:00:00Z",
      "n_sal": 49,
-     "n_temp": 50,
-     "sig": "b0c2e4c47be5"
+     "n_temp": 58,
+     "sig": "0464b9df7daa",
+     "v": 2
     },
     "20": {
-     "blended": "2026-11-14T19:52:37Z",
+     "blended": "2026-11-15T02:34:49Z",
      "goes_newest": "2026-11-11T20:00:00Z",
      "n_sal": 49,
-     "n_temp": 50,
-     "sig": "b537f130438b"
+     "n_temp": 58,
+     "sig": "dd2355faa006",
+     "v": 2
     },
     "21": {
-     "blended": "2026-11-14T19:52:36Z",
+     "blended": "2026-11-15T02:34:48Z",
      "goes_newest": "2026-11-11T21:00:00Z",
      "n_sal": 53,
-     "n_temp": 54,
-     "sig": "9a6f97f61e3b"
+     "n_temp": 62,
+     "sig": "f44475d5b5fe",
+     "v": 2
     },
     "22": {
-     "blended": "2026-11-14T19:52:35Z",
+     "blended": "2026-11-15T02:34:46Z",
      "goes_newest": "2026-11-11T22:00:00Z",
      "n_sal": 53,
-     "n_temp": 54,
-     "sig": "16095cec0646"
+     "n_temp": 62,
+     "sig": "e92476c259ba",
+     "v": 2
     },
     "23": {
-     "blended": "2026-11-14T19:52:34Z",
+     "blended": "2026-11-15T02:34:45Z",
      "goes_newest": "2026-11-11T23:00:00Z",
      "n_sal": 53,
-     "n_temp": 54,
-     "sig": "608094772276"
+     "n_temp": 62,
+     "sig": "a1b2db8d63ea",
+     "v": 2
     }
    },
    "release_tag": "blend-hourly-2026-11",
-   "updated": "2026-11-14T19:52:48Z",
+   "updated": "2026-11-15T02:34:59Z",
    "url": "https://github.com/captainsforcleanwater/swfl-water-map/releases/download/blend-hourly-2026-11/swfl_blend_hourly_2026-11-11.bin.gz"
   },
   "2026-11-12": {
    "asset": "swfl_blend_hourly_2026-11-12.bin.gz",
-   "bytes": 2436705,
+   "bytes": 2498988,
    "hours": {
     "00": {
-     "blended": "2026-11-14T19:52:20Z",
+     "blended": "2026-11-15T02:34:31Z",
      "goes_newest": "2026-11-12T00:00:00Z",
      "n_sal": 53,
-     "n_temp": 54,
-     "sig": "cd0694fbd9d6"
+     "n_temp": 62,
+     "sig": "50bfe6395cc6",
+     "v": 2
     },
     "01": {
-     "blended": "2026-11-14T19:52:19Z",
+     "blended": "2026-11-15T02:34:30Z",
      "goes_newest": "2026-11-12T01:00:00Z",
      "n_sal": 53,
-     "n_temp": 54,
-     "sig": "c79f6e9216d3"
+     "n_temp": 62,
+     "sig": "9c813d91964a",
+     "v": 2
     },
     "02": {
-     "blended": "2026-11-14T19:52:18Z",
+     "blended": "2026-11-15T02:34:29Z",
      "goes_newest": "2026-11-12T02:00:00Z",
      "n_sal": 53,
-     "n_temp": 54,
-     "sig": "da2f98f6dc5f"
+     "n_temp": 62,
+     "sig": "2f6bf0ae2a8f",
+     "v": 2
     },
     "03": {
-     "blended": "2026-11-14T19:52:17Z",
+     "blended": "2026-11-15T02:34:27Z",
      "goes_newest": "2026-11-12T03:00:00Z",
      "n_sal": 53,
-     "n_temp": 53,
-     "sig": "0a4e019d475f"
+     "n_temp": 61,
+     "sig": "3d2aa5375cf2",
+     "v": 2
     },
     "04": {
-     "blended": "2026-11-14T19:52:16Z",
+     "blended": "2026-11-15T02:34:26Z",
      "goes_newest": "2026-11-12T04:00:00Z",
      "n_sal": 53,
-     "n_temp": 53,
-     "sig": "5404a794b0c0"
+     "n_temp": 61,
+     "sig": "e6277d74b0d8",
+     "v": 2
     },
     "05": {
-     "blended": "2026-11-14T19:52:15Z",
+     "blended": "2026-11-15T02:34:25Z",
      "goes_newest": "2026-11-12T05:00:00Z",
      "n_sal": 52,
-     "n_temp": 53,
-     "sig": "17c5cdcba198"
+     "n_temp": 61,
+     "sig": "6dc6d32f5371",
+     "v": 2
     },
     "06": {
-     "blended": "2026-11-14T19:52:14Z",
+     "blended": "2026-11-15T02:34:24Z",
      "goes_newest": "2026-11-12T06:00:00Z",
      "n_sal": 52,
-     "n_temp": 53,
-     "sig": "3328f7ffed6f"
+     "n_temp": 61,
+     "sig": "1f8ead10e290",
+     "v": 2
     },
     "07": {
-     "blended": "2026-11-14T19:52:13Z",
+     "blended": "2026-11-15T02:34:23Z",
      "goes_newest": "2026-11-12T07:00:00Z",
      "n_sal": 52,
-     "n_temp": 53,
-     "sig": "d45890a2bb59"
+     "n_temp": 61,
+     "sig": "973bb1dee0ff",
+     "v": 2
     },
     "08": {
-     "blended": "2026-11-14T19:52:12Z",
+     "blended": "2026-11-15T02:34:21Z",
      "goes_newest": "2026-11-12T08:00:00Z",
      "n_sal": 52,
-     "n_temp": 53,
-     "sig": "5dd073eda4c1"
+     "n_temp": 61,
+     "sig": "c26f28e81abd",
+     "v": 2
     },
     "09": {
-     "blended": "2026-11-14T19:52:11Z",
+     "blended": "2026-11-15T02:34:20Z",
      "goes_newest": "2026-11-12T09:00:00Z",
      "n_sal": 52,
-     "n_temp": 53,
-     "sig": "8d3fa1277df4"
+     "n_temp": 61,
+     "sig": "4e3aba390a3d",
+     "v": 2
     },
     "10": {
-     "blended": "2026-11-14T19:52:10Z",
+     "blended": "2026-11-15T02:34:19Z",
      "goes_newest": "2026-11-12T10:00:00Z",
      "n_sal": 52,
-     "n_temp": 53,
-     "sig": "bba945a4c71b"
+     "n_temp": 61,
+     "sig": "8fafd3962fa9",
+     "v": 2
     },
     "11": {
-     "blended": "2026-11-14T19:52:09Z",
+     "blended": "2026-11-15T02:34:18Z",
      "goes_newest": "2026-11-12T11:00:00Z",
      "n_sal": 52,
-     "n_temp": 53,
-     "sig": "200ab4e909d7"
+     "n_temp": 61,
+     "sig": "b85375841469",
+     "v": 2
     },
     "12": {
-     "blended": "2026-11-14T19:52:08Z",
+     "blended": "2026-11-15T02:34:17Z",
      "goes_newest": "2026-11-12T12:00:00Z",
      "n_sal": 52,
-     "n_temp": 53,
-     "sig": "6f0234ccc813"
+     "n_temp": 61,
+     "sig": "30a68be19411",
+     "v": 2
     },
     "13": {
-     "blended": "2026-11-14T19:52:07Z",
+     "blended": "2026-11-15T02:34:15Z",
      "goes_newest": "2026-11-12T13:00:00Z",
      "n_sal": 53,
-     "n_temp": 54,
-     "sig": "3ea53d3c95ab"
+     "n_temp": 62,
+     "sig": "11074e421ef4",
+     "v": 2
     },
     "14": {
-     "blended": "2026-11-14T19:52:06Z",
+     "blended": "2026-11-15T02:34:14Z",
      "goes_newest": "2026-11-12T14:00:00Z",
      "n_sal": 53,
-     "n_temp": 54,
-     "sig": "bce9c41642d9"
+     "n_temp": 62,
+     "sig": "6f7d83aebe38",
+     "v": 2
     },
     "15": {
-     "blended": "2026-11-14T19:52:05Z",
+     "blended": "2026-11-15T02:34:13Z",
      "goes_newest": "2026-11-12T15:00:00Z",
      "n_sal": 53,
-     "n_temp": 54,
-     "sig": "d70d0af08184"
+     "n_temp": 62,
+     "sig": "05668a9c9d1a",
+     "v": 2
     },
     "16": {
-     "blended": "2026-11-14T19:52:04Z",
+     "blended": "2026-11-15T02:34:12Z",
      "goes_newest": "2026-11-12T16:00:00Z",
      "n_sal": 52,
-     "n_temp": 53,
-     "sig": "aa63c137facf"
+     "n_temp": 61,
+     "sig": "a5fe6365334a",
+     "v": 2
     },
     "17": {
-     "blended": "2026-11-14T19:52:03Z",
+     "blended": "2026-11-15T02:34:10Z",
      "goes_newest": "2026-11-12T17:00:00Z",
      "n_sal": 52,
-     "n_temp": 53,
-     "sig": "2394aea9aa21"
+     "n_temp": 61,
+     "sig": "ec4ab91aa0be",
+     "v": 2
     },
     "18": {
-     "blended": "2026-11-14T19:52:02Z",
+     "blended": "2026-11-15T02:34:09Z",
      "goes_newest": "2026-11-12T18:00:00Z",
      "n_sal": 52,
-     "n_temp": 53,
-     "sig": "b029a7d86458"
+     "n_temp": 61,
+     "sig": "ba906d127614",
+     "v": 2
     },
     "19": {
-     "blended": "2026-11-14T19:52:01Z",
+     "blended": "2026-11-15T02:34:08Z",
      "goes_newest": "2026-11-12T19:00:00Z",
      "n_sal": 52,
-     "n_temp": 53,
-     "sig": "9ad2bb74c39f"
+     "n_temp": 61,
+     "sig": "dc43cbc94f76",
+     "v": 2
     },
     "20": {
-     "blended": "2026-11-14T19:52:00Z",
+     "blended": "2026-11-15T02:34:07Z",
      "goes_newest": "2026-11-12T20:00:00Z",
      "n_sal": 53,
-     "n_temp": 54,
-     "sig": "d82117a4a3d9"
+     "n_temp": 62,
+     "sig": "d6af22f848ab",
+     "v": 2
     },
     "21": {
-     "blended": "2026-11-14T19:51:59Z",
+     "blended": "2026-11-15T02:34:06Z",
      "goes_newest": "2026-11-12T21:00:00Z",
      "n_sal": 53,
-     "n_temp": 54,
-     "sig": "630450014314"
+     "n_temp": 62,
+     "sig": "69fdad6ffb43",
+     "v": 2
     },
     "22": {
-     "blended": "2026-11-14T19:51:58Z",
+     "blended": "2026-11-15T02:34:04Z",
      "goes_newest": "2026-11-12T22:00:00Z",
      "n_sal": 53,
-     "n_temp": 54,
-     "sig": "346c71e90b54"
+     "n_temp": 62,
+     "sig": "32b457905ac0",
+     "v": 2
     },
     "23": {
-     "blended": "2026-11-14T19:51:58Z",
+     "blended": "2026-11-15T02:34:03Z",
      "goes_newest": "2026-11-12T23:00:00Z",
      "n_sal": 53,
-     "n_temp": 54,
-     "sig": "aa61b78d2b1d"
+     "n_temp": 62,
+     "sig": "745835c899c7",
+     "v": 2
     }
    },
    "release_tag": "blend-hourly-2026-11",
-   "updated": "2026-11-14T19:52:33Z",
+   "updated": "2026-11-15T02:34:43Z",
    "url": "https://github.com/captainsforcleanwater/swfl-water-map/releases/download/blend-hourly-2026-11/swfl_blend_hourly_2026-11-12.bin.gz"
   },
   "2026-11-13": {
    "asset": "swfl_blend_hourly_2026-11-13.bin.gz",
-   "bytes": 2575639,
+   "bytes": 2649231,
    "hours": {
     "00": {
-     "blended": "2026-11-14T19:51:42Z",
+     "blended": "2026-11-15T02:33:47Z",
      "goes_newest": "2026-11-13T00:00:00Z",
      "n_sal": 53,
-     "n_temp": 54,
-     "sig": "540d0177e6a4"
+     "n_temp": 62,
+     "sig": "ca385b188504",
+     "v": 2
     },
     "01": {
-     "blended": "2026-11-14T19:51:41Z",
+     "blended": "2026-11-15T02:33:45Z",
      "goes_newest": "2026-11-13T01:00:00Z",
      "n_sal": 53,
-     "n_temp": 54,
-     "sig": "dc80d4f647a7"
+     "n_temp": 62,
+     "sig": "d0a8f9c1fac4",
+     "v": 2
     },
     "02": {
-     "blended": "2026-11-14T19:51:40Z",
+     "blended": "2026-11-15T02:33:44Z",
      "goes_newest": "2026-11-13T02:00:00Z",
      "n_sal": 53,
-     "n_temp": 54,
-     "sig": "af0adb08e7c1"
+     "n_temp": 62,
+     "sig": "5317d79444ad",
+     "v": 2
     },
     "03": {
-     "blended": "2026-11-14T19:51:39Z",
+     "blended": "2026-11-15T02:33:43Z",
      "goes_newest": "2026-11-13T03:00:00Z",
      "n_sal": 53,
-     "n_temp": 54,
-     "sig": "c850e1a1bc2c"
+     "n_temp": 62,
+     "sig": "007a4d84e22b",
+     "v": 2
     },
     "04": {
-     "blended": "2026-11-14T19:51:38Z",
+     "blended": "2026-11-15T02:33:42Z",
      "goes_newest": "2026-11-13T04:00:00Z",
      "n_sal": 53,
-     "n_temp": 54,
-     "sig": "99745bbe69a0"
+     "n_temp": 62,
+     "sig": "f56b452a5c76",
+     "v": 2
     },
     "05": {
-     "blended": "2026-11-14T19:51:38Z",
+     "blended": "2026-11-15T02:33:40Z",
      "goes_newest": "2026-11-13T05:00:00Z",
      "n_sal": 53,
-     "n_temp": 54,
-     "sig": "3537d2c5d218"
+     "n_temp": 62,
+     "sig": "1f1bb0c6cfa7",
+     "v": 2
     },
     "06": {
-     "blended": "2026-11-14T19:51:37Z",
+     "blended": "2026-11-15T02:33:39Z",
      "goes_newest": "2026-11-13T06:00:00Z",
      "n_sal": 53,
-     "n_temp": 54,
-     "sig": "bc2bc72ef27d"
+     "n_temp": 62,
+     "sig": "41ef5c5c40bd",
+     "v": 2
     },
     "07": {
-     "blended": "2026-11-14T19:51:36Z",
+     "blended": "2026-11-15T02:33:38Z",
      "goes_newest": "2026-11-13T07:00:00Z",
      "n_sal": 53,
-     "n_temp": 54,
-     "sig": "f59dbdce94f2"
+     "n_temp": 62,
+     "sig": "ff23babcad49",
+     "v": 2
     },
     "08": {
-     "blended": "2026-11-14T19:51:35Z",
+     "blended": "2026-11-15T02:33:37Z",
      "goes_newest": "2026-11-13T08:00:00Z",
      "n_sal": 53,
-     "n_temp": 54,
-     "sig": "a64fd366cfc2"
+     "n_temp": 62,
+     "sig": "bf40557962fe",
+     "v": 2
     },
     "09": {
-     "blended": "2026-11-14T19:51:34Z",
+     "blended": "2026-11-15T02:33:36Z",
      "goes_newest": "2026-11-13T09:00:00Z",
      "n_sal": 53,
-     "n_temp": 54,
-     "sig": "f40247aa78ed"
+     "n_temp": 62,
+     "sig": "8470406e6490",
+     "v": 2
     },
     "10": {
-     "blended": "2026-11-14T19:51:33Z",
+     "blended": "2026-11-15T02:33:34Z",
      "goes_newest": "2026-11-13T10:00:00Z",
      "n_sal": 53,
-     "n_temp": 54,
-     "sig": "ddf63b5e5ff0"
+     "n_temp": 62,
+     "sig": "25642295b015",
+     "v": 2
     },
     "11": {
-     "blended": "2026-11-14T19:51:32Z",
+     "blended": "2026-11-15T02:33:33Z",
      "goes_newest": "2026-11-13T11:00:00Z",
      "n_sal": 53,
-     "n_temp": 54,
-     "sig": "9db915ea4fb0"
+     "n_temp": 62,
+     "sig": "3e295a7362fb",
+     "v": 2
     },
     "12": {
-     "blended": "2026-11-14T19:51:31Z",
+     "blended": "2026-11-15T02:33:32Z",
      "goes_newest": "2026-11-13T12:00:00Z",
      "n_sal": 53,
-     "n_temp": 54,
-     "sig": "164888a9c656"
+     "n_temp": 62,
+     "sig": "986377afa8a0",
+     "v": 2
     },
     "13": {
-     "blended": "2026-11-14T19:51:30Z",
+     "blended": "2026-11-15T02:33:31Z",
      "goes_newest": "2026-11-13T13:00:00Z",
      "n_sal": 53,
-     "n_temp": 54,
-     "sig": "52366845334e"
+     "n_temp": 62,
+     "sig": "1fe4389735c9",
+     "v": 2
     },
     "14": {
-     "blended": "2026-11-14T19:51:29Z",
+     "blended": "2026-11-15T02:33:30Z",
      "goes_newest": "2026-11-13T14:00:00Z",
      "n_sal": 53,
-     "n_temp": 54,
-     "sig": "9fc88b81d51a"
+     "n_temp": 62,
+     "sig": "5cba845b6f1d",
+     "v": 2
     },
     "15": {
-     "blended": "2026-11-14T19:51:28Z",
+     "blended": "2026-11-15T02:33:28Z",
      "goes_newest": "2026-11-13T15:00:00Z",
      "n_sal": 53,
-     "n_temp": 54,
-     "sig": "1d1f920979ea"
+     "n_temp": 62,
+     "sig": "ee54d390fbee",
+     "v": 2
     },
     "16": {
-     "blended": "2026-11-14T19:51:27Z",
+     "blended": "2026-11-15T02:33:27Z",
      "goes_newest": "2026-11-13T16:00:00Z",
      "n_sal": 53,
-     "n_temp": 54,
-     "sig": "cc3866dda686"
+     "n_temp": 62,
+     "sig": "5af8aa91e211",
+     "v": 2
     },
     "17": {
-     "blended": "2026-11-14T19:51:26Z",
+     "blended": "2026-11-15T02:33:26Z",
      "goes_newest": "2026-11-13T17:00:00Z",
      "n_sal": 53,
-     "n_temp": 54,
-     "sig": "0aa0eb2a5e0d"
+     "n_temp": 62,
+     "sig": "980c280438ff",
+     "v": 2
     },
     "18": {
-     "blended": "2026-11-14T19:51:25Z",
+     "blended": "2026-11-15T02:33:25Z",
      "goes_newest": "2026-11-13T18:00:00Z",
      "n_sal": 53,
-     "n_temp": 54,
-     "sig": "db9257abc026"
+     "n_temp": 62,
+     "sig": "abf8b29e6a11",
+     "v": 2
     },
     "19": {
-     "blended": "2026-11-14T19:51:24Z",
+     "blended": "2026-11-15T02:33:24Z",
      "goes_newest": "2026-11-13T19:00:00Z",
      "n_sal": 53,
-     "n_temp": 54,
-     "sig": "49eac6fde52b"
+     "n_temp": 62,
+     "sig": "31c5f04e9024",
+     "v": 2
     },
     "20": {
-     "blended": "2026-11-14T19:51:23Z",
+     "blended": "2026-11-15T02:33:22Z",
      "goes_newest": "2026-11-13T20:00:00Z",
      "n_sal": 53,
-     "n_temp": 54,
-     "sig": "4d6e56f7ad0f"
+     "n_temp": 62,
+     "sig": "124d0500e4b8",
+     "v": 2
     },
     "21": {
-     "blended": "2026-11-14T19:51:22Z",
+     "blended": "2026-11-15T02:33:21Z",
      "goes_newest": "2026-11-13T21:00:00Z",
      "n_sal": 53,
-     "n_temp": 54,
-     "sig": "282d480dc220"
+     "n_temp": 62,
+     "sig": "8615fc40eb2a",
+     "v": 2
     },
     "22": {
-     "blended": "2026-11-14T19:51:21Z",
+     "blended": "2026-11-15T02:33:20Z",
      "goes_newest": "2026-11-13T22:00:00Z",
      "n_sal": 53,
-     "n_temp": 54,
-     "sig": "20dbcb658a7a"
+     "n_temp": 62,
+     "sig": "8bebbd3e33d1",
+     "v": 2
     },
     "23": {
-     "blended": "2026-11-14T19:51:20Z",
+     "blended": "2026-11-15T02:33:19Z",
      "goes_newest": "2026-11-13T23:00:00Z",
      "n_sal": 53,
-     "n_temp": 54,
-     "sig": "15155124db32"
+     "n_temp": 62,
+     "sig": "8593ed8f0960",
+     "v": 2
     }
    },
    "release_tag": "blend-hourly-2026-11",
-   "updated": "2026-11-14T19:51:57Z",
+   "updated": "2026-11-15T02:34:01Z",
    "url": "https://github.com/captainsforcleanwater/swfl-water-map/releases/download/blend-hourly-2026-11/swfl_blend_hourly_2026-11-13.bin.gz"
   },
   "2026-11-14": {
    "asset": "swfl_blend_hourly_2026-11-14.bin.gz",
-   "bytes": 2656628,
+   "bytes": 2733160,
    "hours": {
     "00": {
-     "blended": "2026-11-14T19:51:06Z",
+     "blended": "2026-11-15T02:33:04Z",
      "goes_newest": "2026-11-14T00:00:00Z",
      "n_sal": 53,
-     "n_temp": 54,
-     "sig": "d9f8f522102c"
+     "n_temp": 62,
+     "sig": "583a11b5126a",
+     "v": 2
     },
     "01": {
-     "blended": "2026-11-14T19:51:05Z",
+     "blended": "2026-11-15T02:33:03Z",
      "goes_newest": "2026-11-14T01:00:00Z",
      "n_sal": 53,
-     "n_temp": 54,
-     "sig": "5a38d9f08510"
+     "n_temp": 62,
+     "sig": "fc4f97b9e2ed",
+     "v": 2
     },
     "02": {
-     "blended": "2026-11-14T19:51:04Z",
+     "blended": "2026-11-15T02:33:02Z",
      "goes_newest": "2026-11-14T02:00:00Z",
      "n_sal": 52,
-     "n_temp": 54,
-     "sig": "e4d1f2ebd876"
+     "n_temp": 62,
+     "sig": "60dd63739f12",
+     "v": 2
     },
     "03": {
-     "blended": "2026-11-14T19:51:03Z",
+     "blended": "2026-11-15T02:33:00Z",
      "goes_newest": "2026-11-14T03:00:00Z",
      "n_sal": 53,
-     "n_temp": 54,
-     "sig": "b6ad1323b117"
+     "n_temp": 62,
+     "sig": "ffd2a3b22102",
+     "v": 2
     },
     "04": {
-     "blended": "2026-11-14T19:51:02Z",
+     "blended": "2026-11-15T02:32:59Z",
      "goes_newest": "2026-11-14T04:00:00Z",
      "n_sal": 53,
-     "n_temp": 54,
-     "sig": "bdbb8a7ac7f7"
+     "n_temp": 62,
+     "sig": "729f0cbd568c",
+     "v": 2
     },
     "05": {
-     "blended": "2026-11-14T19:51:01Z",
+     "blended": "2026-11-15T02:32:58Z",
      "goes_newest": "2026-11-14T05:00:00Z",
      "n_sal": 53,
-     "n_temp": 54,
-     "sig": "5ca8d2a7ba01"
+     "n_temp": 62,
+     "sig": "b0e178edf7c1",
+     "v": 2
     },
     "06": {
-     "blended": "2026-11-14T19:51:00Z",
+     "blended": "2026-11-15T02:32:57Z",
      "goes_newest": "2026-11-14T06:00:00Z",
      "n_sal": 53,
-     "n_temp": 54,
-     "sig": "447dd94749d9"
+     "n_temp": 62,
+     "sig": "27cc092c9679",
+     "v": 2
     },
     "07": {
-     "blended": "2026-11-14T19:50:59Z",
+     "blended": "2026-11-15T02:32:56Z",
      "goes_newest": "2026-11-14T07:00:00Z",
      "n_sal": 53,
-     "n_temp": 54,
-     "sig": "be8b3a3d66f8"
+     "n_temp": 62,
+     "sig": "17f1809f7335",
+     "v": 2
     },
     "08": {
-     "blended": "2026-11-14T19:50:58Z",
+     "blended": "2026-11-15T02:32:54Z",
      "goes_newest": "2026-11-14T08:00:00Z",
      "n_sal": 53,
-     "n_temp": 54,
-     "sig": "732bca594f52"
+     "n_temp": 62,
+     "sig": "c9b3b47b066b",
+     "v": 2
     },
     "09": {
-     "blended": "2026-11-14T19:50:57Z",
+     "blended": "2026-11-15T02:32:53Z",
      "goes_newest": "2026-11-14T09:00:00Z",
      "n_sal": 53,
-     "n_temp": 54,
-     "sig": "380015d6a597"
+     "n_temp": 62,
+     "sig": "9794ab1658f3",
+     "v": 2
     },
     "10": {
-     "blended": "2026-11-14T19:50:56Z",
+     "blended": "2026-11-15T02:32:52Z",
      "goes_newest": "2026-11-14T10:00:00Z",
      "n_sal": 53,
-     "n_temp": 54,
-     "sig": "1243a4fb0591"
+     "n_temp": 62,
+     "sig": "8df0eb7d7dc9",
+     "v": 2
     },
     "11": {
-     "blended": "2026-11-14T19:50:55Z",
+     "blended": "2026-11-15T02:32:51Z",
      "goes_newest": "2026-11-14T11:00:00Z",
      "n_sal": 53,
-     "n_temp": 54,
-     "sig": "0b663fc5b985"
+     "n_temp": 62,
+     "sig": "043f2b5c8e7b",
+     "v": 2
     },
     "12": {
-     "blended": "2026-11-14T19:50:54Z",
+     "blended": "2026-11-15T02:32:49Z",
      "goes_newest": "2026-11-14T12:00:00Z",
      "n_sal": 53,
-     "n_temp": 54,
-     "sig": "017c5563fab0"
+     "n_temp": 62,
+     "sig": "287cae08e829",
+     "v": 2
     },
     "13": {
-     "blended": "2026-11-14T19:50:53Z",
+     "blended": "2026-11-15T02:32:48Z",
      "goes_newest": "2026-11-14T13:00:00Z",
      "n_sal": 53,
-     "n_temp": 54,
-     "sig": "349f32313510"
+     "n_temp": 62,
+     "sig": "5f20b4a78cc8",
+     "v": 2
     },
     "14": {
-     "blended": "2026-11-14T19:50:52Z",
+     "blended": "2026-11-15T02:32:47Z",
      "goes_newest": "2026-11-14T14:00:00Z",
      "n_sal": 53,
-     "n_temp": 54,
-     "sig": "b0e1f01da451"
+     "n_temp": 62,
+     "sig": "e827cc623b3b",
+     "v": 2
     },
     "15": {
-     "blended": "2026-11-14T19:50:51Z",
+     "blended": "2026-11-15T02:32:46Z",
      "goes_newest": "2026-11-14T15:00:00Z",
      "n_sal": 53,
-     "n_temp": 54,
-     "sig": "8c7eca922e63"
+     "n_temp": 62,
+     "sig": "5f2087e622bb",
+     "v": 2
     },
     "16": {
-     "blended": "2026-11-14T23:44:16Z",
+     "blended": "2026-11-15T02:32:45Z",
      "goes_newest": "2026-11-14T16:00:00Z",
      "n_sal": 53,
-     "n_temp": 54,
-     "sig": "b5cd4def4ccd"
+     "n_temp": 62,
+     "sig": "500fb1d74b23",
+     "v": 2
     },
     "17": {
-     "blended": "2026-11-14T23:44:15Z",
+     "blended": "2026-11-15T02:32:43Z",
      "goes_newest": "2026-11-14T17:00:00Z",
      "n_sal": 53,
-     "n_temp": 54,
-     "sig": "a93bc84ce87a"
+     "n_temp": 62,
+     "sig": "58ca28f2a844",
+     "v": 2
     },
     "18": {
-     "blended": "2026-11-14T23:44:14Z",
+     "blended": "2026-11-15T02:32:42Z",
      "goes_newest": "2026-11-14T18:00:00Z",
      "n_sal": 53,
-     "n_temp": 54,
-     "sig": "b135a3197a34"
+     "n_temp": 62,
+     "sig": "41c7d8127262",
+     "v": 2
     },
     "19": {
-     "blended": "2026-11-14T23:44:13Z",
+     "blended": "2026-11-15T02:32:41Z",
      "goes_newest": "2026-11-14T19:00:00Z",
      "n_sal": 53,
-     "n_temp": 54,
-     "sig": "b6d8818f3737"
+     "n_temp": 62,
+     "sig": "7bd55a9e11bb",
+     "v": 2
     },
     "20": {
-     "blended": "2026-11-14T23:44:12Z",
+     "blended": "2026-11-15T02:32:40Z",
      "goes_newest": "2026-11-14T20:00:00Z",
      "n_sal": 53,
-     "n_temp": 54,
-     "sig": "0296397ae2c4"
+     "n_temp": 62,
+     "sig": "07c41fd9669f",
+     "v": 2
     },
     "21": {
-     "blended": "2026-11-15T01:15:31Z",
-     "goes_newest": "2026-11-14T20:00:00Z",
+     "blended": "2026-11-15T02:32:38Z",
+     "goes_newest": "2026-11-14T21:00:00Z",
      "n_sal": 52,
-     "n_temp": 53,
-     "sig": "d1a3d0ba62e3"
+     "n_temp": 61,
+     "sig": "8940a04638d6",
+     "v": 2
     },
     "22": {
-     "blended": "2026-11-15T01:15:30Z",
-     "goes_newest": "2026-11-14T20:00:00Z",
+     "blended": "2026-11-15T02:32:37Z",
+     "goes_newest": "2026-11-14T22:00:00Z",
      "n_sal": 51,
-     "n_temp": 52,
-     "sig": "5a924fd44767"
+     "n_temp": 60,
+     "sig": "6f6a87268bed",
+     "v": 2
     },
     "23": {
-     "blended": "2026-11-15T01:15:29Z",
-     "goes_newest": "2026-11-14T20:00:00Z",
+     "blended": "2026-11-15T02:32:36Z",
+     "goes_newest": "2026-11-14T22:00:00Z",
      "n_sal": 17,
-     "n_temp": 19,
-     "sig": "d001cf08686d"
+     "n_temp": 27,
+     "sig": "604647879d94",
+     "v": 2
     }
    },
    "release_tag": "blend-hourly-2026-11",
-   "updated": "2026-11-15T01:15:42Z",
+   "updated": "2026-11-15T02:33:17Z",
    "url": "https://github.com/captainsforcleanwater/swfl-water-map/releases/download/blend-hourly-2026-11/swfl_blend_hourly_2026-11-14.bin.gz"
   },
   "2026-11-15": {
    "asset": "swfl_blend_hourly_2026-11-15.bin.gz",
-   "bytes": 179321,
+   "bytes": 458324,
    "hours": {
     "00": {
-     "blended": "2026-11-15T01:15:26Z",
-     "goes_newest": "2026-11-14T20:00:00Z",
+     "blended": "2026-11-15T02:32:31Z",
+     "goes_newest": "2026-11-14T22:00:00Z",
      "n_sal": 17,
-     "n_temp": 19,
-     "sig": "5008c5c66d09"
+     "n_temp": 27,
+     "sig": "df87c19bb4e3",
+     "v": 2
+    },
+    "01": {
+     "blended": "2026-11-15T02:32:30Z",
+     "goes_newest": "2026-11-14T22:00:00Z",
+     "n_sal": 17,
+     "n_temp": 27,
+     "sig": "54f45ab458a7",
+     "v": 2
+    },
+    "02": {
+     "blended": "2026-11-15T02:32:30Z",
+     "goes_newest": "2026-11-14T22:00:00Z",
+     "n_sal": 3,
+     "n_temp": 12,
+     "sig": "5c06051618b8",
+     "v": 2
     }
    },
    "release_tag": "blend-hourly-2026-11",
-   "updated": "2026-11-15T01:15:28Z",
+   "updated": "2026-11-15T02:32:34Z",
    "url": "https://github.com/captainsforcleanwater/swfl-water-map/releases/download/blend-hourly-2026-11/swfl_blend_hourly_2026-11-15.bin.gz"
   }
  },
+ "display_mask": "data/grid/display_100m.bin.gz",
  "format": "swfl-grid v1",
  "grid": {
   "cols": 660,
@@ -964,6 +1100,11 @@
   "temp_conf",
   "sal_psu",
   "sal_conf",
+  "temp_c_extra",
+  "temp_conf_extra",
+  "sal_psu_extra",
+  "sal_conf_extra",
   "water_pct"
- ]
+ ],
+ "pieces_key": "391141eadf73e5cf-v2"
 }
