@@ -1,75 +1,70 @@
 {
- "discovery": {
-  "errors": {},
-  "seconds": 49.8,
-  "stations": 107
- },
  "files_changed": {
   "data/sensors/2026/11/2026-11-15_coops.csv": {
-   "new": 30,
-   "rows": 504
+   "new": 27,
+   "rows": 531
   },
   "data/sensors/2026/11/2026-11-15_erddap-gcoos.csv": {
-   "new": 27,
-   "rows": 403
+   "new": 23,
+   "rows": 426
   },
   "data/sensors/2026/11/2026-11-15_erddap-secoora.csv": {
    "new": 116,
-   "rows": 1788
+   "rows": 1904
   },
   "data/sensors/2026/11/2026-11-15_ndbc.csv": {
    "new": 8,
-   "rows": 130
+   "rows": 138
   },
   "data/sensors/2026/11/2026-11-15_usgs.csv": {
-   "new": 272,
-   "rows": 4239
+   "new": 248,
+   "rows": 4487
   }
  },
- "finished": "2026-11-15T16:52:14Z",
+ "finished": "2026-11-15T17:46:18Z",
  "sensor_window": [
-  "2026-11-14T16:51:19Z",
-  "2026-11-15T16:51:19Z"
+  "2026-11-14T17:45:21Z",
+  "2026-11-15T17:45:21Z"
  ],
  "sources": {
   "coops": {
    "errors": {},
    "readings": 717,
-   "seconds": 0.1,
+   "seconds": 0.3,
    "stations_queried": 3,
    "stations_reporting": 3
   },
   "erddap": {
    "errors": {},
-   "readings": 3186,
-   "seconds": 53.8,
+   "readings": 3188,
+   "seconds": 54.4,
    "stations_queried": 58,
    "stations_reporting": 49
   },
   "goes19": {
-   "added": 0,
+   "added": 3,
    "errors": {},
-   "missing_before_run": 0,
-   "seconds": 0.2,
+   "missing_before_run": 3,
+   "seconds": 4.8,
    "server_first": "2026-11-10T17:00:00Z",
-   "server_last": "2026-11-15T12:00:00Z",
+   "server_last": "2026-11-15T14:00:00Z",
    "store": "release"
   },
   "ndbc": {
    "errors": {},
    "readings": 186,
-   "seconds": 0.4,
+   "seconds": 0.6,
    "stations_queried": 2,
    "stations_reporting": 1
   },
   "usgs": {
    "errors": {},
-   "readings": 6059,
-   "seconds": 1.2,
+   "readings": 6047,
+   "seconds": 1.5,
    "stations_queried": 28,
    "stations_reporting": 19
   }
  },
- "started": "2026-11-15T16:50:29Z",
- "total_readings": 10148
+ "started": "2026-11-15T17:45:16Z",
+ "total_readings": 10138
 }
