@@ -1,0 +1,94 @@
+station,name,lat,lon,off_water_km,gnis_name,gnis_class,gnis_km,gnis_lat,gnis_lon
+erddap-secoora:gov-nps-ever-bskf1,"Big Sable Creek, FL (BSKF1)",25.26617,-81.16228,0.3,Big Sable Creek,Stream,1.5,25.2795655,-81.1598002
+erddap-secoora:gov-nps-ever-bwsf1,"Blackwater Sound, FL (BWSF1)",25.17834,-80.43838,0.0,Blackwater Sound,Bay,2.1,25.168035,-80.4209998
+erddap-secoora:gov-nps-ever-bobf1,"Bob Allen Keys, FL (BOBF1)",25.02663,-80.68137,0.0,Bob Allen Keys,Island,0.9,25.0337395,-80.6775643
+erddap-secoora:gov-nps-ever-bkyf1,"Buoy Key, FL (BKYF1)",25.12111,-80.83356,0.14,Buoy Key,Island,0.3,25.119292,-80.8320128
+erddap-secoora:gov-nps-ever-bnkf1,"Butternut Key, FL (BNKF1)",25.08668,-80.51904,0.1,Butternut Key,Island,0.6,25.0837377,-80.5139492
+erddap-secoora:gov-nps-ever-canf1,"Cane Patch, FL (CANF1)",25.422131,-80.941997,1.85,,,,,
+erddap-secoora:gov-nps-ever-cnbf1,"Cannon Bay, FL (CNBF1)",25.70185,-81.1856,0.0,Cannon Bay,Bay,1.0,25.6938223,-81.1904165
+erddap-secoora:gov-nps-ever-cwaf1,"Clear Water Pass, FL (CWAF1)",25.29669,-81.0132,0.2,,,,,
+erddap-secoora:gov-nps-ever-dkkf1,"Duck Key, FL (DKKF1)",25.18009,-80.49001,0.1,Duck Key,Island,0.1,25.1798445,-80.4892256
+erddap-secoora:gov-nps-ever-gbtf1,"Garfield Bight, FL  (GBTF1)",25.16723,-80.8013,0.0,Garfield Bight,Bay,0.9,25.1752893,-80.8035668
+erddap-secoora:gov-nps-ever-gbif1,"Gunboat Island, FL (GBIF1)",25.37806,-81.02953,0.1,Gunboat Island,Island,0.1,25.3784504,-81.0292399
+erddap-secoora:gov-nps-ever-href1,"Harney River, FL (HREF1)",25.42456,-81.06012,0.0,Harney River,Stream,0.1,25.4109496,-81.1461875
+erddap-secoora:gov-nps-ever-hcef1,"Highway Creek, FL (HCEF1)",25.25416,-80.44427,0.0,,,,,
+erddap-secoora:gov-nps-ever-jbyf1,"Joe Bay, FL (JBYF1)",25.22451,-80.54101,0.0,Joe Bay,Bay,1.3,25.2268998,-80.5532813
+erddap-secoora:gov-nps-ever-jkyf1,"Johnson Key, FL (JKYF1)",25.05254,-80.90448,0.1,Johnson Key,Island,0.2,25.0512389,-80.9028485
+erddap-secoora:gov-nps-ever-lrif1,"Lane River, FL (LRIF1)",25.28438,-80.89384,0.0,Lane River,Stream,0.2,25.2817866,-80.9278488
+erddap-secoora:gov-nps-ever-lbsf1,"Little Blackwater Sound, FL (LBSF1)",25.21434,-80.43221,0.0,Little Blackwater Sound,Bay,1.1,25.2120652,-80.4431129
+erddap-secoora:gov-nps-ever-lmdf1,"Little Madeira Bay, FL (LMDF1)",25.1758,-80.63269,0.0,Little Madeira Bay,Bay,1.3,25.1873563,-80.6312223
+erddap-secoora:gov-nps-ever-lrkf1,"Little Rabbit Key, FL (LRKF1)",24.98158,-80.8257,0.1,,,,,
+erddap-secoora:gov-nps-ever-lsnf1,"Long Sound, FL (LSNF1)",25.23516,-80.4568,0.0,Long Sound,Bay,1.3,25.2265091,-80.465058
+erddap-secoora:gov-nps-ever-lmrf1,"Lostmans River, FL (LMRF1)",25.55583,-81.1689,0.0,Lostmans River,Stream,0.1,25.5528888,-81.1889653
+erddap-secoora:gov-nps-ever-mnbf1,"Manatee Bay, FL (MNBF1)",25.23945,-80.42179,0.0,Manatee Bay,Bay,1.5,25.2508721,-80.4146469
+erddap-secoora:gov-nps-ever-mdkf1,"Middle Key, FL (MDKF1)",25.28932,-80.39642,0.0,Middle Key,Island,1.3,25.2776179,-80.3978337
+erddap-secoora:gov-nps-ever-mukf1,"Murray Key, FL (MUKF1)",25.10613,-80.94232,0.0,Murray Key,Island,0.5,25.1084593,-80.9378496
+erddap-secoora:gov-nps-ever-nrrf1,"North River, FL (NRRF1)",25.34023,-80.91113,0.0,North River,Stream,0.1,25.3003973,-80.9675721
+erddap-secoora:gov-nps-ever-pkyf1,"Peterson Key, FL (PKYF1)",24.91806,-80.7468,0.1,Peterson Keys,Island,0.8,24.9123552,-80.7425655
+erddap-secoora:gov-nps-ever-sref1,"Shark River, FL (SREF1)",25.35412,-81.10003,0.0,Shark River,Stream,0.5,25.3534516,-81.1170205
+erddap-secoora:gov-nps-ever-tpef1,"Tarpon Bay East, FL (TPEF1)",25.41012,-80.96395,0.1,Tarpon Bay,Bay,1.7,25.4120374,-80.9810941
+erddap-secoora:gov-nps-ever-trrf1,"Taylor River, FL (TRRF1)",25.21712,-80.64957,1.4,Taylor River,Stream,0.3,25.1906778,-80.6389517
+erddap-secoora:gov-nps-ever-tbyf1,"Terrapin Bay, FL (TBYF1)",25.15734,-80.72479,0.0,Terrapin Bay,Bay,0.7,25.1564647,-80.7315509
+erddap-secoora:gov-nps-ever-thrf1,"Thursday Point, FL (THRF1)",25.20338,-80.37232,0.0,Thursday Point,Cape,0.2,25.2045653,-80.3736664
+erddap-secoora:gov-nps-ever-tcvf1,"Trout Cove, FL (TCVF1)",25.21275,-80.53339,0.1,Trout Cove,Bay,1.5,25.2044784,-80.5215938
+erddap-secoora:gov-nps-ever-bdvf1,"Upper Broad River, FL (BDVF1)",25.47833,-80.98925,1.39,Broad River,Stream,1.2,25.4745584,-81.1714654
+erddap-secoora:gov-nps-ever-wplf1,"Watson Place, FL (WPLF1)",25.709667,-81.249068,0.0,,,,,
+erddap-secoora:gov-nps-ever-wrbf1,"Whipray Basin, FL (WRBF1)",25.07209,-80.73511,0.0,Whipray Basin,Bay,3.3,25.0764019,-80.7671307
+erddap-secoora:gov-nps-ever-wwef1,"Whitewater East, FL (WWEF1)",25.23166,-80.93823,0.1,Whitewater Bay,Bay,6.7,25.2757101,-80.9836186
+erddap-secoora:gov-nps-ever-wiwf1,"Willy Willy, FL (WIWF1)",25.58749,-81.04364,0.22,,,,,
+erddap-secoora:key-largo-fl,"Key Largo, FL",25.08647,-80.45305,0.1,Key Largo,Populated Place,0.6,25.0865151,-80.4472802
+erddap-secoora:ramrod-1,"Ramrod Key, FL",24.65985,-81.40577,0.14,Ramrod Key,Island,0.8,24.6612544,-81.4139706
+coops:8725520,Fort Myers,26.647778,-81.87111,0.0,Fort Myers,Populated Place,0.8,26.640628,-81.8723084
+coops:8724580,Key West,24.5557,-81.8079,0.1,Key West,Island,1.7,24.5545915,-81.7914805
+coops:8723970,"Vaca Key, Florida Bay",24.711,-81.1065,0.14,Vaca Key,Island,3.9,24.71903,-81.0689618
+erddap-secoora:gov-ndbc-lonf1,"LONF1 - Long Key, FL",24.844,-80.864,0.0,Long Key,Island,5.0,24.819859,-80.821734
+ndbc:RKQF1,"Lower Henderson Creek, Rookery Bay Reserve, FL",26.027,-81.734,0.0,Henderson Creek,Gut,1.8,26.0370395,-81.7192533
+ndbc:RKXF1,"Upper Henderson Creek, Rookery Bay Reserve, FL",26.05,-81.701,0.0,Henderson Creek,Gut,2.3,26.0370395,-81.7192533
+erddap-gcoos:SCCF_11,SCCF 11 - SCCF RECON Tarpon Bay,26.46791,-82.0631,0.0,Tarpon Bay,Bay,2.2,26.4528325,-82.0778161
+erddap-gcoos:SCCF_1111,SCCF 1111 - SCCF RECON Alva,26.72,-81.6546,4.22,Alva,Populated Place,4.4,26.7156236,-81.6100797
+erddap-gcoos:SCCF_13,SCCF 13 - SCCF RECON Shell Point,26.522564,-82.007988,0.0,Shell Point,Cape,1.0,26.5253554,-81.9984236
+erddap-gcoos:SCCF_18,SCCF 18 - SCCF RECON Beautiful Island,26.69549,-81.81381,0.0,Beautiful Island,Island,0.5,26.6922922,-81.8106398
+erddap-gcoos:SCCF_51,SCCF 51 - SCCF RECON Redfish Pass,26.55448,-82.17147,0.0,Redfish Pass,Channel,2.7,26.5534105,-82.1984281
+erddap-gcoos:SCCF_53,SCCF 53 - SCCF RECON Fort Myers,26.64934,-81.88097,0.0,Fort Myers,Populated Place,1.3,26.640628,-81.8723084
+erddap-gcoos:SCCF_56,SCCF 56 - SCCF RECON McIntyre Creek,26.46449,-82.10437,0.0,McIntyre Creek,Stream,0.0,26.4645248,-82.1037044
+erddap-secoora:gulf-star-marina,Gulf Star Marina,26.4595,-81.9518,0.0,,,,,
+erddap-secoora:new-pass-bridge,New Pass Bridge,26.37803,-81.86088,0.0,New Pass,Channel,0.1,26.3778606,-81.8617545
+erddap-secoora:sanibel-dock,Sanibel Dock,26.453428,-82.035537,0.0,Sanibel,Populated Place,1.4,26.4489695,-82.0223137
+erddap-secoora:vester-field-station,Vester Field Station,26.330882,-81.837193,0.1,,,,,
+erddap-gcoos:USF_COMPS_C22,C22 - Loop Current Pressure Point Buoy,25.172,-83.475,0.0,,,,,
+erddap-gcoos:USF_COMPS_C10,Navy-2,27.169,-82.926,0.0,,,,,
+erddap-gcoos:USF_COMPS_C12,West Florida Central Buoy,27.498,-83.736,0.0,,,,,
+erddap-gcoos:USF_COMPS_C13,West Florida South Buoy,26.012,-83.085,0.0,,,,,
+usgs:255654081350200,"Blackwater River Near Goodland, Fl",25.9523611111111,-81.5844222222222,0.1,Blackwater River,Stream,0.1,25.9309318,-81.5975844
+usgs:022908295,"Bottle Creek At Rookery Branch Near Homestead, Fl",25.4679777777778,-80.8545277777778,none within 10 km,,,,,
+usgs:02290878,"Broad River Near The Cutoff, Fl",25.5013888888889,-81.0769444444444,0.0,Broad River,Stream,0.1,25.4745584,-81.1714654
+usgs:02292900,"Caloosahatchee River At S-79, Nr.Olga, Fla",26.72173357028381,-81.69318057209861,0.45,Caloosahatchee River,Stream,0.4,26.5170225,-82.0331467
+usgs:255327081275900,"East River Near Everglades City, Fl",25.8953888888889,-81.4555,0.0,East River,Stream,0.1,25.8906549,-81.4739703
+usgs:250802081035500,"East Side Creek Near Lake Ingraham, Fl",25.136969,-81.064381,1.17,,,,,
+usgs:255138081321701,Faka Union Boundary Near Panther Key Fl,25.8605166666667,-81.53795,0.0,Faka Union Bay,Bay,4.6,25.8962898,-81.5139513
+usgs:255726081303700,"Faka Union Canal Boat Basin At Port Of Isles,Fl",25.9569972222222,-81.5109083333333,3.2,Faka Union Canal,Canal,1.0,25.9484307,-81.5089709
+usgs:255432081303900,Faka-Union River Near The Mouth,25.9088055555556,-81.5109166666667,0.5,,,,,
+usgs:252653080273001,"Florida City Canal Nr Fire Station In Homestead,Fl",25.447964,-80.458389,none within 10 km,Florida City Canal,Canal,0.0,25.4481672,-80.4178335
+usgs:252654080220201,"Florida City Canal Nr Sw 117Th Ave In Homestead,Fl",25.4484,-80.3673,3.15,Florida City Canal,Canal,4.5,25.4481672,-80.4178335
+usgs:251355080312800,"Joe Bay 2E, Near Key Largo, Fl",25.232625,-80.524867,0.0,Joe Bay,Bay,2.9,25.2268998,-80.5532813
+usgs:251003080435500,"Mccormick Creek At Mouth Near Key Largo, Fl",25.1681944444444,-80.7335888888889,0.23,McCormick Creek,Gut,0.0,25.1684566,-80.7336764
+usgs:251209080350100,"Mud Creek At Mouth Nr Homestead, Fl",25.203303,-80.584111,0.1,Mud Creek,Gut,0.1,25.2040104,-80.5847835
+usgs:02297460,Peace River At Harbour Heights Fl,26.987558024338394,-81.99429977110398,0.0,Peace River,Stream,0.2,26.9172844,-82.1425909
+usgs:255534081324000,"Pumpkin River Near Goodland, Fl",25.926,-81.5443055555556,0.0,Pumpkin River,Stream,0.0,25.9189875,-81.5453609
+usgs:251032080432200,"Seven Palm Lake Near Flamingo, Fl",25.174642,-80.723111,0.92,Seven Palm Lake,Lake,2.2,25.1932829,-80.7293182
+usgs:02298202,Shell Creek Near Punta Gorda Fl,26.98478028159469,-81.93568701940177,1.29,Shell Creek,Stream,0.0,26.9645043,-81.9945317
+usgs:251127080382100,"Taylor River At Mouth Near Homestead, Fl",25.190594,-80.639053,0.0,Taylor River,Stream,0.0,25.1906778,-80.6389517
+usgs:251457080395800,"Taylor Slough Wetland At E146 Nr Homestead, Fl",25.252542,-80.682867,6.39,,,,,
+usgs:251253080320100,"Trout Creek At Mouth Near Key Largo, Fl",25.2148972222222,-80.5335055555555,0.0,Trout Creek,Gut,0.3,25.2170653,-80.5342265
+usgs:02290930,"Turner River Nr Chokoloskee Island, Fl",25.8286111111111,-81.3416666666667,0.0,Turner River,Stream,0.1,25.8201016,-81.3486897
+usgs:251241080385300,"Upstream Taylor River Near Homestead, Fl",25.210297,-80.647667,1.11,Taylor River,Stream,0.0,25.1906778,-80.6389517
+usgs:251433080265000,"West Highway Creek Near Homestead, Fl",25.242108,-80.447572,0.1,,,,,
+usgs:254729080393601,"Wetland 1600 Blw S-633 In Wca-3B Nr Coopertown,Fl",25.791263888888892,-80.65993055555556,none within 10 km,,,,,
+usgs:254923080384901,"Wetland 500S Blw S-632 In Wca-3B Nr Coopertown,Fl",25.823044444444445,-80.64707777777778,none within 10 km,,,,,
+usgs:254760080395601,"Wetland 500S Blw S-633 In Wca-3B Nr Coopertown,Fl",25.7998,-80.66565,none within 10 km,,,,,
+usgs:255151080371501,"Wetland At S-152 Outflow Near Coopertown, Fl",25.86415,-80.6208333333333,none within 10 km,,,,,
+erddap-secoora:c13-water-velocity-wfs-south-buo,"C13 Water Velocity – WFS South Buoy, 50m Isobath (NBDC: 42023)",26.01,-83.086,0.0,,,,,
+erddap-secoora:42023-c13-wfs-south-buoy-50m-,"C13 – WFS South Buoy, 50m Isobath (NBDC: 42023)",26.01,-83.086,0.0,,,,,
+erddap-secoora:42026-c22-loop-current-pressu,C22 – Loop Current Pressure Point Buoy (NDBC: 42026),25.171,-83.475,0.0,,,,,
+erddap-secoora:c27-wfs-south-buoy-inner-shelf-2,"C27 - WFS South Buoy – Inner Shelf, 25m isobath (NDBC: 42029)",25.854,-82.339,0.0,,,,,
+erddap-secoora:c27-water-velocity-wfs-south-buo,"C27 Water Velocity - WFS South Buoy – Inner Shelf, 25m isobath (WMO ID 42029)",25.854,-82.339,0.0,,,,,

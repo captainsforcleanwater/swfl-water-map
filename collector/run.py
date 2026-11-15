@@ -19,7 +19,7 @@ import sys
 import time
 from datetime import timedelta
 
-from . import goes19, inventory, store
+from . import goes19, inventory, store, tags
 from .common import DATA, Area, Station, hours_ago, iso, load_config, log, parse_time, session, utcnow
 from .sources import coops, erddap, ndbc, usgs
 
@@ -73,6 +73,12 @@ def discover(s, area: Area, cfg: dict, status: dict) -> tuple[list[Station], dic
 def classify(stations: list[Station], area: Area, cfg: dict) -> None:
     active_cut = iso(utcnow() - timedelta(days=cfg["active_within_days"]))
     for st in stations:
+        fix = tags.coordinates(st.uid)   # source metadata known to be wrong
+        if fix:
+            st.lat, st.lon = fix["lat"], fix["lon"]
+            note = tags.corrected_note(fix)
+            if note not in st.notes:
+                st.notes = f"{st.notes}; {note}" if st.notes else note
         st.in_area = area.in_polygon(st.lat, st.lon)
         st.edge_anchor = (not st.in_area) and st.uid in area.edge_anchors
         st.collect = st.in_area or st.edge_anchor

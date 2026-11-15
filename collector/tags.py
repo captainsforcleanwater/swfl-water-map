@@ -38,6 +38,16 @@ def overrides() -> dict:
     return overrides_file().get("setting", {})
 
 
+def coordinates(uid: str) -> dict | None:
+    """Hand-corrected position for a station whose source metadata is wrong, or None.
+    {"lat": ..., "lon": ..., "source": ..., "reason": ...} from config/station_tags.json."""
+    return overrides_file().get("coordinates", {}).get(uid)
+
+
+def corrected_note(c: dict) -> str:
+    return f"coordinates corrected in config/station_tags.json ({c.get('source', 'by hand')})"
+
+
 def setting(uid: str, extra: dict | None) -> tuple[str, str]:
     """(setting, reason) for a station. setting is 'coastal' or 'inland'."""
     o = overrides().get(uid)

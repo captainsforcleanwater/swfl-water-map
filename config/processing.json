@@ -32,10 +32,11 @@
       "water_temp_c": 0.3,
       "salinity_psu": 1.0
     },
+    "_gross_range_comment": "Salinity and conductance limits sit well above Florida Bay's records so hypersaline water is kept: USGS Florida Bay gauges peaked at 60 PSU and 84,500 uS/cm (McCormick Creek, July 2015, the seagrass die-off), and 64.4 PSU was reported in July 2015. 80 and 100 PSU correspond to about 108,000 and 130,000 uS/cm (PSS-78 extrapolated, as USGS does above 42).",
     "gross_range": {
       "water_temp_c": {"fail": [-2.0, 40.0], "suspect": [5.0, 35.0]},
-      "salinity_psu": {"fail": [0.0, 70.0], "suspect": [0.0, 55.0]},
-      "spec_cond_us_cm": {"fail": [0.0, 90000.0], "suspect": [0.0, 75000.0]}
+      "salinity_psu": {"fail": [0.0, 100.0], "suspect": [0.0, 80.0]},
+      "spec_cond_us_cm": {"fail": [0.0, 135000.0], "suspect": [0.0, 110000.0]}
     },
     "spike": {
       "_comment": "A reading is a spike when it sits further than the threshold from the median of readings within window_minutes either side, and further than mad_factor times their scaled median absolute deviation.",
