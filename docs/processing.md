@@ -24,7 +24,7 @@ Tests (codes as in the IOOS QARTOD manuals; thresholds in `config/processing.jso
 |---|---|---|
 | provider | bad | the source marked the reading unusable (USGS equipment, ice, maintenance codes) |
 | time | bad | timestamp more than an hour in the future |
-| range | bad / suspect | outside -2 to 40 C, 0 to 70 PSU (bad); outside 5 to 35 C, above 55 PSU (suspect) |
+| range | bad / suspect | outside -2 to 40 C, above 100 PSU or 135,000 uS/cm (bad); outside 5 to 35 C, above 80 PSU or 110,000 uS/cm (suspect). The salinity and conductance limits sit well above Florida Bay's records (see Hypersaline water below). |
 | spike | suspect | further than 1.5 C or 4 PSU from the median of readings within 90 minutes either side, and more than 6 times the local spread. A real front is a step, not a spike, and passes. |
 | flatline | suspect, then bad | identical readings for 12 h (suspect) or 24 h (bad) for temperature, 24 h / 48 h for salinity, doubled below the surface. Salinity sitting at the fresh-water floor, or flat while conductance keeps changing, is rounding and is not flagged. |
 | neighbor | suspect | temperature more than 2.5 C from the median of stations within 15 km by water, held over a rolling 48-hour window |
@@ -44,6 +44,11 @@ Other rules:
   files but is not used). PSS-78 matches the UNESCO check value and agrees with USGS-reported
   salinity to within their rounding. On the Nov 11 to 14 data it fills in the Peace River at Harbour
   Heights, and replaces whole-PSU salinity at Turner River, East Side Creek and four bottom sensors.
+  PSS-78 is only defined from 2 to 42 PSU. Above 42 the equation is extrapolated, as USGS does for
+  its own Florida Bay salinities (their published values above 42 match the extrapolation, median
+  difference 0.12 PSU over 2,635 days), and the hourly `source` column says "extrapolated above 42
+  PSU". The accepted extension, UNESCO Technical Paper 62 (Poisson, Gadhoumi and Morcos 1991), only
+  reaches 50 PSU; its equations could not be retrieved from this environment.
 - **One series per physical station.** Stations flagged `possible_duplicate_of` in the inventory,
   and stations within 300 m of each other measuring the same thing, are merged only when their
   readings agree (median difference over at least 12 shared hours within 0.3 C and 1 PSU, comparing
@@ -69,6 +74,46 @@ Other rules:
   (so far only SCCF Alva, above the S-79 lock). Inland stations stay in the clean layer but feed
   neither grid. Coastal stations that sit more than 2.5 km from mapped tidal water (Faka Union boat
   basin, Bottle Creek) are also left out of the grids, and `data/clean/stations.csv` says so.
+
+## Hypersaline water
+
+Florida Bay turns hypersaline in droughts, and those are the events the map most needs to show.
+Records found on 2026-11-15:
+
+| Source | Highest | Where and when |
+|---|---|---|
+| USGS daily values, 36 Florida Bay gauges, 1995 to 2026 | 60 PSU, 84,500 uS/cm | McCormick Creek at mouth, 2015-07-13 (seagrass die-off) |
+| Reported for the 2015 drought (secondary source) | 64.4 PSU | water-management stations, July 2015 |
+| ENP stations, NDBC copies 2019 to 2025 | 49.6 PSU (daily median) | Garfield Bight, 2022-05-25 |
+
+ENP's own 2015 record lives on SECOORA, whose backend failed every data request on 2026-11-15; check
+it once SECOORA is back (`analysis/hypersaline_2015.py DATA_DIR ENP_DIR` takes ENP files).
+
+The old limits (suspect above 55 PSU and 75,000 uS/cm) would have hidden the 2015 peak: run on USGS
+15-minute data for May to September 2015, they marked all 2,289 readings above 55 PSU suspect,
+including McCormick Creek's 59.6. With the new limits, 53,031 of 53,034 readings above 42 PSU come
+through as good; the other 3 are a 45-minute conductance swing at West Highway Creek caught by the
+spike test, not by the limits.
+
+## Station coordinates
+
+`config/station_tags.json` (`coordinates`) replaces positions that are wrong in the source
+metadata; the collector applies it to the inventory and the area test, and the processing step to
+everything else. SCCF Shell Point (`erddap-gcoos:SCCF_13`) arrives from GCOOS with Redfish Pass's
+longitude, which puts it in Pine Island Sound; it is set to SCCF's position at the Caloosahatchee
+mouth (26.522564, -82.007988). Its readings agree: salinity swings from 9 to 32 PSU with the tide,
+like a river mouth, and its leave-one-out salinity error halves at the corrected position (6.6 to
+3.3 PSU).
+
+`analysis/station_coordinates.py` looks for other errors and writes
+[station_coordinates.md](station_coordinates.md): stations sharing a latitude or longitude exactly,
+stations far from mapped tidal water, and stations far from the water body in their name (looked up
+in USGS GNIS names, with rivers measured to their NHD flowline). After the Shell Point fix no
+coordinates are shared. Three stations sit 4.5 to 6.7 km from the GNIS point of their named place,
+all explainable: Whitewater East is on the east side of a 15 km bay whose GNIS point is its middle,
+the Long Key C-MAN is at one end of a 5 km key, and the Florida City Canal gauge is past the end of
+NHD's mapped canal line (it is inland and not used in the grids anyway). The stations far from
+mapped tidal water are the known inland sites and creek gauges, already handled by the snap rule.
 
 ## Library versions
 

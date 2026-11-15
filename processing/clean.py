@@ -15,7 +15,9 @@ sensor) the tests below set a flag on every reading (IOOS QARTOD codes: 1 good, 
 
 Salinity is computed from specific conductance with PSS-78 where a station has conductance but no
 salinity at a depth, and also where USGS reports salinity only in whole PSU (the computed value is
-finer; the reported one is kept in the raw files but not used).
+finer; the reported one is kept in the raw files but not used). Above 42 PSU, the top of the range
+PSS-78 is defined for, the value is extrapolated and the hourly source column says so; hypersaline
+readings are kept (the range limits sit above Florida Bay's records).
 
 Hourly values are the mean of good readings within half_window_minutes of the hour. Depth is kept
 as a layer: surface (near-surface), bottom, mid, or profile (thermistor strings, not used).
@@ -51,7 +53,7 @@ from collector.common import DATA, SAL, SPCOND, TEMP, iso
 from collector.tags import overrides_file
 from . import depths as depthmod
 from .config import CLEAN_DIR, QC_DIR, proc_config
-from .pss78 import salinity_from_spec_cond
+from .pss78 import PSS78_MAX, salinity_from_spec_cond
 from .stations import PhysStation, candidate_pairs, load_raw_stations, physical_stations
 
 log = logging.getLogger("processing.clean")
@@ -330,6 +332,9 @@ def hourly_values(df: pd.DataFrame, stations: list[PhysStation], cfg_hourly: dic
     best["source"] = np.where(other, best["station_uid"], "")
     best["source"] = np.where(best["derived"] == "pss78",
                               (best["source"] + " PSS-78 from conductance").str.strip(), best["source"])
+    # PSS-78 is only defined to 42 PSU; above that the value is extrapolated (kept, and said so).
+    ext = (best["derived"] == "pss78") & (best["value"] > PSS78_MAX)
+    best["source"] = np.where(ext, best["source"] + f", extrapolated above {PSS78_MAX:g} PSU", best["source"])
     best["member"] = best["station_uid"]
     out = best.rename(columns={"phys": "station", "hour": "time"})[
         ["time", "station", "variable", "layer", "value", "n", "depth_m", "source", "member"]]
@@ -658,6 +663,7 @@ def run(start: datetime, end: datetime, now: datetime, graph=None, write_days: l
         "good": int((fl == GOOD).sum()), "suspect": int((fl == SUSPECT).sum()), "bad": int((fl == BAD).sum()),
         "by_test": {name: int(((df["bits"].to_numpy() & b) > 0).sum()) for b, (name, _) in TESTS.items()},
         "hourly_values": int(len(hourly)),
+        "salinity_extrapolated_above_42": int(hourly["source"].str.contains("extrapolated", na=False).sum()),
         "stale_stations": status.loc[status["status"] == "stale", "station"].tolist(),
     })
     res = CleanResult(df, hourly, grid, stations, status, stats)

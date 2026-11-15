@@ -6,6 +6,16 @@
       "reason": "Caloosahatchee at Alva, upstream of the S-79 Franklin Lock: fresh river, not tidal"
     }
   },
+  "_coordinates_comment": "Positions that replace wrong source metadata. Applied by the collector (inventory, area test) and the processing step. Note where the correct position came from.",
+  "coordinates": {
+    "erddap-gcoos:SCCF_13": {
+      "lat": 26.522564,
+      "lon": -82.007988,
+      "source": "SCCF RECON website",
+      "since": "2026-11-15",
+      "reason": "The GCOOS feed gives Shell Point the longitude of Redfish Pass (-82.1715), which puts it in Pine Island Sound. SCCF places it at Shell Point, at the Caloosahatchee mouth."
+    }
+  },
   "_qc_hold_comment": "Readings of these stations (only the listed variables) are flagged suspect (test 'hold') and kept out of the grids until the entry is removed. For sensors under review.",
   "qc_hold": {
     "erddap-secoora:gov-nps-ever-hcef1": {

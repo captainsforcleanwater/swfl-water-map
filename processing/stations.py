@@ -16,7 +16,7 @@ from dataclasses import dataclass, field
 
 from collector.common import DATA, distance_m
 from collector.inventory import SYSTEM_PRIORITY
-from collector.tags import setting
+from collector.tags import coordinates, setting
 
 
 @dataclass
@@ -33,7 +33,14 @@ class PhysStation:
 
 
 def load_raw_stations() -> list[dict]:
-    return json.loads((DATA / "stations.json").read_text()).get("stations", [])
+    """Stations from the inventory, with hand-corrected coordinates applied (the collector applies
+    them too; doing it here as well covers an inventory written before a correction was added)."""
+    out = json.loads((DATA / "stations.json").read_text()).get("stations", [])
+    for s in out:
+        fix = coordinates(s["uid"])
+        if fix:
+            s["lat"], s["lon"] = fix["lat"], fix["lon"]
+    return out
 
 
 def _priority(st: dict) -> tuple:

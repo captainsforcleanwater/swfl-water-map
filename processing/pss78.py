@@ -3,6 +3,13 @@ extension below 2 PSU, as used by USGS to compute salinity from specific conduct
 
 Specific conductance is conductivity already corrected to 25 C, so salinity comes from
 PSS-78 at T = 25 C and sea-level pressure.
+
+PSS-78 is defined from 2 to 42 PSU. The extension in UNESCO Technical Paper 62 (Poisson, Gadhoumi
+and Morcos 1991) only reaches 50, and Florida Bay has gone past 60, so above 42 the PSS-78 equation
+is used as is (extrapolated). That is also how USGS reports Florida Bay salinity above 42: their
+published values match this extrapolation to within rounding (median difference 0.12 PSU over
+2,635 daily values above 42, checked 2026-11-15). Values above PSS78_MAX are marked as
+extrapolated in the clean layer, not dropped.
 """
 
 from __future__ import annotations
@@ -10,6 +17,7 @@ from __future__ import annotations
 import numpy as np
 
 C35_15_0 = 42.914   # mS/cm, conductivity of standard seawater (S = 35) at 15 C, 0 dbar
+PSS78_MAX = 42.0    # upper end of the range PSS-78 is defined for
 
 _A = (0.0080, -0.1692, 25.3851, 14.0941, -7.0261, 2.7081)
 _B = (0.0005, -0.0056, -0.0066, -0.0375, 0.0636, -0.0144)

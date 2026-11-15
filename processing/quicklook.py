@@ -19,7 +19,20 @@ from .config import CLEAN_DIR
 from .display import PIECES_PATH
 from .run import NODATA16, NODATA8, read_day
 
-SALINITY_MIN_CONFIDENCE = 40
+SALINITY_MIN_CONFIDENCE = 40       # coverage rule: hide salinity below this confidence (0-100)
+HYPERSALINE_PSU = 40               # salinity scale changes colour family above this
+SALINITY_TOP_PSU = 70
+
+
+def salinity_cmap():
+    """0-40 PSU on one ramp, 40-70 PSU on a separate red-purple ramp, so hypersaline water stands
+    out instead of saturating at the top colour."""
+    from matplotlib import colormaps
+    from matplotlib.colors import ListedColormap
+    n_low = int(256 * HYPERSALINE_PSU / SALINITY_TOP_PSU)
+    low = colormaps["viridis"](np.linspace(0, 1, n_low))
+    high = colormaps["RdPu"](np.linspace(0.35, 1, 256 - n_low))
+    return ListedColormap(np.vstack([low, high]), name="salinity_hypersaline")
 
 
 def to_display(layers: dict, name: str, piece: np.ndarray, nodata) -> np.ndarray:
@@ -69,7 +82,8 @@ def render(path: Path, hour: int, out_dir: Path, region: tuple | None = None, ta
     panels = [
         (axes[0, 0], temp, "Temperature (F)", "turbo", None),
         (axes[0, 1], tconf, "Temperature confidence (0-100)", "Greys_r", (0, 100)),
-        (axes[1, 0], sal, f"Salinity (PSU); grey = hidden, confidence < {SALINITY_MIN_CONFIDENCE}", "viridis", (0, 40)),
+        (axes[1, 0], sal, f"Salinity (PSU), red-purple = hypersaline (> {HYPERSALINE_PSU}); grey = hidden, confidence < {SALINITY_MIN_CONFIDENCE}",
+         salinity_cmap(), (0, SALINITY_TOP_PSU)),
         (axes[1, 1], sconf, "Salinity confidence (0-100)", "Greys_r", (0, 100)),
     ]
     for ax, arr, title, cmap, lim in panels:

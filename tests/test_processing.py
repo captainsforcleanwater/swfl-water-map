@@ -123,3 +123,38 @@ def test_display_pieces_match_the_hourly_extras(graph):
     assert piece[r, c] == 0
     rs, cs = grid.out_slice()
     assert graph.primary.reshape(grid.ny, grid.nx)[rs, cs][r // f, c // f] >= 0
+
+
+def test_hypersaline_florida_bay_readings_are_kept():
+    """McCormick Creek, July 2015: 60 PSU and 84,500 uS/cm. Neither may be flagged."""
+    from datetime import datetime, timezone
+    import pandas as pd
+    from processing.clean import add_derived_salinity, flags_from_bits, run_series_tests
+    t = pd.date_range("2015-07-13", periods=48, freq="15min", tz="UTC")
+    sc = 84500 + 300 * np.sin(np.arange(48) / 5)
+    rows = [(ts, "usgs:251003080435500", "spec_cond_us_cm", v) for ts, v in zip(t, sc)]
+    rows += [(ts, "usgs:251003080435500", "salinity_psu", 60.0 if i % 2 else 59.0) for i, ts in enumerate(t)]
+    rows += [(ts, "erddap-secoora:gov-nps-ever-gbtf1", "salinity_psu", 64.4 + 0.1 * np.sin(i)) for i, ts in enumerate(t)]
+    df = pd.DataFrame(rows, columns=["time", "station_uid", "variable", "value"])
+    df["depth_tag"], df["sensor"], df["qc"], df["depth_m"] = "bottom", "", "", np.nan
+    df["time_utc"] = df["time"].dt.strftime("%Y-%m-%dT%H:%M:%SZ")
+    cfg = proc_config()["qc"]
+    out = run_series_tests(df, datetime(2015, 8, 1, tzinfo=timezone.utc), cfg)
+    out, whole = add_derived_salinity(out, cfg)
+    assert (flags_from_bits(out["bits"].to_numpy()) == 1).all()
+    derived = out[out["derived"] == "pss78"]["value"]
+    assert ("usgs:251003080435500", "bottom") in whole            # whole-PSU USGS salinity replaced
+    assert derived.max() == pytest.approx(59.8, abs=0.3)          # PSS-78 extrapolated above 42
+
+
+def test_salinity_above_42_from_conductance_is_marked_extrapolated():
+    import pandas as pd
+    from processing.clean import hourly_values
+    t = pd.Timestamp("2015-07-13T12:00:00Z")
+    df = pd.DataFrame({"time": [t, t], "station_uid": ["usgs:1", "usgs:2"], "phys": ["usgs:1", "usgs:2"],
+                       "variable": ["salinity_psu"] * 2, "layer": ["surface"] * 2, "sensor": ["x"] * 2,
+                       "derived": ["pss78", "pss78"], "value": [58.0, 35.0], "depth_m": [np.nan] * 2,
+                       "bits": [0, 0], "superseded": [False, False]})
+    h = hourly_values(df, [], {"half_window_minutes": 30}).set_index("station")
+    assert "extrapolated above 42" in h.loc["usgs:1", "source"]
+    assert "extrapolated" not in h.loc["usgs:2", "source"]
