@@ -9,6 +9,6 @@ time_utc,station_uid,variable,depth_tag,sensor,depth_m,value,flag,tests
 2026-11-15T07:00:00Z,erddap-secoora:gov-nps-ever-hcef1,water_temp_c,surface,sea_water_temperature,0,23.66,3,hold
 2026-11-15T08:00:00Z,erddap-secoora:gov-nps-ever-hcef1,water_temp_c,surface,sea_water_temperature,0,23.07,3,hold
 2026-11-15T09:00:00Z,erddap-secoora:gov-nps-ever-hcef1,water_temp_c,surface,sea_water_temperature,0,22.89,3,hold
-2026-11-15T10:40:00Z,erddap-secoora:gulf-star-marina,water_temp_c,surface,sea_water_temperature,0,22.21,3,spike
+2026-11-15T10:00:00Z,erddap-secoora:gov-nps-ever-hcef1,water_temp_c,surface,sea_water_temperature,0,22.7,3,hold
 2026-11-15T03:15:00Z,usgs:255534081324000,salinity_psu,bottom,Near Bottom,,24,3,spike
 2026-11-15T03:15:00Z,usgs:255534081324000,spec_cond_us_cm,bottom,Near Bottom,,38500,3,spike
