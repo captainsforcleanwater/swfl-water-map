@@ -1049,7 +1049,7 @@
   },
   "2026-11-15": {
    "asset": "swfl_blend_hourly_2026-11-15.bin.gz",
-   "bytes": 603471,
+   "bytes": 730217,
    "hours": {
     "00": {
      "blended": "2026-11-15T05:02:21Z",
@@ -1076,24 +1076,32 @@
      "v": 2
     },
     "03": {
-     "blended": "2026-11-15T05:02:19Z",
+     "blended": "2026-11-15T05:59:37Z",
      "goes_newest": "2026-11-15T00:00:00Z",
-     "n_sal": 16,
-     "n_temp": 26,
-     "sig": "01c52198d363",
+     "n_sal": 17,
+     "n_temp": 27,
+     "sig": "728a27fa9c3c",
      "v": 2
     },
     "04": {
-     "blended": "2026-11-15T05:02:18Z",
+     "blended": "2026-11-15T05:59:36Z",
      "goes_newest": "2026-11-15T00:00:00Z",
-     "n_sal": 16,
-     "n_temp": 26,
-     "sig": "189a9ad92739",
+     "n_sal": 17,
+     "n_temp": 27,
+     "sig": "ed8d2222ba73",
+     "v": 2
+    },
+    "05": {
+     "blended": "2026-11-15T05:59:36Z",
+     "goes_newest": "2026-11-15T00:00:00Z",
+     "n_sal": 14,
+     "n_temp": 24,
+     "sig": "0cdd336ccb35",
      "v": 2
     }
    },
    "release_tag": "blend-hourly-2026-11",
-   "updated": "2026-11-15T05:02:26Z",
+   "updated": "2026-11-15T05:59:42Z",
    "url": "https://github.com/captainsforcleanwater/swfl-water-map/releases/download/blend-hourly-2026-11/swfl_blend_hourly_2026-11-15.bin.gz"
   }
  },
