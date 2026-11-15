@@ -1,0 +1,8 @@
+# Only for rebuilding the water mask and display files (python -m processing.shoreline), quick-look
+# images, the Florida Bay analysis and tests. Regenerate requirements-dev.txt with:
+#   uv pip compile requirements-dev.in --python-version 3.12 -o requirements-dev.txt
+-r requirements.in
+pyshp==3.1.8
+matplotlib==3.11.2
+shapely==2.2.0
+pytest==9.2.0

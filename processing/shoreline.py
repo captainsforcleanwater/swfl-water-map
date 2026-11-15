@@ -7,6 +7,7 @@ Run it by hand only when the grid or the shoreline source changes. It writes:
 
 - data/grid/water_fine.png: 1-bit image of the compute grid at fine resolution, white = water.
 - data/grid/grid.json: grid definition, source and a hash of the mask (the distance cache keys on it).
+- data/grid/display_100m.bin.gz and land_100m.geojson: the map's 100 m coastline (processing/display.py).
 
 Water is NHD Sea/Ocean, Bay/Inlet, Stream/River and Foreshore areas plus Lake/Pond waterbodies.
 Canals, swamps and reservoirs count as land. NHD is mapped at 1:24,000 or better, so the mask resolves
@@ -238,7 +239,9 @@ def main(argv=None) -> int:
     save(grid, mask, info)
     log.info("water mask %s: %d x %d, %.1f%% water, %s", MASK_PATH, mask.shape[1], mask.shape[0],
              100 * mask.mean(), info)
-    return 0
+    # The map's 100 m coastline files depend on the mask, so rebuild them with it.
+    from . import display
+    return display.main()
 
 
 if __name__ == "__main__":

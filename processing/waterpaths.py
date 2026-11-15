@@ -208,3 +208,27 @@ class WaterGraph:
         d, _, src = dijkstra(self.adj, directed=False, indices=sources, min_only=True,
                              return_predecessors=True)
         return src, d
+
+
+def display_pieces(graph: WaterGraph, inside_cells: np.ndarray) -> tuple[np.ndarray, np.ndarray]:
+    """100 m display raster for the output area, and the secondary pieces it refers to.
+
+    inside_cells: (out_ny, out_nx) bool, output cells that hold data (water and inside the area).
+    Returns piece (out_ny*fine, out_nx*fine) uint16: 0 = land or no data, 1 = the main water piece of
+    its 500 m cell (value = the cell's value), k >= 2 = secondary piece k - 2 (value in the hourly
+    files' *_extra arrays). Also returns the secondary pieces' node ids, in that order."""
+    g, f = graph.grid, graph.grid.fine
+    rs, cs = g.out_slice()
+    lab = graph.fine_labels[rs.start * f:rs.stop * f, cs.start * f:cs.stop * f]
+    node = lab.astype(np.int64) - 1
+    water = lab > 0
+    cr, cc = np.nonzero(water)
+    nd = node[cr, cc]
+    inside = inside_cells[cr // f, cc // f]
+    primary = graph.primary[graph.node_cell[nd]] == nd
+    secondary = np.unique(nd[inside & ~primary])
+    piece = np.zeros(lab.shape, np.uint16)
+    piece[cr[inside & primary], cc[inside & primary]] = 1
+    sel = inside & ~primary
+    piece[cr[sel], cc[sel]] = (2 + np.searchsorted(secondary, nd[sel])).astype(np.uint16)
+    return piece, secondary

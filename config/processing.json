@@ -19,6 +19,19 @@
     "context_days": 2,
     "rewrite_days": 3,
     "near_surface_max_depth_m": 2.0,
+    "usgs_whole_psu_from_conductance": true,
+    "bottom_temperature": {
+      "_comment": "Where a station has no near-surface sensor, its mid or bottom temperature feeds the temperature grid if the water there is no deeper than max_depth_m (NOAA Coastal Relief Model, processing/depths.py). Never used for salinity.",
+      "use_in_shallow_water": true,
+      "max_depth_m": 3.0
+    },
+    "merge": {
+      "_comment": "Stations flagged possible_duplicate_of, or within max_distance_m of each other, are merged into one physical station only if their readings agree: median absolute difference over at least min_overlap_hours shared hours no more than water_temp_c / salinity_psu. Otherwise both stay.",
+      "max_distance_m": 300,
+      "min_overlap_hours": 12,
+      "water_temp_c": 0.3,
+      "salinity_psu": 1.0
+    },
     "gross_range": {
       "water_temp_c": {"fail": [-2.0, 40.0], "suspect": [5.0, 35.0]},
       "salinity_psu": {"fail": [0.0, 70.0], "suspect": [0.0, 55.0]},

@@ -11,18 +11,27 @@ sensor) the tests below set a flag on every reading (IOOS QARTOD codes: 1 good, 
 - flatline: identical readings for too long (stuck sensor). Salinity at the fresh-water floor and
   salinity runs while conductance keeps changing are left alone: that is rounding, not a stuck sensor
 - neighbor: temperature that stays far from the median of nearby stations (by water path) for days
+- hold: set by hand in config/station_tags.json (qc_hold) while a sensor is under review
 
-Where a station has conductance but no salinity at a depth, salinity is computed from specific
-conductance with PSS-78. Hourly values are the mean of good readings within half_window_minutes of
-the hour, one series per physical station (see stations.py). Depth is kept as a layer: surface
-(near-surface, used by the map now), bottom, mid, or profile (thermistor strings, not used).
+Salinity is computed from specific conductance with PSS-78 where a station has conductance but no
+salinity at a depth, and also where USGS reports salinity only in whole PSU (the computed value is
+finer; the reported one is kept in the raw files but not used).
+
+Hourly values are the mean of good readings within half_window_minutes of the hour. Depth is kept
+as a layer: surface (near-surface), bottom, mid, or profile (thermistor strings, not used).
+Stations at the same spot (flagged possible_duplicate_of, or within merge.max_distance_m) are
+merged into one physical station only when their readings agree (stations.py); otherwise both stay.
+
+Grid inputs (CleanResult.grid): salinity from the surface layer only; temperature from the surface
+layer, or, where a station has no surface sensor and sits in shallow water (depths.py), from its
+mid or bottom sensor.
 
 Outputs (only good readings make it into the hourly values):
 - data/qc/YYYY/MM/YYYY-MM-DD_flags.csv: every raw reading flagged suspect or bad, with the tests failed
 - data/clean/YYYY/MM/YYYY-MM-DD.csv: hourly cleaned values per physical station, variable and layer.
-  source is blank for the station's own reading, else the feed it came from (for grouped
+  source is blank for the station's own reading, else the feed it came from (for merged
   duplicates) and/or "PSS-78 from conductance"
-- data/clean/stations.csv: physical stations, their members, setting tag, grid use and status
+- data/clean/stations.csv: physical stations, their members, setting tag, depth, grid use and status
 """
 
 from __future__ import annotations
@@ -39,9 +48,11 @@ import numpy as np
 import pandas as pd
 
 from collector.common import DATA, SAL, SPCOND, TEMP, iso
+from collector.tags import overrides_file
+from . import depths as depthmod
 from .config import CLEAN_DIR, QC_DIR, proc_config
 from .pss78 import salinity_from_spec_cond
-from .stations import PhysStation, load_raw_stations, physical_stations
+from .stations import PhysStation, candidate_pairs, load_raw_stations, physical_stations
 
 log = logging.getLogger("processing.clean")
 
@@ -50,6 +61,7 @@ TESTS = {   # bit: (name, flag it sets)
     1: ("provider", BAD), 2: ("time", BAD), 4: ("range", BAD), 8: ("range_suspect", SUSPECT),
     16: ("spike", SUSPECT), 32: ("flatline", SUSPECT), 64: ("flatline_long", BAD),
     128: ("neighbor", SUSPECT), 256: ("missing", BAD), 512: ("from_flagged_conductance", SUSPECT),
+    1024: ("hold", SUSPECT),
 }
 BAD_BITS = sum(b for b, (_, f) in TESTS.items() if f == BAD)
 # USGS qualifier codes that mean the value should not be used.
@@ -65,7 +77,8 @@ FLAG_COLUMNS = ["time_utc", "station_uid", "variable", "depth_tag", "sensor", "d
 @dataclass
 class CleanResult:
     readings: pd.DataFrame        # raw readings with flag, tests, series, layer
-    hourly: pd.DataFrame          # time, station, variable, layer, value, n, depth_m, source
+    hourly: pd.DataFrame          # time, station, variable, layer, value, n, depth_m, source, member
+    grid: pd.DataFrame            # time, station, variable, value, layer: what the grids use
     stations: list[PhysStation]
     status: pd.DataFrame          # per physical station
     stats: dict
@@ -225,17 +238,38 @@ def run_series_tests(df: pd.DataFrame, now: datetime, cfg: dict) -> pd.DataFrame
     return df
 
 
-def add_derived_salinity(df: pd.DataFrame, member_of: dict[str, str], cfg: dict) -> pd.DataFrame:
-    """Salinity from specific conductance where a physical station has no salinity in that layer."""
+def whole_psu_series(df: pd.DataFrame) -> set[tuple[str, str]]:
+    """(station, layer) where USGS reports salinity only in whole PSU."""
+    out = set()
+    sal = df[(df["variable"] == SAL) & df["station_uid"].str.startswith("usgs:")]
+    for (uid, layer), g in sal.groupby(["station_uid", "layer"]):
+        v = g["value"].to_numpy(dtype="f8")
+        v = v[np.isfinite(v)]
+        if len(v) >= 12 and np.mean(np.abs(v - np.rint(v)) < 1e-6) >= 0.98 and v.max() >= 1:
+            out.add((uid, layer))
+    return out
+
+
+def add_derived_salinity(df: pd.DataFrame, cfg: dict) -> tuple[pd.DataFrame, set]:
+    """Salinity from specific conductance (PSS-78) where a station has conductance but no salinity
+    in a layer, or where USGS salinity there is whole PSU only. Returns the readings (derived rows
+    appended, superseded rows marked) and the (station, layer) pairs whose reported salinity was
+    replaced."""
     df = df.copy()
-    df["phys"] = df["station_uid"].map(member_of)
-    has_sal = set(map(tuple, df.loc[df["variable"] == SAL, ["phys", "layer"]].drop_duplicates().to_numpy()))
-    sc = df[(df["variable"] == SPCOND)]
-    keep = [tuple(x) not in has_sal for x in sc[["phys", "layer"]].to_numpy()]
-    sc = sc[keep]
+    df["derived"] = ""
+    df["superseded"] = False
+    sal = df[df["variable"] == SAL]
+    has_sal = set(zip(sal["station_uid"], sal["layer"]))
+    sc = df[df["variable"] == SPCOND]
+    sc_keys = set(zip(sc["station_uid"], sc["layer"]))
+    whole = whole_psu_series(df) & sc_keys if cfg.get("usgs_whole_psu_from_conductance", True) else set()
+    if whole:
+        keys = list(zip(df["station_uid"], df["layer"]))
+        df.loc[(df["variable"] == SAL).to_numpy() & np.array([k in whole for k in keys]), "superseded"] = True
+    derive = {k for k in sc_keys if k not in has_sal or k in whole}
+    sc = sc[[k in derive for k in zip(sc["station_uid"], sc["layer"])]]
     if sc.empty:
-        df["derived"] = ""
-        return df
+        return df, whole
     d = sc.copy()
     d["variable"] = SAL
     d["value"] = salinity_from_spec_cond(sc["value"].to_numpy())
@@ -248,8 +282,19 @@ def add_derived_salinity(df: pd.DataFrame, member_of: dict[str, str], cfg: dict)
     v = d["value"].to_numpy()
     d.loc[(v < lo) | (v > hi), "bits"] |= 4
     d["series"] = df["series"].max() + 1 + d.groupby(["station_uid", "depth_tag", "sensor"]).ngroup()
-    df["derived"] = ""
-    return pd.concat([df, d], ignore_index=True)
+    return pd.concat([df, d], ignore_index=True), whole
+
+
+def hold_bits(df: pd.DataFrame) -> tuple[np.ndarray, dict]:
+    """Bit 1024 on readings of stations held by hand in config/station_tags.json (qc_hold)."""
+    holds = overrides_file().get("qc_hold", {})
+    bits = np.zeros(len(df), np.int64)
+    for uid, h in holds.items():
+        m = (df["station_uid"] == uid).to_numpy().copy()
+        if h.get("variables"):
+            m &= df["variable"].isin(h["variables"]).to_numpy()
+        bits[m] = 1024
+    return bits, holds
 
 
 # ---------------------------------------------------------------- hourly values
@@ -258,11 +303,12 @@ SENSOR_RANK = lambda s: 0 if SURFACE_SENSOR.search(s or "") else (1 if not s els
 
 
 def hourly_values(df: pd.DataFrame, stations: list[PhysStation], cfg_hourly: dict) -> pd.DataFrame:
-    """One value per physical station, variable, layer and hour, from good readings only."""
+    """One value per station (df["phys"]), variable, layer and hour, from good readings only.
+    stations gives the member order of merged stations; unmerged stations have one member."""
     good = df[(flags_from_bits(df["bits"].to_numpy()) == GOOD) & (df["variable"] != SPCOND)
-              & (df["layer"] != "profile")].copy()
+              & (df["layer"] != "profile") & ~df["superseded"]].copy()
     if good.empty:
-        return pd.DataFrame(columns=CLEAN_COLUMNS + ["time"])
+        return pd.DataFrame(columns=["time", "station", "variable", "layer", "value", "n", "depth_m", "source", "member"])
     half = pd.Timedelta(minutes=cfg_hourly["half_window_minutes"])
     good["hour"] = (good["time"] + half).dt.floor("h")
     # Readings exactly half a window after the hour belong to the next hour's window only.
@@ -284,21 +330,66 @@ def hourly_values(df: pd.DataFrame, stations: list[PhysStation], cfg_hourly: dic
     best["source"] = np.where(other, best["station_uid"], "")
     best["source"] = np.where(best["derived"] == "pss78",
                               (best["source"] + " PSS-78 from conductance").str.strip(), best["source"])
+    best["member"] = best["station_uid"]
     out = best.rename(columns={"phys": "station", "hour": "time"})[
-        ["time", "station", "variable", "layer", "value", "n", "depth_m", "source"]]
+        ["time", "station", "variable", "layer", "value", "n", "depth_m", "source", "member"]]
     return out.reset_index(drop=True)
+
+
+def grid_values(hourly: pd.DataFrame, shallow: dict[str, bool | None]) -> pd.DataFrame:
+    """The value each station gives the grids each hour: salinity from the surface layer; temperature
+    from the surface layer, else from a mid or bottom sensor in shallow water (shallow[member])."""
+    if hourly.empty:
+        return pd.DataFrame(columns=["time", "station", "variable", "value", "layer", "member"])
+    h = hourly
+    sal = h[(h["variable"] == SAL) & (h["layer"] == "surface")]
+    t = h[h["variable"] == TEMP]
+    surf = t[t["layer"] == "surface"]
+    below = t[t["layer"].isin(["mid", "bottom"]) & t["member"].map(lambda m: shallow.get(m) is True)]
+    below = below.assign(rank=below["layer"].map({"mid": 0, "bottom": 1})).sort_values("rank")
+    below = below.drop_duplicates(["station", "time"]).drop(columns="rank")
+    have = set(zip(surf["station"], surf["time"]))
+    below = below[[k not in have for k in zip(below["station"], below["time"])]]
+    out = pd.concat([sal, surf, below], ignore_index=True)
+    return out[["time", "station", "variable", "value", "layer", "member"]].sort_values(
+        ["station", "variable", "time"]).reset_index(drop=True)
+
+
+def agreement(grid: pd.DataFrame, pairs: list[tuple[str, str]], mcfg: dict) -> dict[tuple[str, str], dict]:
+    """For each candidate pair, the median absolute difference of their grid values over shared
+    hours, per variable, and whether they agree. agree is None when they share no hours."""
+    out = {}
+    piv = {var: grid[grid["variable"] == var].pivot_table(index="time", columns="station", values="value")
+           for var in (TEMP, SAL)}
+    for a, b in pairs:
+        info = {"agree": None}
+        verdicts = []
+        for var, key in ((TEMP, "temp"), (SAL, "salinity")):
+            p = piv[var]
+            if a not in p or b not in p:
+                continue
+            both = p[[a, b]].dropna()
+            if len(both) < mcfg["min_overlap_hours"]:
+                continue
+            md = float(np.median(np.abs(both[a] - both[b])))
+            info[key] = {"median_abs_diff": round(md, 2), "hours": int(len(both))}
+            verdicts.append(md <= mcfg[var])
+        if verdicts:
+            info["agree"] = all(verdicts)
+        out[(a, b)] = info
+    return out
 
 
 # ---------------------------------------------------------------- neighbor test
 
-def neighbor_test(df: pd.DataFrame, hourly: pd.DataFrame, stations: list[PhysStation],
-                  dist: dict[tuple[str, str], float], cfg: dict) -> tuple[np.ndarray, dict]:
-    """Bits (128) for raw readings in hours where a station's temperature stays far from its
+def neighbor_test(df: pd.DataFrame, grid: pd.DataFrame, dist: dict[tuple[str, str], float], cfg: dict
+                  ) -> tuple[np.ndarray, dict]:
+    """Bits (128) for raw readings in hours where a station's grid temperature stays far from its
     neighbours. dist maps (station id, station id) to water-path km for coastal gridded stations."""
     nc = cfg["neighbor"]
     var = TEMP
     thr = nc.get(var)
-    h = hourly[(hourly["variable"] == var) & (hourly["layer"] == "surface")]
+    h = grid[grid["variable"] == var]
     ids = sorted({a for a, _ in dist})
     if thr is None or h.empty or len(ids) < nc["min_neighbors"] + 1:
         return np.zeros(len(df), np.int64), {}
@@ -336,19 +427,23 @@ def neighbor_test(df: pd.DataFrame, hourly: pd.DataFrame, stations: list[PhysSta
     bits = np.zeros(len(df), np.int64)
     half = pd.Timedelta(minutes=proc_config()["hourly"]["half_window_minutes"])
     hours = (df["time"] + half).dt.floor("h")
-    fl = {(ids[i], t) for t_idx, i in zip(*np.nonzero(flagged)) for t in [X.index[t_idx]]}
+    fl = {(ids[i], X.index[t_idx]) for t_idx, i in zip(*np.nonzero(flagged))}
     if fl:
-        m = (df["variable"] == var) & (df["layer"] == "surface")
-        keys = list(zip(df.loc[m, "phys"], hours[m]))
-        hit = np.array([k in fl for k in keys])
-        bits[np.nonzero(m.to_numpy())[0][hit]] = 128
+        layer_of = dict(zip(zip(h["station"], h["time"]), h["layer"]))
+        m = (df["variable"] == var).to_numpy()
+        idx = np.nonzero(m)[0]
+        keys = zip(df["phys"].to_numpy()[idx], hours.to_numpy()[idx], df["layer"].to_numpy()[idx])
+        hit = np.array([layer_of.get((p, pd.Timestamp(t))) == lay if (p, pd.Timestamp(t)) in fl else False
+                        for p, t, lay in keys], bool)
+        bits[idx[hit]] = 128
     return bits, summary
 
 
 # ---------------------------------------------------------------- station status
 
 def station_status(df: pd.DataFrame, stations: list[PhysStation], now: datetime, cfg: dict,
-                   grid_use: dict[str, dict]) -> pd.DataFrame:
+                   grid_use: dict[str, dict], depth: dict[str, dict], not_merged: dict[str, list[str]],
+                   grid: pd.DataFrame) -> pd.DataFrame:
     sc = cfg["stale"]
     raw = {s["uid"]: s for s in load_raw_stations()}
     last = df[df["variable"] != SPCOND].groupby("phys")["time"].max()
@@ -372,11 +467,16 @@ def station_status(df: pd.DataFrame, stations: list[PhysStation], now: datetime,
             s = sub[(sub["variable"] == var) & (fl == GOOD)]
             layers[var] = ",".join(sorted(set(s["layer"]), key=LAYERS.index))
         gu = grid_use.get(ps.id, {})
+        dp = depth.get(ps.id) or {}
+        gt = grid[(grid["station"] == ps.id) & (grid["variable"] == TEMP)]
         rows.append({
             "station": ps.id, "name": ps.name, "provider": ps.provider,
             "lat": round(ps.lat, 5), "lon": round(ps.lon, 5),
-            "members": ";".join(ps.members), "setting": ps.setting, "setting_reason": ps.setting_reason,
+            "members": ";".join(ps.members), "not_merged_with": ";".join(not_merged.get(ps.id, [])),
+            "setting": ps.setting, "setting_reason": ps.setting_reason,
+            "depth_m": "" if not dp else ("creek" if dp.get("depth_m") is None else dp["depth_m"]),
             "temp_layers": layers[TEMP], "salinity_layers": layers[SAL],
+            "grid_temp_layer": ",".join(sorted(set(gt["layer"]), key=LAYERS.index)),
             "salinity_from_conductance": "yes" if (sub["derived"] == "pss78").any() else "no",
             "grid_temp": gu.get("temp", ""), "grid_salinity": gu.get("salinity", ""),
             "snap_km": gu.get("snap_km", ""),
@@ -431,7 +531,7 @@ def write_outputs(res: CleanResult, days: list[date]) -> dict:
         w = csv.writer(buf, lineterminator="\n")
         w.writerow(CLEAN_COLUMNS)
         for r in sub.itertuples():
-            w.writerow([iso(r.time.to_pydatetime()), r.station, r.variable, r.layer,
+            w.writerow([iso(pd.Timestamp(r.time).to_pydatetime()), r.station, r.variable, r.layer,
                         _fmt(r.value, 3 if r.variable == SAL else 2), r.n, _fmt(r.depth_m, 2), r.source])
         p = CLEAN_DIR / f"{d:%Y}" / f"{d:%m}" / f"{ds}.csv"
         if not sub.empty and _write_if_changed(p, buf.getvalue()):
@@ -444,29 +544,60 @@ def write_outputs(res: CleanResult, days: list[date]) -> dict:
 
 # ---------------------------------------------------------------- entry point
 
-def run(start: datetime, end: datetime, now: datetime, graph=None, write_days: list[date] | None = None
-        ) -> CleanResult:
-    """QC readings between start and end (plus context), compute hourly values.
+def run(start: datetime, end: datetime, now: datetime, graph=None, write_days: list[date] | None = None,
+        fetch_depths: bool = True) -> CleanResult:
+    """QC readings between start and end (plus context), compute hourly values and grid inputs.
 
     graph: a WaterGraph, used for the neighbor test and to record which stations the grids can use.
     """
-    cfg = proc_config()["qc"]
+    pcfg = proc_config()
+    cfg = pcfg["qc"]
     ctx = cfg["context_days"]
     days = raw_days((start - timedelta(days=ctx)).date(), end.date())
     df = load_raw(days)
-    stations, member_of = physical_stations()
-    df = df[df["station_uid"].isin(member_of)]
+    raw_st = [s for s in load_raw_stations() if s.get("collect")]
+    df = df[df["station_uid"].isin({s["uid"] for s in raw_st})]
     stats: dict = {"raw_readings": int(len(df))}
     if df.empty:
+        stations, _ = physical_stations(raw_st, set())
         empty = pd.DataFrame(columns=CLEAN_COLUMNS)
-        return CleanResult(df, empty, stations, pd.DataFrame(), stats)
+        return CleanResult(df, empty, empty, stations, pd.DataFrame(), stats)
     df = run_series_tests(df, now, cfg)
-    df = add_derived_salinity(df, member_of, cfg)
+    df, whole = add_derived_salinity(df, cfg)
+    hb, holds = hold_bits(df)
+    df["bits"] = df["bits"].to_numpy() | hb
+    stats["salinity_from_conductance_replacing_whole_psu"] = sorted(f"{u} ({lay})" for u, lay in whole)
+    stats["holds"] = {u: h.get("reason", "") for u, h in holds.items()}
+
+    # Depth at each station, for bottom gauges standing in for surface temperature.
+    bt = cfg["bottom_temperature"]
+    depth = depthmod.station_depths(raw_st, fetch=fetch_depths)
+    shallow = {s["uid"]: (depthmod.is_shallow(depth.get(s["uid"]), bt["max_depth_m"]) if bt["use_in_shallow_water"]
+                          else False) for s in raw_st}
+
+    # Each station on its own first; merge co-located stations only where their readings agree.
+    df["phys"] = df["station_uid"]
+    solo = grid_values(hourly_values(df, [], pcfg["hourly"]), shallow)
+    pairs = candidate_pairs(raw_st, cfg["merge"]["max_distance_m"])
+    checks = agreement(solo, pairs, cfg["merge"])
+    agree = {frozenset(p) for p, i in checks.items() if i["agree"]}
+    stations, member_of = physical_stations(raw_st, agree)
+    df["phys"] = df["station_uid"].map(member_of)
+    not_merged: dict[str, list[str]] = {}
+    for (a, b), i in checks.items():
+        if frozenset((a, b)) in agree:
+            continue
+        why = "; ".join(f"{k} differs by {v['median_abs_diff']}" for k, v in i.items() if isinstance(v, dict)) \
+            or "no shared hours to compare"
+        not_merged.setdefault(member_of[a], []).append(f"{b} ({why})")
+        not_merged.setdefault(member_of[b], []).append(f"{a} ({why})")
+    stats["merge_checks"] = {f"{a} + {b}": i for (a, b), i in checks.items()}
+    depth_phys = {ps.id: depth.get(ps.id) for ps in stations}
 
     # Grid use and water-path distances between coastal stations (for the neighbor test).
     grid_use, dist = {}, {}
     if graph is not None:
-        snap_km = proc_config()["grid"]["station_snap_km"]
+        snap_km = pcfg["grid"]["station_snap_km"]
         nodes = {}
         for ps in stations:
             gu = {}
@@ -488,29 +619,40 @@ def run(start: datetime, end: datetime, now: datetime, graph=None, write_days: l
                     dist[(a, b)] = float(D[a_i, nodes[b]])
         stats["station_nodes"] = nodes
 
-    hourly = hourly_values(df, stations, proc_config()["hourly"])
-    nb_bits, nb_summary = neighbor_test(df, hourly, stations, dist, cfg)
+    hourly = hourly_values(df, stations, pcfg["hourly"])
+    grid = grid_values(hourly, shallow)
+    nb_bits, nb_summary = neighbor_test(df, grid, dist, cfg)
     if nb_bits.any():
         df["bits"] = df["bits"].to_numpy() | nb_bits
-        hourly = hourly_values(df, stations, proc_config()["hourly"])
+        hourly = hourly_values(df, stations, pcfg["hourly"])
+        grid = grid_values(hourly, shallow)
     stats["neighbor_flags"] = nb_summary
+    if graph is not None:
+        grid = grid[grid["station"].isin(stats["station_nodes"])].reset_index(drop=True)
 
-    # Which stations ended up with surface values the grids can use.
-    surf = hourly[hourly["layer"] == "surface"]
+    # Why each station is or is not in each grid.
     for ps in stations:
         gu = grid_use.setdefault(ps.id, {})
         for var, key in ((TEMP, "temp"), (SAL, "salinity")):
             if key in gu:
                 continue
+            g = grid[(grid["station"] == ps.id) & (grid["variable"] == var)]
+            h = hourly[(hourly["station"] == ps.id) & (hourly["variable"] == var)]
             if ps.setting != "coastal":
                 gu[key] = f"no: {ps.setting}"
-            elif ((surf["station"] == ps.id) & (surf["variable"] == var)).any():
-                gu[key] = "yes"
-            elif ((hourly["station"] == ps.id) & (hourly["variable"] == var)).any():
-                gu[key] = "no: no near-surface sensor"
+            elif len(g):
+                below = sorted(set(g["layer"]) - {"surface"})
+                gu[key] = "yes" if not below else f"yes: {'/'.join(below)} sensor in shallow water"
+            elif len(h):
+                if var == TEMP and bt["use_in_shallow_water"]:
+                    sh = shallow.get(ps.id)
+                    gu[key] = ("no: no near-surface sensor, depth unknown" if sh is None else
+                               f"no: no near-surface sensor, water deeper than {bt['max_depth_m']:g} m")
+                else:
+                    gu[key] = "no: no near-surface sensor"
             else:
                 gu[key] = "no: no good readings in window"
-    status = station_status(df, stations, now, cfg, grid_use)
+    status = station_status(df, stations, now, cfg, grid_use, depth_phys, not_merged, grid)
     fl = flags_from_bits(df["bits"].to_numpy())
     stats.update({
         "good": int((fl == GOOD).sum()), "suspect": int((fl == SUSPECT).sum()), "bad": int((fl == BAD).sum()),
@@ -518,7 +660,7 @@ def run(start: datetime, end: datetime, now: datetime, graph=None, write_days: l
         "hourly_values": int(len(hourly)),
         "stale_stations": status.loc[status["status"] == "stale", "station"].tolist(),
     })
-    res = CleanResult(df, hourly, stations, status, stats)
+    res = CleanResult(df, hourly, grid, stations, status, stats)
     if write_days:
         stats["files_changed"] = write_outputs(res, write_days)
     return res

@@ -5,5 +5,13 @@
       "setting": "inland",
       "reason": "Caloosahatchee at Alva, upstream of the S-79 Franklin Lock: fresh river, not tidal"
     }
+  },
+  "_qc_hold_comment": "Readings of these stations (only the listed variables) are flagged suspect (test 'hold') and kept out of the grids until the entry is removed. For sensors under review.",
+  "qc_hold": {
+    "erddap-secoora:gov-nps-ever-hcef1": {
+      "variables": ["water_temp_c"],
+      "since": "2026-11-14",
+      "reason": "Highway Creek: offset from neighbouring stations grew to about +4 C in November 2026, day and night alike, the largest in 18 months of record. Held while CFCW reviews docs/florida_bay_offsets.md."
+    }
   }
 }

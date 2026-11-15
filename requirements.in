@@ -1,0 +1,9 @@
+# Direct dependencies of the hourly workflow. requirements.txt pins these and everything they pull in
+# to exact versions; regenerate it with:
+#   uv pip compile requirements.in --python-version 3.12 -o requirements.txt
+requests==2.34.2
+numpy==2.5.4
+netCDF4==1.7.5.1.post1
+scipy==1.18.1
+pandas==3.1.1
+pillow==13.0.0

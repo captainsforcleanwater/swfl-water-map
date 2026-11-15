@@ -80,3 +80,46 @@ def test_caloosahatchee_connects_to_the_gulf_but_stops_at_s79(graph):
     shell_point_gulf = (26.45, -82.05)
     assert np.isfinite(water_km(graph, beautiful_island, shell_point_gulf))
     assert graph.snap(26.7200, -81.6546, 1.0) is None   # Alva, above the S-79 lock, is not tidal water
+
+
+def test_merge_only_when_readings_agree():
+    import pandas as pd
+    from processing.clean import agreement
+    t = pd.date_range("2026-11-12", periods=24, freq="h", tz="UTC")
+    rows = []
+    for i, ts in enumerate(t):
+        rows += [(ts, "a", "water_temp_c", 27.0 + 0.01 * i), (ts, "b", "water_temp_c", 27.02 + 0.01 * i),
+                 (ts, "c", "water_temp_c", 28.6 + 0.01 * i)]
+    grid = pd.DataFrame(rows, columns=["time", "station", "variable", "value"])
+    mcfg = {"min_overlap_hours": 12, "water_temp_c": 0.3, "salinity_psu": 1.0}
+    res = agreement(grid, [("a", "b"), ("a", "c"), ("a", "d")], mcfg)
+    assert res[("a", "b")]["agree"] is True       # same sensor through two services
+    assert res[("a", "c")]["agree"] is False      # Trout Cove and Trout Creek: 1.6 C apart
+    assert res[("a", "d")]["agree"] is None       # nothing to compare: stay separate
+
+
+def test_whole_psu_usgs_salinity_is_detected():
+    import pandas as pd
+    from processing.clean import whole_psu_series
+    n = 20
+    df = pd.DataFrame({
+        "station_uid": ["usgs:1"] * n + ["usgs:2"] * n + ["erddap-secoora:x"] * n,
+        "variable": ["salinity_psu"] * (3 * n), "layer": ["bottom"] * (3 * n),
+        "value": [30.0, 31.0] * (n // 2) + [30.4, 31.2] * (n // 2) + [30.0] * n})
+    assert whole_psu_series(df) == {("usgs:1", "bottom")}
+
+
+def test_display_pieces_match_the_hourly_extras(graph):
+    from processing.display import inside_cells
+    from processing.waterpaths import display_pieces
+    grid = graph.grid
+    piece, secondary = display_pieces(graph, inside_cells(grid, graph))
+    assert piece.shape == (grid.out_ny * grid.fine, grid.out_nx * grid.fine)
+    assert piece.max() == len(secondary) + 1     # every secondary piece is used, none out of range
+    # Captiva Island is land at 100 m even though its 500 m cells hold water
+    f = grid.fine
+    r = int((grid.top - grid.out_row0 * grid.dlat - 26.52) / grid.fdlat)
+    c = int((-82.191 - (grid.left + grid.out_col0 * grid.dlon)) / grid.fdlon)
+    assert piece[r, c] == 0
+    rs, cs = grid.out_slice()
+    assert graph.primary.reshape(grid.ny, grid.nx)[rs, cs][r // f, c // f] >= 0

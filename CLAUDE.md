@@ -24,9 +24,16 @@ A live map of water temperature and salinity along Florida's Gulf coast from Eng
 | GOES-19 storage | GitHub Releases, one NetCDF file per UTC day in a monthly release `goes19-sst-hourly-YYYY-MM`, confirmed 2026-11-14. |
 | USGS API key | CFCW adds `USGS_API_KEY` as a repository secret; the workflow already passes it to the collector. |
 | Depth | Near-surface only for now (2026-11-14). Depth layers stay in the clean files so a bottom layer can be added later. |
+| Bottom-only gauges | Used for temperature where the water is shallow (no deeper than 3 m in the NOAA Coastal Relief Model, or a creek narrower than it), never for salinity (2026-11-14). |
+| USGS salinity | Computed from specific conductance (PSS-78) where USGS reports salinity only in whole PSU (2026-11-14). |
+| Duplicate stations | Co-located series (flagged `possible_duplicate_of`, or within 300 m) are merged only when their readings agree; otherwise both are kept (2026-11-14). Trout Cove (NPS TCVF1) and Trout Creek (USGS 251253080320100) are two stations. |
 | Inland stations | Fresh, non-tidal sites stay out of the grids, using the inventory's `setting` tag (2026-11-14). |
-| Clean layer | *Proposed*: QC flags and hourly cleaned values as CSV in git (`data/qc/`, `data/clean/`), about 100 MB a year. |
-| Blended grids | *Proposed*: 500 m grid, one gzip file per UTC day on monthly releases `blend-hourly-YYYY-MM`, about 0.9 GB a year. Format in `processing/gridfile.py`. |
+| Clean layer | QC flags and hourly cleaned values as CSV in git (`data/qc/`, `data/clean/`), about 100 MB a year. Storage approved 2026-11-14. |
+| Blended grids | 500 m grid, one gzip file per UTC day on monthly releases `blend-hourly-YYYY-MM`, about 0.9 GB a year. Format in `processing/gridfile.py`. Storage approved 2026-11-14. |
+| Serving the grids | Decided together with the map (2026-11-14). Release files can't be fetched by a browser directly (no CORS headers). |
+| Map coastline | The map draws its coastline and water from the 100 m mask, not from the 500 m cells (2026-11-14). See Pipeline step 4. |
+| Salinity display | The map hides salinity where its confidence is below a threshold instead of showing it faded (2026-11-14). Threshold *proposed*: 40. |
+| Highway Creek | Temperature held as suspect (`qc_hold` in `config/station_tags.json`) while its November 2026 warm offset is reviewed (`docs/florida_bay_offsets.md`). |
 
 ## How this repo works
 
@@ -47,7 +54,8 @@ A live map of water temperature and salinity along Florida's Gulf coast from Eng
 - Keep large grids out of git history. Each day's hourly GOES-19 subset is one compressed NetCDF file attached to a GitHub Release (confirmed). Raw sensor readings live in the repo as plain CSV daily files (confirmed).
 - Convert everything to UTC and consistent units. Display temperature in °F.
 - Never change the raw files in `data/sensors/`. QC flags and cleaned values are a separate layer.
-- The water mask (`data/grid/water_fine.png`) is rebuilt by hand with `python -m processing.shoreline`, only when the grid or the list of barriers changes. The water-path distance cache keys on its hash.
+- Library versions are pinned exactly in `requirements.txt` (and `requirements-dev.txt`), generated from `requirements.in` with `uv pip compile requirements.in --python-version 3.12 -o requirements.txt`. Change a version on purpose, then run `python -m pytest tests` and a local `python -m processing.run --store local` before committing.
+- The water mask (`data/grid/water_fine.png`) is rebuilt by hand with `python -m processing.shoreline`, only when the grid or the list of barriers changes. That also rebuilds the map's 100 m coastline files. The water-path distance cache keys on its hash.
 - Style for docs, UI text, code comments and commit messages: plain language, no em dashes.
 
 ## Pipeline
@@ -59,10 +67,12 @@ Steps 2 and 3 are in `processing/` and run in the hourly workflow right after co
 3. **Blend into a grid:**
    - Temperature: the satellite field is the background. At each sensor, compute sensor minus satellite, interpolate those corrections across the grid and add them back. When clouds block an hour, fall back to the last clear frame corrected by sensors.
    - Interpolate through water, not across land. Use a coastline mask with water-path (cost) distance, so Caloosahatchee readings don't bleed across Sanibel into the Gulf.
-   - Count each physical station once. Some stations are collected from two services and are flagged in `data/stations.csv` (`possible_duplicate_of`): USF COMPS C13 (three series: GCOOS `USF_COMPS_C13` plus two SECOORA datasets), C22 (GCOOS and SECOORA) and Trout Cove (Everglades National Park TCVF1 on SECOORA and USGS 251253080320100). Use one series per physical station, or merge them, so a duplicate does not get double weight in the corrections.
+   - Count each physical station once. Some stations are collected from two services: USF COMPS C13 (GCOOS `USF_COMPS_C13` plus two SECOORA datasets), C22 (GCOOS and SECOORA) and C27 (two SECOORA datasets). Co-located series are merged only when their readings agree (checked 2026-11-14: these three groups match to within 0.02 C, but the SECOORA feeds stopped on 2026-11-03, leaving C27 with no working feed). Trout Cove (NPS TCVF1) and Trout Creek (USGS 251253080320100) are 240 m apart but differ by more than 1 C, so they are two stations.
    - Salinity: sensor-only. Satellite salinity is far too coarse near shore. It will be strongest in the estuaries and shaded as low-confidence elsewhere.
    - A confidence layer shades areas far from any sensor or under cloud.
 4. **Live map** (GitHub Pages): hourly frames on a time slider, isotherms in °F, a thermal fronts layer, confidence shading, temperature/salinity toggle, and tap-a-sensor charts.
+   - **Coastline from the 100 m mask, not the 500 m cells.** A 500 m cell counts as water if it holds any water (that keeps narrow rivers open for the water paths), so drawing the cells would erase Captiva, Cayo Costa and Gasparilla and shrink Sanibel and Pine Island to slivers. Draw land and water from `data/grid/display_100m.bin.gz` (or the vector `data/grid/land_100m.geojson`). Its `piece` layer also says how to colour each 100 m water pixel: 1 = its 500 m cell's value, k >= 2 = element k - 2 of the hourly file's `*_extra` layers (the far side of an island inside the same cell). `pieces_key` must match between the two files. `processing/quicklook.py` draws this way and can serve as a reference.
+   - **Hide salinity below a confidence threshold, don't fade it.** Offshore salinity is extrapolation (for example the fresh water fanning out of Charlotte Harbor, or the salty patch west of Cape Sable). The *proposed* threshold is 40, which keeps roughly the water within 10 km by water path of a salinity sensor. Salinity confidence measures sensor coverage, not a calibrated error: leave-one-out errors near offshore buoys are small even at low confidence, and errors at fresh estuary sites are large even at middling confidence.
 
 ## Data sources
 
@@ -104,13 +114,13 @@ History features: scrub any day back to 2012 or any hour in the last 2 years; a 
 3. Done: `.github/workflows/collect.yml`, first run 2026-11-14. Start the hourly collector and archiving immediately, before the map is polished. GOES-19 hourly history older than about 5 days can't be recovered later.
 4. Done: clean and blend (`processing/`, `docs/processing.md`). Runs after each collection; hourly grids go to releases `blend-hourly-YYYY-MM`.
 5. Backfill daily history to 2012.
-6. Ship the v1 map with the salinity layer and history. Its style is chosen separately. Release files cannot be fetched by a browser directly (no CORS headers), so the map step must pick how to serve the grids.
+6. Ship the v1 map with the salinity layer and history. Its style is chosen separately. Release files cannot be fetched by a browser directly (no CORS headers), so the map step also decides how to serve the grids. Follow the coastline and salinity rules under Pipeline step 4.
 
 ## Open questions for CFCW
 
 - Approve or adjust the history plan.
-- Bottom-only gauges (six USGS sites in the Ten Thousand Islands and Florida Bay creeks, and Broad River's mid-depth sensor) are left out of the near-surface grids. Use them as near-surface stand-ins where the water is shallow and well mixed?
-- USGS reports salinity in whole PSU at several sites, though conductance is reported more finely. Use PSS-78 from conductance at every USGS site instead?
-- How should the map serve the hourly grid files: copy recent days to GitHub Pages, a small CORS proxy, or object storage?
+- Highway Creek (HCEF1): its temperature ran about 2 C beyond the other northeast Florida Bay stations in November 2026, the same day and night (`docs/florida_bay_offsets.md`). Ask Everglades National Park whether the sensor was serviced or is faulty; lift the hold after a service visit or once the offset settles below about 1 C.
+- Confirm or change the salinity display threshold (proposed: hide below confidence 40).
+- USF COMPS C27 (inner shelf, 25.85 N 82.34 W): both feeds stopped on 2026-11-03 and GCOOS has no copy. Is there another source?
 - Is the map public from day one, or internal first?
 - SCCF RECON access: is there a contact at SCCF who could provide a data feed if needed?
