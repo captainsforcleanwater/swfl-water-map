@@ -5,24 +5,27 @@
    "flatline": 85,
    "flatline_long": 182,
    "from_flagged_conductance": 1,
-   "hold": 78,
+   "hold": 85,
    "missing": 0,
    "neighbor": 0,
    "provider": 0,
    "range": 0,
    "range_suspect": 0,
-   "spike": 8,
+   "spike": 11,
    "time": 0
   },
   "files_changed": {
-   "data/clean/2026/11/2026-11-15.csv": 442,
-   "data/clean/stations.csv": 93
+   "data/clean/2026/11/2026-11-14.csv": 3441,
+   "data/clean/2026/11/2026-11-15.csv": 959,
+   "data/clean/stations.csv": 93,
+   "data/qc/2026/11/2026-11-14_flags.csv": 74,
+   "data/qc/2026/11/2026-11-15_flags.csv": 11
   },
-  "good": 40103,
+  "good": 41149,
   "holds": {
    "erddap-secoora:gov-nps-ever-hcef1": "Highway Creek: offset from neighbouring stations grew to about +4 C in November 2026, day and night alike, the largest in 18 months of record. Held while CFCW reviews docs/florida_bay_offsets.md."
   },
-  "hourly_values": 11617,
+  "hourly_values": 12209,
   "merge_checks": {
    "erddap-gcoos:USF_COMPS_C13 + erddap-secoora:42023-c13-wfs-south-buoy-50m-": {
     "agree": null
@@ -42,13 +45,13 @@
    "usgs:251253080320100 + erddap-secoora:gov-nps-ever-tcvf1": {
     "agree": false,
     "temp": {
-     "hours": 78,
-     "median_abs_diff": 1.2
+     "hours": 85,
+     "median_abs_diff": 1.19
     }
    }
   },
   "neighbor_flags": {},
-  "raw_readings": 36439,
+  "raw_readings": 37435,
   "salinity_from_conductance_replacing_whole_psu": [
    "usgs:02290930 (surface)",
    "usgs:250802081035500 (surface)",
@@ -57,22 +60,22 @@
    "usgs:255534081324000 (bottom)",
    "usgs:255726081303700 (bottom)"
   ],
-  "seconds": 2.8,
+  "seconds": 2.0,
   "stale_stations": [],
-  "suspect": 172
+  "suspect": 182
  },
  "errors": {},
- "finished": "2026-11-15T05:59:42Z",
- "hours_blended": 3,
+ "finished": "2026-11-15T07:13:47Z",
+ "hours_blended": 9,
  "hours_considered": 121,
- "hours_to_blend": 3,
- "now": "2026-11-15T05:59:28Z",
+ "hours_to_blend": 9,
+ "now": "2026-11-15T07:13:16Z",
  "out_of_time": false,
- "seconds": 13.7,
- "started": "2026-11-15T05:59:28Z",
+ "seconds": 31.0,
+ "started": "2026-11-15T07:13:16Z",
  "store": "release",
  "window": [
-  "2026-11-10T05:00:00Z",
-  "2026-11-15T05:00:00Z"
+  "2026-11-10T06:00:00Z",
+  "2026-11-15T06:00:00Z"
  ]
 }

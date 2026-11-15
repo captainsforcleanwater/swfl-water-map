@@ -1,3 +1,12 @@
 time_utc,station_uid,variable,depth_tag,sensor,depth_m,value,flag,tests
+2026-11-15T00:00:00Z,erddap-secoora:gov-nps-ever-hcef1,water_temp_c,surface,sea_water_temperature,0,27.06,3,hold
+2026-11-15T01:00:00Z,erddap-secoora:gov-nps-ever-hcef1,water_temp_c,surface,sea_water_temperature,0,27.9,3,hold
+2026-11-15T02:00:00Z,erddap-secoora:gov-nps-ever-hcef1,water_temp_c,surface,sea_water_temperature,0,27.54,3,hold
+2026-11-15T03:00:00Z,erddap-secoora:gov-nps-ever-hcef1,water_temp_c,surface,sea_water_temperature,0,26.2,3,hold
+2026-11-15T04:00:00Z,erddap-secoora:gov-nps-ever-hcef1,water_temp_c,surface,sea_water_temperature,0,25.15,3,hold
+2026-11-15T05:00:00Z,erddap-secoora:gov-nps-ever-hcef1,water_temp_c,surface,sea_water_temperature,0,24.93,3,hold
 2026-11-15T03:15:00Z,usgs:255534081324000,salinity_psu,bottom,Near Bottom,,24,3,spike
 2026-11-15T03:15:00Z,usgs:255534081324000,spec_cond_us_cm,bottom,Near Bottom,,38500,3,spike
+2026-11-15T07:00:00Z,usgs:255654081350200,salinity_psu,bottom,Near Bottom,,13,3,spike
+2026-11-15T07:00:00Z,usgs:255654081350200,spec_cond_us_cm,bottom,Near Bottom,,21300,3,spike
+2026-11-15T07:00:00Z,usgs:255654081350200,water_temp_c,bottom,Near Bottom,,23.5,3,spike
