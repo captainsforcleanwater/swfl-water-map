@@ -5,7 +5,7 @@
    "flatline": 85,
    "flatline_long": 182,
    "from_flagged_conductance": 1,
-   "hold": 113,
+   "hold": 117,
    "missing": 0,
    "neighbor": 0,
    "provider": 0,
@@ -15,17 +15,15 @@
    "time": 0
   },
   "files_changed": {
-   "data/clean/2026/11/2026-11-15.csv": 3442,
-   "data/clean/2026/11/2026-11-16.csv": 1504,
+   "data/clean/2026/11/2026-11-16.csv": 2019,
    "data/clean/stations.csv": 93,
-   "data/qc/2026/11/2026-11-15_flags.csv": 26,
-   "data/qc/2026/11/2026-11-16_flags.csv": 10
+   "data/qc/2026/11/2026-11-16_flags.csv": 14
   },
-  "good": 54648,
+  "good": 56232,
   "holds": {
    "erddap-secoora:gov-nps-ever-hcef1": "Highway Creek: offset from neighbouring stations grew to about +4 C in November 2026, day and night alike, the largest in 18 months of record. Held while CFCW reviews docs/florida_bay_offsets.md."
   },
-  "hourly_values": 16196,
+  "hourly_values": 16711,
   "merge_checks": {
    "erddap-gcoos:USF_COMPS_C13 + erddap-secoora:42023-c13-wfs-south-buoy-50m-": {
     "agree": null
@@ -45,13 +43,13 @@
    "usgs:251253080320100 + erddap-secoora:gov-nps-ever-tcvf1": {
     "agree": false,
     "temp": {
-     "hours": 113,
+     "hours": 117,
      "median_abs_diff": 1.19
     }
    }
   },
   "neighbor_flags": {},
-  "raw_readings": 49595,
+  "raw_readings": 51019,
   "salinity_from_conductance_replacing_whole_psu": [
    "usgs:02290930 (surface)",
    "usgs:250802081035500 (surface)",
@@ -60,22 +58,26 @@
    "usgs:255534081324000 (bottom)",
    "usgs:255726081303700 (bottom)"
   ],
-  "seconds": 2.5,
-  "stale_stations": [],
-  "suspect": 207
+  "seconds": 2.2,
+  "stale_stations": [
+   "erddap-secoora:gulf-star-marina",
+   "erddap-secoora:new-pass-bridge",
+   "erddap-secoora:key-largo-fl"
+  ],
+  "suspect": 211
  },
  "errors": {},
- "finished": "2026-11-16T11:34:55Z",
- "hours_blended": 14,
+ "finished": "2026-11-16T15:15:23Z",
+ "hours_blended": 8,
  "hours_considered": 121,
- "hours_to_blend": 14,
- "now": "2026-11-16T11:34:18Z",
+ "hours_to_blend": 8,
+ "now": "2026-11-16T15:15:01Z",
  "out_of_time": false,
- "seconds": 37.2,
- "started": "2026-11-16T11:34:18Z",
+ "seconds": 21.8,
+ "started": "2026-11-16T15:15:01Z",
  "store": "release",
  "window": [
-  "2026-11-11T11:00:00Z",
-  "2026-11-16T11:00:00Z"
+  "2026-11-11T14:00:00Z",
+  "2026-11-16T14:00:00Z"
  ]
 }
