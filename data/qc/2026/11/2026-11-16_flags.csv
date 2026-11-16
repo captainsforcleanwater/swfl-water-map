@@ -1,1 +1,3 @@
 time_utc,station_uid,variable,depth_tag,sensor,depth_m,value,flag,tests
+2026-11-16T08:00:00Z,usgs:255654081350200,salinity_psu,bottom,Near Bottom,,12,3,spike
+2026-11-16T08:00:00Z,usgs:255654081350200,spec_cond_us_cm,bottom,Near Bottom,,19800,3,spike
