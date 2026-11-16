@@ -11,19 +11,19 @@
    "provider": 0,
    "range": 0,
    "range_suspect": 0,
-   "spike": 9,
+   "spike": 8,
    "time": 0
   },
   "files_changed": {
-   "data/clean/2026/11/2026-11-16.csv": 324,
+   "data/clean/2026/11/2026-11-16.csv": 470,
    "data/clean/stations.csv": 93,
-   "data/qc/2026/11/2026-11-16_flags.csv": 1
+   "data/qc/2026/11/2026-11-16_flags.csv": 0
   },
-  "good": 51084,
+  "good": 51914,
   "holds": {
    "erddap-secoora:gov-nps-ever-hcef1": "Highway Creek: offset from neighbouring stations grew to about +4 C in November 2026, day and night alike, the largest in 18 months of record. Held while CFCW reviews docs/florida_bay_offsets.md."
   },
-  "hourly_values": 14941,
+  "hourly_values": 15087,
   "merge_checks": {
    "erddap-gcoos:USF_COMPS_C13 + erddap-secoora:42023-c13-wfs-south-buoy-50m-": {
     "agree": null
@@ -49,7 +49,7 @@
    }
   },
   "neighbor_flags": {},
-  "raw_readings": 46377,
+  "raw_readings": 47110,
   "salinity_from_conductance_replacing_whole_psu": [
    "usgs:02290930 (surface)",
    "usgs:250802081035500 (surface)",
@@ -58,22 +58,22 @@
    "usgs:255534081324000 (bottom)",
    "usgs:255726081303700 (bottom)"
   ],
-  "seconds": 2.7,
+  "seconds": 3.2,
   "stale_stations": [],
-  "suspect": 197
+  "suspect": 196
  },
  "errors": {},
- "finished": "2026-11-16T04:23:44Z",
- "hours_blended": 2,
+ "finished": "2026-11-16T06:29:13Z",
+ "hours_blended": 7,
  "hours_considered": 121,
- "hours_to_blend": 2,
- "now": "2026-11-16T04:23:32Z",
+ "hours_to_blend": 7,
+ "now": "2026-11-16T06:28:37Z",
  "out_of_time": false,
- "seconds": 12.1,
- "started": "2026-11-16T04:23:32Z",
+ "seconds": 35.6,
+ "started": "2026-11-16T06:28:37Z",
  "store": "release",
  "window": [
-  "2026-11-11T03:00:00Z",
-  "2026-11-16T03:00:00Z"
+  "2026-11-11T05:00:00Z",
+  "2026-11-16T05:00:00Z"
  ]
 }
