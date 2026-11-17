@@ -1,90 +1,78 @@
 {
  "files_changed": {
-  "data/sensors/2026/11/2026-11-16_coops.csv": {
-   "new": 6,
-   "rows": 720
-  },
-  "data/sensors/2026/11/2026-11-16_erddap-gcoos.csv": {
-   "new": 28,
-   "rows": 598
-  },
   "data/sensors/2026/11/2026-11-16_erddap-secoora.csv": {
-   "new": 100,
-   "rows": 2425
-  },
-  "data/sensors/2026/11/2026-11-16_ndbc.csv": {
-   "new": 6,
-   "rows": 192
+   "new": 805,
+   "rows": 3230
   },
   "data/sensors/2026/11/2026-11-16_usgs.csv": {
-   "new": 184,
-   "rows": 6230
+   "new": 9,
+   "rows": 6239
   },
   "data/sensors/2026/11/2026-11-17_coops.csv": {
-   "new": 39,
-   "rows": 39
+   "new": 48,
+   "rows": 87
   },
   "data/sensors/2026/11/2026-11-17_erddap-gcoos.csv": {
-   "new": 11,
-   "rows": 11
+   "new": 34,
+   "rows": 45
   },
   "data/sensors/2026/11/2026-11-17_erddap-secoora.csv": {
-   "new": 12,
-   "rows": 12
+   "new": 124,
+   "rows": 136
   },
   "data/sensors/2026/11/2026-11-17_ndbc.csv": {
-   "new": 2,
-   "rows": 2
+   "new": 16,
+   "rows": 18
   },
   "data/sensors/2026/11/2026-11-17_usgs.csv": {
-   "new": 196,
-   "rows": 196
+   "new": 415,
+   "rows": 611
   }
  },
- "finished": "2026-11-17T01:21:34Z",
+ "finished": "2026-11-17T02:57:20Z",
  "sensor_window": [
-  "2026-11-16T01:20:13Z",
-  "2026-11-17T01:20:13Z"
+  "2026-11-16T02:56:22Z",
+  "2026-11-17T02:56:22Z"
  ],
  "sources": {
   "coops": {
    "errors": {},
    "readings": 717,
-   "seconds": 0.6,
+   "seconds": 0.3,
    "stations_queried": 3,
    "stations_reporting": 3
   },
   "erddap": {
    "errors": {},
-   "readings": 2548,
-   "seconds": 77.9,
+   "readings": 3536,
+   "seconds": 55.0,
    "stations_queried": 58,
-   "stations_reporting": 51
+   "stations_reporting": 54
   },
   "goes19": {
    "added": 2,
    "errors": {},
    "missing_before_run": 2,
-   "seconds": 4.6,
+   "seconds": 3.7,
    "server_first": "2026-11-12T17:00:00Z",
-   "server_last": "2026-11-16T20:00:00Z",
+   "server_last": "2026-11-16T22:00:00Z",
    "store": "release"
   },
   "ndbc": {
    "errors": {},
-   "readings": 182,
-   "seconds": 0.8,
+   "readings": 186,
+   "seconds": 0.7,
    "stations_queried": 2,
    "stations_reporting": 1
   },
   "usgs": {
    "errors": {},
-   "readings": 6036,
-   "seconds": 1.9,
+   "readings": 6070,
+   "seconds": 2.1,
    "stations_queried": 28,
    "stations_reporting": 19
   }
  },
- "started": "2026-11-17T01:20:08Z",
- "total_readings": 9483
+ "started": "2026-11-17T02:56:18Z",
+ "total_readings": 10509
 }

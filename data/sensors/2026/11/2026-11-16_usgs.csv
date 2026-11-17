@@ -2492,6 +2492,9 @@ time_utc,station_uid,variable,value,depth_m,depth_tag,sensor,qc
 2026-11-16T22:30:00Z,usgs:252654080220201,salinity_psu,0.4,,surface,,Provisional
 2026-11-16T22:45:00Z,usgs:252654080220201,salinity_psu,0.4,,surface,,Provisional
 2026-11-16T23:00:00Z,usgs:252654080220201,salinity_psu,0.4,,surface,,Provisional
+2026-11-16T23:15:00Z,usgs:252654080220201,salinity_psu,0.4,,surface,,Provisional
+2026-11-16T23:30:00Z,usgs:252654080220201,salinity_psu,0.4,,surface,,Provisional
+2026-11-16T23:45:00Z,usgs:252654080220201,salinity_psu,0.4,,surface,,Provisional
 2026-11-16T00:00:00Z,usgs:252654080220201,spec_cond_us_cm,1210,,surface,,Provisional
 2026-11-16T00:15:00Z,usgs:252654080220201,spec_cond_us_cm,1160,,surface,,Provisional
 2026-11-16T00:30:00Z,usgs:252654080220201,spec_cond_us_cm,1140,,surface,,Provisional
@@ -2585,6 +2588,9 @@ time_utc,station_uid,variable,value,depth_m,depth_tag,sensor,qc
 2026-11-16T22:30:00Z,usgs:252654080220201,spec_cond_us_cm,946,,surface,,Provisional
 2026-11-16T22:45:00Z,usgs:252654080220201,spec_cond_us_cm,939,,surface,,Provisional
 2026-11-16T23:00:00Z,usgs:252654080220201,spec_cond_us_cm,933,,surface,,Provisional
+2026-11-16T23:15:00Z,usgs:252654080220201,spec_cond_us_cm,923,,surface,,Provisional
+2026-11-16T23:30:00Z,usgs:252654080220201,spec_cond_us_cm,909,,surface,,Provisional
+2026-11-16T23:45:00Z,usgs:252654080220201,spec_cond_us_cm,898,,surface,,Provisional
 2026-11-16T00:00:00Z,usgs:252654080220201,water_temp_c,25.1,,surface,,Provisional
 2026-11-16T00:15:00Z,usgs:252654080220201,water_temp_c,25,,surface,,Provisional
 2026-11-16T00:30:00Z,usgs:252654080220201,water_temp_c,25,,surface,,Provisional
@@ -2678,6 +2684,9 @@ time_utc,station_uid,variable,value,depth_m,depth_tag,sensor,qc
 2026-11-16T22:30:00Z,usgs:252654080220201,water_temp_c,25.4,,surface,,Provisional
 2026-11-16T22:45:00Z,usgs:252654080220201,water_temp_c,25.4,,surface,,Provisional
 2026-11-16T23:00:00Z,usgs:252654080220201,water_temp_c,25.4,,surface,,Provisional
+2026-11-16T23:15:00Z,usgs:252654080220201,water_temp_c,25.4,,surface,,Provisional
+2026-11-16T23:30:00Z,usgs:252654080220201,water_temp_c,25.4,,surface,,Provisional
+2026-11-16T23:45:00Z,usgs:252654080220201,water_temp_c,25.4,,surface,,Provisional
 2026-11-16T00:00:00Z,usgs:254729080393601,spec_cond_us_cm,607,,surface,,Provisional
 2026-11-16T00:15:00Z,usgs:254729080393601,spec_cond_us_cm,606,,surface,,Provisional
 2026-11-16T00:30:00Z,usgs:254729080393601,spec_cond_us_cm,606,,surface,,Provisional
