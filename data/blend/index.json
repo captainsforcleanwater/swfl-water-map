@@ -1451,7 +1451,7 @@
   },
   "2026-11-17": {
    "asset": "swfl_blend_hourly_2026-11-17.bin.gz",
-   "bytes": 1510956,
+   "bytes": 1728000,
    "hours": {
     "00": {
      "blended": "2026-11-17T07:30:00Z",
@@ -1526,40 +1526,56 @@
      "v": 2
     },
     "09": {
-     "blended": "2026-11-17T13:19:38Z",
-     "goes_newest": "2026-11-17T08:00:00Z",
+     "blended": "2026-11-17T15:01:20Z",
+     "goes_newest": "2026-11-17T09:00:00Z",
      "n_sal": 54,
      "n_temp": 63,
-     "sig": "e06989c35d54",
+     "sig": "1a01683d8e50",
      "v": 2
     },
     "10": {
-     "blended": "2026-11-17T13:19:37Z",
-     "goes_newest": "2026-11-17T08:00:00Z",
+     "blended": "2026-11-17T15:01:19Z",
+     "goes_newest": "2026-11-17T10:00:00Z",
      "n_sal": 54,
      "n_temp": 63,
-     "sig": "59375624c2b2",
+     "sig": "7943e75bb4c8",
      "v": 2
     },
     "11": {
-     "blended": "2026-11-17T13:19:36Z",
-     "goes_newest": "2026-11-17T08:00:00Z",
-     "n_sal": 51,
-     "n_temp": 60,
-     "sig": "d466fa8f83a5",
+     "blended": "2026-11-17T15:01:18Z",
+     "goes_newest": "2026-11-17T10:00:00Z",
+     "n_sal": 53,
+     "n_temp": 62,
+     "sig": "8baf37b27a6d",
      "v": 2
     },
     "12": {
-     "blended": "2026-11-17T13:19:35Z",
-     "goes_newest": "2026-11-17T08:00:00Z",
+     "blended": "2026-11-17T15:01:17Z",
+     "goes_newest": "2026-11-17T10:00:00Z",
+     "n_sal": 52,
+     "n_temp": 61,
+     "sig": "af7eebd1cff3",
+     "v": 2
+    },
+    "13": {
+     "blended": "2026-11-17T15:01:16Z",
+     "goes_newest": "2026-11-17T10:00:00Z",
      "n_sal": 18,
      "n_temp": 28,
-     "sig": "c56088dbbb7f",
+     "sig": "d11c678d80ff",
+     "v": 2
+    },
+    "14": {
+     "blended": "2026-11-17T15:01:15Z",
+     "goes_newest": "2026-11-17T10:00:00Z",
+     "n_sal": 13,
+     "n_temp": 23,
+     "sig": "fb2abbad775b",
      "v": 2
     }
    },
    "release_tag": "blend-hourly-2026-11",
-   "updated": "2026-11-17T13:19:49Z",
+   "updated": "2026-11-17T15:01:29Z",
    "url": "https://github.com/captainsforcleanwater/swfl-water-map/releases/download/blend-hourly-2026-11/swfl_blend_hourly_2026-11-17.bin.gz"
   }
  },
