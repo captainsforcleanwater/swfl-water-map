@@ -1,0 +1,13 @@
+time_utc,station_uid,variable,value,depth_m,depth_tag,sensor,qc
+2026-11-17T00:05:00Z,erddap-secoora:42023-c13-wfs-south-buoy-50m-,salinity_psu,36.6,0,surface,sea_water_practical_salinity,
+2026-11-17T00:35:00Z,erddap-secoora:42023-c13-wfs-south-buoy-50m-,salinity_psu,36.59,0,surface,sea_water_practical_salinity,
+2026-11-17T00:05:00Z,erddap-secoora:42023-c13-wfs-south-buoy-50m-,water_temp_c,26.18,0,surface,sea_water_temperature,
+2026-11-17T00:35:00Z,erddap-secoora:42023-c13-wfs-south-buoy-50m-,water_temp_c,26.19,0,surface,sea_water_temperature,
+2026-11-17T00:05:00Z,erddap-secoora:42026-c22-loop-current-pressu,salinity_psu,36.48,0,surface,sea_water_practical_salinity,
+2026-11-17T00:35:00Z,erddap-secoora:42026-c22-loop-current-pressu,salinity_psu,36.48,0,surface,sea_water_practical_salinity,
+2026-11-17T00:05:00Z,erddap-secoora:42026-c22-loop-current-pressu,water_temp_c,27.71,0,surface,sea_water_temperature,
+2026-11-17T00:35:00Z,erddap-secoora:42026-c22-loop-current-pressu,water_temp_c,27.7,0,surface,sea_water_temperature,
+2026-11-17T00:05:00Z,erddap-secoora:c13-water-velocity-wfs-south-buo,salinity_psu,36.6,1,surface,sea_water_practical_salinity,
+2026-11-17T00:35:00Z,erddap-secoora:c13-water-velocity-wfs-south-buo,salinity_psu,36.59,1,surface,sea_water_practical_salinity,
+2026-11-17T00:05:00Z,erddap-secoora:c13-water-velocity-wfs-south-buo,water_temp_c,26.18,1,surface,sea_water_temperature,
+2026-11-17T00:35:00Z,erddap-secoora:c13-water-velocity-wfs-south-buo,water_temp_c,26.19,1,surface,sea_water_temperature,
