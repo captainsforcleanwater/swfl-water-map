@@ -1,70 +1,70 @@
 {
  "files_changed": {
   "data/sensors/2026/11/2026-11-17_coops.csv": {
-   "new": 24,
-   "rows": 630
+   "new": 30,
+   "rows": 660
   },
   "data/sensors/2026/11/2026-11-17_erddap-gcoos.csv": {
-   "new": 23,
-   "rows": 497
+   "new": 27,
+   "rows": 524
   },
   "data/sensors/2026/11/2026-11-17_erddap-secoora.csv": {
-   "new": 28,
-   "rows": 2720
+   "new": 128,
+   "rows": 2848
   },
   "data/sensors/2026/11/2026-11-17_ndbc.csv": {
    "new": 8,
-   "rows": 162
+   "rows": 170
   },
   "data/sensors/2026/11/2026-11-17_usgs.csv": {
-   "new": 172,
-   "rows": 5291
+   "new": 260,
+   "rows": 5551
   }
  },
- "finished": "2026-11-17T21:01:33Z",
+ "finished": "2026-11-17T22:01:30Z",
  "sensor_window": [
-  "2026-11-16T21:00:39Z",
-  "2026-11-17T21:00:39Z"
+  "2026-11-16T22:00:00Z",
+  "2026-11-17T22:00:00Z"
  ],
  "sources": {
   "coops": {
    "errors": {},
    "readings": 720,
-   "seconds": 0.5,
+   "seconds": 0.6,
    "stations_queried": 3,
    "stations_reporting": 3
   },
   "erddap": {
    "errors": {},
-   "readings": 3623,
-   "seconds": 48.9,
+   "readings": 3698,
+   "seconds": 86.3,
    "stations_queried": 58,
    "stations_reporting": 54
   },
   "goes19": {
-   "added": 0,
+   "added": 2,
    "errors": {},
-   "missing_before_run": 0,
-   "seconds": 0.4,
+   "missing_before_run": 2,
+   "seconds": 4.2,
    "server_first": "2026-11-13T17:00:00Z",
-   "server_last": "2026-11-17T16:00:00Z",
+   "server_last": "2026-11-17T18:00:00Z",
    "store": "release"
   },
   "ndbc": {
    "errors": {},
    "readings": 184,
-   "seconds": 0.8,
+   "seconds": 1.0,
    "stations_queried": 2,
    "stations_reporting": 1
   },
   "usgs": {
    "errors": {},
-   "readings": 6006,
-   "seconds": 3.6,
+   "readings": 6071,
+   "seconds": 2.0,
    "stations_queried": 28,
    "stations_reporting": 19
   }
  },
- "started": "2026-11-17T21:00:39Z",
- "total_readings": 10533
+ "started": "2026-11-17T21:59:56Z",
+ "total_readings": 10673
 }
