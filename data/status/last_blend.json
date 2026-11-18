@@ -15,70 +15,67 @@
    "time": 0
   },
   "files_changed": {
-   "data/clean/2026/11/2026-11-17.csv": 3523,
-   "data/clean/2026/11/2026-11-18.csv": 119,
-   "data/clean/stations.csv": 89,
-   "data/qc/2026/11/2026-11-17_flags.csv": 23,
-   "data/qc/2026/11/2026-11-18_flags.csv": 0
+   "data/clean/2026/11/2026-11-18.csv": 243,
+   "data/clean/stations.csv": 89
   },
-  "good": 74475,
+  "good": 75128,
   "holds": {
    "erddap-secoora:gov-nps-ever-hcef1": "Highway Creek: offset from neighbouring stations grew to about +4 C in November 2026, day and night alike, the largest in 18 months of record. Held while CFCW reviews docs/florida_bay_offsets.md."
   },
-  "hourly_values": 21968,
+  "hourly_values": 22092,
   "merge_checks": {
    "erddap-gcoos:USF_COMPS_C13 + erddap-secoora:42023-c13-wfs-south-buoy-50m-": {
     "agree": true,
     "salinity": {
-     "hours": 49,
+     "hours": 51,
      "median_abs_diff": 0.0
     },
     "temp": {
-     "hours": 49,
+     "hours": 51,
      "median_abs_diff": 0.0
     }
    },
    "erddap-gcoos:USF_COMPS_C13 + erddap-secoora:c13-water-velocity-wfs-south-buo": {
     "agree": true,
     "salinity": {
-     "hours": 49,
+     "hours": 51,
      "median_abs_diff": 0.0
     },
     "temp": {
-     "hours": 49,
+     "hours": 51,
      "median_abs_diff": 0.0
     }
    },
    "erddap-gcoos:USF_COMPS_C22 + erddap-secoora:42026-c22-loop-current-pressu": {
     "agree": true,
     "salinity": {
-     "hours": 56,
+     "hours": 57,
      "median_abs_diff": 0.0
     },
     "temp": {
-     "hours": 56,
+     "hours": 57,
      "median_abs_diff": 0.0
     }
    },
    "erddap-secoora:42023-c13-wfs-south-buoy-50m- + erddap-secoora:c13-water-velocity-wfs-south-buo": {
     "agree": true,
     "salinity": {
-     "hours": 52,
+     "hours": 53,
      "median_abs_diff": 0.0
     },
     "temp": {
-     "hours": 52,
+     "hours": 53,
      "median_abs_diff": 0.0
     }
    },
    "erddap-secoora:c27-water-velocity-wfs-south-buo + erddap-secoora:c27-wfs-south-buoy-inner-shelf-2": {
     "agree": true,
     "salinity": {
-     "hours": 56,
+     "hours": 57,
      "median_abs_diff": 0.0
     },
     "temp": {
-     "hours": 56,
+     "hours": 57,
      "median_abs_diff": 0.0
     }
    },
@@ -91,7 +88,7 @@
    }
   },
   "neighbor_flags": {},
-  "raw_readings": 67658,
+  "raw_readings": 68235,
   "salinity_from_conductance_replacing_whole_psu": [
    "usgs:02290930 (surface)",
    "usgs:250802081035500 (surface)",
@@ -100,22 +97,22 @@
    "usgs:255534081324000 (bottom)",
    "usgs:255726081303700 (bottom)"
   ],
-  "seconds": 2.7,
+  "seconds": 4.1,
   "stale_stations": [],
   "suspect": 247
  },
  "errors": {},
- "finished": "2026-11-18T01:28:08Z",
+ "finished": "2026-11-18T03:00:23Z",
  "hours_blended": 6,
  "hours_considered": 121,
  "hours_to_blend": 6,
- "now": "2026-11-18T01:27:40Z",
+ "now": "2026-11-18T02:59:47Z",
  "out_of_time": false,
- "seconds": 27.8,
- "started": "2026-11-18T01:27:40Z",
+ "seconds": 36.9,
+ "started": "2026-11-18T02:59:47Z",
  "store": "release",
  "window": [
-  "2026-11-13T00:00:00Z",
-  "2026-11-18T00:00:00Z"
+  "2026-11-13T02:00:00Z",
+  "2026-11-18T02:00:00Z"
  ]
 }
