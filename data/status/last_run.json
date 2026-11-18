@@ -1,34 +1,30 @@
 {
  "files_changed": {
-  "data/sensors/2026/11/2026-11-17_erddap-secoora.csv": {
-   "new": 76,
-   "rows": 3376
-  },
   "data/sensors/2026/11/2026-11-18_coops.csv": {
-   "new": 36,
-   "rows": 222
+   "new": 54,
+   "rows": 276
   },
   "data/sensors/2026/11/2026-11-18_erddap-gcoos.csv": {
-   "new": 23,
-   "rows": 159
+   "new": 54,
+   "rows": 213
   },
   "data/sensors/2026/11/2026-11-18_erddap-secoora.csv": {
-   "new": 496,
-   "rows": 880
+   "new": 422,
+   "rows": 1302
   },
   "data/sensors/2026/11/2026-11-18_ndbc.csv": {
-   "new": 16,
-   "rows": 58
+   "new": 8,
+   "rows": 66
   },
   "data/sensors/2026/11/2026-11-18_usgs.csv": {
-   "new": 256,
-   "rows": 1609
+   "new": 452,
+   "rows": 2061
   }
  },
- "finished": "2026-11-18T07:31:41Z",
+ "finished": "2026-11-18T09:14:11Z",
  "sensor_window": [
-  "2026-11-17T07:29:14Z",
-  "2026-11-18T07:29:14Z"
+  "2026-11-17T09:13:11Z",
+  "2026-11-18T09:13:11Z"
  ],
  "sources": {
   "coops": {
@@ -39,41 +35,36 @@
    "stations_reporting": 3
   },
   "erddap": {
-   "errors": {
-    "erddap-secoora:gov-ndbc-lonf1": "HTTPSConnectionPool(host='erddap.secoora.org', port=443): Max retries exceeded with url: /erddap/tabledap/gov-ndbc-lonf1.csv?time,z,sea_surface_temperature&time%3E=2026-11-17T07%3A29%3A14Z&time%3C=202",
-    "erddap-secoora:gulf-star-marina": "HTTPSConnectionPool(host='erddap.secoora.org', port=443): Max retries exceeded with url: /erddap/tabledap/gulf-star-marina.csv?time,z,sea_water_practical_salinity,sea_water_temperature&time%3E=2026-11",
-    "erddap-secoora:new-pass-bridge": "HTTPSConnectionPool(host='erddap.secoora.org', port=443): Max retries exceeded with url: /erddap/tabledap/new-pass-bridge.csv?time,z,sea_water_practical_salinity,sea_water_temperature&time%3E=2026-11-",
-    "erddap-secoora:sanibel-dock": "HTTPSConnectionPool(host='erddap.secoora.org', port=443): Max retries exceeded with url: /erddap/tabledap/sanibel-dock.csv?time,z,sea_water_practical_salinity,sea_water_temperature&time%3E=2026-11-17T"
-   },
-   "readings": 3137,
-   "seconds": 143.6,
+   "errors": {},
+   "readings": 3907,
+   "seconds": 57.4,
    "stations_queried": 58,
-   "stations_reporting": 52
+   "stations_reporting": 55
   },
   "goes19": {
-   "added": 0,
+   "added": 2,
    "errors": {},
-   "missing_before_run": 0,
-   "seconds": 0.2,
+   "missing_before_run": 2,
+   "seconds": 5.3,
    "server_first": "2026-11-13T17:00:00Z",
-   "server_last": "2026-11-18T02:00:00Z",
+   "server_last": "2026-11-18T04:00:00Z",
    "store": "release"
   },
   "ndbc": {
    "errors": {},
-   "readings": 190,
-   "seconds": 0.7,
+   "readings": 184,
+   "seconds": 0.5,
    "stations_queried": 2,
    "stations_reporting": 1
   },
   "usgs": {
    "errors": {},
-   "readings": 5881,
-   "seconds": 2.4,
+   "readings": 5878,
+   "seconds": 2.2,
    "stations_queried": 28,
    "stations_reporting": 19
   }
  },
- "started": "2026-11-18T07:29:14Z",
- "total_readings": 9925
+ "started": "2026-11-18T09:13:05Z",
+ "total_readings": 10686
 }
