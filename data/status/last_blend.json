@@ -15,9 +15,7 @@
    "time": 0
   },
   "files_changed": {
-   "data/clean/2026/11/2026-11-18.csv": 2996,
-   "data/clean/stations.csv": 88,
-   "data/qc/2026/11/2026-11-18_flags.csv": 25
+   "data/clean/stations.csv": 88
   },
   "good": 84335,
   "holds": {
@@ -98,22 +96,22 @@
    "usgs:255534081324000 (bottom)",
    "usgs:255726081303700 (bottom)"
   ],
-  "seconds": 4.8,
+  "seconds": 2.9,
   "stale_stations": [],
   "suspect": 273
  },
  "errors": {},
- "finished": "2026-11-18T20:08:36Z",
- "hours_blended": 4,
+ "finished": "2026-11-18T21:22:46Z",
+ "hours_blended": 1,
  "hours_considered": 121,
- "hours_to_blend": 4,
- "now": "2026-11-18T20:08:09Z",
+ "hours_to_blend": 1,
+ "now": "2026-11-18T21:22:23Z",
  "out_of_time": false,
- "seconds": 27.0,
- "started": "2026-11-18T20:08:09Z",
+ "seconds": 22.8,
+ "started": "2026-11-18T21:22:23Z",
  "store": "release",
  "window": [
-  "2026-11-13T19:00:00Z",
-  "2026-11-18T19:00:00Z"
+  "2026-11-13T20:00:00Z",
+  "2026-11-18T20:00:00Z"
  ]
 }
