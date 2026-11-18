@@ -2,52 +2,58 @@
  "files_changed": {
   "data/sensors/2026/11/2026-11-18_coops.csv": {
    "new": 33,
-   "rows": 153
+   "rows": 186
   },
   "data/sensors/2026/11/2026-11-18_erddap-gcoos.csv": {
-   "new": 41,
-   "rows": 109
+   "new": 27,
+   "rows": 136
   },
   "data/sensors/2026/11/2026-11-18_erddap-secoora.csv": {
-   "new": 88,
-   "rows": 356
+   "new": 28,
+   "rows": 384
   },
   "data/sensors/2026/11/2026-11-18_ndbc.csv": {
    "new": 8,
-   "rows": 34
+   "rows": 42
   },
   "data/sensors/2026/11/2026-11-18_usgs.csv": {
-   "new": 300,
-   "rows": 1117
+   "new": 236,
+   "rows": 1353
   }
  },
- "finished": "2026-11-18T05:11:05Z",
+ "finished": "2026-11-18T06:16:34Z",
  "sensor_window": [
-  "2026-11-17T05:10:16Z",
-  "2026-11-18T05:10:16Z"
+  "2026-11-17T06:13:50Z",
+  "2026-11-18T06:13:50Z"
  ],
  "sources": {
   "coops": {
    "errors": {},
    "readings": 717,
-   "seconds": 0.5,
+   "seconds": 0.3,
    "stations_queried": 3,
    "stations_reporting": 3
   },
   "erddap": {
-   "errors": {},
-   "readings": 3425,
-   "seconds": 46.0,
+   "errors": {
+    "erddap-secoora:gov-ndbc-lonf1": "HTTPSConnectionPool(host='erddap.secoora.org', port=443): Max retries exceeded with url: /erddap/tabledap/gov-ndbc-lonf1.csv?time,z,sea_surface_temperature&time%3E=2026-11-17T06%3A13%3A50Z&time%3C=202",
+    "erddap-secoora:gulf-star-marina": "HTTPSConnectionPool(host='erddap.secoora.org', port=443): Max retries exceeded with url: /erddap/tabledap/gulf-star-marina.csv?time,z,sea_water_practical_salinity,sea_water_temperature&time%3E=2026-11",
+    "erddap-secoora:key-largo-fl": "HTTPSConnectionPool(host='erddap.secoora.org', port=443): Max retries exceeded with url: /erddap/tabledap/key-largo-fl.csv?time,z,sea_water_practical_salinity,sea_water_temperature&time%3E=2026-11-17T",
+    "erddap-secoora:new-pass-bridge": "HTTPSConnectionPool(host='erddap.secoora.org', port=443): Max retries exceeded with url: /erddap/tabledap/new-pass-bridge.csv?time,z,sea_water_practical_salinity,sea_water_temperature&time%3E=2026-11-",
+    "erddap-secoora:sanibel-dock": "HTTPSConnectionPool(host='erddap.secoora.org', port=443): Max retries exceeded with url: /erddap/tabledap/sanibel-dock.csv?time,z,sea_water_practical_salinity,sea_water_temperature&time%3E=2026-11-17T"
+   },
+   "readings": 2223,
+   "seconds": 161.2,
    "stations_queried": 58,
-   "stations_reporting": 55
+   "stations_reporting": 51
   },
   "goes19": {
-   "added": 0,
+   "added": 2,
    "errors": {},
-   "missing_before_run": 0,
-   "seconds": 0.3,
+   "missing_before_run": 2,
+   "seconds": 3.5,
    "server_first": "2026-11-13T17:00:00Z",
-   "server_last": "2026-11-18T00:00:00Z",
+   "server_last": "2026-11-18T02:00:00Z",
    "store": "release"
   },
   "ndbc": {
@@ -59,12 +65,12 @@
   },
   "usgs": {
    "errors": {},
-   "readings": 5974,
-   "seconds": 1.7,
+   "readings": 5950,
+   "seconds": 2.0,
    "stations_queried": 28,
    "stations_reporting": 19
   }
  },
- "started": "2026-11-18T05:10:16Z",
- "total_readings": 10300
+ "started": "2026-11-18T06:13:47Z",
+ "total_readings": 9074
 }
