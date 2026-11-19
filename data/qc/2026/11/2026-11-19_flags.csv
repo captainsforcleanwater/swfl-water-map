@@ -20,4 +20,7 @@ time_utc,station_uid,variable,depth_tag,sensor,depth_m,value,flag,tests
 2026-11-19T18:00:00Z,erddap-secoora:gov-nps-ever-hcef1,water_temp_c,surface,sea_water_temperature,0,23.99,3,hold
 2026-11-19T19:00:00Z,erddap-secoora:gov-nps-ever-hcef1,water_temp_c,surface,sea_water_temperature,0,24.17,3,hold
 2026-11-19T20:00:00Z,erddap-secoora:gov-nps-ever-hcef1,water_temp_c,surface,sea_water_temperature,0,24.59,3,hold
+2026-11-19T21:00:00Z,erddap-secoora:gov-nps-ever-hcef1,water_temp_c,surface,sea_water_temperature,0,24.71,3,hold
 2026-11-19T04:10:00Z,erddap-secoora:sanibel-dock,salinity_psu,surface,sea_water_practical_salinity,0,21.65,3,spike
+2026-11-19T19:30:00Z,usgs:251253080320100,spec_cond_us_cm,bottom,BOTTOM,,25800,3,spike
+2026-11-19T19:45:00Z,usgs:251253080320100,spec_cond_us_cm,bottom,BOTTOM,,23700,3,spike
