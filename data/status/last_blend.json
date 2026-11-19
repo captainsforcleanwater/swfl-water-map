@@ -2,96 +2,94 @@
  "clean": {
   "bad": 182,
   "by_test": {
-   "flatline": 85,
+   "flatline": 57,
    "flatline_long": 182,
-   "from_flagged_conductance": 4,
-   "hold": 174,
+   "from_flagged_conductance": 2,
+   "hold": 167,
    "missing": 0,
    "neighbor": 0,
    "provider": 0,
    "range": 0,
    "range_suspect": 0,
-   "spike": 20,
+   "spike": 16,
    "time": 0
   },
   "files_changed": {
-   "data/clean/2026/11/2026-11-18.csv": 3574,
-   "data/clean/2026/11/2026-11-19.csv": 123,
+   "data/clean/2026/11/2026-11-19.csv": 257,
    "data/clean/stations.csv": 88,
-   "data/qc/2026/11/2026-11-18_flags.csv": 29,
-   "data/qc/2026/11/2026-11-19_flags.csv": 4
+   "data/qc/2026/11/2026-11-19_flags.csv": 0
   },
-  "good": 86946,
+  "good": 84369,
   "holds": {
    "erddap-secoora:gov-nps-ever-hcef1": "Highway Creek: offset from neighbouring stations grew to about +4 C in November 2026, day and night alike, the largest in 18 months of record. Held while CFCW reviews docs/florida_bay_offsets.md."
   },
-  "hourly_values": 25621,
+  "hourly_values": 24786,
   "merge_checks": {
    "erddap-gcoos:USF_COMPS_C13 + erddap-secoora:42023-c13-wfs-south-buoy-50m-": {
     "agree": true,
     "salinity": {
-     "hours": 73,
+     "hours": 75,
      "median_abs_diff": 0.0
     },
     "temp": {
-     "hours": 73,
+     "hours": 75,
      "median_abs_diff": 0.0
     }
    },
    "erddap-gcoos:USF_COMPS_C13 + erddap-secoora:c13-water-velocity-wfs-south-buo": {
     "agree": true,
     "salinity": {
-     "hours": 73,
+     "hours": 75,
      "median_abs_diff": 0.0
     },
     "temp": {
-     "hours": 73,
+     "hours": 75,
      "median_abs_diff": 0.0
     }
    },
    "erddap-gcoos:USF_COMPS_C22 + erddap-secoora:42026-c22-loop-current-pressu": {
     "agree": true,
     "salinity": {
-     "hours": 80,
+     "hours": 82,
      "median_abs_diff": 0.0
     },
     "temp": {
-     "hours": 80,
+     "hours": 82,
      "median_abs_diff": 0.0
     }
    },
    "erddap-secoora:42023-c13-wfs-south-buoy-50m- + erddap-secoora:c13-water-velocity-wfs-south-buo": {
     "agree": true,
     "salinity": {
-     "hours": 76,
+     "hours": 77,
      "median_abs_diff": 0.0
     },
     "temp": {
-     "hours": 76,
+     "hours": 77,
      "median_abs_diff": 0.0
     }
    },
    "erddap-secoora:c27-water-velocity-wfs-south-buo + erddap-secoora:c27-wfs-south-buoy-inner-shelf-2": {
     "agree": true,
     "salinity": {
-     "hours": 78,
+     "hours": 80,
      "median_abs_diff": 0.0
     },
     "temp": {
-     "hours": 78,
+     "hours": 80,
      "median_abs_diff": 0.0
     }
    },
    "usgs:251253080320100 + erddap-secoora:gov-nps-ever-tcvf1": {
     "agree": false,
     "temp": {
-     "hours": 174,
+     "hours": 167,
      "median_abs_diff": 1.09
     }
    }
   },
   "neighbor_flags": {},
-  "raw_readings": 79017,
+  "raw_readings": 76655,
   "salinity_from_conductance_replacing_whole_psu": [
    "usgs:02290930 (surface)",
    "usgs:250802081035500 (surface)",
@@ -100,22 +98,22 @@
    "usgs:255534081324000 (bottom)",
    "usgs:255726081303700 (bottom)"
   ],
-  "seconds": 5.0,
+  "seconds": 3.5,
   "stale_stations": [],
-  "suspect": 283
+  "suspect": 242
  },
  "errors": {},
- "finished": "2026-11-19T01:23:50Z",
- "hours_blended": 11,
+ "finished": "2026-11-19T03:00:26Z",
+ "hours_blended": 7,
  "hours_considered": 121,
- "hours_to_blend": 11,
- "now": "2026-11-19T01:23:12Z",
+ "hours_to_blend": 7,
+ "now": "2026-11-19T02:59:56Z",
  "out_of_time": false,
- "seconds": 37.8,
- "started": "2026-11-19T01:23:12Z",
+ "seconds": 30.6,
+ "started": "2026-11-19T02:59:56Z",
  "store": "release",
  "window": [
-  "2026-11-14T00:00:00Z",
-  "2026-11-19T00:00:00Z"
+  "2026-11-14T02:00:00Z",
+  "2026-11-19T02:00:00Z"
  ]
 }
