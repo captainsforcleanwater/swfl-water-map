@@ -363,7 +363,7 @@
   },
   "2026-11-20": {
    "asset": "goes19_sst_hourly_2026-11-20.nc",
-   "bytes": 48884,
+   "bytes": 48951,
    "hours": [
     "00",
     "01",
@@ -375,11 +375,12 @@
     "07",
     "08",
     "09",
-    "10"
+    "10",
+    "11"
    ],
-   "n_hours": 11,
+   "n_hours": 12,
    "release_tag": "goes19-sst-hourly-2026-11",
-   "updated": "2026-11-20T15:02:59Z",
+   "updated": "2026-11-20T17:06:07Z",
    "url": "https://github.com/captainsforcleanwater/swfl-water-map/releases/download/goes19-sst-hourly-2026-11/goes19_sst_hourly_2026-11-20.nc"
   }
  },
