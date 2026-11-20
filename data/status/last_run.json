@@ -1,30 +1,30 @@
 {
  "files_changed": {
   "data/sensors/2026/11/2026-11-20_coops.csv": {
-   "new": 27,
-   "rows": 363
+   "new": 36,
+   "rows": 399
   },
   "data/sensors/2026/11/2026-11-20_erddap-gcoos.csv": {
-   "new": 27,
-   "rows": 302
+   "new": 17,
+   "rows": 319
   },
   "data/sensors/2026/11/2026-11-20_erddap-secoora.csv": {
-   "new": 144,
-   "rows": 1731
+   "new": 269,
+   "rows": 2000
   },
   "data/sensors/2026/11/2026-11-20_ndbc.csv": {
    "new": 8,
-   "rows": 90
+   "rows": 98
   },
   "data/sensors/2026/11/2026-11-20_usgs.csv": {
-   "new": 236,
-   "rows": 3015
+   "new": 304,
+   "rows": 3319
   }
  },
- "finished": "2026-11-20T12:11:13Z",
+ "finished": "2026-11-20T13:22:54Z",
  "sensor_window": [
-  "2026-11-19T12:08:07Z",
-  "2026-11-20T12:08:07Z"
+  "2026-11-19T13:21:57Z",
+  "2026-11-20T13:21:57Z"
  ],
  "sources": {
   "coops": {
@@ -35,42 +35,36 @@
    "stations_reporting": 3
   },
   "erddap": {
-   "errors": {
-    "erddap-secoora:gov-ndbc-lonf1": "HTTPSConnectionPool(host='erddap.secoora.org', port=443): Max retries exceeded with url: /erddap/tabledap/gov-ndbc-lonf1.csv?time,z,sea_surface_temperature&time%3E=2026-11-19T12%3A08%3A07Z&time%3C=202",
-    "erddap-secoora:gulf-star-marina": "HTTPSConnectionPool(host='erddap.secoora.org', port=443): Max retries exceeded with url: /erddap/tabledap/gulf-star-marina.csv?time,z,sea_water_practical_salinity,sea_water_temperature&time%3E=2026-11",
-    "erddap-secoora:key-largo-fl": "HTTPSConnectionPool(host='erddap.secoora.org', port=443): Max retries exceeded with url: /erddap/tabledap/key-largo-fl.csv?time,z,sea_water_practical_salinity,sea_water_temperature&time%3E=2026-11-19T",
-    "erddap-secoora:new-pass-bridge": "HTTPSConnectionPool(host='erddap.secoora.org', port=443): Max retries exceeded with url: /erddap/tabledap/new-pass-bridge.csv?time,z,sea_water_practical_salinity,sea_water_temperature&time%3E=2026-11-",
-    "erddap-secoora:sanibel-dock": "HTTPSConnectionPool(host='erddap.secoora.org', port=443): Max retries exceeded with url: /erddap/tabledap/sanibel-dock.csv?time,z,sea_water_practical_salinity,sea_water_temperature&time%3E=2026-11-19T"
-   },
-   "readings": 2898,
-   "seconds": 182.8,
+   "errors": {},
+   "readings": 4215,
+   "seconds": 54.6,
    "stations_queried": 58,
-   "stations_reporting": 51
+   "stations_reporting": 55
   },
   "goes19": {
-   "added": 2,
+   "added": 0,
    "errors": {},
-   "missing_before_run": 2,
-   "seconds": 4.4,
+   "missing_before_run": 0,
+   "seconds": 0.2,
    "server_first": "2026-11-15T17:00:00Z",
    "server_last": "2026-11-20T08:00:00Z",
    "store": "release"
   },
   "ndbc": {
    "errors": {},
-   "readings": 184,
-   "seconds": 0.7,
+   "readings": 182,
+   "seconds": 0.6,
    "stations_queried": 2,
    "stations_reporting": 1
   },
   "usgs": {
    "errors": {},
-   "readings": 6070,
-   "seconds": 1.6,
+   "readings": 6049,
+   "seconds": 2.0,
    "stations_queried": 26,
    "stations_reporting": 19
   }
  },
- "started": "2026-11-20T12:08:03Z",
- "total_readings": 9869
+ "started": "2026-11-20T13:21:57Z",
+ "total_readings": 11163
 }
