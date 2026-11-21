@@ -22,3 +22,4 @@ time_utc,station_uid,variable,depth_tag,sensor,depth_m,value,flag,tests
 2026-11-20T20:00:00Z,erddap-secoora:gov-nps-ever-hcef1,water_temp_c,surface,sea_water_temperature,0,26.37,3,hold
 2026-11-20T21:00:00Z,erddap-secoora:gov-nps-ever-hcef1,water_temp_c,surface,sea_water_temperature,0,26.44,3,hold
 2026-11-20T22:00:00Z,erddap-secoora:gov-nps-ever-hcef1,water_temp_c,surface,sea_water_temperature,0,26.43,3,hold
+2026-11-20T23:00:00Z,erddap-secoora:gov-nps-ever-hcef1,water_temp_c,surface,sea_water_temperature,0,26.43,3,hold
