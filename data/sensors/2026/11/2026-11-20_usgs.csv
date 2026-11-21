@@ -2204,6 +2204,9 @@ time_utc,station_uid,variable,value,depth_m,depth_tag,sensor,qc
 2026-11-20T22:30:00Z,usgs:252653080273001,salinity_psu,0.3,,surface,,Provisional
 2026-11-20T22:45:00Z,usgs:252653080273001,salinity_psu,0.3,,surface,,Provisional
 2026-11-20T23:00:00Z,usgs:252653080273001,salinity_psu,0.3,,surface,,Provisional
+2026-11-20T23:15:00Z,usgs:252653080273001,salinity_psu,0.3,,surface,,Provisional
+2026-11-20T23:30:00Z,usgs:252653080273001,salinity_psu,0.3,,surface,,Provisional
+2026-11-20T23:45:00Z,usgs:252653080273001,salinity_psu,0.3,,surface,,Provisional
 2026-11-20T00:00:00Z,usgs:252653080273001,spec_cond_us_cm,739,,surface,,Provisional
 2026-11-20T00:15:00Z,usgs:252653080273001,spec_cond_us_cm,738,,surface,,Provisional
 2026-11-20T00:30:00Z,usgs:252653080273001,spec_cond_us_cm,739,,surface,,Provisional
@@ -2297,6 +2300,9 @@ time_utc,station_uid,variable,value,depth_m,depth_tag,sensor,qc
 2026-11-20T22:30:00Z,usgs:252653080273001,spec_cond_us_cm,739,,surface,,Provisional
 2026-11-20T22:45:00Z,usgs:252653080273001,spec_cond_us_cm,739,,surface,,Provisional
 2026-11-20T23:00:00Z,usgs:252653080273001,spec_cond_us_cm,739,,surface,,Provisional
+2026-11-20T23:15:00Z,usgs:252653080273001,spec_cond_us_cm,739,,surface,,Provisional
+2026-11-20T23:30:00Z,usgs:252653080273001,spec_cond_us_cm,739,,surface,,Provisional
+2026-11-20T23:45:00Z,usgs:252653080273001,spec_cond_us_cm,739,,surface,,Provisional
 2026-11-20T00:00:00Z,usgs:252653080273001,water_temp_c,24.9,,surface,,Provisional
 2026-11-20T00:15:00Z,usgs:252653080273001,water_temp_c,25,,surface,,Provisional
 2026-11-20T00:30:00Z,usgs:252653080273001,water_temp_c,25,,surface,,Provisional
@@ -2390,6 +2396,9 @@ time_utc,station_uid,variable,value,depth_m,depth_tag,sensor,qc
 2026-11-20T22:30:00Z,usgs:252653080273001,water_temp_c,25.6,,surface,,Provisional
 2026-11-20T22:45:00Z,usgs:252653080273001,water_temp_c,25.6,,surface,,Provisional
 2026-11-20T23:00:00Z,usgs:252653080273001,water_temp_c,25.7,,surface,,Provisional
+2026-11-20T23:15:00Z,usgs:252653080273001,water_temp_c,25.7,,surface,,Provisional
+2026-11-20T23:30:00Z,usgs:252653080273001,water_temp_c,25.7,,surface,,Provisional
+2026-11-20T23:45:00Z,usgs:252653080273001,water_temp_c,25.7,,surface,,Provisional
 2026-11-20T00:00:00Z,usgs:252654080220201,salinity_psu,0.4,,surface,,Provisional
 2026-11-20T00:15:00Z,usgs:252654080220201,salinity_psu,0.4,,surface,,Provisional
 2026-11-20T00:30:00Z,usgs:252654080220201,salinity_psu,0.4,,surface,,Provisional
@@ -2483,6 +2492,9 @@ time_utc,station_uid,variable,value,depth_m,depth_tag,sensor,qc
 2026-11-20T22:30:00Z,usgs:252654080220201,salinity_psu,0.6,,surface,,Provisional
 2026-11-20T22:45:00Z,usgs:252654080220201,salinity_psu,0.6,,surface,,Provisional
 2026-11-20T23:00:00Z,usgs:252654080220201,salinity_psu,0.6,,surface,,Provisional
+2026-11-20T23:15:00Z,usgs:252654080220201,salinity_psu,0.6,,surface,,Provisional
+2026-11-20T23:30:00Z,usgs:252654080220201,salinity_psu,0.6,,surface,,Provisional
+2026-11-20T23:45:00Z,usgs:252654080220201,salinity_psu,0.6,,surface,,Provisional
 2026-11-20T00:00:00Z,usgs:252654080220201,spec_cond_us_cm,818,,surface,,Provisional
 2026-11-20T00:15:00Z,usgs:252654080220201,spec_cond_us_cm,811,,surface,,Provisional
 2026-11-20T00:30:00Z,usgs:252654080220201,spec_cond_us_cm,811,,surface,,Provisional
@@ -2576,6 +2588,9 @@ time_utc,station_uid,variable,value,depth_m,depth_tag,sensor,qc
 2026-11-20T22:30:00Z,usgs:252654080220201,spec_cond_us_cm,1160,,surface,,Provisional
 2026-11-20T22:45:00Z,usgs:252654080220201,spec_cond_us_cm,1160,,surface,,Provisional
 2026-11-20T23:00:00Z,usgs:252654080220201,spec_cond_us_cm,1170,,surface,,Provisional
+2026-11-20T23:15:00Z,usgs:252654080220201,spec_cond_us_cm,1160,,surface,,Provisional
+2026-11-20T23:30:00Z,usgs:252654080220201,spec_cond_us_cm,1160,,surface,,Provisional
+2026-11-20T23:45:00Z,usgs:252654080220201,spec_cond_us_cm,1150,,surface,,Provisional
 2026-11-20T00:00:00Z,usgs:252654080220201,water_temp_c,25.6,,surface,,Provisional
 2026-11-20T00:15:00Z,usgs:252654080220201,water_temp_c,25.6,,surface,,Provisional
 2026-11-20T00:30:00Z,usgs:252654080220201,water_temp_c,25.5,,surface,,Provisional
@@ -2669,6 +2684,9 @@ time_utc,station_uid,variable,value,depth_m,depth_tag,sensor,qc
 2026-11-20T22:30:00Z,usgs:252654080220201,water_temp_c,25.4,,surface,,Provisional
 2026-11-20T22:45:00Z,usgs:252654080220201,water_temp_c,25.4,,surface,,Provisional
 2026-11-20T23:00:00Z,usgs:252654080220201,water_temp_c,25.4,,surface,,Provisional
+2026-11-20T23:15:00Z,usgs:252654080220201,water_temp_c,25.4,,surface,,Provisional
+2026-11-20T23:30:00Z,usgs:252654080220201,water_temp_c,25.4,,surface,,Provisional
+2026-11-20T23:45:00Z,usgs:252654080220201,water_temp_c,25.4,,surface,,Provisional
 2026-11-20T00:00:00Z,usgs:254729080393601,spec_cond_us_cm,596,,surface,,Provisional
 2026-11-20T00:15:00Z,usgs:254729080393601,spec_cond_us_cm,597,,surface,,Provisional
 2026-11-20T00:30:00Z,usgs:254729080393601,spec_cond_us_cm,598,,surface,,Provisional
