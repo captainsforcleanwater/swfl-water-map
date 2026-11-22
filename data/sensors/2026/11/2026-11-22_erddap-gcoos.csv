@@ -1,0 +1,12 @@
+time_utc,station_uid,variable,value,depth_m,depth_tag,sensor,qc
+2026-11-22T00:00:00Z,erddap-gcoos:SCCF_11,salinity_psu,31.41,0,surface,sea_water_practical_salinity_1,
+2026-11-22T00:00:00Z,erddap-gcoos:SCCF_11,water_temp_c,23.92,0,surface,sea_surface_temperature_1,
+2026-11-22T00:00:00Z,erddap-gcoos:SCCF_1111,water_temp_c,23.92,0,surface,sea_surface_temperature_1,
+2026-11-22T00:00:00Z,erddap-gcoos:SCCF_13,salinity_psu,28.83,0,surface,sea_water_practical_salinity_1,
+2026-11-22T00:00:00Z,erddap-gcoos:SCCF_13,water_temp_c,24.07,0,surface,sea_surface_temperature_1,
+2026-11-22T00:00:00Z,erddap-gcoos:SCCF_18,salinity_psu,0.29,0,surface,sea_water_practical_salinity_1,
+2026-11-22T00:00:00Z,erddap-gcoos:SCCF_18,water_temp_c,26.09,0,surface,sea_surface_temperature_1,
+2026-11-22T00:00:00Z,erddap-gcoos:SCCF_53,salinity_psu,4.91,0,surface,sea_water_practical_salinity_1,
+2026-11-22T00:00:00Z,erddap-gcoos:SCCF_53,water_temp_c,23.39,0,surface,sea_surface_temperature_1,
+2026-11-22T00:00:00Z,erddap-gcoos:SCCF_56,salinity_psu,29.88,0,surface,sea_water_practical_salinity_1,
+2026-11-22T00:00:00Z,erddap-gcoos:SCCF_56,water_temp_c,23.75,0,surface,sea_surface_temperature_1,
