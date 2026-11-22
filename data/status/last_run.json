@@ -1,73 +1,70 @@
 {
  "files_changed": {
   "data/sensors/2026/11/2026-11-22_coops.csv": {
-   "new": 51,
-   "rows": 120
+   "new": 33,
+   "rows": 153
   },
   "data/sensors/2026/11/2026-11-22_erddap-gcoos.csv": {
-   "new": 54,
-   "rows": 92
+   "new": 27,
+   "rows": 119
   },
   "data/sensors/2026/11/2026-11-22_erddap-secoora.csv": {
-   "new": 152,
-   "rows": 283
+   "new": 112,
+   "rows": 395
   },
   "data/sensors/2026/11/2026-11-22_ndbc.csv": {
-   "new": 16,
-   "rows": 26
+   "new": 8,
+   "rows": 34
   },
   "data/sensors/2026/11/2026-11-22_usgs.csv": {
-   "new": 412,
-   "rows": 871
+   "new": 324,
+   "rows": 1195
   }
  },
- "finished": "2026-11-22T04:01:54Z",
+ "finished": "2026-11-22T05:06:58Z",
  "sensor_window": [
-  "2026-11-21T04:00:20Z",
-  "2026-11-22T04:00:20Z"
+  "2026-11-21T05:06:10Z",
+  "2026-11-22T05:06:10Z"
  ],
  "sources": {
   "coops": {
    "errors": {},
    "readings": 720,
-   "seconds": 0.6,
+   "seconds": 0.3,
    "stations_queried": 3,
    "stations_reporting": 3
   },
   "erddap": {
-   "errors": {
-    "erddap-secoora:gov-ndbc-lonf1": "HTTPSConnectionPool(host='erddap.secoora.org', port=443): Max retries exceeded with url: /erddap/tabledap/gov-ndbc-lonf1.csv?time,z,sea_surface_temperature&time%3E=2026-11-21T04%3A00%3A20Z&time%3C=202",
-    "erddap-secoora:sanibel-dock": "HTTPSConnectionPool(host='erddap.secoora.org', port=443): Max retries exceeded with url: /erddap/tabledap/sanibel-dock.csv?time,z,sea_water_practical_salinity,sea_water_temperature&time%3E=2026-11-21T"
-   },
-   "readings": 3666,
-   "seconds": 90.9,
+   "errors": {},
+   "readings": 3850,
+   "seconds": 45.2,
    "stations_queried": 58,
-   "stations_reporting": 54
+   "stations_reporting": 55
   },
   "goes19": {
-   "added": 0,
+   "added": 2,
    "errors": {},
-   "missing_before_run": 0,
-   "seconds": 0.4,
+   "missing_before_run": 2,
+   "seconds": 5.0,
    "server_first": "2026-11-17T17:00:00Z",
-   "server_last": "2026-11-21T22:00:00Z",
+   "server_last": "2026-11-22T00:00:00Z",
    "store": "release"
   },
   "ndbc": {
    "errors": {},
    "readings": 184,
-   "seconds": 1.0,
+   "seconds": 0.4,
    "stations_queried": 2,
    "stations_reporting": 1
   },
   "usgs": {
    "errors": {},
-   "readings": 5970,
+   "readings": 6034,
    "seconds": 1.9,
    "stations_queried": 24,
    "stations_reporting": 19
   }
  },
- "started": "2026-11-22T04:00:19Z",
- "total_readings": 10540
+ "started": "2026-11-22T05:06:05Z",
+ "total_readings": 10788
 }
