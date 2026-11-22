@@ -5,7 +5,7 @@
    "flatline": 0,
    "flatline_long": 0,
    "from_flagged_conductance": 2,
-   "hold": 180,
+   "hold": 181,
    "missing": 0,
    "neighbor": 0,
    "provider": 0,
@@ -15,46 +15,46 @@
    "time": 0
   },
   "files_changed": {
-   "data/clean/2026/11/2026-11-22.csv": 2025,
+   "data/clean/2026/11/2026-11-22.csv": 2166,
    "data/clean/stations.csv": 84,
-   "data/qc/2026/11/2026-11-22_flags.csv": 12
+   "data/qc/2026/11/2026-11-22_flags.csv": 13
   },
-  "good": 93787,
+  "good": 94274,
   "holds": {
    "erddap-secoora:gov-nps-ever-hcef1": "Highway Creek: offset from neighbouring stations grew to about +4 C in November 2026, day and night alike, the largest in 18 months of record. Held while CFCW reviews docs/florida_bay_offsets.md."
   },
-  "hourly_values": 27412,
+  "hourly_values": 27553,
   "merge_checks": {
    "erddap-gcoos:USF_COMPS_C13 + erddap-secoora:42023-c13-wfs-south-buoy-50m-": {
     "agree": true,
     "salinity": {
-     "hours": 157,
+     "hours": 158,
      "median_abs_diff": 0.0
     },
     "temp": {
-     "hours": 157,
+     "hours": 158,
      "median_abs_diff": 0.0
     }
    },
    "erddap-gcoos:USF_COMPS_C13 + erddap-secoora:c13-water-velocity-wfs-south-buo": {
     "agree": true,
     "salinity": {
-     "hours": 157,
+     "hours": 158,
      "median_abs_diff": 0.0
     },
     "temp": {
-     "hours": 157,
+     "hours": 158,
      "median_abs_diff": 0.0
     }
    },
    "erddap-gcoos:USF_COMPS_C22 + erddap-secoora:42026-c22-loop-current-pressu": {
     "agree": true,
     "salinity": {
-     "hours": 163,
+     "hours": 164,
      "median_abs_diff": 0.0
     },
     "temp": {
-     "hours": 163,
+     "hours": 164,
      "median_abs_diff": 0.0
     }
    },
@@ -83,13 +83,13 @@
    "usgs:251253080320100 + erddap-secoora:gov-nps-ever-tcvf1": {
     "agree": false,
     "temp": {
-     "hours": 180,
+     "hours": 181,
      "median_abs_diff": 1.05
     }
    }
   },
   "neighbor_flags": {},
-  "raw_readings": 85332,
+  "raw_readings": 85774,
   "salinity_from_conductance_replacing_whole_psu": [
    "usgs:02290930 (surface)",
    "usgs:250802081035500 (surface)",
@@ -98,22 +98,22 @@
    "usgs:255534081324000 (bottom)",
    "usgs:255726081303700 (bottom)"
   ],
-  "seconds": 5.4,
+  "seconds": 3.2,
   "stale_stations": [],
-  "suspect": 195
+  "suspect": 196
  },
  "errors": {},
- "finished": "2026-11-22T14:05:31Z",
- "hours_blended": 5,
+ "finished": "2026-11-22T14:57:14Z",
+ "hours_blended": 4,
  "hours_considered": 121,
- "hours_to_blend": 5,
- "now": "2026-11-22T14:05:07Z",
+ "hours_to_blend": 4,
+ "now": "2026-11-22T14:56:56Z",
  "out_of_time": false,
- "seconds": 24.2,
- "started": "2026-11-22T14:05:07Z",
+ "seconds": 17.8,
+ "started": "2026-11-22T14:56:56Z",
  "store": "release",
  "window": [
-  "2026-11-17T13:00:00Z",
-  "2026-11-22T13:00:00Z"
+  "2026-11-17T14:00:00Z",
+  "2026-11-22T14:00:00Z"
  ]
 }
