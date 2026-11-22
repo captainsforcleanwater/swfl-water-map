@@ -1,75 +1,70 @@
 {
- "discovery": {
-  "errors": {},
-  "seconds": 36.9,
-  "stations": 101
- },
  "files_changed": {
   "data/sensors/2026/11/2026-11-22_coops.csv": {
-   "new": 33,
-   "rows": 657
+   "new": 30,
+   "rows": 687
   },
   "data/sensors/2026/11/2026-11-22_erddap-gcoos.csv": {
    "new": 27,
-   "rows": 550
+   "rows": 577
   },
   "data/sensors/2026/11/2026-11-22_erddap-secoora.csv": {
-   "new": 160,
-   "rows": 3278
+   "new": 158,
+   "rows": 3436
   },
   "data/sensors/2026/11/2026-11-22_ndbc.csv": {
    "new": 8,
-   "rows": 170
+   "rows": 178
   },
   "data/sensors/2026/11/2026-11-22_usgs.csv": {
-   "new": 272,
-   "rows": 5481
+   "new": 248,
+   "rows": 5729
   }
  },
- "finished": "2026-11-22T21:54:06Z",
+ "finished": "2026-11-22T22:53:56Z",
  "sensor_window": [
-  "2026-11-21T21:53:23Z",
-  "2026-11-22T21:53:23Z"
+  "2026-11-21T22:53:07Z",
+  "2026-11-22T22:53:07Z"
  ],
  "sources": {
   "coops": {
    "errors": {},
    "readings": 720,
-   "seconds": 0.1,
+   "seconds": 0.2,
    "stations_queried": 3,
    "stations_reporting": 3
   },
   "erddap": {
    "errors": {},
-   "readings": 4204,
-   "seconds": 41.2,
+   "readings": 4202,
+   "seconds": 45.3,
    "stations_queried": 58,
    "stations_reporting": 55
   },
   "goes19": {
-   "added": 0,
+   "added": 2,
    "errors": {},
-   "missing_before_run": 0,
-   "seconds": 0.2,
+   "missing_before_run": 2,
+   "seconds": 5.9,
    "server_first": "2026-11-18T13:00:00Z",
-   "server_last": "2026-11-22T16:00:00Z",
+   "server_last": "2026-11-22T18:00:00Z",
    "store": "release"
   },
   "ndbc": {
    "errors": {},
    "readings": 186,
-   "seconds": 0.5,
+   "seconds": 0.4,
    "stations_queried": 2,
    "stations_reporting": 1
   },
   "usgs": {
    "errors": {},
-   "readings": 6001,
-   "seconds": 1.5,
+   "readings": 5989,
+   "seconds": 2.4,
    "stations_queried": 24,
    "stations_reporting": 19
   }
  },
- "started": "2026-11-22T21:52:46Z",
- "total_readings": 11111
+ "started": "2026-11-22T22:53:01Z",
+ "total_readings": 11097
 }
