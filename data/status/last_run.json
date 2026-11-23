@@ -1,72 +1,70 @@
 {
  "files_changed": {
   "data/sensors/2026/11/2026-11-23_coops.csv": {
-   "new": 51,
-   "rows": 336
+   "new": 27,
+   "rows": 363
   },
   "data/sensors/2026/11/2026-11-23_erddap-gcoos.csv": {
-   "new": 19,
-   "rows": 269
+   "new": 31,
+   "rows": 300
   },
   "data/sensors/2026/11/2026-11-23_erddap-secoora.csv": {
-   "new": 471,
-   "rows": 1631
+   "new": 160,
+   "rows": 1791
   },
   "data/sensors/2026/11/2026-11-23_ndbc.csv": {
    "new": 8,
-   "rows": 82
+   "rows": 90
   },
   "data/sensors/2026/11/2026-11-23_usgs.csv": {
-   "new": 484,
-   "rows": 2725
+   "new": 232,
+   "rows": 2957
   }
  },
- "finished": "2026-11-23T11:17:38Z",
+ "finished": "2026-11-23T12:11:07Z",
  "sensor_window": [
-  "2026-11-22T11:16:04Z",
-  "2026-11-23T11:16:04Z"
+  "2026-11-22T12:09:55Z",
+  "2026-11-23T12:09:55Z"
  ],
  "sources": {
   "coops": {
    "errors": {},
    "readings": 717,
-   "seconds": 0.1,
+   "seconds": 0.4,
    "stations_queried": 3,
    "stations_reporting": 3
   },
   "erddap": {
-   "errors": {
-    "erddap-secoora:sanibel-dock": "HTTPSConnectionPool(host='erddap.secoora.org', port=443): Max retries exceeded with url: /erddap/tabledap/sanibel-dock.csv?time,z,sea_water_practical_salinity,sea_water_temperature&time%3E=2026-11-22T"
-   },
-   "readings": 3936,
-   "seconds": 91.7,
+   "errors": {},
+   "readings": 4188,
+   "seconds": 69.8,
    "stations_queried": 58,
-   "stations_reporting": 54
+   "stations_reporting": 55
   },
   "goes19": {
    "added": 2,
    "errors": {},
    "missing_before_run": 2,
-   "seconds": 5.3,
+   "seconds": 4.2,
    "server_first": "2026-11-18T13:00:00Z",
-   "server_last": "2026-11-23T06:00:00Z",
+   "server_last": "2026-11-23T08:00:00Z",
    "store": "release"
   },
   "ndbc": {
    "errors": {},
-   "readings": 182,
-   "seconds": 0.3,
+   "readings": 184,
+   "seconds": 0.5,
    "stations_queried": 2,
    "stations_reporting": 1
   },
   "usgs": {
    "errors": {},
-   "readings": 5955,
+   "readings": 5998,
    "seconds": 1.5,
    "stations_queried": 24,
    "stations_reporting": 19
   }
  },
- "started": "2026-11-23T11:15:59Z",
- "total_readings": 10790
+ "started": "2026-11-23T12:09:51Z",
+ "total_readings": 11087
 }

@@ -2657,7 +2657,7 @@
   },
   "2026-11-23": {
    "asset": "swfl_blend_hourly_2026-11-23.bin.gz",
-   "bytes": 1119317,
+   "bytes": 1269537,
    "hours": {
     "00": {
      "blended": "2026-11-23T07:45:19Z",
@@ -2716,40 +2716,48 @@
      "v": 2
     },
     "07": {
-     "blended": "2026-11-23T11:17:50Z",
-     "goes_newest": "2026-11-23T06:00:00Z",
+     "blended": "2026-11-23T12:11:25Z",
+     "goes_newest": "2026-11-23T07:00:00Z",
      "n_sal": 54,
      "n_temp": 64,
-     "sig": "e51739ad10cf",
+     "sig": "7c50fff0ffc2",
      "v": 2
     },
     "08": {
-     "blended": "2026-11-23T11:17:49Z",
-     "goes_newest": "2026-11-23T06:00:00Z",
-     "n_sal": 51,
-     "n_temp": 63,
-     "sig": "6d55747c1391",
+     "blended": "2026-11-23T12:11:24Z",
+     "goes_newest": "2026-11-23T08:00:00Z",
+     "n_sal": 52,
+     "n_temp": 64,
+     "sig": "3ab110322724",
      "v": 2
     },
     "09": {
-     "blended": "2026-11-23T11:17:48Z",
-     "goes_newest": "2026-11-23T06:00:00Z",
-     "n_sal": 31,
-     "n_temp": 60,
-     "sig": "33a25c0c6a1f",
+     "blended": "2026-11-23T12:11:22Z",
+     "goes_newest": "2026-11-23T08:00:00Z",
+     "n_sal": 34,
+     "n_temp": 63,
+     "sig": "2fe8c7849c73",
      "v": 2
     },
     "10": {
-     "blended": "2026-11-23T11:17:47Z",
-     "goes_newest": "2026-11-23T06:00:00Z",
-     "n_sal": 16,
-     "n_temp": 31,
-     "sig": "cec21b72b606",
+     "blended": "2026-11-23T12:11:21Z",
+     "goes_newest": "2026-11-23T08:00:00Z",
+     "n_sal": 48,
+     "n_temp": 62,
+     "sig": "6d61f951c842",
+     "v": 2
+    },
+    "11": {
+     "blended": "2026-11-23T12:11:20Z",
+     "goes_newest": "2026-11-23T08:00:00Z",
+     "n_sal": 18,
+     "n_temp": 29,
+     "sig": "030414cf3bbf",
      "v": 2
     }
    },
    "release_tag": "blend-hourly-2026-11",
-   "updated": "2026-11-23T11:17:57Z",
+   "updated": "2026-11-23T12:11:33Z",
    "url": "https://github.com/captainsforcleanwater/swfl-water-map/releases/download/blend-hourly-2026-11/swfl_blend_hourly_2026-11-23.bin.gz"
   }
  },
