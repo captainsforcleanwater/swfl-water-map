@@ -16,3 +16,4 @@ time_utc,station_uid,variable,depth_tag,sensor,depth_m,value,flag,tests
 2026-11-23T08:50:00Z,erddap-secoora:sanibel-dock,salinity_psu,surface,sea_water_practical_salinity,0,25.78,3,spike
 2026-11-23T11:40:00Z,erddap-secoora:sanibel-dock,salinity_psu,surface,sea_water_practical_salinity,0,20.88,3,spike
 2026-11-23T11:50:00Z,erddap-secoora:sanibel-dock,salinity_psu,surface,sea_water_practical_salinity,0,16.55,3,spike
+2026-11-23T14:45:00Z,usgs:250802081035500,water_temp_c,surface,,,23.7,3,spike
