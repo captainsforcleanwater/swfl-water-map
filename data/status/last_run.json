@@ -1,70 +1,74 @@
 {
  "files_changed": {
+  "data/sensors/2026/11/2026-11-22_erddap-secoora.csv": {
+   "new": 76,
+   "rows": 3820
+  },
   "data/sensors/2026/11/2026-11-23_coops.csv": {
-   "new": 39,
-   "rows": 165
+   "new": 66,
+   "rows": 231
   },
   "data/sensors/2026/11/2026-11-23_erddap-gcoos.csv": {
-   "new": 27,
-   "rows": 119
+   "new": 81,
+   "rows": 200
   },
   "data/sensors/2026/11/2026-11-23_erddap-secoora.csv": {
-   "new": 88,
-   "rows": 452
+   "new": 604,
+   "rows": 1056
   },
   "data/sensors/2026/11/2026-11-23_ndbc.csv": {
    "new": 16,
-   "rows": 42
+   "rows": 58
   },
   "data/sensors/2026/11/2026-11-23_usgs.csv": {
-   "new": 340,
-   "rows": 1297
+   "new": 516,
+   "rows": 1813
   }
  },
- "finished": "2026-11-23T05:34:34Z",
+ "finished": "2026-11-23T07:45:04Z",
  "sensor_window": [
-  "2026-11-22T05:33:46Z",
-  "2026-11-23T05:33:46Z"
+  "2026-11-22T07:44:13Z",
+  "2026-11-23T07:44:13Z"
  ],
  "sources": {
   "coops": {
    "errors": {},
    "readings": 717,
-   "seconds": 0.5,
+   "seconds": 0.4,
    "stations_queried": 3,
    "stations_reporting": 3
   },
   "erddap": {
    "errors": {},
-   "readings": 3858,
-   "seconds": 45.5,
+   "readings": 4227,
+   "seconds": 46.8,
    "stations_queried": 58,
    "stations_reporting": 55
   },
   "goes19": {
-   "added": 0,
+   "added": 2,
    "errors": {},
-   "missing_before_run": 0,
-   "seconds": 0.3,
+   "missing_before_run": 2,
+   "seconds": 3.8,
    "server_first": "2026-11-18T13:00:00Z",
-   "server_last": "2026-11-23T00:00:00Z",
+   "server_last": "2026-11-23T02:00:00Z",
    "store": "release"
   },
   "ndbc": {
    "errors": {},
    "readings": 188,
-   "seconds": 0.8,
+   "seconds": 0.6,
    "stations_queried": 2,
    "stations_reporting": 1
   },
   "usgs": {
    "errors": {},
-   "readings": 5976,
-   "seconds": 1.3,
+   "readings": 5988,
+   "seconds": 2.4,
    "stations_queried": 24,
    "stations_reporting": 19
   }
  },
- "started": "2026-11-23T05:33:46Z",
- "total_readings": 10739
+ "started": "2026-11-23T07:44:10Z",
+ "total_readings": 11120
 }
