@@ -2844,49 +2844,57 @@
      "v": 2
     },
     "23": {
-     "blended": "2026-11-24T03:01:01Z",
-     "goes_newest": "2026-11-23T22:00:00Z",
+     "blended": "2026-11-24T04:09:47Z",
+     "goes_newest": "2026-11-23T23:00:00Z",
      "n_sal": 18,
      "n_temp": 29,
-     "sig": "565370ee62ab",
+     "sig": "e8d083c01a01",
      "v": 2
     }
    },
    "release_tag": "blend-hourly-2026-11",
-   "updated": "2026-11-24T03:01:17Z",
+   "updated": "2026-11-24T04:09:58Z",
    "url": "https://github.com/captainsforcleanwater/swfl-water-map/releases/download/blend-hourly-2026-11/swfl_blend_hourly_2026-11-23.bin.gz"
   },
   "2026-11-24": {
    "asset": "swfl_blend_hourly_2026-11-24.bin.gz",
-   "bytes": 356010,
+   "bytes": 451040,
    "hours": {
     "00": {
-     "blended": "2026-11-24T03:00:57Z",
-     "goes_newest": "2026-11-23T22:00:00Z",
+     "blended": "2026-11-24T04:09:42Z",
+     "goes_newest": "2026-11-24T00:00:00Z",
      "n_sal": 18,
      "n_temp": 29,
-     "sig": "b6ea38083a00",
+     "sig": "2160b05cfc0f",
      "v": 2
     },
     "01": {
-     "blended": "2026-11-24T03:00:56Z",
-     "goes_newest": "2026-11-23T22:00:00Z",
+     "blended": "2026-11-24T04:09:41Z",
+     "goes_newest": "2026-11-24T00:00:00Z",
      "n_sal": 18,
      "n_temp": 29,
-     "sig": "84a5f7d8b00a",
+     "sig": "bde2e863dc2a",
      "v": 2
     },
     "02": {
-     "blended": "2026-11-24T03:00:56Z",
-     "goes_newest": "2026-11-23T22:00:00Z",
+     "blended": "2026-11-24T04:09:41Z",
+     "goes_newest": "2026-11-24T00:00:00Z",
      "n_sal": 18,
      "n_temp": 29,
-     "sig": "c9f22e624623",
+     "sig": "a85fa8c0e044",
+     "v": 2
+    },
+    "03": {
+     "blended": "2026-11-24T04:09:41Z",
+     "goes_newest": "2026-11-24T00:00:00Z",
+     "n_sal": 18,
+     "n_temp": 29,
+     "sig": "3d14fe1bb3bb",
      "v": 2
     }
    },
    "release_tag": "blend-hourly-2026-11",
-   "updated": "2026-11-24T03:01:00Z",
+   "updated": "2026-11-24T04:09:45Z",
    "url": "https://github.com/captainsforcleanwater/swfl-water-map/releases/download/blend-hourly-2026-11/swfl_blend_hourly_2026-11-24.bin.gz"
   }
  },
