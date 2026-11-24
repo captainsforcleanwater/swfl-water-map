@@ -14,7 +14,8 @@ time_utc,station,variable,layer,value,n,depth_m,source
 2026-11-24T12:00:00Z,coops:8723970,water_temp_c,surface,25.32,10,,
 2026-11-24T13:00:00Z,coops:8723970,water_temp_c,surface,25.3,10,,
 2026-11-24T14:00:00Z,coops:8723970,water_temp_c,surface,25.21,10,,
-2026-11-24T15:00:00Z,coops:8723970,water_temp_c,surface,25.2,7,,
+2026-11-24T15:00:00Z,coops:8723970,water_temp_c,surface,25.22,10,,
+2026-11-24T16:00:00Z,coops:8723970,water_temp_c,surface,25.3,8,,
 2026-11-24T00:00:00Z,coops:8724580,water_temp_c,surface,26.3,10,,
 2026-11-24T01:00:00Z,coops:8724580,water_temp_c,surface,26.28,10,,
 2026-11-24T02:00:00Z,coops:8724580,water_temp_c,surface,26.21,10,,
@@ -30,7 +31,8 @@ time_utc,station,variable,layer,value,n,depth_m,source
 2026-11-24T12:00:00Z,coops:8724580,water_temp_c,surface,26.08,10,,
 2026-11-24T13:00:00Z,coops:8724580,water_temp_c,surface,26,10,,
 2026-11-24T14:00:00Z,coops:8724580,water_temp_c,surface,26,10,,
-2026-11-24T15:00:00Z,coops:8724580,water_temp_c,surface,26,7,,
+2026-11-24T15:00:00Z,coops:8724580,water_temp_c,surface,26,10,,
+2026-11-24T16:00:00Z,coops:8724580,water_temp_c,surface,26,8,,
 2026-11-24T00:00:00Z,coops:8725520,water_temp_c,surface,24.26,10,,
 2026-11-24T01:00:00Z,coops:8725520,water_temp_c,surface,24.2,10,,
 2026-11-24T02:00:00Z,coops:8725520,water_temp_c,surface,24.12,10,,
@@ -46,7 +48,8 @@ time_utc,station,variable,layer,value,n,depth_m,source
 2026-11-24T12:00:00Z,coops:8725520,water_temp_c,surface,23.2,10,,
 2026-11-24T13:00:00Z,coops:8725520,water_temp_c,surface,23.2,10,,
 2026-11-24T14:00:00Z,coops:8725520,water_temp_c,surface,23.13,10,,
-2026-11-24T15:00:00Z,coops:8725520,water_temp_c,surface,23.1,7,,
+2026-11-24T15:00:00Z,coops:8725520,water_temp_c,surface,23.1,10,,
+2026-11-24T16:00:00Z,coops:8725520,water_temp_c,surface,23.24,8,,
 2026-11-24T00:00:00Z,erddap-gcoos:SCCF_11,salinity_psu,surface,28.48,1,0,
 2026-11-24T01:00:00Z,erddap-gcoos:SCCF_11,salinity_psu,surface,28.71,1,0,
 2026-11-24T02:00:00Z,erddap-gcoos:SCCF_11,salinity_psu,surface,28.73,1,0,
@@ -61,6 +64,8 @@ time_utc,station,variable,layer,value,n,depth_m,source
 2026-11-24T11:00:00Z,erddap-gcoos:SCCF_11,salinity_psu,surface,29.02,1,0,
 2026-11-24T12:00:00Z,erddap-gcoos:SCCF_11,salinity_psu,surface,28.74,1,0,
 2026-11-24T13:00:00Z,erddap-gcoos:SCCF_11,salinity_psu,surface,28.92,1,0,
+2026-11-24T14:00:00Z,erddap-gcoos:SCCF_11,salinity_psu,surface,28.91,1,0,
+2026-11-24T15:00:00Z,erddap-gcoos:SCCF_11,salinity_psu,surface,28.49,1,0,
 2026-11-24T00:00:00Z,erddap-gcoos:SCCF_11,water_temp_c,surface,23.65,1,0,
 2026-11-24T01:00:00Z,erddap-gcoos:SCCF_11,water_temp_c,surface,23.57,1,0,
 2026-11-24T02:00:00Z,erddap-gcoos:SCCF_11,water_temp_c,surface,23.41,1,0,
@@ -75,6 +80,8 @@ time_utc,station,variable,layer,value,n,depth_m,source
 2026-11-24T11:00:00Z,erddap-gcoos:SCCF_11,water_temp_c,surface,22.64,1,0,
 2026-11-24T12:00:00Z,erddap-gcoos:SCCF_11,water_temp_c,surface,22.11,1,0,
 2026-11-24T13:00:00Z,erddap-gcoos:SCCF_11,water_temp_c,surface,22.51,1,0,
+2026-11-24T14:00:00Z,erddap-gcoos:SCCF_11,water_temp_c,surface,22.38,1,0,
+2026-11-24T15:00:00Z,erddap-gcoos:SCCF_11,water_temp_c,surface,22.74,1,0,
 2026-11-24T00:00:00Z,erddap-gcoos:SCCF_1111,water_temp_c,surface,23.63,1,0,
 2026-11-24T01:00:00Z,erddap-gcoos:SCCF_1111,water_temp_c,surface,23.55,1,0,
 2026-11-24T02:00:00Z,erddap-gcoos:SCCF_1111,water_temp_c,surface,23.44,1,0,
@@ -90,6 +97,7 @@ time_utc,station,variable,layer,value,n,depth_m,source
 2026-11-24T12:00:00Z,erddap-gcoos:SCCF_1111,water_temp_c,surface,23.25,1,0,
 2026-11-24T13:00:00Z,erddap-gcoos:SCCF_1111,water_temp_c,surface,23.24,1,0,
 2026-11-24T14:00:00Z,erddap-gcoos:SCCF_1111,water_temp_c,surface,23.23,1,0,
+2026-11-24T15:00:00Z,erddap-gcoos:SCCF_1111,water_temp_c,surface,23.24,1,0,
 2026-11-24T00:00:00Z,erddap-gcoos:SCCF_13,salinity_psu,surface,22.79,1,0,
 2026-11-24T01:00:00Z,erddap-gcoos:SCCF_13,salinity_psu,surface,26.58,1,0,
 2026-11-24T02:00:00Z,erddap-gcoos:SCCF_13,salinity_psu,surface,26.24,1,0,
@@ -104,6 +112,8 @@ time_utc,station,variable,layer,value,n,depth_m,source
 2026-11-24T11:00:00Z,erddap-gcoos:SCCF_13,salinity_psu,surface,19.23,1,0,
 2026-11-24T12:00:00Z,erddap-gcoos:SCCF_13,salinity_psu,surface,18.44,1,0,
 2026-11-24T13:00:00Z,erddap-gcoos:SCCF_13,salinity_psu,surface,16.55,1,0,
+2026-11-24T14:00:00Z,erddap-gcoos:SCCF_13,salinity_psu,surface,15.56,1,0,
+2026-11-24T15:00:00Z,erddap-gcoos:SCCF_13,salinity_psu,surface,14.88,1,0,
 2026-11-24T00:00:00Z,erddap-gcoos:SCCF_13,water_temp_c,surface,23.8,1,0,
 2026-11-24T01:00:00Z,erddap-gcoos:SCCF_13,water_temp_c,surface,23.91,1,0,
 2026-11-24T02:00:00Z,erddap-gcoos:SCCF_13,water_temp_c,surface,23.65,1,0,
@@ -118,6 +128,8 @@ time_utc,station,variable,layer,value,n,depth_m,source
 2026-11-24T11:00:00Z,erddap-gcoos:SCCF_13,water_temp_c,surface,23.04,1,0,
 2026-11-24T12:00:00Z,erddap-gcoos:SCCF_13,water_temp_c,surface,23,1,0,
 2026-11-24T13:00:00Z,erddap-gcoos:SCCF_13,water_temp_c,surface,22.92,1,0,
+2026-11-24T14:00:00Z,erddap-gcoos:SCCF_13,water_temp_c,surface,22.89,1,0,
+2026-11-24T15:00:00Z,erddap-gcoos:SCCF_13,water_temp_c,surface,22.85,1,0,
 2026-11-24T00:00:00Z,erddap-gcoos:SCCF_18,salinity_psu,surface,0.24,1,0,
 2026-11-24T01:00:00Z,erddap-gcoos:SCCF_18,salinity_psu,surface,0.24,1,0,
 2026-11-24T02:00:00Z,erddap-gcoos:SCCF_18,salinity_psu,surface,0.24,1,0,
@@ -133,6 +145,7 @@ time_utc,station,variable,layer,value,n,depth_m,source
 2026-11-24T12:00:00Z,erddap-gcoos:SCCF_18,salinity_psu,surface,0.24,1,0,
 2026-11-24T13:00:00Z,erddap-gcoos:SCCF_18,salinity_psu,surface,0.24,1,0,
 2026-11-24T14:00:00Z,erddap-gcoos:SCCF_18,salinity_psu,surface,0.24,1,0,
+2026-11-24T15:00:00Z,erddap-gcoos:SCCF_18,salinity_psu,surface,0.24,1,0,
 2026-11-24T00:00:00Z,erddap-gcoos:SCCF_18,water_temp_c,surface,26,1,0,
 2026-11-24T01:00:00Z,erddap-gcoos:SCCF_18,water_temp_c,surface,25.64,1,0,
 2026-11-24T02:00:00Z,erddap-gcoos:SCCF_18,water_temp_c,surface,25.69,1,0,
@@ -148,6 +161,7 @@ time_utc,station,variable,layer,value,n,depth_m,source
 2026-11-24T12:00:00Z,erddap-gcoos:SCCF_18,water_temp_c,surface,25.61,1,0,
 2026-11-24T13:00:00Z,erddap-gcoos:SCCF_18,water_temp_c,surface,25.11,1,0,
 2026-11-24T14:00:00Z,erddap-gcoos:SCCF_18,water_temp_c,surface,24.76,1,0,
+2026-11-24T15:00:00Z,erddap-gcoos:SCCF_18,water_temp_c,surface,24.67,1,0,
 2026-11-24T00:00:00Z,erddap-gcoos:SCCF_53,salinity_psu,surface,8.25,1,0,
 2026-11-24T01:00:00Z,erddap-gcoos:SCCF_53,salinity_psu,surface,8.36,1,0,
 2026-11-24T02:00:00Z,erddap-gcoos:SCCF_53,salinity_psu,surface,7.88,1,0,
@@ -162,6 +176,8 @@ time_utc,station,variable,layer,value,n,depth_m,source
 2026-11-24T11:00:00Z,erddap-gcoos:SCCF_53,salinity_psu,surface,8.64,1,0,
 2026-11-24T12:00:00Z,erddap-gcoos:SCCF_53,salinity_psu,surface,8.69,1,0,
 2026-11-24T13:00:00Z,erddap-gcoos:SCCF_53,salinity_psu,surface,7.14,1,0,
+2026-11-24T14:00:00Z,erddap-gcoos:SCCF_53,salinity_psu,surface,7.27,1,0,
+2026-11-24T15:00:00Z,erddap-gcoos:SCCF_53,salinity_psu,surface,7.43,1,0,
 2026-11-24T00:00:00Z,erddap-gcoos:SCCF_53,water_temp_c,surface,23.85,1,0,
 2026-11-24T01:00:00Z,erddap-gcoos:SCCF_53,water_temp_c,surface,23.81,1,0,
 2026-11-24T02:00:00Z,erddap-gcoos:SCCF_53,water_temp_c,surface,23.82,1,0,
@@ -176,6 +192,8 @@ time_utc,station,variable,layer,value,n,depth_m,source
 2026-11-24T11:00:00Z,erddap-gcoos:SCCF_53,water_temp_c,surface,23.82,1,0,
 2026-11-24T12:00:00Z,erddap-gcoos:SCCF_53,water_temp_c,surface,23.83,1,0,
 2026-11-24T13:00:00Z,erddap-gcoos:SCCF_53,water_temp_c,surface,23.65,1,0,
+2026-11-24T14:00:00Z,erddap-gcoos:SCCF_53,water_temp_c,surface,23.66,1,0,
+2026-11-24T15:00:00Z,erddap-gcoos:SCCF_53,water_temp_c,surface,23.66,1,0,
 2026-11-24T00:00:00Z,erddap-gcoos:SCCF_56,salinity_psu,surface,28.95,1,0,
 2026-11-24T01:00:00Z,erddap-gcoos:SCCF_56,salinity_psu,surface,28.91,1,0,
 2026-11-24T02:00:00Z,erddap-gcoos:SCCF_56,salinity_psu,surface,28.88,1,0,
@@ -190,6 +208,8 @@ time_utc,station,variable,layer,value,n,depth_m,source
 2026-11-24T11:00:00Z,erddap-gcoos:SCCF_56,salinity_psu,surface,28.77,1,0,
 2026-11-24T12:00:00Z,erddap-gcoos:SCCF_56,salinity_psu,surface,28.73,1,0,
 2026-11-24T13:00:00Z,erddap-gcoos:SCCF_56,salinity_psu,surface,28.7,1,0,
+2026-11-24T14:00:00Z,erddap-gcoos:SCCF_56,salinity_psu,surface,28.78,1,0,
+2026-11-24T15:00:00Z,erddap-gcoos:SCCF_56,salinity_psu,surface,28.83,1,0,
 2026-11-24T00:00:00Z,erddap-gcoos:SCCF_56,water_temp_c,surface,23.44,1,0,
 2026-11-24T01:00:00Z,erddap-gcoos:SCCF_56,water_temp_c,surface,23.31,1,0,
 2026-11-24T02:00:00Z,erddap-gcoos:SCCF_56,water_temp_c,surface,23.33,1,0,
@@ -204,6 +224,8 @@ time_utc,station,variable,layer,value,n,depth_m,source
 2026-11-24T11:00:00Z,erddap-gcoos:SCCF_56,water_temp_c,surface,22.24,1,0,
 2026-11-24T12:00:00Z,erddap-gcoos:SCCF_56,water_temp_c,surface,22.03,1,0,
 2026-11-24T13:00:00Z,erddap-gcoos:SCCF_56,water_temp_c,surface,21.87,1,0,
+2026-11-24T14:00:00Z,erddap-gcoos:SCCF_56,water_temp_c,surface,21.77,1,0,
+2026-11-24T15:00:00Z,erddap-gcoos:SCCF_56,water_temp_c,surface,21.87,1,0,
 2026-11-24T00:00:00Z,erddap-gcoos:USF_COMPS_C10,salinity_psu,surface,36.6,2,,
 2026-11-24T01:00:00Z,erddap-gcoos:USF_COMPS_C10,salinity_psu,surface,36.635,2,,
 2026-11-24T02:00:00Z,erddap-gcoos:USF_COMPS_C10,salinity_psu,surface,36.65,2,,
@@ -218,7 +240,8 @@ time_utc,station,variable,layer,value,n,depth_m,source
 2026-11-24T11:00:00Z,erddap-gcoos:USF_COMPS_C10,salinity_psu,surface,36.695,2,,
 2026-11-24T12:00:00Z,erddap-gcoos:USF_COMPS_C10,salinity_psu,surface,36.69,2,,
 2026-11-24T13:00:00Z,erddap-gcoos:USF_COMPS_C10,salinity_psu,surface,36.695,2,,
-2026-11-24T14:00:00Z,erddap-gcoos:USF_COMPS_C10,salinity_psu,surface,36.71,1,,
+2026-11-24T14:00:00Z,erddap-gcoos:USF_COMPS_C10,salinity_psu,surface,36.715,2,,
+2026-11-24T15:00:00Z,erddap-gcoos:USF_COMPS_C10,salinity_psu,surface,36.73,1,,
 2026-11-24T00:00:00Z,erddap-gcoos:USF_COMPS_C10,water_temp_c,surface,24.16,2,,
 2026-11-24T01:00:00Z,erddap-gcoos:USF_COMPS_C10,water_temp_c,surface,24.12,2,,
 2026-11-24T02:00:00Z,erddap-gcoos:USF_COMPS_C10,water_temp_c,surface,24.05,2,,
@@ -233,7 +256,8 @@ time_utc,station,variable,layer,value,n,depth_m,source
 2026-11-24T11:00:00Z,erddap-gcoos:USF_COMPS_C10,water_temp_c,surface,23.68,2,,
 2026-11-24T12:00:00Z,erddap-gcoos:USF_COMPS_C10,water_temp_c,surface,23.68,2,,
 2026-11-24T13:00:00Z,erddap-gcoos:USF_COMPS_C10,water_temp_c,surface,23.68,2,,
-2026-11-24T14:00:00Z,erddap-gcoos:USF_COMPS_C10,water_temp_c,surface,23.65,1,,
+2026-11-24T14:00:00Z,erddap-gcoos:USF_COMPS_C10,water_temp_c,surface,23.64,2,,
+2026-11-24T15:00:00Z,erddap-gcoos:USF_COMPS_C10,water_temp_c,surface,23.63,1,,
 2026-11-24T00:00:00Z,erddap-gcoos:USF_COMPS_C12,salinity_psu,surface,36.56,2,,
 2026-11-24T01:00:00Z,erddap-gcoos:USF_COMPS_C12,salinity_psu,surface,36.565,2,,
 2026-11-24T02:00:00Z,erddap-gcoos:USF_COMPS_C12,salinity_psu,surface,36.345,2,,
@@ -247,7 +271,9 @@ time_utc,station,variable,layer,value,n,depth_m,source
 2026-11-24T10:00:00Z,erddap-gcoos:USF_COMPS_C12,salinity_psu,surface,36.57,2,,
 2026-11-24T11:00:00Z,erddap-gcoos:USF_COMPS_C12,salinity_psu,surface,36.565,2,,
 2026-11-24T12:00:00Z,erddap-gcoos:USF_COMPS_C12,salinity_psu,surface,36.55,2,,
-2026-11-24T13:00:00Z,erddap-gcoos:USF_COMPS_C12,salinity_psu,surface,36.55,1,,
+2026-11-24T13:00:00Z,erddap-gcoos:USF_COMPS_C12,salinity_psu,surface,36.555,2,,
+2026-11-24T14:00:00Z,erddap-gcoos:USF_COMPS_C12,salinity_psu,surface,36.58,2,,
+2026-11-24T15:00:00Z,erddap-gcoos:USF_COMPS_C12,salinity_psu,surface,36.53,1,,
 2026-11-24T00:00:00Z,erddap-gcoos:USF_COMPS_C12,water_temp_c,surface,24.3,2,,
 2026-11-24T01:00:00Z,erddap-gcoos:USF_COMPS_C12,water_temp_c,surface,24.3,2,,
 2026-11-24T02:00:00Z,erddap-gcoos:USF_COMPS_C12,water_temp_c,surface,24.29,2,,
@@ -261,7 +287,9 @@ time_utc,station,variable,layer,value,n,depth_m,source
 2026-11-24T10:00:00Z,erddap-gcoos:USF_COMPS_C12,water_temp_c,surface,24.19,2,,
 2026-11-24T11:00:00Z,erddap-gcoos:USF_COMPS_C12,water_temp_c,surface,24.2,2,,
 2026-11-24T12:00:00Z,erddap-gcoos:USF_COMPS_C12,water_temp_c,surface,24.22,2,,
-2026-11-24T13:00:00Z,erddap-gcoos:USF_COMPS_C12,water_temp_c,surface,24.22,1,,
+2026-11-24T13:00:00Z,erddap-gcoos:USF_COMPS_C12,water_temp_c,surface,24.21,2,,
+2026-11-24T14:00:00Z,erddap-gcoos:USF_COMPS_C12,water_temp_c,surface,24.18,2,,
+2026-11-24T15:00:00Z,erddap-gcoos:USF_COMPS_C12,water_temp_c,surface,24.15,1,,
 2026-11-24T00:00:00Z,erddap-gcoos:USF_COMPS_C13,salinity_psu,bottom,36.265,2,30,erddap-secoora:c13-water-velocity-wfs-south-buo
 2026-11-24T01:00:00Z,erddap-gcoos:USF_COMPS_C13,salinity_psu,bottom,36.285,2,30,erddap-secoora:c13-water-velocity-wfs-south-buo
 2026-11-24T02:00:00Z,erddap-gcoos:USF_COMPS_C13,salinity_psu,bottom,36.29,2,30,erddap-secoora:c13-water-velocity-wfs-south-buo
@@ -277,6 +305,8 @@ time_utc,station,variable,layer,value,n,depth_m,source
 2026-11-24T12:00:00Z,erddap-gcoos:USF_COMPS_C13,salinity_psu,bottom,36.17,2,30,erddap-secoora:c13-water-velocity-wfs-south-buo
 2026-11-24T13:00:00Z,erddap-gcoos:USF_COMPS_C13,salinity_psu,bottom,36.175,2,30,erddap-secoora:c13-water-velocity-wfs-south-buo
 2026-11-24T14:00:00Z,erddap-gcoos:USF_COMPS_C13,salinity_psu,bottom,36.18,1,30,erddap-secoora:c13-water-velocity-wfs-south-buo
+2026-11-24T15:00:00Z,erddap-gcoos:USF_COMPS_C13,salinity_psu,bottom,36.2,1,30,erddap-secoora:c13-water-velocity-wfs-south-buo
+2026-11-24T16:00:00Z,erddap-gcoos:USF_COMPS_C13,salinity_psu,bottom,36.2,1,30,erddap-secoora:c13-water-velocity-wfs-south-buo
 2026-11-24T00:00:00Z,erddap-gcoos:USF_COMPS_C13,salinity_psu,surface,36.44,2,,
 2026-11-24T01:00:00Z,erddap-gcoos:USF_COMPS_C13,salinity_psu,surface,36.455,2,,
 2026-11-24T02:00:00Z,erddap-gcoos:USF_COMPS_C13,salinity_psu,surface,36.46,2,,
@@ -290,8 +320,10 @@ time_utc,station,variable,layer,value,n,depth_m,source
 2026-11-24T10:00:00Z,erddap-gcoos:USF_COMPS_C13,salinity_psu,surface,36.485,2,,
 2026-11-24T11:00:00Z,erddap-gcoos:USF_COMPS_C13,salinity_psu,surface,36.455,2,,
 2026-11-24T12:00:00Z,erddap-gcoos:USF_COMPS_C13,salinity_psu,surface,36.46,2,,
-2026-11-24T13:00:00Z,erddap-gcoos:USF_COMPS_C13,salinity_psu,surface,36.46,1,,
-2026-11-24T14:00:00Z,erddap-gcoos:USF_COMPS_C13,salinity_psu,surface,36.52,1,0,erddap-secoora:42023-c13-wfs-south-buoy-50m-
+2026-11-24T13:00:00Z,erddap-gcoos:USF_COMPS_C13,salinity_psu,surface,36.455,2,,
+2026-11-24T14:00:00Z,erddap-gcoos:USF_COMPS_C13,salinity_psu,surface,36.52,1,,
+2026-11-24T15:00:00Z,erddap-gcoos:USF_COMPS_C13,salinity_psu,surface,36.54,1,0,erddap-secoora:42023-c13-wfs-south-buoy-50m-
+2026-11-24T16:00:00Z,erddap-gcoos:USF_COMPS_C13,salinity_psu,surface,36.51,1,0,erddap-secoora:42023-c13-wfs-south-buoy-50m-
 2026-11-24T00:00:00Z,erddap-gcoos:USF_COMPS_C13,water_temp_c,bottom,26.02,2,30,erddap-secoora:c13-water-velocity-wfs-south-buo
 2026-11-24T01:00:00Z,erddap-gcoos:USF_COMPS_C13,water_temp_c,bottom,25.95,2,30,erddap-secoora:c13-water-velocity-wfs-south-buo
 2026-11-24T02:00:00Z,erddap-gcoos:USF_COMPS_C13,water_temp_c,bottom,25.94,2,30,erddap-secoora:c13-water-velocity-wfs-south-buo
@@ -307,6 +339,8 @@ time_utc,station,variable,layer,value,n,depth_m,source
 2026-11-24T12:00:00Z,erddap-gcoos:USF_COMPS_C13,water_temp_c,bottom,25.55,2,30,erddap-secoora:c13-water-velocity-wfs-south-buo
 2026-11-24T13:00:00Z,erddap-gcoos:USF_COMPS_C13,water_temp_c,bottom,25.55,2,30,erddap-secoora:c13-water-velocity-wfs-south-buo
 2026-11-24T14:00:00Z,erddap-gcoos:USF_COMPS_C13,water_temp_c,bottom,25.57,1,30,erddap-secoora:c13-water-velocity-wfs-south-buo
+2026-11-24T15:00:00Z,erddap-gcoos:USF_COMPS_C13,water_temp_c,bottom,25.61,1,30,erddap-secoora:c13-water-velocity-wfs-south-buo
+2026-11-24T16:00:00Z,erddap-gcoos:USF_COMPS_C13,water_temp_c,bottom,25.64,1,30,erddap-secoora:c13-water-velocity-wfs-south-buo
 2026-11-24T00:00:00Z,erddap-gcoos:USF_COMPS_C13,water_temp_c,surface,25.93,2,,
 2026-11-24T01:00:00Z,erddap-gcoos:USF_COMPS_C13,water_temp_c,surface,25.91,2,,
 2026-11-24T02:00:00Z,erddap-gcoos:USF_COMPS_C13,water_temp_c,surface,25.9,2,,
@@ -320,8 +354,10 @@ time_utc,station,variable,layer,value,n,depth_m,source
 2026-11-24T10:00:00Z,erddap-gcoos:USF_COMPS_C13,water_temp_c,surface,25.59,2,,
 2026-11-24T11:00:00Z,erddap-gcoos:USF_COMPS_C13,water_temp_c,surface,25.54,2,,
 2026-11-24T12:00:00Z,erddap-gcoos:USF_COMPS_C13,water_temp_c,surface,25.53,2,,
-2026-11-24T13:00:00Z,erddap-gcoos:USF_COMPS_C13,water_temp_c,surface,25.53,1,,
-2026-11-24T14:00:00Z,erddap-gcoos:USF_COMPS_C13,water_temp_c,surface,25.55,1,0,erddap-secoora:42023-c13-wfs-south-buoy-50m-
+2026-11-24T13:00:00Z,erddap-gcoos:USF_COMPS_C13,water_temp_c,surface,25.54,2,,
+2026-11-24T14:00:00Z,erddap-gcoos:USF_COMPS_C13,water_temp_c,surface,25.55,1,,
+2026-11-24T15:00:00Z,erddap-gcoos:USF_COMPS_C13,water_temp_c,surface,25.62,1,0,erddap-secoora:42023-c13-wfs-south-buoy-50m-
+2026-11-24T16:00:00Z,erddap-gcoos:USF_COMPS_C13,water_temp_c,surface,25.65,1,0,erddap-secoora:42023-c13-wfs-south-buoy-50m-
 2026-11-24T00:00:00Z,erddap-gcoos:USF_COMPS_C22,salinity_psu,surface,36.405,2,,
 2026-11-24T01:00:00Z,erddap-gcoos:USF_COMPS_C22,salinity_psu,surface,36.41,2,,
 2026-11-24T02:00:00Z,erddap-gcoos:USF_COMPS_C22,salinity_psu,surface,36.41,2,,
@@ -335,9 +371,10 @@ time_utc,station,variable,layer,value,n,depth_m,source
 2026-11-24T10:00:00Z,erddap-gcoos:USF_COMPS_C22,salinity_psu,surface,36.42,2,,
 2026-11-24T11:00:00Z,erddap-gcoos:USF_COMPS_C22,salinity_psu,surface,36.43,2,,
 2026-11-24T12:00:00Z,erddap-gcoos:USF_COMPS_C22,salinity_psu,surface,36.435,2,,
-2026-11-24T13:00:00Z,erddap-gcoos:USF_COMPS_C22,salinity_psu,surface,36.44,1,,
-2026-11-24T14:00:00Z,erddap-gcoos:USF_COMPS_C22,salinity_psu,surface,36.445,2,0,erddap-secoora:42026-c22-loop-current-pressu
-2026-11-24T15:00:00Z,erddap-gcoos:USF_COMPS_C22,salinity_psu,surface,36.45,1,0,erddap-secoora:42026-c22-loop-current-pressu
+2026-11-24T13:00:00Z,erddap-gcoos:USF_COMPS_C22,salinity_psu,surface,36.445,2,,
+2026-11-24T14:00:00Z,erddap-gcoos:USF_COMPS_C22,salinity_psu,surface,36.445,2,,
+2026-11-24T15:00:00Z,erddap-gcoos:USF_COMPS_C22,salinity_psu,surface,36.45,1,,
+2026-11-24T16:00:00Z,erddap-gcoos:USF_COMPS_C22,salinity_psu,surface,36.45,1,0,erddap-secoora:42026-c22-loop-current-pressu
 2026-11-24T00:00:00Z,erddap-gcoos:USF_COMPS_C22,water_temp_c,surface,27.26,2,,
 2026-11-24T01:00:00Z,erddap-gcoos:USF_COMPS_C22,water_temp_c,surface,27.25,2,,
 2026-11-24T02:00:00Z,erddap-gcoos:USF_COMPS_C22,water_temp_c,surface,27.25,2,,
@@ -351,9 +388,10 @@ time_utc,station,variable,layer,value,n,depth_m,source
 2026-11-24T10:00:00Z,erddap-gcoos:USF_COMPS_C22,water_temp_c,surface,27.14,2,,
 2026-11-24T11:00:00Z,erddap-gcoos:USF_COMPS_C22,water_temp_c,surface,27.13,2,,
 2026-11-24T12:00:00Z,erddap-gcoos:USF_COMPS_C22,water_temp_c,surface,27.12,2,,
-2026-11-24T13:00:00Z,erddap-gcoos:USF_COMPS_C22,water_temp_c,surface,27.12,1,,
-2026-11-24T14:00:00Z,erddap-gcoos:USF_COMPS_C22,water_temp_c,surface,27.12,2,0,erddap-secoora:42026-c22-loop-current-pressu
-2026-11-24T15:00:00Z,erddap-gcoos:USF_COMPS_C22,water_temp_c,surface,27.1,1,0,erddap-secoora:42026-c22-loop-current-pressu
+2026-11-24T13:00:00Z,erddap-gcoos:USF_COMPS_C22,water_temp_c,surface,27.12,2,,
+2026-11-24T14:00:00Z,erddap-gcoos:USF_COMPS_C22,water_temp_c,surface,27.12,2,,
+2026-11-24T15:00:00Z,erddap-gcoos:USF_COMPS_C22,water_temp_c,surface,27.1,1,,
+2026-11-24T16:00:00Z,erddap-gcoos:USF_COMPS_C22,water_temp_c,surface,27.1,1,0,erddap-secoora:42026-c22-loop-current-pressu
 2026-11-24T00:00:00Z,erddap-secoora:c27-water-velocity-wfs-south-buo,salinity_psu,bottom,36.885,2,19,
 2026-11-24T01:00:00Z,erddap-secoora:c27-water-velocity-wfs-south-buo,salinity_psu,bottom,36.905,2,19,
 2026-11-24T02:00:00Z,erddap-secoora:c27-water-velocity-wfs-south-buo,salinity_psu,bottom,36.925,2,19,
@@ -368,7 +406,8 @@ time_utc,station,variable,layer,value,n,depth_m,source
 2026-11-24T12:00:00Z,erddap-secoora:c27-water-velocity-wfs-south-buo,salinity_psu,bottom,36.875,2,19,
 2026-11-24T13:00:00Z,erddap-secoora:c27-water-velocity-wfs-south-buo,salinity_psu,bottom,36.885,2,19,
 2026-11-24T14:00:00Z,erddap-secoora:c27-water-velocity-wfs-south-buo,salinity_psu,bottom,36.9,2,19,
-2026-11-24T15:00:00Z,erddap-secoora:c27-water-velocity-wfs-south-buo,salinity_psu,bottom,36.91,1,19,
+2026-11-24T15:00:00Z,erddap-secoora:c27-water-velocity-wfs-south-buo,salinity_psu,bottom,36.915,2,19,
+2026-11-24T16:00:00Z,erddap-secoora:c27-water-velocity-wfs-south-buo,salinity_psu,bottom,36.93,1,19,
 2026-11-24T00:00:00Z,erddap-secoora:c27-water-velocity-wfs-south-buo,salinity_psu,mid,36.865,2,10,
 2026-11-24T01:00:00Z,erddap-secoora:c27-water-velocity-wfs-south-buo,salinity_psu,mid,36.865,2,10,
 2026-11-24T02:00:00Z,erddap-secoora:c27-water-velocity-wfs-south-buo,salinity_psu,mid,36.85,2,10,
@@ -383,7 +422,8 @@ time_utc,station,variable,layer,value,n,depth_m,source
 2026-11-24T12:00:00Z,erddap-secoora:c27-water-velocity-wfs-south-buo,salinity_psu,mid,36.88,2,10,
 2026-11-24T13:00:00Z,erddap-secoora:c27-water-velocity-wfs-south-buo,salinity_psu,mid,36.885,2,10,
 2026-11-24T14:00:00Z,erddap-secoora:c27-water-velocity-wfs-south-buo,salinity_psu,mid,36.905,2,10,
-2026-11-24T15:00:00Z,erddap-secoora:c27-water-velocity-wfs-south-buo,salinity_psu,mid,36.92,1,10,
+2026-11-24T15:00:00Z,erddap-secoora:c27-water-velocity-wfs-south-buo,salinity_psu,mid,36.89,2,10,
+2026-11-24T16:00:00Z,erddap-secoora:c27-water-velocity-wfs-south-buo,salinity_psu,mid,36.86,1,10,
 2026-11-24T00:00:00Z,erddap-secoora:c27-water-velocity-wfs-south-buo,salinity_psu,surface,36.885,2,1,
 2026-11-24T01:00:00Z,erddap-secoora:c27-water-velocity-wfs-south-buo,salinity_psu,surface,36.855,2,1,
 2026-11-24T02:00:00Z,erddap-secoora:c27-water-velocity-wfs-south-buo,salinity_psu,surface,36.88,2,1,
@@ -398,7 +438,8 @@ time_utc,station,variable,layer,value,n,depth_m,source
 2026-11-24T12:00:00Z,erddap-secoora:c27-water-velocity-wfs-south-buo,salinity_psu,surface,36.9,2,1,
 2026-11-24T13:00:00Z,erddap-secoora:c27-water-velocity-wfs-south-buo,salinity_psu,surface,36.9,2,1,
 2026-11-24T14:00:00Z,erddap-secoora:c27-water-velocity-wfs-south-buo,salinity_psu,surface,36.92,2,1,
-2026-11-24T15:00:00Z,erddap-secoora:c27-water-velocity-wfs-south-buo,salinity_psu,surface,36.94,1,1,
+2026-11-24T15:00:00Z,erddap-secoora:c27-water-velocity-wfs-south-buo,salinity_psu,surface,36.94,2,1,
+2026-11-24T16:00:00Z,erddap-secoora:c27-water-velocity-wfs-south-buo,salinity_psu,surface,36.87,1,1,
 2026-11-24T00:00:00Z,erddap-secoora:c27-water-velocity-wfs-south-buo,water_temp_c,bottom,25.63,2,19,
 2026-11-24T01:00:00Z,erddap-secoora:c27-water-velocity-wfs-south-buo,water_temp_c,bottom,25.62,2,19,
 2026-11-24T02:00:00Z,erddap-secoora:c27-water-velocity-wfs-south-buo,water_temp_c,bottom,25.59,2,19,
@@ -413,7 +454,8 @@ time_utc,station,variable,layer,value,n,depth_m,source
 2026-11-24T12:00:00Z,erddap-secoora:c27-water-velocity-wfs-south-buo,water_temp_c,bottom,25.47,1,19,
 2026-11-24T13:00:00Z,erddap-secoora:c27-water-velocity-wfs-south-buo,water_temp_c,bottom,25.45,2,19,
 2026-11-24T14:00:00Z,erddap-secoora:c27-water-velocity-wfs-south-buo,water_temp_c,bottom,25.44,2,19,
-2026-11-24T15:00:00Z,erddap-secoora:c27-water-velocity-wfs-south-buo,water_temp_c,bottom,25.42,1,19,
+2026-11-24T15:00:00Z,erddap-secoora:c27-water-velocity-wfs-south-buo,water_temp_c,bottom,25.41,2,19,
+2026-11-24T16:00:00Z,erddap-secoora:c27-water-velocity-wfs-south-buo,water_temp_c,bottom,25.4,1,19,
 2026-11-24T00:00:00Z,erddap-secoora:c27-water-velocity-wfs-south-buo,water_temp_c,mid,25.66,2,10,
 2026-11-24T01:00:00Z,erddap-secoora:c27-water-velocity-wfs-south-buo,water_temp_c,mid,25.62,2,10,
 2026-11-24T02:00:00Z,erddap-secoora:c27-water-velocity-wfs-south-buo,water_temp_c,mid,25.59,2,10,
@@ -428,7 +470,8 @@ time_utc,station,variable,layer,value,n,depth_m,source
 2026-11-24T12:00:00Z,erddap-secoora:c27-water-velocity-wfs-south-buo,water_temp_c,mid,25.46,1,10,
 2026-11-24T13:00:00Z,erddap-secoora:c27-water-velocity-wfs-south-buo,water_temp_c,mid,25.45,2,10,
 2026-11-24T14:00:00Z,erddap-secoora:c27-water-velocity-wfs-south-buo,water_temp_c,mid,25.44,2,10,
-2026-11-24T15:00:00Z,erddap-secoora:c27-water-velocity-wfs-south-buo,water_temp_c,mid,25.42,1,10,
+2026-11-24T15:00:00Z,erddap-secoora:c27-water-velocity-wfs-south-buo,water_temp_c,mid,25.41,2,10,
+2026-11-24T16:00:00Z,erddap-secoora:c27-water-velocity-wfs-south-buo,water_temp_c,mid,25.4,1,10,
 2026-11-24T00:00:00Z,erddap-secoora:c27-water-velocity-wfs-south-buo,water_temp_c,surface,25.64,2,1,
 2026-11-24T01:00:00Z,erddap-secoora:c27-water-velocity-wfs-south-buo,water_temp_c,surface,25.59,2,1,
 2026-11-24T02:00:00Z,erddap-secoora:c27-water-velocity-wfs-south-buo,water_temp_c,surface,25.56,2,1,
@@ -443,7 +486,8 @@ time_utc,station,variable,layer,value,n,depth_m,source
 2026-11-24T12:00:00Z,erddap-secoora:c27-water-velocity-wfs-south-buo,water_temp_c,surface,25.45,2,1,
 2026-11-24T13:00:00Z,erddap-secoora:c27-water-velocity-wfs-south-buo,water_temp_c,surface,25.44,2,1,
 2026-11-24T14:00:00Z,erddap-secoora:c27-water-velocity-wfs-south-buo,water_temp_c,surface,25.42,2,1,
-2026-11-24T15:00:00Z,erddap-secoora:c27-water-velocity-wfs-south-buo,water_temp_c,surface,25.4,1,1,
+2026-11-24T15:00:00Z,erddap-secoora:c27-water-velocity-wfs-south-buo,water_temp_c,surface,25.4,2,1,
+2026-11-24T16:00:00Z,erddap-secoora:c27-water-velocity-wfs-south-buo,water_temp_c,surface,25.39,1,1,
 2026-11-24T00:00:00Z,erddap-secoora:gov-nps-ever-bdvf1,salinity_psu,surface,3.18,1,0,
 2026-11-24T01:00:00Z,erddap-secoora:gov-nps-ever-bdvf1,salinity_psu,surface,3.209,1,0,
 2026-11-24T02:00:00Z,erddap-secoora:gov-nps-ever-bdvf1,salinity_psu,surface,3.186,1,0,
@@ -458,6 +502,7 @@ time_utc,station,variable,layer,value,n,depth_m,source
 2026-11-24T11:00:00Z,erddap-secoora:gov-nps-ever-bdvf1,salinity_psu,surface,2.879,1,0,
 2026-11-24T12:00:00Z,erddap-secoora:gov-nps-ever-bdvf1,salinity_psu,surface,2.781,1,0,
 2026-11-24T13:00:00Z,erddap-secoora:gov-nps-ever-bdvf1,salinity_psu,surface,2.729,1,0,
+2026-11-24T14:00:00Z,erddap-secoora:gov-nps-ever-bdvf1,salinity_psu,surface,2.695,1,0,
 2026-11-24T00:00:00Z,erddap-secoora:gov-nps-ever-bdvf1,water_temp_c,surface,24.87,1,0,
 2026-11-24T01:00:00Z,erddap-secoora:gov-nps-ever-bdvf1,water_temp_c,surface,24.86,1,0,
 2026-11-24T02:00:00Z,erddap-secoora:gov-nps-ever-bdvf1,water_temp_c,surface,24.85,1,0,
@@ -472,6 +517,7 @@ time_utc,station,variable,layer,value,n,depth_m,source
 2026-11-24T11:00:00Z,erddap-secoora:gov-nps-ever-bdvf1,water_temp_c,surface,23.98,1,0,
 2026-11-24T12:00:00Z,erddap-secoora:gov-nps-ever-bdvf1,water_temp_c,surface,23.83,1,0,
 2026-11-24T13:00:00Z,erddap-secoora:gov-nps-ever-bdvf1,water_temp_c,surface,23.75,1,0,
+2026-11-24T14:00:00Z,erddap-secoora:gov-nps-ever-bdvf1,water_temp_c,surface,23.69,1,0,
 2026-11-24T00:00:00Z,erddap-secoora:gov-nps-ever-bkyf1,salinity_psu,surface,38.919,1,0,
 2026-11-24T01:00:00Z,erddap-secoora:gov-nps-ever-bkyf1,salinity_psu,surface,38.919,1,0,
 2026-11-24T02:00:00Z,erddap-secoora:gov-nps-ever-bkyf1,salinity_psu,surface,38.919,1,0,
@@ -486,6 +532,7 @@ time_utc,station,variable,layer,value,n,depth_m,source
 2026-11-24T11:00:00Z,erddap-secoora:gov-nps-ever-bkyf1,salinity_psu,surface,39.031,1,0,
 2026-11-24T12:00:00Z,erddap-secoora:gov-nps-ever-bkyf1,salinity_psu,surface,39.069,1,0,
 2026-11-24T13:00:00Z,erddap-secoora:gov-nps-ever-bkyf1,salinity_psu,surface,38.979,1,0,
+2026-11-24T14:00:00Z,erddap-secoora:gov-nps-ever-bkyf1,salinity_psu,surface,38.971,1,0,
 2026-11-24T00:00:00Z,erddap-secoora:gov-nps-ever-bkyf1,water_temp_c,surface,26.45,1,0,
 2026-11-24T01:00:00Z,erddap-secoora:gov-nps-ever-bkyf1,water_temp_c,surface,26.55,1,0,
 2026-11-24T02:00:00Z,erddap-secoora:gov-nps-ever-bkyf1,water_temp_c,surface,26.21,1,0,
@@ -500,6 +547,7 @@ time_utc,station,variable,layer,value,n,depth_m,source
 2026-11-24T11:00:00Z,erddap-secoora:gov-nps-ever-bkyf1,water_temp_c,surface,23.78,1,0,
 2026-11-24T12:00:00Z,erddap-secoora:gov-nps-ever-bkyf1,water_temp_c,surface,23.75,1,0,
 2026-11-24T13:00:00Z,erddap-secoora:gov-nps-ever-bkyf1,water_temp_c,surface,23.65,1,0,
+2026-11-24T14:00:00Z,erddap-secoora:gov-nps-ever-bkyf1,water_temp_c,surface,23.47,1,0,
 2026-11-24T00:00:00Z,erddap-secoora:gov-nps-ever-bnkf1,salinity_psu,surface,35.847,1,0,
 2026-11-24T01:00:00Z,erddap-secoora:gov-nps-ever-bnkf1,salinity_psu,surface,35.869,1,0,
 2026-11-24T02:00:00Z,erddap-secoora:gov-nps-ever-bnkf1,salinity_psu,surface,35.884,1,0,
@@ -514,6 +562,7 @@ time_utc,station,variable,layer,value,n,depth_m,source
 2026-11-24T11:00:00Z,erddap-secoora:gov-nps-ever-bnkf1,salinity_psu,surface,35.958,1,0,
 2026-11-24T12:00:00Z,erddap-secoora:gov-nps-ever-bnkf1,salinity_psu,surface,35.943,1,0,
 2026-11-24T13:00:00Z,erddap-secoora:gov-nps-ever-bnkf1,salinity_psu,surface,35.936,1,0,
+2026-11-24T14:00:00Z,erddap-secoora:gov-nps-ever-bnkf1,salinity_psu,surface,35.736,1,0,
 2026-11-24T00:00:00Z,erddap-secoora:gov-nps-ever-bnkf1,water_temp_c,surface,25.51,1,0,
 2026-11-24T01:00:00Z,erddap-secoora:gov-nps-ever-bnkf1,water_temp_c,surface,25.44,1,0,
 2026-11-24T02:00:00Z,erddap-secoora:gov-nps-ever-bnkf1,water_temp_c,surface,25.32,1,0,
@@ -528,6 +577,7 @@ time_utc,station,variable,layer,value,n,depth_m,source
 2026-11-24T11:00:00Z,erddap-secoora:gov-nps-ever-bnkf1,water_temp_c,surface,24.56,1,0,
 2026-11-24T12:00:00Z,erddap-secoora:gov-nps-ever-bnkf1,water_temp_c,surface,24.44,1,0,
 2026-11-24T13:00:00Z,erddap-secoora:gov-nps-ever-bnkf1,water_temp_c,surface,24.41,1,0,
+2026-11-24T14:00:00Z,erddap-secoora:gov-nps-ever-bnkf1,water_temp_c,surface,24.45,1,0,
 2026-11-24T00:00:00Z,erddap-secoora:gov-nps-ever-bobf1,salinity_psu,surface,36.774,1,0,
 2026-11-24T01:00:00Z,erddap-secoora:gov-nps-ever-bobf1,salinity_psu,surface,36.774,1,0,
 2026-11-24T02:00:00Z,erddap-secoora:gov-nps-ever-bobf1,salinity_psu,surface,36.745,1,0,
@@ -542,6 +592,7 @@ time_utc,station,variable,layer,value,n,depth_m,source
 2026-11-24T11:00:00Z,erddap-secoora:gov-nps-ever-bobf1,salinity_psu,surface,36.886,1,0,
 2026-11-24T12:00:00Z,erddap-secoora:gov-nps-ever-bobf1,salinity_psu,surface,36.849,1,0,
 2026-11-24T13:00:00Z,erddap-secoora:gov-nps-ever-bobf1,salinity_psu,surface,36.841,1,0,
+2026-11-24T14:00:00Z,erddap-secoora:gov-nps-ever-bobf1,salinity_psu,surface,36.864,1,0,
 2026-11-24T00:00:00Z,erddap-secoora:gov-nps-ever-bobf1,water_temp_c,surface,26.43,1,0,
 2026-11-24T01:00:00Z,erddap-secoora:gov-nps-ever-bobf1,water_temp_c,surface,26.22,1,0,
 2026-11-24T02:00:00Z,erddap-secoora:gov-nps-ever-bobf1,water_temp_c,surface,25.99,1,0,
@@ -556,6 +607,7 @@ time_utc,station,variable,layer,value,n,depth_m,source
 2026-11-24T11:00:00Z,erddap-secoora:gov-nps-ever-bobf1,water_temp_c,surface,24.62,1,0,
 2026-11-24T12:00:00Z,erddap-secoora:gov-nps-ever-bobf1,water_temp_c,surface,24.59,1,0,
 2026-11-24T13:00:00Z,erddap-secoora:gov-nps-ever-bobf1,water_temp_c,surface,24.46,1,0,
+2026-11-24T14:00:00Z,erddap-secoora:gov-nps-ever-bobf1,water_temp_c,surface,24.45,1,0,
 2026-11-24T00:00:00Z,erddap-secoora:gov-nps-ever-bwsf1,salinity_psu,surface,34.238,1,0,
 2026-11-24T01:00:00Z,erddap-secoora:gov-nps-ever-bwsf1,salinity_psu,surface,34.252,1,0,
 2026-11-24T02:00:00Z,erddap-secoora:gov-nps-ever-bwsf1,salinity_psu,surface,34.238,1,0,
@@ -570,6 +622,7 @@ time_utc,station,variable,layer,value,n,depth_m,source
 2026-11-24T11:00:00Z,erddap-secoora:gov-nps-ever-bwsf1,salinity_psu,surface,33.929,1,0,
 2026-11-24T12:00:00Z,erddap-secoora:gov-nps-ever-bwsf1,salinity_psu,surface,33.958,1,0,
 2026-11-24T13:00:00Z,erddap-secoora:gov-nps-ever-bwsf1,salinity_psu,surface,34.024,1,0,
+2026-11-24T14:00:00Z,erddap-secoora:gov-nps-ever-bwsf1,salinity_psu,surface,34.01,1,0,
 2026-11-24T00:00:00Z,erddap-secoora:gov-nps-ever-bwsf1,water_temp_c,surface,26.45,1,0,
 2026-11-24T01:00:00Z,erddap-secoora:gov-nps-ever-bwsf1,water_temp_c,surface,26.34,1,0,
 2026-11-24T02:00:00Z,erddap-secoora:gov-nps-ever-bwsf1,water_temp_c,surface,26.25,1,0,
@@ -584,6 +637,7 @@ time_utc,station,variable,layer,value,n,depth_m,source
 2026-11-24T11:00:00Z,erddap-secoora:gov-nps-ever-bwsf1,water_temp_c,surface,25.8,1,0,
 2026-11-24T12:00:00Z,erddap-secoora:gov-nps-ever-bwsf1,water_temp_c,surface,25.71,1,0,
 2026-11-24T13:00:00Z,erddap-secoora:gov-nps-ever-bwsf1,water_temp_c,surface,25.05,1,0,
+2026-11-24T14:00:00Z,erddap-secoora:gov-nps-ever-bwsf1,water_temp_c,surface,25.03,1,0,
 2026-11-24T00:00:00Z,erddap-secoora:gov-nps-ever-canf1,salinity_psu,surface,0.233,1,0,
 2026-11-24T01:00:00Z,erddap-secoora:gov-nps-ever-canf1,salinity_psu,surface,0.238,1,0,
 2026-11-24T02:00:00Z,erddap-secoora:gov-nps-ever-canf1,salinity_psu,surface,0.238,1,0,
@@ -598,6 +652,7 @@ time_utc,station,variable,layer,value,n,depth_m,source
 2026-11-24T11:00:00Z,erddap-secoora:gov-nps-ever-canf1,salinity_psu,surface,0.233,1,0,
 2026-11-24T12:00:00Z,erddap-secoora:gov-nps-ever-canf1,salinity_psu,surface,0.233,1,0,
 2026-11-24T13:00:00Z,erddap-secoora:gov-nps-ever-canf1,salinity_psu,surface,0.233,1,0,
+2026-11-24T14:00:00Z,erddap-secoora:gov-nps-ever-canf1,salinity_psu,surface,0.238,1,0,
 2026-11-24T00:00:00Z,erddap-secoora:gov-nps-ever-canf1,water_temp_c,surface,24.62,1,0,
 2026-11-24T01:00:00Z,erddap-secoora:gov-nps-ever-canf1,water_temp_c,surface,24.6,1,0,
 2026-11-24T02:00:00Z,erddap-secoora:gov-nps-ever-canf1,water_temp_c,surface,24.56,1,0,
@@ -612,6 +667,7 @@ time_utc,station,variable,layer,value,n,depth_m,source
 2026-11-24T11:00:00Z,erddap-secoora:gov-nps-ever-canf1,water_temp_c,surface,24.05,1,0,
 2026-11-24T12:00:00Z,erddap-secoora:gov-nps-ever-canf1,water_temp_c,surface,24.06,1,0,
 2026-11-24T13:00:00Z,erddap-secoora:gov-nps-ever-canf1,water_temp_c,surface,24.03,1,0,
+2026-11-24T14:00:00Z,erddap-secoora:gov-nps-ever-canf1,water_temp_c,surface,23.97,1,0,
 2026-11-24T00:00:00Z,erddap-secoora:gov-nps-ever-cnbf1,salinity_psu,surface,23.456,1,0,
 2026-11-24T01:00:00Z,erddap-secoora:gov-nps-ever-cnbf1,salinity_psu,surface,23.114,1,0,
 2026-11-24T02:00:00Z,erddap-secoora:gov-nps-ever-cnbf1,salinity_psu,surface,22.975,1,0,
@@ -626,6 +682,7 @@ time_utc,station,variable,layer,value,n,depth_m,source
 2026-11-24T11:00:00Z,erddap-secoora:gov-nps-ever-cnbf1,salinity_psu,surface,25.035,1,0,
 2026-11-24T12:00:00Z,erddap-secoora:gov-nps-ever-cnbf1,salinity_psu,surface,24.704,1,0,
 2026-11-24T13:00:00Z,erddap-secoora:gov-nps-ever-cnbf1,salinity_psu,surface,23.806,1,0,
+2026-11-24T14:00:00Z,erddap-secoora:gov-nps-ever-cnbf1,salinity_psu,surface,23.526,1,0,
 2026-11-24T00:00:00Z,erddap-secoora:gov-nps-ever-cnbf1,water_temp_c,surface,25.6,1,0,
 2026-11-24T01:00:00Z,erddap-secoora:gov-nps-ever-cnbf1,water_temp_c,surface,25.48,1,0,
 2026-11-24T02:00:00Z,erddap-secoora:gov-nps-ever-cnbf1,water_temp_c,surface,25.44,1,0,
@@ -640,6 +697,7 @@ time_utc,station,variable,layer,value,n,depth_m,source
 2026-11-24T11:00:00Z,erddap-secoora:gov-nps-ever-cnbf1,water_temp_c,surface,25.18,1,0,
 2026-11-24T12:00:00Z,erddap-secoora:gov-nps-ever-cnbf1,water_temp_c,surface,24.92,1,0,
 2026-11-24T13:00:00Z,erddap-secoora:gov-nps-ever-cnbf1,water_temp_c,surface,24.15,1,0,
+2026-11-24T14:00:00Z,erddap-secoora:gov-nps-ever-cnbf1,water_temp_c,surface,24.1,1,0,
 2026-11-24T00:00:00Z,erddap-secoora:gov-nps-ever-cwaf1,salinity_psu,surface,22.064,1,0,
 2026-11-24T01:00:00Z,erddap-secoora:gov-nps-ever-cwaf1,salinity_psu,surface,21.793,1,0,
 2026-11-24T02:00:00Z,erddap-secoora:gov-nps-ever-cwaf1,salinity_psu,surface,21.787,1,0,
@@ -653,6 +711,7 @@ time_utc,station,variable,layer,value,n,depth_m,source
 2026-11-24T10:00:00Z,erddap-secoora:gov-nps-ever-cwaf1,salinity_psu,surface,22.126,1,0,
 2026-11-24T11:00:00Z,erddap-secoora:gov-nps-ever-cwaf1,salinity_psu,surface,22.223,1,0,
 2026-11-24T12:00:00Z,erddap-secoora:gov-nps-ever-cwaf1,salinity_psu,surface,22.23,1,0,
+2026-11-24T13:00:00Z,erddap-secoora:gov-nps-ever-cwaf1,salinity_psu,surface,22.23,1,0,
 2026-11-24T00:00:00Z,erddap-secoora:gov-nps-ever-cwaf1,water_temp_c,surface,25.79,1,0,
 2026-11-24T01:00:00Z,erddap-secoora:gov-nps-ever-cwaf1,water_temp_c,surface,25.42,1,0,
 2026-11-24T02:00:00Z,erddap-secoora:gov-nps-ever-cwaf1,water_temp_c,surface,25.2,1,0,
@@ -666,6 +725,7 @@ time_utc,station,variable,layer,value,n,depth_m,source
 2026-11-24T10:00:00Z,erddap-secoora:gov-nps-ever-cwaf1,water_temp_c,surface,24.12,1,0,
 2026-11-24T11:00:00Z,erddap-secoora:gov-nps-ever-cwaf1,water_temp_c,surface,23.97,1,0,
 2026-11-24T12:00:00Z,erddap-secoora:gov-nps-ever-cwaf1,water_temp_c,surface,23.87,1,0,
+2026-11-24T13:00:00Z,erddap-secoora:gov-nps-ever-cwaf1,water_temp_c,surface,23.72,1,0,
 2026-11-24T00:00:00Z,erddap-secoora:gov-nps-ever-dkkf1,salinity_psu,surface,33.349,1,0,
 2026-11-24T01:00:00Z,erddap-secoora:gov-nps-ever-dkkf1,salinity_psu,surface,33.283,1,0,
 2026-11-24T02:00:00Z,erddap-secoora:gov-nps-ever-dkkf1,salinity_psu,surface,33.247,1,0,
@@ -680,6 +740,7 @@ time_utc,station,variable,layer,value,n,depth_m,source
 2026-11-24T11:00:00Z,erddap-secoora:gov-nps-ever-dkkf1,salinity_psu,surface,33.789,1,0,
 2026-11-24T12:00:00Z,erddap-secoora:gov-nps-ever-dkkf1,salinity_psu,surface,33.797,1,0,
 2026-11-24T13:00:00Z,erddap-secoora:gov-nps-ever-dkkf1,salinity_psu,surface,33.804,1,0,
+2026-11-24T14:00:00Z,erddap-secoora:gov-nps-ever-dkkf1,salinity_psu,surface,33.804,1,0,
 2026-11-24T00:00:00Z,erddap-secoora:gov-nps-ever-dkkf1,water_temp_c,surface,25.89,1,0,
 2026-11-24T01:00:00Z,erddap-secoora:gov-nps-ever-dkkf1,water_temp_c,surface,25.82,1,0,
 2026-11-24T02:00:00Z,erddap-secoora:gov-nps-ever-dkkf1,water_temp_c,surface,25.76,1,0,
@@ -694,6 +755,7 @@ time_utc,station,variable,layer,value,n,depth_m,source
 2026-11-24T11:00:00Z,erddap-secoora:gov-nps-ever-dkkf1,water_temp_c,surface,24.83,1,0,
 2026-11-24T12:00:00Z,erddap-secoora:gov-nps-ever-dkkf1,water_temp_c,surface,24.78,1,0,
 2026-11-24T13:00:00Z,erddap-secoora:gov-nps-ever-dkkf1,water_temp_c,surface,24.65,1,0,
+2026-11-24T14:00:00Z,erddap-secoora:gov-nps-ever-dkkf1,water_temp_c,surface,24.6,1,0,
 2026-11-24T00:00:00Z,erddap-secoora:gov-nps-ever-gbif1,salinity_psu,surface,18.812,1,0,
 2026-11-24T01:00:00Z,erddap-secoora:gov-nps-ever-gbif1,salinity_psu,surface,17.024,1,0,
 2026-11-24T02:00:00Z,erddap-secoora:gov-nps-ever-gbif1,salinity_psu,surface,15.822,1,0,
@@ -708,6 +770,7 @@ time_utc,station,variable,layer,value,n,depth_m,source
 2026-11-24T11:00:00Z,erddap-secoora:gov-nps-ever-gbif1,salinity_psu,surface,21.953,1,0,
 2026-11-24T12:00:00Z,erddap-secoora:gov-nps-ever-gbif1,salinity_psu,surface,19.885,1,0,
 2026-11-24T13:00:00Z,erddap-secoora:gov-nps-ever-gbif1,salinity_psu,surface,18.622,1,0,
+2026-11-24T14:00:00Z,erddap-secoora:gov-nps-ever-gbif1,salinity_psu,surface,17.26,1,0,
 2026-11-24T00:00:00Z,erddap-secoora:gov-nps-ever-gbif1,water_temp_c,surface,24.35,1,0,
 2026-11-24T01:00:00Z,erddap-secoora:gov-nps-ever-gbif1,water_temp_c,surface,24.12,1,0,
 2026-11-24T02:00:00Z,erddap-secoora:gov-nps-ever-gbif1,water_temp_c,surface,24.55,1,0,
@@ -722,6 +785,7 @@ time_utc,station,variable,layer,value,n,depth_m,source
 2026-11-24T11:00:00Z,erddap-secoora:gov-nps-ever-gbif1,water_temp_c,surface,23.28,1,0,
 2026-11-24T12:00:00Z,erddap-secoora:gov-nps-ever-gbif1,water_temp_c,surface,23.01,1,0,
 2026-11-24T13:00:00Z,erddap-secoora:gov-nps-ever-gbif1,water_temp_c,surface,22.62,1,0,
+2026-11-24T14:00:00Z,erddap-secoora:gov-nps-ever-gbif1,water_temp_c,surface,23.04,1,0,
 2026-11-24T00:00:00Z,erddap-secoora:gov-nps-ever-gbtf1,salinity_psu,surface,33.789,1,0,
 2026-11-24T01:00:00Z,erddap-secoora:gov-nps-ever-gbtf1,salinity_psu,surface,33.848,1,0,
 2026-11-24T02:00:00Z,erddap-secoora:gov-nps-ever-gbtf1,salinity_psu,surface,33.21,1,0,
@@ -736,6 +800,7 @@ time_utc,station,variable,layer,value,n,depth_m,source
 2026-11-24T11:00:00Z,erddap-secoora:gov-nps-ever-gbtf1,salinity_psu,surface,34.451,1,0,
 2026-11-24T12:00:00Z,erddap-secoora:gov-nps-ever-gbtf1,salinity_psu,surface,34.392,1,0,
 2026-11-24T13:00:00Z,erddap-secoora:gov-nps-ever-gbtf1,salinity_psu,surface,33.958,1,0,
+2026-11-24T14:00:00Z,erddap-secoora:gov-nps-ever-gbtf1,salinity_psu,surface,33.87,1,0,
 2026-11-24T00:00:00Z,erddap-secoora:gov-nps-ever-gbtf1,water_temp_c,surface,27.49,1,0,
 2026-11-24T01:00:00Z,erddap-secoora:gov-nps-ever-gbtf1,water_temp_c,surface,27.41,1,0,
 2026-11-24T02:00:00Z,erddap-secoora:gov-nps-ever-gbtf1,water_temp_c,surface,27.27,1,0,
@@ -750,6 +815,7 @@ time_utc,station,variable,layer,value,n,depth_m,source
 2026-11-24T11:00:00Z,erddap-secoora:gov-nps-ever-gbtf1,water_temp_c,surface,26.55,1,0,
 2026-11-24T12:00:00Z,erddap-secoora:gov-nps-ever-gbtf1,water_temp_c,surface,26.27,1,0,
 2026-11-24T13:00:00Z,erddap-secoora:gov-nps-ever-gbtf1,water_temp_c,surface,25.98,1,0,
+2026-11-24T14:00:00Z,erddap-secoora:gov-nps-ever-gbtf1,water_temp_c,surface,25.94,1,0,
 2026-11-24T00:00:00Z,erddap-secoora:gov-nps-ever-hcef1,salinity_psu,surface,21.773,1,0,
 2026-11-24T01:00:00Z,erddap-secoora:gov-nps-ever-hcef1,salinity_psu,surface,18.554,1,0,
 2026-11-24T02:00:00Z,erddap-secoora:gov-nps-ever-hcef1,salinity_psu,surface,20.29,1,0,
@@ -764,6 +830,7 @@ time_utc,station,variable,layer,value,n,depth_m,source
 2026-11-24T11:00:00Z,erddap-secoora:gov-nps-ever-hcef1,salinity_psu,surface,20.819,1,0,
 2026-11-24T12:00:00Z,erddap-secoora:gov-nps-ever-hcef1,salinity_psu,surface,12.218,1,0,
 2026-11-24T13:00:00Z,erddap-secoora:gov-nps-ever-hcef1,salinity_psu,surface,17.341,1,0,
+2026-11-24T14:00:00Z,erddap-secoora:gov-nps-ever-hcef1,salinity_psu,surface,16.486,1,0,
 2026-11-24T00:00:00Z,erddap-secoora:gov-nps-ever-href1,salinity_psu,surface,18.88,1,0,
 2026-11-24T01:00:00Z,erddap-secoora:gov-nps-ever-href1,salinity_psu,surface,16.519,1,0,
 2026-11-24T02:00:00Z,erddap-secoora:gov-nps-ever-href1,salinity_psu,surface,14.916,1,0,
@@ -778,6 +845,7 @@ time_utc,station,variable,layer,value,n,depth_m,source
 2026-11-24T11:00:00Z,erddap-secoora:gov-nps-ever-href1,salinity_psu,surface,22.126,1,0,
 2026-11-24T12:00:00Z,erddap-secoora:gov-nps-ever-href1,salinity_psu,surface,20.001,1,0,
 2026-11-24T13:00:00Z,erddap-secoora:gov-nps-ever-href1,salinity_psu,surface,17.071,1,0,
+2026-11-24T14:00:00Z,erddap-secoora:gov-nps-ever-href1,salinity_psu,surface,13.791,1,0,
 2026-11-24T00:00:00Z,erddap-secoora:gov-nps-ever-href1,water_temp_c,surface,24.44,1,0,
 2026-11-24T01:00:00Z,erddap-secoora:gov-nps-ever-href1,water_temp_c,surface,24.38,1,0,
 2026-11-24T02:00:00Z,erddap-secoora:gov-nps-ever-href1,water_temp_c,surface,24.45,1,0,
@@ -792,6 +860,7 @@ time_utc,station,variable,layer,value,n,depth_m,source
 2026-11-24T11:00:00Z,erddap-secoora:gov-nps-ever-href1,water_temp_c,surface,23.78,1,0,
 2026-11-24T12:00:00Z,erddap-secoora:gov-nps-ever-href1,water_temp_c,surface,23.62,1,0,
 2026-11-24T13:00:00Z,erddap-secoora:gov-nps-ever-href1,water_temp_c,surface,23.47,1,0,
+2026-11-24T14:00:00Z,erddap-secoora:gov-nps-ever-href1,water_temp_c,surface,23.75,1,0,
 2026-11-24T00:00:00Z,erddap-secoora:gov-nps-ever-jbyf1,salinity_psu,surface,12.147,1,0,
 2026-11-24T01:00:00Z,erddap-secoora:gov-nps-ever-jbyf1,salinity_psu,surface,12.088,1,0,
 2026-11-24T02:00:00Z,erddap-secoora:gov-nps-ever-jbyf1,salinity_psu,surface,12.166,1,0,
@@ -806,6 +875,7 @@ time_utc,station,variable,layer,value,n,depth_m,source
 2026-11-24T11:00:00Z,erddap-secoora:gov-nps-ever-jbyf1,salinity_psu,surface,11.097,1,0,
 2026-11-24T12:00:00Z,erddap-secoora:gov-nps-ever-jbyf1,salinity_psu,surface,10.948,1,0,
 2026-11-24T13:00:00Z,erddap-secoora:gov-nps-ever-jbyf1,salinity_psu,surface,10.877,1,0,
+2026-11-24T14:00:00Z,erddap-secoora:gov-nps-ever-jbyf1,salinity_psu,surface,10.806,1,0,
 2026-11-24T00:00:00Z,erddap-secoora:gov-nps-ever-jbyf1,water_temp_c,surface,25.7,1,0,
 2026-11-24T01:00:00Z,erddap-secoora:gov-nps-ever-jbyf1,water_temp_c,surface,25.71,1,0,
 2026-11-24T02:00:00Z,erddap-secoora:gov-nps-ever-jbyf1,water_temp_c,surface,25.68,1,0,
@@ -820,6 +890,7 @@ time_utc,station,variable,layer,value,n,depth_m,source
 2026-11-24T11:00:00Z,erddap-secoora:gov-nps-ever-jbyf1,water_temp_c,surface,24.84,1,0,
 2026-11-24T12:00:00Z,erddap-secoora:gov-nps-ever-jbyf1,water_temp_c,surface,24.74,1,0,
 2026-11-24T13:00:00Z,erddap-secoora:gov-nps-ever-jbyf1,water_temp_c,surface,24.64,1,0,
+2026-11-24T14:00:00Z,erddap-secoora:gov-nps-ever-jbyf1,water_temp_c,surface,24.56,1,0,
 2026-11-24T00:00:00Z,erddap-secoora:gov-nps-ever-jkyf1,salinity_psu,surface,39.219,1,0,
 2026-11-24T01:00:00Z,erddap-secoora:gov-nps-ever-jkyf1,salinity_psu,surface,39.234,1,0,
 2026-11-24T02:00:00Z,erddap-secoora:gov-nps-ever-jkyf1,salinity_psu,surface,39.287,1,0,
@@ -834,6 +905,7 @@ time_utc,station,variable,layer,value,n,depth_m,source
 2026-11-24T11:00:00Z,erddap-secoora:gov-nps-ever-jkyf1,salinity_psu,surface,39.497,1,0,
 2026-11-24T12:00:00Z,erddap-secoora:gov-nps-ever-jkyf1,salinity_psu,surface,39.475,1,0,
 2026-11-24T13:00:00Z,erddap-secoora:gov-nps-ever-jkyf1,salinity_psu,surface,39.482,1,0,
+2026-11-24T14:00:00Z,erddap-secoora:gov-nps-ever-jkyf1,salinity_psu,surface,39.49,1,0,
 2026-11-24T00:00:00Z,erddap-secoora:gov-nps-ever-jkyf1,water_temp_c,surface,25.94,1,0,
 2026-11-24T01:00:00Z,erddap-secoora:gov-nps-ever-jkyf1,water_temp_c,surface,25.7,1,0,
 2026-11-24T02:00:00Z,erddap-secoora:gov-nps-ever-jkyf1,water_temp_c,surface,25.37,1,0,
@@ -848,6 +920,7 @@ time_utc,station,variable,layer,value,n,depth_m,source
 2026-11-24T11:00:00Z,erddap-secoora:gov-nps-ever-jkyf1,water_temp_c,surface,24.82,1,0,
 2026-11-24T12:00:00Z,erddap-secoora:gov-nps-ever-jkyf1,water_temp_c,surface,24.52,1,0,
 2026-11-24T13:00:00Z,erddap-secoora:gov-nps-ever-jkyf1,water_temp_c,surface,24.17,1,0,
+2026-11-24T14:00:00Z,erddap-secoora:gov-nps-ever-jkyf1,water_temp_c,surface,23.88,1,0,
 2026-11-24T00:00:00Z,erddap-secoora:gov-nps-ever-lbsf1,salinity_psu,surface,29.155,1,0,
 2026-11-24T01:00:00Z,erddap-secoora:gov-nps-ever-lbsf1,salinity_psu,surface,29.134,1,0,
 2026-11-24T02:00:00Z,erddap-secoora:gov-nps-ever-lbsf1,salinity_psu,surface,29.119,1,0,
@@ -862,6 +935,7 @@ time_utc,station,variable,layer,value,n,depth_m,source
 2026-11-24T11:00:00Z,erddap-secoora:gov-nps-ever-lbsf1,salinity_psu,surface,29.421,1,0,
 2026-11-24T12:00:00Z,erddap-secoora:gov-nps-ever-lbsf1,salinity_psu,surface,29.436,1,0,
 2026-11-24T13:00:00Z,erddap-secoora:gov-nps-ever-lbsf1,salinity_psu,surface,29.472,1,0,
+2026-11-24T14:00:00Z,erddap-secoora:gov-nps-ever-lbsf1,salinity_psu,surface,29.472,1,0,
 2026-11-24T00:00:00Z,erddap-secoora:gov-nps-ever-lbsf1,water_temp_c,surface,26.29,1,0,
 2026-11-24T01:00:00Z,erddap-secoora:gov-nps-ever-lbsf1,water_temp_c,surface,26.16,1,0,
 2026-11-24T02:00:00Z,erddap-secoora:gov-nps-ever-lbsf1,water_temp_c,surface,25.99,1,0,
@@ -876,6 +950,7 @@ time_utc,station,variable,layer,value,n,depth_m,source
 2026-11-24T11:00:00Z,erddap-secoora:gov-nps-ever-lbsf1,water_temp_c,surface,24.57,1,0,
 2026-11-24T12:00:00Z,erddap-secoora:gov-nps-ever-lbsf1,water_temp_c,surface,24.49,1,0,
 2026-11-24T13:00:00Z,erddap-secoora:gov-nps-ever-lbsf1,water_temp_c,surface,24.42,1,0,
+2026-11-24T14:00:00Z,erddap-secoora:gov-nps-ever-lbsf1,water_temp_c,surface,24.38,1,0,
 2026-11-24T00:00:00Z,erddap-secoora:gov-nps-ever-lmdf1,salinity_psu,surface,29.832,1,0,
 2026-11-24T01:00:00Z,erddap-secoora:gov-nps-ever-lmdf1,salinity_psu,surface,29.882,1,0,
 2026-11-24T02:00:00Z,erddap-secoora:gov-nps-ever-lmdf1,salinity_psu,surface,29.861,1,0,
@@ -890,6 +965,7 @@ time_utc,station,variable,layer,value,n,depth_m,source
 2026-11-24T11:00:00Z,erddap-secoora:gov-nps-ever-lmdf1,salinity_psu,surface,30.554,1,0,
 2026-11-24T12:00:00Z,erddap-secoora:gov-nps-ever-lmdf1,salinity_psu,surface,30.597,1,0,
 2026-11-24T13:00:00Z,erddap-secoora:gov-nps-ever-lmdf1,salinity_psu,surface,30.67,1,0,
+2026-11-24T14:00:00Z,erddap-secoora:gov-nps-ever-lmdf1,salinity_psu,surface,28.638,1,0,
 2026-11-24T00:00:00Z,erddap-secoora:gov-nps-ever-lmdf1,water_temp_c,surface,26.35,1,0,
 2026-11-24T01:00:00Z,erddap-secoora:gov-nps-ever-lmdf1,water_temp_c,surface,26.21,1,0,
 2026-11-24T02:00:00Z,erddap-secoora:gov-nps-ever-lmdf1,water_temp_c,surface,26.17,1,0,
@@ -904,6 +980,7 @@ time_utc,station,variable,layer,value,n,depth_m,source
 2026-11-24T11:00:00Z,erddap-secoora:gov-nps-ever-lmdf1,water_temp_c,surface,25.06,1,0,
 2026-11-24T12:00:00Z,erddap-secoora:gov-nps-ever-lmdf1,water_temp_c,surface,24.96,1,0,
 2026-11-24T13:00:00Z,erddap-secoora:gov-nps-ever-lmdf1,water_temp_c,surface,24.89,1,0,
+2026-11-24T14:00:00Z,erddap-secoora:gov-nps-ever-lmdf1,water_temp_c,surface,24.58,1,0,
 2026-11-24T00:00:00Z,erddap-secoora:gov-nps-ever-lmrf1,salinity_psu,surface,23.911,1,0,
 2026-11-24T01:00:00Z,erddap-secoora:gov-nps-ever-lmrf1,salinity_psu,surface,23.386,1,0,
 2026-11-24T02:00:00Z,erddap-secoora:gov-nps-ever-lmrf1,salinity_psu,surface,22.877,1,0,
@@ -918,6 +995,7 @@ time_utc,station,variable,layer,value,n,depth_m,source
 2026-11-24T11:00:00Z,erddap-secoora:gov-nps-ever-lmrf1,salinity_psu,surface,25.995,1,0,
 2026-11-24T12:00:00Z,erddap-secoora:gov-nps-ever-lmrf1,salinity_psu,surface,25.063,1,0,
 2026-11-24T13:00:00Z,erddap-secoora:gov-nps-ever-lmrf1,salinity_psu,surface,23.75,1,0,
+2026-11-24T14:00:00Z,erddap-secoora:gov-nps-ever-lmrf1,salinity_psu,surface,22.592,1,0,
 2026-11-24T00:00:00Z,erddap-secoora:gov-nps-ever-lmrf1,water_temp_c,surface,25.13,1,0,
 2026-11-24T01:00:00Z,erddap-secoora:gov-nps-ever-lmrf1,water_temp_c,surface,25.07,1,0,
 2026-11-24T02:00:00Z,erddap-secoora:gov-nps-ever-lmrf1,water_temp_c,surface,25.02,1,0,
@@ -932,6 +1010,7 @@ time_utc,station,variable,layer,value,n,depth_m,source
 2026-11-24T11:00:00Z,erddap-secoora:gov-nps-ever-lmrf1,water_temp_c,surface,24.14,1,0,
 2026-11-24T12:00:00Z,erddap-secoora:gov-nps-ever-lmrf1,water_temp_c,surface,24.09,1,0,
 2026-11-24T13:00:00Z,erddap-secoora:gov-nps-ever-lmrf1,water_temp_c,surface,24.03,1,0,
+2026-11-24T14:00:00Z,erddap-secoora:gov-nps-ever-lmrf1,water_temp_c,surface,23.99,1,0,
 2026-11-24T00:00:00Z,erddap-secoora:gov-nps-ever-lrif1,salinity_psu,surface,6.152,1,0,
 2026-11-24T01:00:00Z,erddap-secoora:gov-nps-ever-lrif1,salinity_psu,surface,6.231,1,0,
 2026-11-24T02:00:00Z,erddap-secoora:gov-nps-ever-lrif1,salinity_psu,surface,5.597,1,0,
@@ -946,6 +1025,7 @@ time_utc,station,variable,layer,value,n,depth_m,source
 2026-11-24T11:00:00Z,erddap-secoora:gov-nps-ever-lrif1,salinity_psu,surface,7.275,1,0,
 2026-11-24T12:00:00Z,erddap-secoora:gov-nps-ever-lrif1,salinity_psu,surface,8.048,1,0,
 2026-11-24T13:00:00Z,erddap-secoora:gov-nps-ever-lrif1,salinity_psu,surface,7.729,1,0,
+2026-11-24T14:00:00Z,erddap-secoora:gov-nps-ever-lrif1,salinity_psu,surface,5.956,1,0,
 2026-11-24T00:00:00Z,erddap-secoora:gov-nps-ever-lrif1,water_temp_c,surface,26.19,1,0,
 2026-11-24T01:00:00Z,erddap-secoora:gov-nps-ever-lrif1,water_temp_c,surface,26.2,1,0,
 2026-11-24T02:00:00Z,erddap-secoora:gov-nps-ever-lrif1,water_temp_c,surface,25.95,1,0,
@@ -960,6 +1040,7 @@ time_utc,station,variable,layer,value,n,depth_m,source
 2026-11-24T11:00:00Z,erddap-secoora:gov-nps-ever-lrif1,water_temp_c,surface,24.94,1,0,
 2026-11-24T12:00:00Z,erddap-secoora:gov-nps-ever-lrif1,water_temp_c,surface,24.88,1,0,
 2026-11-24T13:00:00Z,erddap-secoora:gov-nps-ever-lrif1,water_temp_c,surface,24.82,1,0,
+2026-11-24T14:00:00Z,erddap-secoora:gov-nps-ever-lrif1,water_temp_c,surface,24.36,1,0,
 2026-11-24T00:00:00Z,erddap-secoora:gov-nps-ever-lrkf1,salinity_psu,surface,43.755,1,0,
 2026-11-24T01:00:00Z,erddap-secoora:gov-nps-ever-lrkf1,salinity_psu,surface,43.174,1,0,
 2026-11-24T02:00:00Z,erddap-secoora:gov-nps-ever-lrkf1,salinity_psu,surface,42.983,1,0,
@@ -974,6 +1055,7 @@ time_utc,station,variable,layer,value,n,depth_m,source
 2026-11-24T11:00:00Z,erddap-secoora:gov-nps-ever-lrkf1,salinity_psu,surface,44.085,1,0,
 2026-11-24T12:00:00Z,erddap-secoora:gov-nps-ever-lrkf1,salinity_psu,surface,44.116,1,0,
 2026-11-24T13:00:00Z,erddap-secoora:gov-nps-ever-lrkf1,salinity_psu,surface,44.146,1,0,
+2026-11-24T14:00:00Z,erddap-secoora:gov-nps-ever-lrkf1,salinity_psu,surface,44.1,1,0,
 2026-11-24T00:00:00Z,erddap-secoora:gov-nps-ever-lrkf1,water_temp_c,surface,26.23,1,0,
 2026-11-24T01:00:00Z,erddap-secoora:gov-nps-ever-lrkf1,water_temp_c,surface,26.55,1,0,
 2026-11-24T02:00:00Z,erddap-secoora:gov-nps-ever-lrkf1,water_temp_c,surface,26.34,1,0,
@@ -988,6 +1070,7 @@ time_utc,station,variable,layer,value,n,depth_m,source
 2026-11-24T11:00:00Z,erddap-secoora:gov-nps-ever-lrkf1,water_temp_c,surface,24.2,1,0,
 2026-11-24T12:00:00Z,erddap-secoora:gov-nps-ever-lrkf1,water_temp_c,surface,23.6,1,0,
 2026-11-24T13:00:00Z,erddap-secoora:gov-nps-ever-lrkf1,water_temp_c,surface,23.5,1,0,
+2026-11-24T14:00:00Z,erddap-secoora:gov-nps-ever-lrkf1,water_temp_c,surface,23.65,1,0,
 2026-11-24T00:00:00Z,erddap-secoora:gov-nps-ever-lsnf1,salinity_psu,surface,28.051,1,0,
 2026-11-24T01:00:00Z,erddap-secoora:gov-nps-ever-lsnf1,salinity_psu,surface,27.302,1,0,
 2026-11-24T02:00:00Z,erddap-secoora:gov-nps-ever-lsnf1,salinity_psu,surface,26.045,1,0,
@@ -1002,6 +1085,7 @@ time_utc,station,variable,layer,value,n,depth_m,source
 2026-11-24T11:00:00Z,erddap-secoora:gov-nps-ever-lsnf1,salinity_psu,surface,29.019,1,0,
 2026-11-24T12:00:00Z,erddap-secoora:gov-nps-ever-lsnf1,salinity_psu,surface,28.337,1,0,
 2026-11-24T13:00:00Z,erddap-secoora:gov-nps-ever-lsnf1,salinity_psu,surface,27.937,1,0,
+2026-11-24T14:00:00Z,erddap-secoora:gov-nps-ever-lsnf1,salinity_psu,surface,27.509,1,0,
 2026-11-24T00:00:00Z,erddap-secoora:gov-nps-ever-lsnf1,water_temp_c,surface,27.12,1,0,
 2026-11-24T01:00:00Z,erddap-secoora:gov-nps-ever-lsnf1,water_temp_c,surface,27.1,1,0,
 2026-11-24T02:00:00Z,erddap-secoora:gov-nps-ever-lsnf1,water_temp_c,surface,26.77,1,0,
@@ -1016,6 +1100,7 @@ time_utc,station,variable,layer,value,n,depth_m,source
 2026-11-24T11:00:00Z,erddap-secoora:gov-nps-ever-lsnf1,water_temp_c,surface,27.35,1,0,
 2026-11-24T12:00:00Z,erddap-secoora:gov-nps-ever-lsnf1,water_temp_c,surface,26.49,1,0,
 2026-11-24T13:00:00Z,erddap-secoora:gov-nps-ever-lsnf1,water_temp_c,surface,26.14,1,0,
+2026-11-24T14:00:00Z,erddap-secoora:gov-nps-ever-lsnf1,water_temp_c,surface,26.23,1,0,
 2026-11-24T00:00:00Z,erddap-secoora:gov-nps-ever-mdkf1,salinity_psu,surface,31.126,1,0,
 2026-11-24T01:00:00Z,erddap-secoora:gov-nps-ever-mdkf1,salinity_psu,surface,31.17,1,0,
 2026-11-24T02:00:00Z,erddap-secoora:gov-nps-ever-mdkf1,salinity_psu,surface,31.155,1,0,
@@ -1030,6 +1115,7 @@ time_utc,station,variable,layer,value,n,depth_m,source
 2026-11-24T11:00:00Z,erddap-secoora:gov-nps-ever-mdkf1,salinity_psu,surface,30.981,1,0,
 2026-11-24T12:00:00Z,erddap-secoora:gov-nps-ever-mdkf1,salinity_psu,surface,30.952,1,0,
 2026-11-24T13:00:00Z,erddap-secoora:gov-nps-ever-mdkf1,salinity_psu,surface,30.887,1,0,
+2026-11-24T14:00:00Z,erddap-secoora:gov-nps-ever-mdkf1,salinity_psu,surface,30.88,1,0,
 2026-11-24T00:00:00Z,erddap-secoora:gov-nps-ever-mdkf1,water_temp_c,surface,26.18,1,0,
 2026-11-24T01:00:00Z,erddap-secoora:gov-nps-ever-mdkf1,water_temp_c,surface,26.05,1,0,
 2026-11-24T02:00:00Z,erddap-secoora:gov-nps-ever-mdkf1,water_temp_c,surface,26.1,1,0,
@@ -1044,6 +1130,7 @@ time_utc,station,variable,layer,value,n,depth_m,source
 2026-11-24T11:00:00Z,erddap-secoora:gov-nps-ever-mdkf1,water_temp_c,surface,25.02,1,0,
 2026-11-24T12:00:00Z,erddap-secoora:gov-nps-ever-mdkf1,water_temp_c,surface,24.93,1,0,
 2026-11-24T13:00:00Z,erddap-secoora:gov-nps-ever-mdkf1,water_temp_c,surface,24.91,1,0,
+2026-11-24T14:00:00Z,erddap-secoora:gov-nps-ever-mdkf1,water_temp_c,surface,24.92,1,0,
 2026-11-24T00:00:00Z,erddap-secoora:gov-nps-ever-mnbf1,salinity_psu,surface,27.28,1,0,
 2026-11-24T01:00:00Z,erddap-secoora:gov-nps-ever-mnbf1,salinity_psu,surface,27.138,1,0,
 2026-11-24T02:00:00Z,erddap-secoora:gov-nps-ever-mnbf1,salinity_psu,surface,26.946,1,0,
@@ -1058,6 +1145,7 @@ time_utc,station,variable,layer,value,n,depth_m,source
 2026-11-24T11:00:00Z,erddap-secoora:gov-nps-ever-mnbf1,salinity_psu,surface,28.294,1,0,
 2026-11-24T12:00:00Z,erddap-secoora:gov-nps-ever-mnbf1,salinity_psu,surface,28.717,1,0,
 2026-11-24T13:00:00Z,erddap-secoora:gov-nps-ever-mnbf1,salinity_psu,surface,28.696,1,0,
+2026-11-24T14:00:00Z,erddap-secoora:gov-nps-ever-mnbf1,salinity_psu,surface,28.724,1,0,
 2026-11-24T00:00:00Z,erddap-secoora:gov-nps-ever-mnbf1,water_temp_c,surface,25.53,1,0,
 2026-11-24T01:00:00Z,erddap-secoora:gov-nps-ever-mnbf1,water_temp_c,surface,25.38,1,0,
 2026-11-24T02:00:00Z,erddap-secoora:gov-nps-ever-mnbf1,water_temp_c,surface,25.26,1,0,
@@ -1072,6 +1160,7 @@ time_utc,station,variable,layer,value,n,depth_m,source
 2026-11-24T11:00:00Z,erddap-secoora:gov-nps-ever-mnbf1,water_temp_c,surface,24.48,1,0,
 2026-11-24T12:00:00Z,erddap-secoora:gov-nps-ever-mnbf1,water_temp_c,surface,24.42,1,0,
 2026-11-24T13:00:00Z,erddap-secoora:gov-nps-ever-mnbf1,water_temp_c,surface,24.41,1,0,
+2026-11-24T14:00:00Z,erddap-secoora:gov-nps-ever-mnbf1,water_temp_c,surface,24.41,1,0,
 2026-11-24T00:00:00Z,erddap-secoora:gov-nps-ever-mukf1,salinity_psu,surface,37.773,1,0,
 2026-11-24T01:00:00Z,erddap-secoora:gov-nps-ever-mukf1,salinity_psu,surface,37.922,1,0,
 2026-11-24T02:00:00Z,erddap-secoora:gov-nps-ever-mukf1,salinity_psu,surface,37.848,1,0,
@@ -1086,6 +1175,7 @@ time_utc,station,variable,layer,value,n,depth_m,source
 2026-11-24T11:00:00Z,erddap-secoora:gov-nps-ever-mukf1,salinity_psu,surface,38.222,1,0,
 2026-11-24T12:00:00Z,erddap-secoora:gov-nps-ever-mukf1,salinity_psu,surface,38.072,1,0,
 2026-11-24T13:00:00Z,erddap-secoora:gov-nps-ever-mukf1,salinity_psu,surface,38.072,1,0,
+2026-11-24T14:00:00Z,erddap-secoora:gov-nps-ever-mukf1,salinity_psu,surface,38.147,1,0,
 2026-11-24T00:00:00Z,erddap-secoora:gov-nps-ever-mukf1,water_temp_c,surface,25.32,1,0,
 2026-11-24T01:00:00Z,erddap-secoora:gov-nps-ever-mukf1,water_temp_c,surface,25.1,1,0,
 2026-11-24T02:00:00Z,erddap-secoora:gov-nps-ever-mukf1,water_temp_c,surface,25.04,1,0,
@@ -1100,6 +1190,7 @@ time_utc,station,variable,layer,value,n,depth_m,source
 2026-11-24T11:00:00Z,erddap-secoora:gov-nps-ever-mukf1,water_temp_c,surface,23.56,1,0,
 2026-11-24T12:00:00Z,erddap-secoora:gov-nps-ever-mukf1,water_temp_c,surface,23.19,1,0,
 2026-11-24T13:00:00Z,erddap-secoora:gov-nps-ever-mukf1,water_temp_c,surface,22.96,1,0,
+2026-11-24T14:00:00Z,erddap-secoora:gov-nps-ever-mukf1,water_temp_c,surface,22.86,1,0,
 2026-11-24T00:00:00Z,erddap-secoora:gov-nps-ever-nrrf1,salinity_psu,surface,8.633,1,0,
 2026-11-24T01:00:00Z,erddap-secoora:gov-nps-ever-nrrf1,salinity_psu,surface,8.646,1,0,
 2026-11-24T02:00:00Z,erddap-secoora:gov-nps-ever-nrrf1,salinity_psu,surface,8.293,1,0,
@@ -1114,6 +1205,7 @@ time_utc,station,variable,layer,value,n,depth_m,source
 2026-11-24T11:00:00Z,erddap-secoora:gov-nps-ever-nrrf1,salinity_psu,surface,9.088,1,0,
 2026-11-24T12:00:00Z,erddap-secoora:gov-nps-ever-nrrf1,salinity_psu,surface,9.215,1,0,
 2026-11-24T13:00:00Z,erddap-secoora:gov-nps-ever-nrrf1,salinity_psu,surface,9.253,1,0,
+2026-11-24T14:00:00Z,erddap-secoora:gov-nps-ever-nrrf1,salinity_psu,surface,9.018,1,0,
 2026-11-24T00:00:00Z,erddap-secoora:gov-nps-ever-nrrf1,water_temp_c,surface,25.05,1,0,
 2026-11-24T01:00:00Z,erddap-secoora:gov-nps-ever-nrrf1,water_temp_c,surface,24.97,1,0,
 2026-11-24T02:00:00Z,erddap-secoora:gov-nps-ever-nrrf1,water_temp_c,surface,24.77,1,0,
@@ -1128,6 +1220,7 @@ time_utc,station,variable,layer,value,n,depth_m,source
 2026-11-24T11:00:00Z,erddap-secoora:gov-nps-ever-nrrf1,water_temp_c,surface,24.13,1,0,
 2026-11-24T12:00:00Z,erddap-secoora:gov-nps-ever-nrrf1,water_temp_c,surface,24.11,1,0,
 2026-11-24T13:00:00Z,erddap-secoora:gov-nps-ever-nrrf1,water_temp_c,surface,24.1,1,0,
+2026-11-24T14:00:00Z,erddap-secoora:gov-nps-ever-nrrf1,water_temp_c,surface,23.94,1,0,
 2026-11-24T00:00:00Z,erddap-secoora:gov-nps-ever-pkyf1,salinity_psu,surface,35.995,1,0,
 2026-11-24T01:00:00Z,erddap-secoora:gov-nps-ever-pkyf1,salinity_psu,surface,36.069,1,0,
 2026-11-24T02:00:00Z,erddap-secoora:gov-nps-ever-pkyf1,salinity_psu,surface,36.039,1,0,
@@ -1142,6 +1235,7 @@ time_utc,station,variable,layer,value,n,depth_m,source
 2026-11-24T11:00:00Z,erddap-secoora:gov-nps-ever-pkyf1,salinity_psu,surface,36.351,1,0,
 2026-11-24T12:00:00Z,erddap-secoora:gov-nps-ever-pkyf1,salinity_psu,surface,36.321,1,0,
 2026-11-24T13:00:00Z,erddap-secoora:gov-nps-ever-pkyf1,salinity_psu,surface,36.329,1,0,
+2026-11-24T14:00:00Z,erddap-secoora:gov-nps-ever-pkyf1,salinity_psu,surface,36.314,1,0,
 2026-11-24T00:00:00Z,erddap-secoora:gov-nps-ever-pkyf1,water_temp_c,surface,26.13,1,0,
 2026-11-24T01:00:00Z,erddap-secoora:gov-nps-ever-pkyf1,water_temp_c,surface,26.03,1,0,
 2026-11-24T02:00:00Z,erddap-secoora:gov-nps-ever-pkyf1,water_temp_c,surface,25.72,1,0,
@@ -1156,6 +1250,7 @@ time_utc,station,variable,layer,value,n,depth_m,source
 2026-11-24T11:00:00Z,erddap-secoora:gov-nps-ever-pkyf1,water_temp_c,surface,25.22,1,0,
 2026-11-24T12:00:00Z,erddap-secoora:gov-nps-ever-pkyf1,water_temp_c,surface,25.1,1,0,
 2026-11-24T13:00:00Z,erddap-secoora:gov-nps-ever-pkyf1,water_temp_c,surface,25.05,1,0,
+2026-11-24T14:00:00Z,erddap-secoora:gov-nps-ever-pkyf1,water_temp_c,surface,24.98,1,0,
 2026-11-24T00:00:00Z,erddap-secoora:gov-nps-ever-sref1,salinity_psu,surface,29.933,1,0,
 2026-11-24T01:00:00Z,erddap-secoora:gov-nps-ever-sref1,salinity_psu,surface,29.594,1,0,
 2026-11-24T02:00:00Z,erddap-secoora:gov-nps-ever-sref1,salinity_psu,surface,29.63,1,0,
@@ -1170,6 +1265,7 @@ time_utc,station,variable,layer,value,n,depth_m,source
 2026-11-24T11:00:00Z,erddap-secoora:gov-nps-ever-sref1,salinity_psu,surface,30.286,1,0,
 2026-11-24T12:00:00Z,erddap-secoora:gov-nps-ever-sref1,salinity_psu,surface,30.048,1,0,
 2026-11-24T13:00:00Z,erddap-secoora:gov-nps-ever-sref1,salinity_psu,surface,29.998,1,0,
+2026-11-24T14:00:00Z,erddap-secoora:gov-nps-ever-sref1,salinity_psu,surface,29.608,1,0,
 2026-11-24T00:00:00Z,erddap-secoora:gov-nps-ever-sref1,water_temp_c,surface,25.07,1,0,
 2026-11-24T01:00:00Z,erddap-secoora:gov-nps-ever-sref1,water_temp_c,surface,25.12,1,0,
 2026-11-24T02:00:00Z,erddap-secoora:gov-nps-ever-sref1,water_temp_c,surface,25.08,1,0,
@@ -1184,6 +1280,7 @@ time_utc,station,variable,layer,value,n,depth_m,source
 2026-11-24T11:00:00Z,erddap-secoora:gov-nps-ever-sref1,water_temp_c,surface,24.31,1,0,
 2026-11-24T12:00:00Z,erddap-secoora:gov-nps-ever-sref1,water_temp_c,surface,24.27,1,0,
 2026-11-24T13:00:00Z,erddap-secoora:gov-nps-ever-sref1,water_temp_c,surface,24.25,1,0,
+2026-11-24T14:00:00Z,erddap-secoora:gov-nps-ever-sref1,water_temp_c,surface,24.28,1,0,
 2026-11-24T00:00:00Z,erddap-secoora:gov-nps-ever-tbyf1,salinity_psu,surface,25.543,1,0,
 2026-11-24T01:00:00Z,erddap-secoora:gov-nps-ever-tbyf1,salinity_psu,surface,25.543,1,0,
 2026-11-24T02:00:00Z,erddap-secoora:gov-nps-ever-tbyf1,salinity_psu,surface,25.578,1,0,
@@ -1198,6 +1295,7 @@ time_utc,station,variable,layer,value,n,depth_m,source
 2026-11-24T11:00:00Z,erddap-secoora:gov-nps-ever-tbyf1,salinity_psu,surface,25.387,1,0,
 2026-11-24T12:00:00Z,erddap-secoora:gov-nps-ever-tbyf1,salinity_psu,surface,25.409,1,0,
 2026-11-24T13:00:00Z,erddap-secoora:gov-nps-ever-tbyf1,salinity_psu,surface,25.437,1,0,
+2026-11-24T14:00:00Z,erddap-secoora:gov-nps-ever-tbyf1,salinity_psu,surface,25.493,1,0,
 2026-11-24T00:00:00Z,erddap-secoora:gov-nps-ever-tbyf1,water_temp_c,surface,26.17,1,0,
 2026-11-24T01:00:00Z,erddap-secoora:gov-nps-ever-tbyf1,water_temp_c,surface,26.12,1,0,
 2026-11-24T02:00:00Z,erddap-secoora:gov-nps-ever-tbyf1,water_temp_c,surface,26.03,1,0,
@@ -1212,6 +1310,7 @@ time_utc,station,variable,layer,value,n,depth_m,source
 2026-11-24T11:00:00Z,erddap-secoora:gov-nps-ever-tbyf1,water_temp_c,surface,24.17,1,0,
 2026-11-24T12:00:00Z,erddap-secoora:gov-nps-ever-tbyf1,water_temp_c,surface,24.14,1,0,
 2026-11-24T13:00:00Z,erddap-secoora:gov-nps-ever-tbyf1,water_temp_c,surface,24.11,1,0,
+2026-11-24T14:00:00Z,erddap-secoora:gov-nps-ever-tbyf1,water_temp_c,surface,24.05,1,0,
 2026-11-24T00:00:00Z,erddap-secoora:gov-nps-ever-tcvf1,salinity_psu,surface,8.936,1,0,
 2026-11-24T01:00:00Z,erddap-secoora:gov-nps-ever-tcvf1,salinity_psu,surface,11.75,1,0,
 2026-11-24T02:00:00Z,erddap-secoora:gov-nps-ever-tcvf1,salinity_psu,surface,14.637,1,0,
@@ -1226,6 +1325,7 @@ time_utc,station,variable,layer,value,n,depth_m,source
 2026-11-24T11:00:00Z,erddap-secoora:gov-nps-ever-tcvf1,salinity_psu,surface,8.968,1,0,
 2026-11-24T12:00:00Z,erddap-secoora:gov-nps-ever-tcvf1,salinity_psu,surface,9.202,1,0,
 2026-11-24T13:00:00Z,erddap-secoora:gov-nps-ever-tcvf1,salinity_psu,surface,8.829,1,0,
+2026-11-24T14:00:00Z,erddap-secoora:gov-nps-ever-tcvf1,salinity_psu,surface,8.702,1,0,
 2026-11-24T00:00:00Z,erddap-secoora:gov-nps-ever-tcvf1,water_temp_c,surface,26.61,1,0,
 2026-11-24T01:00:00Z,erddap-secoora:gov-nps-ever-tcvf1,water_temp_c,surface,26.58,1,0,
 2026-11-24T02:00:00Z,erddap-secoora:gov-nps-ever-tcvf1,water_temp_c,surface,26.62,1,0,
@@ -1240,6 +1340,7 @@ time_utc,station,variable,layer,value,n,depth_m,source
 2026-11-24T11:00:00Z,erddap-secoora:gov-nps-ever-tcvf1,water_temp_c,surface,25.11,1,0,
 2026-11-24T12:00:00Z,erddap-secoora:gov-nps-ever-tcvf1,water_temp_c,surface,25.04,1,0,
 2026-11-24T13:00:00Z,erddap-secoora:gov-nps-ever-tcvf1,water_temp_c,surface,24.96,1,0,
+2026-11-24T14:00:00Z,erddap-secoora:gov-nps-ever-tcvf1,water_temp_c,surface,24.91,1,0,
 2026-11-24T00:00:00Z,erddap-secoora:gov-nps-ever-thrf1,salinity_psu,surface,32.129,1,0,
 2026-11-24T01:00:00Z,erddap-secoora:gov-nps-ever-thrf1,salinity_psu,surface,32.129,1,0,
 2026-11-24T02:00:00Z,erddap-secoora:gov-nps-ever-thrf1,salinity_psu,surface,32.108,1,0,
@@ -1254,6 +1355,7 @@ time_utc,station,variable,layer,value,n,depth_m,source
 2026-11-24T11:00:00Z,erddap-secoora:gov-nps-ever-thrf1,salinity_psu,surface,31.562,1,0,
 2026-11-24T12:00:00Z,erddap-secoora:gov-nps-ever-thrf1,salinity_psu,surface,31.511,1,0,
 2026-11-24T13:00:00Z,erddap-secoora:gov-nps-ever-thrf1,salinity_psu,surface,31.475,1,0,
+2026-11-24T14:00:00Z,erddap-secoora:gov-nps-ever-thrf1,salinity_psu,surface,31.416,1,0,
 2026-11-24T00:00:00Z,erddap-secoora:gov-nps-ever-thrf1,water_temp_c,surface,25.93,1,0,
 2026-11-24T01:00:00Z,erddap-secoora:gov-nps-ever-thrf1,water_temp_c,surface,25.93,1,0,
 2026-11-24T02:00:00Z,erddap-secoora:gov-nps-ever-thrf1,water_temp_c,surface,25.93,1,0,
@@ -1268,6 +1370,7 @@ time_utc,station,variable,layer,value,n,depth_m,source
 2026-11-24T11:00:00Z,erddap-secoora:gov-nps-ever-thrf1,water_temp_c,surface,24.32,1,0,
 2026-11-24T12:00:00Z,erddap-secoora:gov-nps-ever-thrf1,water_temp_c,surface,24.32,1,0,
 2026-11-24T13:00:00Z,erddap-secoora:gov-nps-ever-thrf1,water_temp_c,surface,24.38,1,0,
+2026-11-24T14:00:00Z,erddap-secoora:gov-nps-ever-thrf1,water_temp_c,surface,24.19,1,0,
 2026-11-24T00:00:00Z,erddap-secoora:gov-nps-ever-tpef1,salinity_psu,surface,6.489,1,0,
 2026-11-24T01:00:00Z,erddap-secoora:gov-nps-ever-tpef1,salinity_psu,surface,6.483,1,0,
 2026-11-24T02:00:00Z,erddap-secoora:gov-nps-ever-tpef1,salinity_psu,surface,6.477,1,0,
@@ -1282,6 +1385,7 @@ time_utc,station,variable,layer,value,n,depth_m,source
 2026-11-24T11:00:00Z,erddap-secoora:gov-nps-ever-tpef1,salinity_psu,surface,7.281,1,0,
 2026-11-24T12:00:00Z,erddap-secoora:gov-nps-ever-tpef1,salinity_psu,surface,7.374,1,0,
 2026-11-24T13:00:00Z,erddap-secoora:gov-nps-ever-tpef1,salinity_psu,surface,6.921,1,0,
+2026-11-24T14:00:00Z,erddap-secoora:gov-nps-ever-tpef1,salinity_psu,surface,6.927,1,0,
 2026-11-24T00:00:00Z,erddap-secoora:gov-nps-ever-tpef1,water_temp_c,surface,25.87,1,0,
 2026-11-24T01:00:00Z,erddap-secoora:gov-nps-ever-tpef1,water_temp_c,surface,25.61,1,0,
 2026-11-24T02:00:00Z,erddap-secoora:gov-nps-ever-tpef1,water_temp_c,surface,25.54,1,0,
@@ -1296,6 +1400,7 @@ time_utc,station,variable,layer,value,n,depth_m,source
 2026-11-24T11:00:00Z,erddap-secoora:gov-nps-ever-tpef1,water_temp_c,surface,25.34,1,0,
 2026-11-24T12:00:00Z,erddap-secoora:gov-nps-ever-tpef1,water_temp_c,surface,25.32,1,0,
 2026-11-24T13:00:00Z,erddap-secoora:gov-nps-ever-tpef1,water_temp_c,surface,24.94,1,0,
+2026-11-24T14:00:00Z,erddap-secoora:gov-nps-ever-tpef1,water_temp_c,surface,24.81,1,0,
 2026-11-24T00:00:00Z,erddap-secoora:gov-nps-ever-trrf1,salinity_psu,surface,6.103,1,0,
 2026-11-24T01:00:00Z,erddap-secoora:gov-nps-ever-trrf1,salinity_psu,surface,6.085,1,0,
 2026-11-24T02:00:00Z,erddap-secoora:gov-nps-ever-trrf1,salinity_psu,surface,6.072,1,0,
@@ -1310,6 +1415,7 @@ time_utc,station,variable,layer,value,n,depth_m,source
 2026-11-24T11:00:00Z,erddap-secoora:gov-nps-ever-trrf1,salinity_psu,surface,6.011,1,0,
 2026-11-24T12:00:00Z,erddap-secoora:gov-nps-ever-trrf1,salinity_psu,surface,6.005,1,0,
 2026-11-24T13:00:00Z,erddap-secoora:gov-nps-ever-trrf1,salinity_psu,surface,5.974,1,0,
+2026-11-24T14:00:00Z,erddap-secoora:gov-nps-ever-trrf1,salinity_psu,surface,5.956,1,0,
 2026-11-24T00:00:00Z,erddap-secoora:gov-nps-ever-trrf1,water_temp_c,surface,26.18,1,0,
 2026-11-24T01:00:00Z,erddap-secoora:gov-nps-ever-trrf1,water_temp_c,surface,26.19,1,0,
 2026-11-24T02:00:00Z,erddap-secoora:gov-nps-ever-trrf1,water_temp_c,surface,26.21,1,0,
@@ -1324,6 +1430,7 @@ time_utc,station,variable,layer,value,n,depth_m,source
 2026-11-24T11:00:00Z,erddap-secoora:gov-nps-ever-trrf1,water_temp_c,surface,26.03,1,0,
 2026-11-24T12:00:00Z,erddap-secoora:gov-nps-ever-trrf1,water_temp_c,surface,25.94,1,0,
 2026-11-24T13:00:00Z,erddap-secoora:gov-nps-ever-trrf1,water_temp_c,surface,25.87,1,0,
+2026-11-24T14:00:00Z,erddap-secoora:gov-nps-ever-trrf1,water_temp_c,surface,25.83,1,0,
 2026-11-24T00:00:00Z,erddap-secoora:gov-nps-ever-wiwf1,salinity_psu,surface,3.936,1,0,
 2026-11-24T01:00:00Z,erddap-secoora:gov-nps-ever-wiwf1,salinity_psu,surface,3.139,1,0,
 2026-11-24T02:00:00Z,erddap-secoora:gov-nps-ever-wiwf1,salinity_psu,surface,2.335,1,0,
@@ -1338,6 +1445,7 @@ time_utc,station,variable,layer,value,n,depth_m,source
 2026-11-24T11:00:00Z,erddap-secoora:gov-nps-ever-wiwf1,salinity_psu,surface,4.986,1,0,
 2026-11-24T12:00:00Z,erddap-secoora:gov-nps-ever-wiwf1,salinity_psu,surface,4.89,1,0,
 2026-11-24T13:00:00Z,erddap-secoora:gov-nps-ever-wiwf1,salinity_psu,surface,4.435,1,0,
+2026-11-24T14:00:00Z,erddap-secoora:gov-nps-ever-wiwf1,salinity_psu,surface,4.078,1,0,
 2026-11-24T00:00:00Z,erddap-secoora:gov-nps-ever-wiwf1,water_temp_c,surface,24.61,1,0,
 2026-11-24T01:00:00Z,erddap-secoora:gov-nps-ever-wiwf1,water_temp_c,surface,23.96,1,0,
 2026-11-24T02:00:00Z,erddap-secoora:gov-nps-ever-wiwf1,water_temp_c,surface,23.48,1,0,
@@ -1352,6 +1460,7 @@ time_utc,station,variable,layer,value,n,depth_m,source
 2026-11-24T11:00:00Z,erddap-secoora:gov-nps-ever-wiwf1,water_temp_c,surface,24.55,1,0,
 2026-11-24T12:00:00Z,erddap-secoora:gov-nps-ever-wiwf1,water_temp_c,surface,24.42,1,0,
 2026-11-24T13:00:00Z,erddap-secoora:gov-nps-ever-wiwf1,water_temp_c,surface,23.85,1,0,
+2026-11-24T14:00:00Z,erddap-secoora:gov-nps-ever-wiwf1,water_temp_c,surface,23.17,1,0,
 2026-11-24T00:00:00Z,erddap-secoora:gov-nps-ever-wplf1,salinity_psu,surface,18.309,1,0,
 2026-11-24T01:00:00Z,erddap-secoora:gov-nps-ever-wplf1,salinity_psu,surface,18.424,1,0,
 2026-11-24T02:00:00Z,erddap-secoora:gov-nps-ever-wplf1,salinity_psu,surface,18.642,1,0,
@@ -1366,6 +1475,7 @@ time_utc,station,variable,layer,value,n,depth_m,source
 2026-11-24T11:00:00Z,erddap-secoora:gov-nps-ever-wplf1,salinity_psu,surface,18.289,1,0,
 2026-11-24T12:00:00Z,erddap-secoora:gov-nps-ever-wplf1,salinity_psu,surface,18.282,1,0,
 2026-11-24T13:00:00Z,erddap-secoora:gov-nps-ever-wplf1,salinity_psu,surface,18.363,1,0,
+2026-11-24T14:00:00Z,erddap-secoora:gov-nps-ever-wplf1,salinity_psu,surface,18.397,1,0,
 2026-11-24T00:00:00Z,erddap-secoora:gov-nps-ever-wplf1,water_temp_c,surface,24.78,1,0,
 2026-11-24T01:00:00Z,erddap-secoora:gov-nps-ever-wplf1,water_temp_c,surface,24.72,1,0,
 2026-11-24T02:00:00Z,erddap-secoora:gov-nps-ever-wplf1,water_temp_c,surface,24.65,1,0,
@@ -1380,6 +1490,7 @@ time_utc,station,variable,layer,value,n,depth_m,source
 2026-11-24T11:00:00Z,erddap-secoora:gov-nps-ever-wplf1,water_temp_c,surface,24.15,1,0,
 2026-11-24T12:00:00Z,erddap-secoora:gov-nps-ever-wplf1,water_temp_c,surface,24.1,1,0,
 2026-11-24T13:00:00Z,erddap-secoora:gov-nps-ever-wplf1,water_temp_c,surface,23.77,1,0,
+2026-11-24T14:00:00Z,erddap-secoora:gov-nps-ever-wplf1,water_temp_c,surface,23.59,1,0,
 2026-11-24T00:00:00Z,erddap-secoora:gov-nps-ever-wrbf1,salinity_psu,surface,39.941,1,0,
 2026-11-24T01:00:00Z,erddap-secoora:gov-nps-ever-wrbf1,salinity_psu,surface,39.979,1,0,
 2026-11-24T02:00:00Z,erddap-secoora:gov-nps-ever-wrbf1,salinity_psu,surface,39.994,1,0,
@@ -1394,6 +1505,7 @@ time_utc,station,variable,layer,value,n,depth_m,source
 2026-11-24T11:00:00Z,erddap-secoora:gov-nps-ever-wrbf1,salinity_psu,surface,40.1,1,0,
 2026-11-24T12:00:00Z,erddap-secoora:gov-nps-ever-wrbf1,salinity_psu,surface,40.077,1,0,
 2026-11-24T13:00:00Z,erddap-secoora:gov-nps-ever-wrbf1,salinity_psu,surface,40.07,1,0,
+2026-11-24T14:00:00Z,erddap-secoora:gov-nps-ever-wrbf1,salinity_psu,surface,40.039,1,0,
 2026-11-24T00:00:00Z,erddap-secoora:gov-nps-ever-wrbf1,water_temp_c,surface,26.83,1,0,
 2026-11-24T01:00:00Z,erddap-secoora:gov-nps-ever-wrbf1,water_temp_c,surface,26.62,1,0,
 2026-11-24T02:00:00Z,erddap-secoora:gov-nps-ever-wrbf1,water_temp_c,surface,26.24,1,0,
@@ -1408,6 +1520,7 @@ time_utc,station,variable,layer,value,n,depth_m,source
 2026-11-24T11:00:00Z,erddap-secoora:gov-nps-ever-wrbf1,water_temp_c,surface,24.49,1,0,
 2026-11-24T12:00:00Z,erddap-secoora:gov-nps-ever-wrbf1,water_temp_c,surface,24.41,1,0,
 2026-11-24T13:00:00Z,erddap-secoora:gov-nps-ever-wrbf1,water_temp_c,surface,24.34,1,0,
+2026-11-24T14:00:00Z,erddap-secoora:gov-nps-ever-wrbf1,water_temp_c,surface,24.26,1,0,
 2026-11-24T00:00:00Z,erddap-secoora:gov-nps-ever-wwef1,salinity_psu,surface,18.574,1,0,
 2026-11-24T01:00:00Z,erddap-secoora:gov-nps-ever-wwef1,salinity_psu,surface,18.547,1,0,
 2026-11-24T02:00:00Z,erddap-secoora:gov-nps-ever-wwef1,salinity_psu,surface,18.526,1,0,
@@ -1421,6 +1534,7 @@ time_utc,station,variable,layer,value,n,depth_m,source
 2026-11-24T10:00:00Z,erddap-secoora:gov-nps-ever-wwef1,salinity_psu,surface,18.404,1,0,
 2026-11-24T11:00:00Z,erddap-secoora:gov-nps-ever-wwef1,salinity_psu,surface,18.411,1,0,
 2026-11-24T12:00:00Z,erddap-secoora:gov-nps-ever-wwef1,salinity_psu,surface,18.424,1,0,
+2026-11-24T13:00:00Z,erddap-secoora:gov-nps-ever-wwef1,salinity_psu,surface,18.424,1,0,
 2026-11-24T00:00:00Z,erddap-secoora:gov-nps-ever-wwef1,water_temp_c,surface,25.42,1,0,
 2026-11-24T01:00:00Z,erddap-secoora:gov-nps-ever-wwef1,water_temp_c,surface,25.42,1,0,
 2026-11-24T02:00:00Z,erddap-secoora:gov-nps-ever-wwef1,water_temp_c,surface,25.36,1,0,
@@ -1434,6 +1548,7 @@ time_utc,station,variable,layer,value,n,depth_m,source
 2026-11-24T10:00:00Z,erddap-secoora:gov-nps-ever-wwef1,water_temp_c,surface,24.53,1,0,
 2026-11-24T11:00:00Z,erddap-secoora:gov-nps-ever-wwef1,water_temp_c,surface,24.37,1,0,
 2026-11-24T12:00:00Z,erddap-secoora:gov-nps-ever-wwef1,water_temp_c,surface,24.26,1,0,
+2026-11-24T13:00:00Z,erddap-secoora:gov-nps-ever-wwef1,water_temp_c,surface,24.19,1,0,
 2026-11-24T00:00:00Z,erddap-secoora:gulf-star-marina,salinity_psu,surface,29.527,6,0,
 2026-11-24T01:00:00Z,erddap-secoora:gulf-star-marina,salinity_psu,surface,29.652,6,0,
 2026-11-24T02:00:00Z,erddap-secoora:gulf-star-marina,salinity_psu,surface,30.215,6,0,
@@ -1449,7 +1564,8 @@ time_utc,station,variable,layer,value,n,depth_m,source
 2026-11-24T12:00:00Z,erddap-secoora:gulf-star-marina,salinity_psu,surface,30.25,6,0,
 2026-11-24T13:00:00Z,erddap-secoora:gulf-star-marina,salinity_psu,surface,30.393,6,0,
 2026-11-24T14:00:00Z,erddap-secoora:gulf-star-marina,salinity_psu,surface,30.333,6,0,
-2026-11-24T15:00:00Z,erddap-secoora:gulf-star-marina,salinity_psu,surface,30.157,4,0,
+2026-11-24T15:00:00Z,erddap-secoora:gulf-star-marina,salinity_psu,surface,29.918,6,0,
+2026-11-24T16:00:00Z,erddap-secoora:gulf-star-marina,salinity_psu,surface,28.602,4,0,
 2026-11-24T00:00:00Z,erddap-secoora:gulf-star-marina,water_temp_c,surface,23.95,6,0,
 2026-11-24T01:00:00Z,erddap-secoora:gulf-star-marina,water_temp_c,surface,23.89,6,0,
 2026-11-24T02:00:00Z,erddap-secoora:gulf-star-marina,water_temp_c,surface,23.81,6,0,
@@ -1465,7 +1581,8 @@ time_utc,station,variable,layer,value,n,depth_m,source
 2026-11-24T12:00:00Z,erddap-secoora:gulf-star-marina,water_temp_c,surface,22.94,6,0,
 2026-11-24T13:00:00Z,erddap-secoora:gulf-star-marina,water_temp_c,surface,22.82,6,0,
 2026-11-24T14:00:00Z,erddap-secoora:gulf-star-marina,water_temp_c,surface,22.69,6,0,
-2026-11-24T15:00:00Z,erddap-secoora:gulf-star-marina,water_temp_c,surface,22.73,4,0,
+2026-11-24T15:00:00Z,erddap-secoora:gulf-star-marina,water_temp_c,surface,22.74,6,0,
+2026-11-24T16:00:00Z,erddap-secoora:gulf-star-marina,water_temp_c,surface,22.83,4,0,
 2026-11-24T00:00:00Z,erddap-secoora:key-largo-fl,salinity_psu,surface,39.413,10,0,
 2026-11-24T01:00:00Z,erddap-secoora:key-largo-fl,salinity_psu,surface,39.426,10,0,
 2026-11-24T02:00:00Z,erddap-secoora:key-largo-fl,salinity_psu,surface,39.406,10,0,
@@ -1481,7 +1598,8 @@ time_utc,station,variable,layer,value,n,depth_m,source
 2026-11-24T12:00:00Z,erddap-secoora:key-largo-fl,salinity_psu,surface,39.214,10,0,
 2026-11-24T13:00:00Z,erddap-secoora:key-largo-fl,salinity_psu,surface,39.21,10,0,
 2026-11-24T14:00:00Z,erddap-secoora:key-largo-fl,salinity_psu,surface,39.17,10,0,
-2026-11-24T15:00:00Z,erddap-secoora:key-largo-fl,salinity_psu,surface,39.172,6,0,
+2026-11-24T15:00:00Z,erddap-secoora:key-largo-fl,salinity_psu,surface,39.174,10,0,
+2026-11-24T16:00:00Z,erddap-secoora:key-largo-fl,salinity_psu,surface,39.159,6,0,
 2026-11-24T00:00:00Z,erddap-secoora:key-largo-fl,water_temp_c,surface,25.68,10,0,
 2026-11-24T01:00:00Z,erddap-secoora:key-largo-fl,water_temp_c,surface,25.64,10,0,
 2026-11-24T02:00:00Z,erddap-secoora:key-largo-fl,water_temp_c,surface,25.59,10,0,
@@ -1497,7 +1615,8 @@ time_utc,station,variable,layer,value,n,depth_m,source
 2026-11-24T12:00:00Z,erddap-secoora:key-largo-fl,water_temp_c,surface,24.59,10,0,
 2026-11-24T13:00:00Z,erddap-secoora:key-largo-fl,water_temp_c,surface,24.52,10,0,
 2026-11-24T14:00:00Z,erddap-secoora:key-largo-fl,water_temp_c,surface,24.49,10,0,
-2026-11-24T15:00:00Z,erddap-secoora:key-largo-fl,water_temp_c,surface,24.49,6,0,
+2026-11-24T15:00:00Z,erddap-secoora:key-largo-fl,water_temp_c,surface,24.5,10,0,
+2026-11-24T16:00:00Z,erddap-secoora:key-largo-fl,water_temp_c,surface,24.5,6,0,
 2026-11-24T00:00:00Z,erddap-secoora:new-pass-bridge,salinity_psu,surface,35.142,6,0,
 2026-11-24T01:00:00Z,erddap-secoora:new-pass-bridge,salinity_psu,surface,35.485,6,0,
 2026-11-24T02:00:00Z,erddap-secoora:new-pass-bridge,salinity_psu,surface,35.533,6,0,
@@ -1513,7 +1632,8 @@ time_utc,station,variable,layer,value,n,depth_m,source
 2026-11-24T12:00:00Z,erddap-secoora:new-pass-bridge,salinity_psu,surface,32.317,6,0,
 2026-11-24T13:00:00Z,erddap-secoora:new-pass-bridge,salinity_psu,surface,32.798,6,0,
 2026-11-24T14:00:00Z,erddap-secoora:new-pass-bridge,salinity_psu,surface,34.75,6,0,
-2026-11-24T15:00:00Z,erddap-secoora:new-pass-bridge,salinity_psu,surface,35.526,5,0,
+2026-11-24T15:00:00Z,erddap-secoora:new-pass-bridge,salinity_psu,surface,35.565,6,0,
+2026-11-24T16:00:00Z,erddap-secoora:new-pass-bridge,salinity_psu,surface,35.816,5,0,
 2026-11-24T00:00:00Z,erddap-secoora:new-pass-bridge,water_temp_c,surface,23.96,6,0,
 2026-11-24T01:00:00Z,erddap-secoora:new-pass-bridge,water_temp_c,surface,23.88,6,0,
 2026-11-24T02:00:00Z,erddap-secoora:new-pass-bridge,water_temp_c,surface,23.8,6,0,
@@ -1529,7 +1649,8 @@ time_utc,station,variable,layer,value,n,depth_m,source
 2026-11-24T12:00:00Z,erddap-secoora:new-pass-bridge,water_temp_c,surface,22.7,6,0,
 2026-11-24T13:00:00Z,erddap-secoora:new-pass-bridge,water_temp_c,surface,22.57,6,0,
 2026-11-24T14:00:00Z,erddap-secoora:new-pass-bridge,water_temp_c,surface,22.88,6,0,
-2026-11-24T15:00:00Z,erddap-secoora:new-pass-bridge,water_temp_c,surface,23.3,5,0,
+2026-11-24T15:00:00Z,erddap-secoora:new-pass-bridge,water_temp_c,surface,23.33,6,0,
+2026-11-24T16:00:00Z,erddap-secoora:new-pass-bridge,water_temp_c,surface,23.55,5,0,
 2026-11-24T00:00:00Z,erddap-secoora:sanibel-dock,salinity_psu,surface,23.615,6,0,
 2026-11-24T01:00:00Z,erddap-secoora:sanibel-dock,salinity_psu,surface,23.732,6,0,
 2026-11-24T02:00:00Z,erddap-secoora:sanibel-dock,salinity_psu,surface,24.837,6,0,
@@ -1545,7 +1666,8 @@ time_utc,station,variable,layer,value,n,depth_m,source
 2026-11-24T12:00:00Z,erddap-secoora:sanibel-dock,salinity_psu,surface,23.182,6,0,
 2026-11-24T13:00:00Z,erddap-secoora:sanibel-dock,salinity_psu,surface,20.56,6,0,
 2026-11-24T14:00:00Z,erddap-secoora:sanibel-dock,salinity_psu,surface,21.81,6,0,
-2026-11-24T15:00:00Z,erddap-secoora:sanibel-dock,salinity_psu,surface,22.37,4,0,
+2026-11-24T15:00:00Z,erddap-secoora:sanibel-dock,salinity_psu,surface,21.24,6,0,
+2026-11-24T16:00:00Z,erddap-secoora:sanibel-dock,salinity_psu,surface,19.072,5,0,
 2026-11-24T00:00:00Z,erddap-secoora:sanibel-dock,water_temp_c,surface,23.55,6,0,
 2026-11-24T01:00:00Z,erddap-secoora:sanibel-dock,water_temp_c,surface,23.48,6,0,
 2026-11-24T02:00:00Z,erddap-secoora:sanibel-dock,water_temp_c,surface,23.4,6,0,
@@ -1561,7 +1683,8 @@ time_utc,station,variable,layer,value,n,depth_m,source
 2026-11-24T12:00:00Z,erddap-secoora:sanibel-dock,water_temp_c,surface,22.58,6,0,
 2026-11-24T13:00:00Z,erddap-secoora:sanibel-dock,water_temp_c,surface,22.53,6,0,
 2026-11-24T14:00:00Z,erddap-secoora:sanibel-dock,water_temp_c,surface,22.6,6,0,
-2026-11-24T15:00:00Z,erddap-secoora:sanibel-dock,water_temp_c,surface,22.8,4,0,
+2026-11-24T15:00:00Z,erddap-secoora:sanibel-dock,water_temp_c,surface,22.81,6,0,
+2026-11-24T16:00:00Z,erddap-secoora:sanibel-dock,water_temp_c,surface,22.85,5,0,
 2026-11-24T00:00:00Z,ndbc:RKQF1,salinity_psu,surface,31.25,4,1.23,
 2026-11-24T01:00:00Z,ndbc:RKQF1,salinity_psu,surface,31.8,4,1.35,
 2026-11-24T02:00:00Z,ndbc:RKQF1,salinity_psu,surface,31.725,4,1.48,
@@ -1576,7 +1699,8 @@ time_utc,station,variable,layer,value,n,depth_m,source
 2026-11-24T11:00:00Z,ndbc:RKQF1,salinity_psu,surface,30.1,4,0.9,
 2026-11-24T12:00:00Z,ndbc:RKQF1,salinity_psu,surface,30,4,0.78,
 2026-11-24T13:00:00Z,ndbc:RKQF1,salinity_psu,surface,29.575,4,0.7,
-2026-11-24T14:00:00Z,ndbc:RKQF1,salinity_psu,surface,28.633,3,0.73,
+2026-11-24T14:00:00Z,ndbc:RKQF1,salinity_psu,surface,28.9,4,0.75,
+2026-11-24T15:00:00Z,ndbc:RKQF1,salinity_psu,surface,30.133,3,0.87,
 2026-11-24T00:00:00Z,ndbc:RKQF1,water_temp_c,surface,25.05,4,1.23,
 2026-11-24T01:00:00Z,ndbc:RKQF1,water_temp_c,surface,24.82,4,1.35,
 2026-11-24T02:00:00Z,ndbc:RKQF1,water_temp_c,surface,24.68,4,1.48,
@@ -1591,7 +1715,8 @@ time_utc,station,variable,layer,value,n,depth_m,source
 2026-11-24T11:00:00Z,ndbc:RKQF1,water_temp_c,surface,23.65,4,0.9,
 2026-11-24T12:00:00Z,ndbc:RKQF1,water_temp_c,surface,23.5,4,0.78,
 2026-11-24T13:00:00Z,ndbc:RKQF1,water_temp_c,surface,23.42,4,0.7,
-2026-11-24T14:00:00Z,ndbc:RKQF1,water_temp_c,surface,23.57,3,0.73,
+2026-11-24T14:00:00Z,ndbc:RKQF1,water_temp_c,surface,23.55,4,0.75,
+2026-11-24T15:00:00Z,ndbc:RKQF1,water_temp_c,surface,23.47,3,0.87,
 2026-11-24T00:00:00Z,usgs:022908295,salinity_psu,surface,0.2,4,,
 2026-11-24T01:00:00Z,usgs:022908295,salinity_psu,surface,0.2,4,,
 2026-11-24T02:00:00Z,usgs:022908295,salinity_psu,surface,0.2,4,,
@@ -1607,7 +1732,8 @@ time_utc,station,variable,layer,value,n,depth_m,source
 2026-11-24T12:00:00Z,usgs:022908295,salinity_psu,surface,0.2,4,,
 2026-11-24T13:00:00Z,usgs:022908295,salinity_psu,surface,0.2,4,,
 2026-11-24T14:00:00Z,usgs:022908295,salinity_psu,surface,0.2,4,,
-2026-11-24T15:00:00Z,usgs:022908295,salinity_psu,surface,0.2,1,,
+2026-11-24T15:00:00Z,usgs:022908295,salinity_psu,surface,0.2,4,,
+2026-11-24T16:00:00Z,usgs:022908295,salinity_psu,surface,0.2,1,,
 2026-11-24T00:00:00Z,usgs:022908295,water_temp_c,surface,25.2,4,,
 2026-11-24T01:00:00Z,usgs:022908295,water_temp_c,surface,24.98,4,,
 2026-11-24T02:00:00Z,usgs:022908295,water_temp_c,surface,24.85,4,,
@@ -1623,7 +1749,8 @@ time_utc,station,variable,layer,value,n,depth_m,source
 2026-11-24T12:00:00Z,usgs:022908295,water_temp_c,surface,23.77,4,,
 2026-11-24T13:00:00Z,usgs:022908295,water_temp_c,surface,23.7,4,,
 2026-11-24T14:00:00Z,usgs:022908295,water_temp_c,surface,23.7,4,,
-2026-11-24T15:00:00Z,usgs:022908295,water_temp_c,surface,23.7,1,,
+2026-11-24T15:00:00Z,usgs:022908295,water_temp_c,surface,23.73,4,,
+2026-11-24T16:00:00Z,usgs:022908295,water_temp_c,surface,23.8,1,,
 2026-11-24T00:00:00Z,usgs:02290878,salinity_psu,mid,13.25,4,,
 2026-11-24T01:00:00Z,usgs:02290878,salinity_psu,mid,11.2,4,,
 2026-11-24T02:00:00Z,usgs:02290878,salinity_psu,mid,10.825,4,,
@@ -1639,7 +1766,8 @@ time_utc,station,variable,layer,value,n,depth_m,source
 2026-11-24T12:00:00Z,usgs:02290878,salinity_psu,mid,13.25,4,,
 2026-11-24T13:00:00Z,usgs:02290878,salinity_psu,mid,11.5,4,,
 2026-11-24T14:00:00Z,usgs:02290878,salinity_psu,mid,10.75,4,,
-2026-11-24T15:00:00Z,usgs:02290878,salinity_psu,mid,10,1,,
+2026-11-24T15:00:00Z,usgs:02290878,salinity_psu,mid,10,4,,
+2026-11-24T16:00:00Z,usgs:02290878,salinity_psu,mid,10,1,,
 2026-11-24T00:00:00Z,usgs:02290878,water_temp_c,mid,25.1,4,,
 2026-11-24T01:00:00Z,usgs:02290878,water_temp_c,mid,25.23,4,,
 2026-11-24T02:00:00Z,usgs:02290878,water_temp_c,mid,25.25,4,,
@@ -1655,7 +1783,8 @@ time_utc,station,variable,layer,value,n,depth_m,source
 2026-11-24T12:00:00Z,usgs:02290878,water_temp_c,mid,24.23,4,,
 2026-11-24T13:00:00Z,usgs:02290878,water_temp_c,mid,24.02,4,,
 2026-11-24T14:00:00Z,usgs:02290878,water_temp_c,mid,23.98,4,,
-2026-11-24T15:00:00Z,usgs:02290878,water_temp_c,mid,24,1,,
+2026-11-24T15:00:00Z,usgs:02290878,water_temp_c,mid,24.05,4,,
+2026-11-24T16:00:00Z,usgs:02290878,water_temp_c,mid,24.2,1,,
 2026-11-24T00:00:00Z,usgs:02290930,salinity_psu,surface,21.733,4,,PSS-78 from conductance
 2026-11-24T01:00:00Z,usgs:02290930,salinity_psu,surface,20.385,4,,PSS-78 from conductance
 2026-11-24T02:00:00Z,usgs:02290930,salinity_psu,surface,19.099,4,,PSS-78 from conductance
@@ -1671,7 +1800,8 @@ time_utc,station,variable,layer,value,n,depth_m,source
 2026-11-24T12:00:00Z,usgs:02290930,salinity_psu,surface,23.651,4,,PSS-78 from conductance
 2026-11-24T13:00:00Z,usgs:02290930,salinity_psu,surface,22.759,4,,PSS-78 from conductance
 2026-11-24T14:00:00Z,usgs:02290930,salinity_psu,surface,21.23,4,,PSS-78 from conductance
-2026-11-24T15:00:00Z,usgs:02290930,salinity_psu,surface,20.35,2,,PSS-78 from conductance
+2026-11-24T15:00:00Z,usgs:02290930,salinity_psu,surface,20.178,4,,PSS-78 from conductance
+2026-11-24T16:00:00Z,usgs:02290930,salinity_psu,surface,19.732,2,,PSS-78 from conductance
 2026-11-24T00:00:00Z,usgs:02290930,water_temp_c,surface,24.55,4,,
 2026-11-24T01:00:00Z,usgs:02290930,water_temp_c,surface,24.38,4,,
 2026-11-24T02:00:00Z,usgs:02290930,water_temp_c,surface,24.25,4,,
@@ -1687,7 +1817,8 @@ time_utc,station,variable,layer,value,n,depth_m,source
 2026-11-24T12:00:00Z,usgs:02290930,water_temp_c,surface,23.3,4,,
 2026-11-24T13:00:00Z,usgs:02290930,water_temp_c,surface,23.1,4,,
 2026-11-24T14:00:00Z,usgs:02290930,water_temp_c,surface,22.95,4,,
-2026-11-24T15:00:00Z,usgs:02290930,water_temp_c,surface,22.9,2,,
+2026-11-24T15:00:00Z,usgs:02290930,water_temp_c,surface,22.95,4,,
+2026-11-24T16:00:00Z,usgs:02290930,water_temp_c,surface,23,2,,
 2026-11-24T00:00:00Z,usgs:02297460,salinity_psu,bottom,0.242,4,,PSS-78 from conductance
 2026-11-24T01:00:00Z,usgs:02297460,salinity_psu,bottom,0.216,4,,PSS-78 from conductance
 2026-11-24T02:00:00Z,usgs:02297460,salinity_psu,bottom,0.225,4,,PSS-78 from conductance
@@ -1703,7 +1834,8 @@ time_utc,station,variable,layer,value,n,depth_m,source
 2026-11-24T12:00:00Z,usgs:02297460,salinity_psu,bottom,0.257,4,,PSS-78 from conductance
 2026-11-24T13:00:00Z,usgs:02297460,salinity_psu,bottom,0.344,4,,PSS-78 from conductance
 2026-11-24T14:00:00Z,usgs:02297460,salinity_psu,bottom,0.373,4,,PSS-78 from conductance
-2026-11-24T15:00:00Z,usgs:02297460,salinity_psu,bottom,0.433,3,,PSS-78 from conductance
+2026-11-24T15:00:00Z,usgs:02297460,salinity_psu,bottom,0.44,4,,PSS-78 from conductance
+2026-11-24T16:00:00Z,usgs:02297460,salinity_psu,bottom,0.391,3,,PSS-78 from conductance
 2026-11-24T00:00:00Z,usgs:02297460,salinity_psu,surface,0.244,4,,PSS-78 from conductance
 2026-11-24T01:00:00Z,usgs:02297460,salinity_psu,surface,0.228,4,,PSS-78 from conductance
 2026-11-24T02:00:00Z,usgs:02297460,salinity_psu,surface,0.263,4,,PSS-78 from conductance
@@ -1719,7 +1851,8 @@ time_utc,station,variable,layer,value,n,depth_m,source
 2026-11-24T12:00:00Z,usgs:02297460,salinity_psu,surface,0.257,4,,PSS-78 from conductance
 2026-11-24T13:00:00Z,usgs:02297460,salinity_psu,surface,0.342,4,,PSS-78 from conductance
 2026-11-24T14:00:00Z,usgs:02297460,salinity_psu,surface,0.372,4,,PSS-78 from conductance
-2026-11-24T15:00:00Z,usgs:02297460,salinity_psu,surface,0.435,3,,PSS-78 from conductance
+2026-11-24T15:00:00Z,usgs:02297460,salinity_psu,surface,0.442,4,,PSS-78 from conductance
+2026-11-24T16:00:00Z,usgs:02297460,salinity_psu,surface,0.401,3,,PSS-78 from conductance
 2026-11-24T00:00:00Z,usgs:02297460,water_temp_c,bottom,22.73,4,,
 2026-11-24T01:00:00Z,usgs:02297460,water_temp_c,bottom,22.6,4,,
 2026-11-24T02:00:00Z,usgs:02297460,water_temp_c,bottom,22.62,4,,
@@ -1735,7 +1868,8 @@ time_utc,station,variable,layer,value,n,depth_m,source
 2026-11-24T12:00:00Z,usgs:02297460,water_temp_c,bottom,21.8,4,,
 2026-11-24T13:00:00Z,usgs:02297460,water_temp_c,bottom,21.73,4,,
 2026-11-24T14:00:00Z,usgs:02297460,water_temp_c,bottom,21.7,4,,
-2026-11-24T15:00:00Z,usgs:02297460,water_temp_c,bottom,21.73,3,,
+2026-11-24T15:00:00Z,usgs:02297460,water_temp_c,bottom,21.75,4,,
+2026-11-24T16:00:00Z,usgs:02297460,water_temp_c,bottom,21.93,3,,
 2026-11-24T00:00:00Z,usgs:02297460,water_temp_c,surface,22.73,4,,
 2026-11-24T01:00:00Z,usgs:02297460,water_temp_c,surface,22.58,4,,
 2026-11-24T02:00:00Z,usgs:02297460,water_temp_c,surface,22.6,4,,
@@ -1751,7 +1885,8 @@ time_utc,station,variable,layer,value,n,depth_m,source
 2026-11-24T12:00:00Z,usgs:02297460,water_temp_c,surface,21.8,4,,
 2026-11-24T13:00:00Z,usgs:02297460,water_temp_c,surface,21.7,4,,
 2026-11-24T14:00:00Z,usgs:02297460,water_temp_c,surface,21.7,4,,
-2026-11-24T15:00:00Z,usgs:02297460,water_temp_c,surface,21.73,3,,
+2026-11-24T15:00:00Z,usgs:02297460,water_temp_c,surface,21.75,4,,
+2026-11-24T16:00:00Z,usgs:02297460,water_temp_c,surface,21.93,3,,
 2026-11-24T00:00:00Z,usgs:250802081035500,water_temp_c,surface,24.6,4,,
 2026-11-24T01:00:00Z,usgs:250802081035500,water_temp_c,surface,24.1,4,,
 2026-11-24T02:00:00Z,usgs:250802081035500,water_temp_c,surface,23.65,4,,
@@ -1767,6 +1902,7 @@ time_utc,station,variable,layer,value,n,depth_m,source
 2026-11-24T12:00:00Z,usgs:250802081035500,water_temp_c,surface,20.6,4,,
 2026-11-24T13:00:00Z,usgs:250802081035500,water_temp_c,surface,20.73,4,,
 2026-11-24T14:00:00Z,usgs:250802081035500,water_temp_c,surface,21.12,4,,
+2026-11-24T15:00:00Z,usgs:250802081035500,water_temp_c,surface,21.77,4,,
 2026-11-24T00:00:00Z,usgs:251003080435500,salinity_psu,bottom,21.698,4,,PSS-78 from conductance
 2026-11-24T01:00:00Z,usgs:251003080435500,salinity_psu,bottom,21.68,4,,PSS-78 from conductance
 2026-11-24T02:00:00Z,usgs:251003080435500,salinity_psu,bottom,21.663,4,,PSS-78 from conductance
@@ -1781,7 +1917,9 @@ time_utc,station,variable,layer,value,n,depth_m,source
 2026-11-24T11:00:00Z,usgs:251003080435500,salinity_psu,bottom,21.68,4,,PSS-78 from conductance
 2026-11-24T12:00:00Z,usgs:251003080435500,salinity_psu,bottom,21.68,4,,PSS-78 from conductance
 2026-11-24T13:00:00Z,usgs:251003080435500,salinity_psu,bottom,21.628,4,,PSS-78 from conductance
-2026-11-24T14:00:00Z,usgs:251003080435500,salinity_psu,bottom,21.478,3,,PSS-78 from conductance
+2026-11-24T14:00:00Z,usgs:251003080435500,salinity_psu,bottom,21.455,4,,PSS-78 from conductance
+2026-11-24T15:00:00Z,usgs:251003080435500,salinity_psu,bottom,21.334,4,,PSS-78 from conductance
+2026-11-24T16:00:00Z,usgs:251003080435500,salinity_psu,bottom,21.316,3,,PSS-78 from conductance
 2026-11-24T00:00:00Z,usgs:251003080435500,water_temp_c,bottom,25.98,4,,
 2026-11-24T01:00:00Z,usgs:251003080435500,water_temp_c,bottom,25.82,4,,
 2026-11-24T02:00:00Z,usgs:251003080435500,water_temp_c,bottom,25.65,4,,
@@ -1796,7 +1934,9 @@ time_utc,station,variable,layer,value,n,depth_m,source
 2026-11-24T11:00:00Z,usgs:251003080435500,water_temp_c,bottom,24.42,4,,
 2026-11-24T12:00:00Z,usgs:251003080435500,water_temp_c,bottom,24.3,4,,
 2026-11-24T13:00:00Z,usgs:251003080435500,water_temp_c,bottom,24.12,4,,
-2026-11-24T14:00:00Z,usgs:251003080435500,water_temp_c,bottom,23.97,3,,
+2026-11-24T14:00:00Z,usgs:251003080435500,water_temp_c,bottom,23.95,4,,
+2026-11-24T15:00:00Z,usgs:251003080435500,water_temp_c,bottom,23.9,4,,
+2026-11-24T16:00:00Z,usgs:251003080435500,water_temp_c,bottom,24.03,3,,
 2026-11-24T00:00:00Z,usgs:251253080320100,salinity_psu,bottom,8.9,4,,
 2026-11-24T01:00:00Z,usgs:251253080320100,salinity_psu,bottom,8.9,4,,
 2026-11-24T02:00:00Z,usgs:251253080320100,salinity_psu,bottom,8.875,4,,
@@ -1812,7 +1952,8 @@ time_utc,station,variable,layer,value,n,depth_m,source
 2026-11-24T12:00:00Z,usgs:251253080320100,salinity_psu,bottom,8.425,4,,
 2026-11-24T13:00:00Z,usgs:251253080320100,salinity_psu,bottom,8.325,4,,
 2026-11-24T14:00:00Z,usgs:251253080320100,salinity_psu,bottom,8.125,4,,
-2026-11-24T15:00:00Z,usgs:251253080320100,salinity_psu,bottom,8,2,,
+2026-11-24T15:00:00Z,usgs:251253080320100,salinity_psu,bottom,7.95,4,,
+2026-11-24T16:00:00Z,usgs:251253080320100,salinity_psu,bottom,7.85,2,,
 2026-11-24T00:00:00Z,usgs:251253080320100,water_temp_c,bottom,25.55,4,,
 2026-11-24T01:00:00Z,usgs:251253080320100,water_temp_c,bottom,25.42,4,,
 2026-11-24T02:00:00Z,usgs:251253080320100,water_temp_c,bottom,25.3,4,,
@@ -1828,7 +1969,8 @@ time_utc,station,variable,layer,value,n,depth_m,source
 2026-11-24T12:00:00Z,usgs:251253080320100,water_temp_c,bottom,24,4,,
 2026-11-24T13:00:00Z,usgs:251253080320100,water_temp_c,bottom,24,4,,
 2026-11-24T14:00:00Z,usgs:251253080320100,water_temp_c,bottom,24,4,,
-2026-11-24T15:00:00Z,usgs:251253080320100,water_temp_c,bottom,24,2,,
+2026-11-24T15:00:00Z,usgs:251253080320100,water_temp_c,bottom,24,4,,
+2026-11-24T16:00:00Z,usgs:251253080320100,water_temp_c,bottom,24.1,2,,
 2026-11-24T00:00:00Z,usgs:252653080273001,salinity_psu,surface,0.3,3,,
 2026-11-24T00:00:00Z,usgs:252653080273001,water_temp_c,surface,25.7,3,,
 2026-11-24T00:00:00Z,usgs:252654080220201,salinity_psu,surface,0.9,3,,
@@ -1848,6 +1990,7 @@ time_utc,station,variable,layer,value,n,depth_m,source
 2026-11-24T12:00:00Z,usgs:254729080393601,salinity_psu,surface,0.291,4,,PSS-78 from conductance
 2026-11-24T13:00:00Z,usgs:254729080393601,salinity_psu,surface,0.291,4,,PSS-78 from conductance
 2026-11-24T14:00:00Z,usgs:254729080393601,salinity_psu,surface,0.291,4,,PSS-78 from conductance
+2026-11-24T15:00:00Z,usgs:254729080393601,salinity_psu,surface,0.291,4,,PSS-78 from conductance
 2026-11-24T00:00:00Z,usgs:254729080393601,water_temp_c,surface,23.6,4,,
 2026-11-24T01:00:00Z,usgs:254729080393601,water_temp_c,surface,23.52,4,,
 2026-11-24T02:00:00Z,usgs:254729080393601,water_temp_c,surface,23.3,4,,
@@ -1863,6 +2006,7 @@ time_utc,station,variable,layer,value,n,depth_m,source
 2026-11-24T12:00:00Z,usgs:254729080393601,water_temp_c,surface,22.2,4,,
 2026-11-24T13:00:00Z,usgs:254729080393601,water_temp_c,surface,22.2,4,,
 2026-11-24T14:00:00Z,usgs:254729080393601,water_temp_c,surface,22.27,4,,
+2026-11-24T15:00:00Z,usgs:254729080393601,water_temp_c,surface,22.32,4,,
 2026-11-24T00:00:00Z,usgs:254760080395601,salinity_psu,surface,0.278,4,,PSS-78 from conductance
 2026-11-24T01:00:00Z,usgs:254760080395601,salinity_psu,surface,0.278,4,,PSS-78 from conductance
 2026-11-24T02:00:00Z,usgs:254760080395601,salinity_psu,surface,0.277,4,,PSS-78 from conductance
@@ -1878,6 +2022,7 @@ time_utc,station,variable,layer,value,n,depth_m,source
 2026-11-24T12:00:00Z,usgs:254760080395601,salinity_psu,surface,0.27,4,,PSS-78 from conductance
 2026-11-24T13:00:00Z,usgs:254760080395601,salinity_psu,surface,0.27,4,,PSS-78 from conductance
 2026-11-24T14:00:00Z,usgs:254760080395601,salinity_psu,surface,0.27,4,,PSS-78 from conductance
+2026-11-24T15:00:00Z,usgs:254760080395601,salinity_psu,surface,0.271,4,,PSS-78 from conductance
 2026-11-24T00:00:00Z,usgs:254760080395601,water_temp_c,surface,23.85,4,,
 2026-11-24T01:00:00Z,usgs:254760080395601,water_temp_c,surface,23.55,4,,
 2026-11-24T02:00:00Z,usgs:254760080395601,water_temp_c,surface,23.38,4,,
@@ -1893,6 +2038,7 @@ time_utc,station,variable,layer,value,n,depth_m,source
 2026-11-24T12:00:00Z,usgs:254760080395601,water_temp_c,surface,22.52,4,,
 2026-11-24T13:00:00Z,usgs:254760080395601,water_temp_c,surface,22.55,4,,
 2026-11-24T14:00:00Z,usgs:254760080395601,water_temp_c,surface,22.7,4,,
+2026-11-24T15:00:00Z,usgs:254760080395601,water_temp_c,surface,22.85,4,,
 2026-11-24T00:00:00Z,usgs:254923080384901,salinity_psu,surface,0.308,4,,PSS-78 from conductance
 2026-11-24T01:00:00Z,usgs:254923080384901,salinity_psu,surface,0.309,4,,PSS-78 from conductance
 2026-11-24T02:00:00Z,usgs:254923080384901,salinity_psu,surface,0.308,4,,PSS-78 from conductance
@@ -1907,7 +2053,9 @@ time_utc,station,variable,layer,value,n,depth_m,source
 2026-11-24T11:00:00Z,usgs:254923080384901,salinity_psu,surface,0.308,4,,PSS-78 from conductance
 2026-11-24T12:00:00Z,usgs:254923080384901,salinity_psu,surface,0.308,4,,PSS-78 from conductance
 2026-11-24T13:00:00Z,usgs:254923080384901,salinity_psu,surface,0.308,4,,PSS-78 from conductance
-2026-11-24T14:00:00Z,usgs:254923080384901,salinity_psu,surface,0.308,3,,PSS-78 from conductance
+2026-11-24T14:00:00Z,usgs:254923080384901,salinity_psu,surface,0.308,4,,PSS-78 from conductance
+2026-11-24T15:00:00Z,usgs:254923080384901,salinity_psu,surface,0.308,4,,PSS-78 from conductance
+2026-11-24T16:00:00Z,usgs:254923080384901,salinity_psu,surface,0.308,3,,PSS-78 from conductance
 2026-11-24T00:00:00Z,usgs:254923080384901,water_temp_c,surface,23.55,4,,
 2026-11-24T01:00:00Z,usgs:254923080384901,water_temp_c,surface,23.48,4,,
 2026-11-24T02:00:00Z,usgs:254923080384901,water_temp_c,surface,23.27,4,,
@@ -1922,7 +2070,9 @@ time_utc,station,variable,layer,value,n,depth_m,source
 2026-11-24T11:00:00Z,usgs:254923080384901,water_temp_c,surface,22.08,4,,
 2026-11-24T12:00:00Z,usgs:254923080384901,water_temp_c,surface,22,4,,
 2026-11-24T13:00:00Z,usgs:254923080384901,water_temp_c,surface,22,4,,
-2026-11-24T14:00:00Z,usgs:254923080384901,water_temp_c,surface,22.1,3,,
+2026-11-24T14:00:00Z,usgs:254923080384901,water_temp_c,surface,22.1,4,,
+2026-11-24T15:00:00Z,usgs:254923080384901,water_temp_c,surface,22.12,4,,
+2026-11-24T16:00:00Z,usgs:254923080384901,water_temp_c,surface,22.2,3,,
 2026-11-24T00:00:00Z,usgs:255138081321701,salinity_psu,bottom,32.074,4,,PSS-78 from conductance
 2026-11-24T01:00:00Z,usgs:255138081321701,salinity_psu,bottom,33.064,4,,PSS-78 from conductance
 2026-11-24T02:00:00Z,usgs:255138081321701,salinity_psu,bottom,33.709,4,,PSS-78 from conductance
@@ -1938,7 +2088,8 @@ time_utc,station,variable,layer,value,n,depth_m,source
 2026-11-24T12:00:00Z,usgs:255138081321701,salinity_psu,bottom,31.817,4,,PSS-78 from conductance
 2026-11-24T13:00:00Z,usgs:255138081321701,salinity_psu,bottom,31.288,4,,PSS-78 from conductance
 2026-11-24T14:00:00Z,usgs:255138081321701,salinity_psu,bottom,31.033,4,,PSS-78 from conductance
-2026-11-24T15:00:00Z,usgs:255138081321701,salinity_psu,bottom,31.197,1,,PSS-78 from conductance
+2026-11-24T15:00:00Z,usgs:255138081321701,salinity_psu,bottom,31.397,4,,PSS-78 from conductance
+2026-11-24T16:00:00Z,usgs:255138081321701,salinity_psu,bottom,31.781,1,,PSS-78 from conductance
 2026-11-24T00:00:00Z,usgs:255138081321701,salinity_psu,surface,32,4,,
 2026-11-24T01:00:00Z,usgs:255138081321701,salinity_psu,surface,33,4,,
 2026-11-24T02:00:00Z,usgs:255138081321701,salinity_psu,surface,33.75,4,,
@@ -1954,7 +2105,8 @@ time_utc,station,variable,layer,value,n,depth_m,source
 2026-11-24T12:00:00Z,usgs:255138081321701,salinity_psu,surface,32,4,,
 2026-11-24T13:00:00Z,usgs:255138081321701,salinity_psu,surface,31.25,4,,
 2026-11-24T14:00:00Z,usgs:255138081321701,salinity_psu,surface,31,4,,
-2026-11-24T15:00:00Z,usgs:255138081321701,salinity_psu,surface,31,1,,
+2026-11-24T15:00:00Z,usgs:255138081321701,salinity_psu,surface,31.5,4,,
+2026-11-24T16:00:00Z,usgs:255138081321701,salinity_psu,surface,32,1,,
 2026-11-24T00:00:00Z,usgs:255138081321701,water_temp_c,bottom,24.65,4,,
 2026-11-24T01:00:00Z,usgs:255138081321701,water_temp_c,bottom,24.62,4,,
 2026-11-24T02:00:00Z,usgs:255138081321701,water_temp_c,bottom,24.6,4,,
@@ -1970,7 +2122,8 @@ time_utc,station,variable,layer,value,n,depth_m,source
 2026-11-24T12:00:00Z,usgs:255138081321701,water_temp_c,bottom,23.32,4,,
 2026-11-24T13:00:00Z,usgs:255138081321701,water_temp_c,bottom,23.3,4,,
 2026-11-24T14:00:00Z,usgs:255138081321701,water_temp_c,bottom,23.38,4,,
-2026-11-24T15:00:00Z,usgs:255138081321701,water_temp_c,bottom,23.3,1,,
+2026-11-24T15:00:00Z,usgs:255138081321701,water_temp_c,bottom,23.25,4,,
+2026-11-24T16:00:00Z,usgs:255138081321701,water_temp_c,bottom,23.3,1,,
 2026-11-24T00:00:00Z,usgs:255151080371501,salinity_psu,surface,0.3,4,,
 2026-11-24T01:00:00Z,usgs:255151080371501,salinity_psu,surface,0.3,4,,
 2026-11-24T02:00:00Z,usgs:255151080371501,salinity_psu,surface,0.3,4,,
@@ -1986,7 +2139,8 @@ time_utc,station,variable,layer,value,n,depth_m,source
 2026-11-24T12:00:00Z,usgs:255151080371501,salinity_psu,surface,0.3,4,,
 2026-11-24T13:00:00Z,usgs:255151080371501,salinity_psu,surface,0.3,4,,
 2026-11-24T14:00:00Z,usgs:255151080371501,salinity_psu,surface,0.3,4,,
-2026-11-24T15:00:00Z,usgs:255151080371501,salinity_psu,surface,0.3,2,,
+2026-11-24T15:00:00Z,usgs:255151080371501,salinity_psu,surface,0.3,4,,
+2026-11-24T16:00:00Z,usgs:255151080371501,salinity_psu,surface,0.3,2,,
 2026-11-24T00:00:00Z,usgs:255151080371501,water_temp_c,surface,24.82,4,,
 2026-11-24T01:00:00Z,usgs:255151080371501,water_temp_c,surface,24.8,4,,
 2026-11-24T02:00:00Z,usgs:255151080371501,water_temp_c,surface,24.77,4,,
@@ -2002,7 +2156,8 @@ time_utc,station,variable,layer,value,n,depth_m,source
 2026-11-24T12:00:00Z,usgs:255151080371501,water_temp_c,surface,24.18,4,,
 2026-11-24T13:00:00Z,usgs:255151080371501,water_temp_c,surface,24.1,4,,
 2026-11-24T14:00:00Z,usgs:255151080371501,water_temp_c,surface,24.1,4,,
-2026-11-24T15:00:00Z,usgs:255151080371501,water_temp_c,surface,24.1,2,,
+2026-11-24T15:00:00Z,usgs:255151080371501,water_temp_c,surface,24.1,4,,
+2026-11-24T16:00:00Z,usgs:255151080371501,water_temp_c,surface,24.1,2,,
 2026-11-24T00:00:00Z,usgs:255327081275900,salinity_psu,bottom,30.833,4,,PSS-78 from conductance
 2026-11-24T01:00:00Z,usgs:255327081275900,salinity_psu,bottom,30.833,4,,PSS-78 from conductance
 2026-11-24T02:00:00Z,usgs:255327081275900,salinity_psu,bottom,30.833,4,,PSS-78 from conductance
@@ -2018,7 +2173,8 @@ time_utc,station,variable,layer,value,n,depth_m,source
 2026-11-24T12:00:00Z,usgs:255327081275900,salinity_psu,bottom,31.27,4,,PSS-78 from conductance
 2026-11-24T13:00:00Z,usgs:255327081275900,salinity_psu,bottom,31.179,4,,PSS-78 from conductance
 2026-11-24T14:00:00Z,usgs:255327081275900,salinity_psu,bottom,31.069,4,,PSS-78 from conductance
-2026-11-24T15:00:00Z,usgs:255327081275900,salinity_psu,bottom,30.942,2,,PSS-78 from conductance
+2026-11-24T15:00:00Z,usgs:255327081275900,salinity_psu,bottom,30.851,4,,PSS-78 from conductance
+2026-11-24T16:00:00Z,usgs:255327081275900,salinity_psu,bottom,30.506,2,,PSS-78 from conductance
 2026-11-24T00:00:00Z,usgs:255327081275900,water_temp_c,bottom,23.88,4,,
 2026-11-24T01:00:00Z,usgs:255327081275900,water_temp_c,bottom,23.75,4,,
 2026-11-24T02:00:00Z,usgs:255327081275900,water_temp_c,bottom,23.68,4,,
@@ -2034,7 +2190,8 @@ time_utc,station,variable,layer,value,n,depth_m,source
 2026-11-24T12:00:00Z,usgs:255327081275900,water_temp_c,bottom,22.65,4,,
 2026-11-24T13:00:00Z,usgs:255327081275900,water_temp_c,bottom,22.48,4,,
 2026-11-24T14:00:00Z,usgs:255327081275900,water_temp_c,bottom,22.4,4,,
-2026-11-24T15:00:00Z,usgs:255327081275900,water_temp_c,bottom,22.4,2,,
+2026-11-24T15:00:00Z,usgs:255327081275900,water_temp_c,bottom,22.35,4,,
+2026-11-24T16:00:00Z,usgs:255327081275900,water_temp_c,bottom,22.3,2,,
 2026-11-24T00:00:00Z,usgs:255432081303900,salinity_psu,bottom,20.75,4,,
 2026-11-24T01:00:00Z,usgs:255432081303900,salinity_psu,bottom,18.5,4,,
 2026-11-24T02:00:00Z,usgs:255432081303900,salinity_psu,bottom,18.25,4,,
@@ -2050,7 +2207,8 @@ time_utc,station,variable,layer,value,n,depth_m,source
 2026-11-24T12:00:00Z,usgs:255432081303900,salinity_psu,bottom,21.5,4,,
 2026-11-24T13:00:00Z,usgs:255432081303900,salinity_psu,bottom,19,4,,
 2026-11-24T14:00:00Z,usgs:255432081303900,salinity_psu,bottom,17.5,4,,
-2026-11-24T15:00:00Z,usgs:255432081303900,salinity_psu,bottom,17,2,,
+2026-11-24T15:00:00Z,usgs:255432081303900,salinity_psu,bottom,16.5,4,,
+2026-11-24T16:00:00Z,usgs:255432081303900,salinity_psu,bottom,16,2,,
 2026-11-24T00:00:00Z,usgs:255432081303900,water_temp_c,bottom,24.4,4,,
 2026-11-24T01:00:00Z,usgs:255432081303900,water_temp_c,bottom,24.23,4,,
 2026-11-24T02:00:00Z,usgs:255432081303900,water_temp_c,bottom,24.12,4,,
@@ -2066,7 +2224,8 @@ time_utc,station,variable,layer,value,n,depth_m,source
 2026-11-24T12:00:00Z,usgs:255432081303900,water_temp_c,bottom,23.2,4,,
 2026-11-24T13:00:00Z,usgs:255432081303900,water_temp_c,bottom,22.98,4,,
 2026-11-24T14:00:00Z,usgs:255432081303900,water_temp_c,bottom,22.9,4,,
-2026-11-24T15:00:00Z,usgs:255432081303900,water_temp_c,bottom,22.85,2,,
+2026-11-24T15:00:00Z,usgs:255432081303900,water_temp_c,bottom,22.82,4,,
+2026-11-24T16:00:00Z,usgs:255432081303900,water_temp_c,bottom,22.85,2,,
 2026-11-24T00:00:00Z,usgs:255534081324000,salinity_psu,bottom,23.266,4,,PSS-78 from conductance
 2026-11-24T01:00:00Z,usgs:255534081324000,salinity_psu,bottom,26.414,4,,PSS-78 from conductance
 2026-11-24T02:00:00Z,usgs:255534081324000,salinity_psu,bottom,28.302,4,,PSS-78 from conductance
@@ -2082,6 +2241,7 @@ time_utc,station,variable,layer,value,n,depth_m,source
 2026-11-24T12:00:00Z,usgs:255534081324000,salinity_psu,bottom,26.069,4,,PSS-78 from conductance
 2026-11-24T13:00:00Z,usgs:255534081324000,salinity_psu,bottom,24.953,4,,PSS-78 from conductance
 2026-11-24T14:00:00Z,usgs:255534081324000,salinity_psu,bottom,24.055,4,,PSS-78 from conductance
+2026-11-24T15:00:00Z,usgs:255534081324000,salinity_psu,bottom,23.563,4,,PSS-78 from conductance
 2026-11-24T00:00:00Z,usgs:255534081324000,water_temp_c,bottom,22.07,4,,
 2026-11-24T01:00:00Z,usgs:255534081324000,water_temp_c,bottom,23,4,,
 2026-11-24T02:00:00Z,usgs:255534081324000,water_temp_c,bottom,23.68,4,,
@@ -2097,6 +2257,7 @@ time_utc,station,variable,layer,value,n,depth_m,source
 2026-11-24T12:00:00Z,usgs:255534081324000,water_temp_c,bottom,21.52,4,,
 2026-11-24T13:00:00Z,usgs:255534081324000,water_temp_c,bottom,21.2,4,,
 2026-11-24T14:00:00Z,usgs:255534081324000,water_temp_c,bottom,21.02,4,,
+2026-11-24T15:00:00Z,usgs:255534081324000,water_temp_c,bottom,20.92,4,,
 2026-11-24T00:00:00Z,usgs:255654081350200,salinity_psu,bottom,10.25,4,,
 2026-11-24T01:00:00Z,usgs:255654081350200,salinity_psu,bottom,9.85,4,,
 2026-11-24T02:00:00Z,usgs:255654081350200,salinity_psu,bottom,10.25,4,,
@@ -2112,7 +2273,8 @@ time_utc,station,variable,layer,value,n,depth_m,source
 2026-11-24T12:00:00Z,usgs:255654081350200,salinity_psu,bottom,11,4,,
 2026-11-24T13:00:00Z,usgs:255654081350200,salinity_psu,bottom,10,4,,
 2026-11-24T14:00:00Z,usgs:255654081350200,salinity_psu,bottom,9.95,4,,
-2026-11-24T15:00:00Z,usgs:255654081350200,salinity_psu,bottom,9.767,3,,
+2026-11-24T15:00:00Z,usgs:255654081350200,salinity_psu,bottom,9.75,4,,
+2026-11-24T16:00:00Z,usgs:255654081350200,salinity_psu,bottom,9.933,3,,
 2026-11-24T00:00:00Z,usgs:255654081350200,water_temp_c,bottom,23.25,4,,
 2026-11-24T01:00:00Z,usgs:255654081350200,water_temp_c,bottom,23.18,4,,
 2026-11-24T02:00:00Z,usgs:255654081350200,water_temp_c,bottom,23.2,4,,
@@ -2128,7 +2290,8 @@ time_utc,station,variable,layer,value,n,depth_m,source
 2026-11-24T12:00:00Z,usgs:255654081350200,water_temp_c,bottom,22.27,4,,
 2026-11-24T13:00:00Z,usgs:255654081350200,water_temp_c,bottom,22.12,4,,
 2026-11-24T14:00:00Z,usgs:255654081350200,water_temp_c,bottom,22.05,4,,
-2026-11-24T15:00:00Z,usgs:255654081350200,water_temp_c,bottom,22.07,3,,
+2026-11-24T15:00:00Z,usgs:255654081350200,water_temp_c,bottom,22.05,4,,
+2026-11-24T16:00:00Z,usgs:255654081350200,water_temp_c,bottom,22.1,3,,
 2026-11-24T00:00:00Z,usgs:255726081303700,salinity_psu,bottom,25.696,4,,PSS-78 from conductance
 2026-11-24T01:00:00Z,usgs:255726081303700,salinity_psu,bottom,25.661,4,,PSS-78 from conductance
 2026-11-24T02:00:00Z,usgs:255726081303700,salinity_psu,bottom,25.501,4,,PSS-78 from conductance
@@ -2144,6 +2307,7 @@ time_utc,station,variable,layer,value,n,depth_m,source
 2026-11-24T12:00:00Z,usgs:255726081303700,salinity_psu,bottom,26.727,4,,PSS-78 from conductance
 2026-11-24T13:00:00Z,usgs:255726081303700,salinity_psu,bottom,26.852,4,,PSS-78 from conductance
 2026-11-24T14:00:00Z,usgs:255726081303700,salinity_psu,bottom,26.781,4,,PSS-78 from conductance
+2026-11-24T15:00:00Z,usgs:255726081303700,salinity_psu,bottom,26.745,4,,PSS-78 from conductance
 2026-11-24T00:00:00Z,usgs:255726081303700,salinity_psu,surface,10.25,4,,
 2026-11-24T01:00:00Z,usgs:255726081303700,salinity_psu,surface,11,4,,
 2026-11-24T02:00:00Z,usgs:255726081303700,salinity_psu,surface,11,4,,
@@ -2159,6 +2323,7 @@ time_utc,station,variable,layer,value,n,depth_m,source
 2026-11-24T12:00:00Z,usgs:255726081303700,salinity_psu,surface,10,4,,
 2026-11-24T13:00:00Z,usgs:255726081303700,salinity_psu,surface,10,4,,
 2026-11-24T14:00:00Z,usgs:255726081303700,salinity_psu,surface,10,4,,
+2026-11-24T15:00:00Z,usgs:255726081303700,salinity_psu,surface,10,4,,
 2026-11-24T00:00:00Z,usgs:255726081303700,water_temp_c,bottom,25.4,4,,
 2026-11-24T01:00:00Z,usgs:255726081303700,water_temp_c,bottom,25.48,4,,
 2026-11-24T02:00:00Z,usgs:255726081303700,water_temp_c,bottom,25.45,4,,
@@ -2174,6 +2339,7 @@ time_utc,station,variable,layer,value,n,depth_m,source
 2026-11-24T12:00:00Z,usgs:255726081303700,water_temp_c,bottom,25.23,4,,
 2026-11-24T13:00:00Z,usgs:255726081303700,water_temp_c,bottom,25.23,4,,
 2026-11-24T14:00:00Z,usgs:255726081303700,water_temp_c,bottom,25.2,4,,
+2026-11-24T15:00:00Z,usgs:255726081303700,water_temp_c,bottom,25.2,4,,
 2026-11-24T00:00:00Z,usgs:255726081303700,water_temp_c,surface,24.1,4,,
 2026-11-24T01:00:00Z,usgs:255726081303700,water_temp_c,surface,24.05,4,,
 2026-11-24T02:00:00Z,usgs:255726081303700,water_temp_c,surface,23.9,4,,
@@ -2189,3 +2355,4 @@ time_utc,station,variable,layer,value,n,depth_m,source
 2026-11-24T12:00:00Z,usgs:255726081303700,water_temp_c,surface,22.8,4,,
 2026-11-24T13:00:00Z,usgs:255726081303700,water_temp_c,surface,22.5,4,,
 2026-11-24T14:00:00Z,usgs:255726081303700,water_temp_c,surface,22.48,4,,
+2026-11-24T15:00:00Z,usgs:255726081303700,water_temp_c,surface,22.55,4,,
