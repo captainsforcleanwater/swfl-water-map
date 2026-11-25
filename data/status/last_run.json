@@ -1,47 +1,43 @@
 {
  "files_changed": {
-  "data/sensors/2026/11/2026-11-24_erddap-secoora.csv": {
-   "new": 76,
-   "rows": 3706
-  },
   "data/sensors/2026/11/2026-11-25_coops.csv": {
-   "new": 63,
-   "rows": 225
+   "new": 54,
+   "rows": 279
   },
   "data/sensors/2026/11/2026-11-25_erddap-gcoos.csv": {
-   "new": 44,
-   "rows": 155
+   "new": 42,
+   "rows": 197
   },
   "data/sensors/2026/11/2026-11-25_erddap-secoora.csv": {
-   "new": 532,
-   "rows": 922
+   "new": 260,
+   "rows": 1182
   },
   "data/sensors/2026/11/2026-11-25_ndbc.csv": {
    "new": 16,
-   "rows": 50
+   "rows": 66
   },
   "data/sensors/2026/11/2026-11-25_usgs.csv": {
-   "new": 500,
-   "rows": 1637
+   "new": 444,
+   "rows": 2081
   }
  },
- "finished": "2026-11-25T07:33:05Z",
+ "finished": "2026-11-25T09:22:49Z",
  "sensor_window": [
-  "2026-11-24T07:31:42Z",
-  "2026-11-25T07:31:42Z"
+  "2026-11-24T09:21:04Z",
+  "2026-11-25T09:21:04Z"
  ],
  "sources": {
   "coops": {
    "errors": {},
    "readings": 717,
-   "seconds": 0.4,
+   "seconds": 0.5,
    "stations_queried": 3,
    "stations_reporting": 3
   },
   "erddap": {
    "errors": {},
-   "readings": 3263,
-   "seconds": 79.2,
+   "readings": 3285,
+   "seconds": 101.8,
    "stations_queried": 58,
    "stations_reporting": 52
   },
@@ -49,26 +45,26 @@
    "added": 2,
    "errors": {},
    "missing_before_run": 2,
-   "seconds": 4.7,
+   "seconds": 5.0,
    "server_first": "2026-11-20T17:00:00Z",
-   "server_last": "2026-11-25T02:00:00Z",
+   "server_last": "2026-11-25T04:00:00Z",
    "store": "release"
   },
   "ndbc": {
    "errors": {},
-   "readings": 180,
-   "seconds": 0.7,
+   "readings": 182,
+   "seconds": 1.0,
    "stations_queried": 2,
    "stations_reporting": 1
   },
   "usgs": {
    "errors": {},
-   "readings": 5404,
-   "seconds": 1.8,
+   "readings": 5449,
+   "seconds": 1.5,
    "stations_queried": 24,
    "stations_reporting": 17
   }
  },
- "started": "2026-11-25T07:31:38Z",
- "total_readings": 9564
+ "started": "2026-11-25T09:20:59Z",
+ "total_readings": 9633
 }
