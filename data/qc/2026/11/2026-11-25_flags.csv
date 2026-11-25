@@ -1,1 +1,4 @@
 time_utc,station_uid,variable,depth_tag,sensor,depth_m,value,flag,tests
+2026-11-25T04:45:00Z,usgs:02297460,spec_cond_us_cm,bottom,BOTTOM,,9950,3,spike
+2026-11-25T05:00:00Z,usgs:02297460,spec_cond_us_cm,bottom,BOTTOM,,11400,3,spike
+2026-11-25T04:45:00Z,usgs:02297460,spec_cond_us_cm,surface,TOP,,10100,3,spike
