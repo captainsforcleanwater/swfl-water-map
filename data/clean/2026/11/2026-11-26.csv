@@ -1,0 +1,15 @@
+time_utc,station,variable,layer,value,n,depth_m,source
+2026-11-26T00:00:00Z,coops:8723970,water_temp_c,surface,24.6,4,,
+2026-11-26T00:00:00Z,coops:8724580,water_temp_c,surface,25.4,4,,
+2026-11-26T00:00:00Z,coops:8725520,water_temp_c,surface,23.2,4,,
+2026-11-26T00:00:00Z,usgs:022908295,salinity_psu,surface,0.1,1,,
+2026-11-26T00:00:00Z,usgs:022908295,water_temp_c,surface,23.1,1,,
+2026-11-26T00:00:00Z,usgs:02290878,salinity_psu,mid,12,1,,
+2026-11-26T00:00:00Z,usgs:02290878,water_temp_c,mid,23.6,1,,
+2026-11-26T00:00:00Z,usgs:02290930,salinity_psu,surface,23.056,2,,PSS-78 from conductance
+2026-11-26T00:00:00Z,usgs:02290930,water_temp_c,surface,23.2,2,,
+2026-11-26T00:00:00Z,usgs:255138081321701,salinity_psu,bottom,33.321,1,,PSS-78 from conductance
+2026-11-26T00:00:00Z,usgs:255138081321701,salinity_psu,surface,33,1,,
+2026-11-26T00:00:00Z,usgs:255138081321701,water_temp_c,bottom,23,1,,
+2026-11-26T00:00:00Z,usgs:255151080371501,salinity_psu,surface,0.2,2,,
+2026-11-26T00:00:00Z,usgs:255151080371501,water_temp_c,surface,23.4,2,,
