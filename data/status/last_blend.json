@@ -1,29 +1,29 @@
 {
  "clean": {
-  "bad": 20,
+  "bad": 21,
   "by_test": {
    "flatline": 0,
    "flatline_long": 0,
    "from_flagged_conductance": 0,
-   "hold": 183,
+   "hold": 184,
    "missing": 0,
    "neighbor": 0,
    "provider": 0,
-   "range": 20,
-   "range_suspect": 20,
-   "spike": 21,
+   "range": 21,
+   "range_suspect": 21,
+   "spike": 20,
    "time": 0
   },
   "files_changed": {
-   "data/clean/2026/11/2026-11-26.csv": 2230,
+   "data/clean/2026/11/2026-11-26.csv": 2378,
    "data/clean/stations.csv": 84,
-   "data/qc/2026/11/2026-11-26_flags.csv": 33
+   "data/qc/2026/11/2026-11-26_flags.csv": 34
   },
-  "good": 94671,
+  "good": 95167,
   "holds": {
    "erddap-secoora:gov-nps-ever-hcef1": "Highway Creek: offset from neighbouring stations grew to about +4 C in November 2026, day and night alike, the largest in 18 months of record. Held while CFCW reviews docs/florida_bay_offsets.md."
   },
-  "hourly_values": 27755,
+  "hourly_values": 27903,
   "merge_checks": {
    "erddap-gcoos:USF_COMPS_C13 + erddap-secoora:42023-c13-wfs-south-buoy-50m-": {
     "agree": true,
@@ -61,35 +61,35 @@
    "erddap-secoora:42023-c13-wfs-south-buoy-50m- + erddap-secoora:c13-water-velocity-wfs-south-buo": {
     "agree": true,
     "salinity": {
-     "hours": 179,
+     "hours": 181,
      "median_abs_diff": 0.0
     },
     "temp": {
-     "hours": 179,
+     "hours": 181,
      "median_abs_diff": 0.0
     }
    },
    "erddap-secoora:c27-water-velocity-wfs-south-buo + erddap-secoora:c27-wfs-south-buoy-inner-shelf-2": {
     "agree": true,
     "salinity": {
-     "hours": 182,
+     "hours": 184,
      "median_abs_diff": 0.0
     },
     "temp": {
-     "hours": 182,
+     "hours": 184,
      "median_abs_diff": 0.0
     }
    },
    "usgs:251253080320100 + erddap-secoora:gov-nps-ever-tcvf1": {
     "agree": false,
     "temp": {
-     "hours": 183,
+     "hours": 184,
      "median_abs_diff": 1.11
     }
    }
   },
   "neighbor_flags": {},
-  "raw_readings": 85515,
+  "raw_readings": 85956,
   "salinity_from_conductance_replacing_whole_psu": [
    "usgs:02290930 (surface)",
    "usgs:250802081035500 (surface)",
@@ -109,17 +109,17 @@
   "suspect": 204
  },
  "errors": {},
- "finished": "2026-11-26T16:18:07Z",
- "hours_blended": 4,
+ "finished": "2026-11-26T17:24:56Z",
+ "hours_blended": 3,
  "hours_considered": 121,
- "hours_to_blend": 4,
- "now": "2026-11-26T16:17:44Z",
+ "hours_to_blend": 3,
+ "now": "2026-11-26T17:24:36Z",
  "out_of_time": false,
- "seconds": 22.3,
- "started": "2026-11-26T16:17:44Z",
+ "seconds": 20.4,
+ "started": "2026-11-26T17:24:36Z",
  "store": "release",
  "window": [
-  "2026-11-21T15:00:00Z",
-  "2026-11-26T15:00:00Z"
+  "2026-11-21T16:00:00Z",
+  "2026-11-26T16:00:00Z"
  ]
 }
