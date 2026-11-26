@@ -11,72 +11,72 @@
    "provider": 0,
    "range": 24,
    "range_suspect": 24,
-   "spike": 23,
+   "spike": 24,
    "time": 0
   },
   "files_changed": {
-   "data/clean/2026/11/2026-11-26.csv": 2803,
+   "data/clean/2026/11/2026-11-26.csv": 2890,
    "data/clean/stations.csv": 84,
-   "data/qc/2026/11/2026-11-26_flags.csv": 43
+   "data/qc/2026/11/2026-11-26_flags.csv": 44
   },
-  "good": 96539,
+  "good": 96928,
   "holds": {
    "erddap-secoora:gov-nps-ever-hcef1": "Highway Creek: offset from neighbouring stations grew to about +4 C in November 2026, day and night alike, the largest in 18 months of record. Held while CFCW reviews docs/florida_bay_offsets.md."
   },
-  "hourly_values": 28328,
+  "hourly_values": 28415,
   "merge_checks": {
    "erddap-gcoos:USF_COMPS_C13 + erddap-secoora:42023-c13-wfs-south-buoy-50m-": {
     "agree": true,
     "salinity": {
-     "hours": 180,
+     "hours": 182,
      "median_abs_diff": 0.0
     },
     "temp": {
-     "hours": 180,
+     "hours": 182,
      "median_abs_diff": 0.0
     }
    },
    "erddap-gcoos:USF_COMPS_C13 + erddap-secoora:c13-water-velocity-wfs-south-buo": {
     "agree": true,
     "salinity": {
-     "hours": 180,
+     "hours": 182,
      "median_abs_diff": 0.0
     },
     "temp": {
-     "hours": 180,
+     "hours": 182,
      "median_abs_diff": 0.0
     }
    },
    "erddap-gcoos:USF_COMPS_C22 + erddap-secoora:42026-c22-loop-current-pressu": {
     "agree": true,
     "salinity": {
-     "hours": 185,
+     "hours": 186,
      "median_abs_diff": 0.0
     },
     "temp": {
-     "hours": 185,
+     "hours": 186,
      "median_abs_diff": 0.0
     }
    },
    "erddap-secoora:42023-c13-wfs-south-buoy-50m- + erddap-secoora:c13-water-velocity-wfs-south-buo": {
     "agree": true,
     "salinity": {
-     "hours": 184,
+     "hours": 185,
      "median_abs_diff": 0.0
     },
     "temp": {
-     "hours": 184,
+     "hours": 185,
      "median_abs_diff": 0.0
     }
    },
    "erddap-secoora:c27-water-velocity-wfs-south-buo + erddap-secoora:c27-wfs-south-buoy-inner-shelf-2": {
     "agree": true,
     "salinity": {
-     "hours": 187,
+     "hours": 188,
      "median_abs_diff": 0.0
     },
     "temp": {
-     "hours": 187,
+     "hours": 188,
      "median_abs_diff": 0.0
     }
    },
@@ -89,7 +89,7 @@
    }
   },
   "neighbor_flags": {},
-  "raw_readings": 87189,
+  "raw_readings": 87527,
   "salinity_from_conductance_replacing_whole_psu": [
    "usgs:02290930 (surface)",
    "usgs:250802081035500 (surface)",
@@ -99,27 +99,27 @@
    "usgs:255534081324000 (bottom)",
    "usgs:255726081303700 (bottom)"
   ],
-  "seconds": 5.6,
+  "seconds": 5.4,
   "stale_stations": [
    "erddap-secoora:gulf-star-marina",
    "erddap-secoora:sanibel-dock",
    "erddap-secoora:new-pass-bridge",
    "erddap-secoora:key-largo-fl"
   ],
-  "suspect": 210
+  "suspect": 211
  },
  "errors": {},
- "finished": "2026-11-26T20:16:06Z",
- "hours_blended": 4,
+ "finished": "2026-11-26T21:07:15Z",
+ "hours_blended": 2,
  "hours_considered": 121,
- "hours_to_blend": 4,
- "now": "2026-11-26T20:15:35Z",
+ "hours_to_blend": 2,
+ "now": "2026-11-26T21:06:47Z",
  "out_of_time": false,
- "seconds": 31.1,
- "started": "2026-11-26T20:15:35Z",
+ "seconds": 27.6,
+ "started": "2026-11-26T21:06:47Z",
  "store": "release",
  "window": [
-  "2026-11-21T19:00:00Z",
-  "2026-11-26T19:00:00Z"
+  "2026-11-21T20:00:00Z",
+  "2026-11-26T20:00:00Z"
  ]
 }
