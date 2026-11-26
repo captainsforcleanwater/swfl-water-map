@@ -1,4 +1,10 @@
 time_utc,station_uid,variable,depth_tag,sensor,depth_m,value,flag,tests
+2026-11-25T18:00:00Z,erddap-secoora:gov-nps-ever-cwaf1,water_temp_c,surface,sea_water_temperature,0,66.38,4,range;range_suspect
+2026-11-25T19:00:00Z,erddap-secoora:gov-nps-ever-cwaf1,water_temp_c,surface,sea_water_temperature,0,66.38,4,range;range_suspect
+2026-11-25T20:00:00Z,erddap-secoora:gov-nps-ever-cwaf1,water_temp_c,surface,sea_water_temperature,0,66.38,4,range;range_suspect
+2026-11-25T21:00:00Z,erddap-secoora:gov-nps-ever-cwaf1,water_temp_c,surface,sea_water_temperature,0,66.38,4,range;range_suspect
+2026-11-25T22:00:00Z,erddap-secoora:gov-nps-ever-cwaf1,water_temp_c,surface,sea_water_temperature,0,66.38,4,range;range_suspect
+2026-11-25T23:00:00Z,erddap-secoora:gov-nps-ever-cwaf1,water_temp_c,surface,sea_water_temperature,0,66.38,4,range;range_suspect
 2026-11-25T04:00:00Z,erddap-secoora:gov-nps-ever-hcef1,salinity_psu,surface,sea_water_practical_salinity,0,4.878,3,spike
 2026-11-25T09:00:00Z,erddap-secoora:gov-nps-ever-hcef1,salinity_psu,surface,sea_water_practical_salinity,0,6.219,3,spike
 2026-11-25T00:00:00Z,erddap-secoora:gov-nps-ever-hcef1,water_temp_c,surface,sea_water_temperature,0,26.08,3,hold
@@ -21,4 +27,8 @@ time_utc,station_uid,variable,depth_tag,sensor,depth_m,value,flag,tests
 2026-11-25T17:00:00Z,erddap-secoora:gov-nps-ever-hcef1,water_temp_c,surface,sea_water_temperature,0,25.92,3,hold
 2026-11-25T18:00:00Z,erddap-secoora:gov-nps-ever-hcef1,water_temp_c,surface,sea_water_temperature,0,25.16,3,hold
 2026-11-25T19:00:00Z,erddap-secoora:gov-nps-ever-hcef1,water_temp_c,surface,sea_water_temperature,0,25.66,3,hold
+2026-11-25T20:00:00Z,erddap-secoora:gov-nps-ever-hcef1,water_temp_c,surface,sea_water_temperature,0,25.67,3,hold
+2026-11-25T21:00:00Z,erddap-secoora:gov-nps-ever-hcef1,water_temp_c,surface,sea_water_temperature,0,25.63,3,hold
+2026-11-25T22:00:00Z,erddap-secoora:gov-nps-ever-hcef1,water_temp_c,surface,sea_water_temperature,0,25.62,3,hold
+2026-11-25T23:00:00Z,erddap-secoora:gov-nps-ever-hcef1,water_temp_c,surface,sea_water_temperature,0,25.49,3,hold
 2026-11-25T16:00:00Z,erddap-secoora:gov-nps-ever-lmdf1,salinity_psu,surface,sea_water_practical_salinity,0,20.207,3,spike

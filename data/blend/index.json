@@ -3059,7 +3059,7 @@
   },
   "2026-11-25": {
    "asset": "swfl_blend_hourly_2026-11-25.bin.gz",
-   "bytes": 2749483,
+   "bytes": 2713283,
    "hours": {
     "00": {
      "blended": "2026-11-25T07:33:27Z",
@@ -3206,129 +3206,137 @@
      "v": 2
     },
     "18": {
-     "blended": "2026-11-25T21:08:37Z",
+     "blended": "2026-11-26T09:20:08Z",
      "goes_newest": "2026-11-25T12:00:00Z",
-     "n_sal": 49,
-     "n_temp": 57,
-     "sig": "59442350e839",
+     "n_sal": 51,
+     "n_temp": 58,
+     "sig": "9af0033383e2",
      "v": 2
     },
     "19": {
-     "blended": "2026-11-25T22:06:35Z",
+     "blended": "2026-11-26T09:20:07Z",
      "goes_newest": "2026-11-25T12:00:00Z",
-     "n_sal": 48,
-     "n_temp": 56,
-     "sig": "9d2090b844c7",
+     "n_sal": 51,
+     "n_temp": 58,
+     "sig": "718df21acf73",
      "v": 2
     },
     "20": {
-     "blended": "2026-11-25T22:06:35Z",
+     "blended": "2026-11-26T09:20:06Z",
      "goes_newest": "2026-11-25T12:00:00Z",
-     "n_sal": 22,
-     "n_temp": 31,
-     "sig": "1da798f4b3ea",
+     "n_sal": 51,
+     "n_temp": 58,
+     "sig": "8c09977f287a",
      "v": 2
     },
     "21": {
-     "blended": "2026-11-25T23:06:56Z",
+     "blended": "2026-11-26T09:20:05Z",
      "goes_newest": "2026-11-25T12:00:00Z",
-     "n_sal": 15,
-     "n_temp": 24,
-     "sig": "5f846b6f3cc2",
+     "n_sal": 51,
+     "n_temp": 58,
+     "sig": "b5ca5ae6fa27",
      "v": 2
     },
     "22": {
-     "blended": "2026-11-26T00:01:02Z",
+     "blended": "2026-11-26T09:20:04Z",
      "goes_newest": "2026-11-25T12:00:00Z",
-     "n_sal": 15,
-     "n_temp": 24,
-     "sig": "8e8c8d86582a",
+     "n_sal": 51,
+     "n_temp": 58,
+     "sig": "2e10cc7f239e",
      "v": 2
     },
     "23": {
-     "blended": "2026-11-26T01:30:22Z",
+     "blended": "2026-11-26T09:20:03Z",
      "goes_newest": "2026-11-25T12:00:00Z",
-     "n_sal": 15,
-     "n_temp": 24,
-     "sig": "19fa50da6c50",
+     "n_sal": 51,
+     "n_temp": 58,
+     "sig": "9664ba22faf9",
      "v": 2
     }
    },
    "release_tag": "blend-hourly-2026-11",
-   "updated": "2026-11-26T01:30:38Z",
+   "updated": "2026-11-26T09:20:23Z",
    "url": "https://github.com/captainsforcleanwater/swfl-water-map/releases/download/blend-hourly-2026-11/swfl_blend_hourly_2026-11-25.bin.gz"
   },
   "2026-11-26": {
    "asset": "swfl_blend_hourly_2026-11-26.bin.gz",
-   "bytes": 852445,
+   "bytes": 1118351,
    "hours": {
     "00": {
-     "blended": "2026-11-26T03:06:54Z",
+     "blended": "2026-11-26T09:19:54Z",
      "goes_newest": "2026-11-25T12:00:00Z",
-     "n_sal": 15,
-     "n_temp": 24,
-     "sig": "97d370bf9f6b",
+     "n_sal": 51,
+     "n_temp": 58,
+     "sig": "ec3195522918",
      "v": 2
     },
     "01": {
-     "blended": "2026-11-26T03:06:54Z",
+     "blended": "2026-11-26T09:19:54Z",
      "goes_newest": "2026-11-25T12:00:00Z",
-     "n_sal": 15,
-     "n_temp": 24,
-     "sig": "150aae7d7a3b",
+     "n_sal": 51,
+     "n_temp": 58,
+     "sig": "a8175af6f6e7",
      "v": 2
     },
     "02": {
-     "blended": "2026-11-26T04:15:17Z",
+     "blended": "2026-11-26T09:19:53Z",
      "goes_newest": "2026-11-25T12:00:00Z",
-     "n_sal": 15,
-     "n_temp": 24,
-     "sig": "d473bc4ec08d",
+     "n_sal": 51,
+     "n_temp": 58,
+     "sig": "f42cf3025a63",
      "v": 2
     },
     "03": {
-     "blended": "2026-11-26T05:24:17Z",
+     "blended": "2026-11-26T09:19:52Z",
      "goes_newest": "2026-11-25T12:00:00Z",
-     "n_sal": 15,
-     "n_temp": 24,
-     "sig": "8e72a2a4d314",
+     "n_sal": 51,
+     "n_temp": 58,
+     "sig": "63cd0cdeb2d2",
      "v": 2
     },
     "04": {
-     "blended": "2026-11-26T07:33:11Z",
+     "blended": "2026-11-26T09:19:51Z",
      "goes_newest": "2026-11-25T12:00:00Z",
-     "n_sal": 15,
-     "n_temp": 24,
-     "sig": "348f1d87b1e5",
+     "n_sal": 51,
+     "n_temp": 58,
+     "sig": "3e7709df1f58",
      "v": 2
     },
     "05": {
-     "blended": "2026-11-26T07:33:11Z",
+     "blended": "2026-11-26T09:19:50Z",
      "goes_newest": "2026-11-25T12:00:00Z",
-     "n_sal": 15,
-     "n_temp": 24,
-     "sig": "98356bd2765a",
+     "n_sal": 51,
+     "n_temp": 58,
+     "sig": "7bffd9af1459",
      "v": 2
     },
     "06": {
-     "blended": "2026-11-26T07:33:11Z",
+     "blended": "2026-11-26T09:19:49Z",
      "goes_newest": "2026-11-25T12:00:00Z",
-     "n_sal": 10,
-     "n_temp": 19,
-     "sig": "2cce01689f99",
+     "n_sal": 51,
+     "n_temp": 58,
+     "sig": "3dbd5df31122",
      "v": 2
     },
     "07": {
-     "blended": "2026-11-26T07:33:10Z",
+     "blended": "2026-11-26T09:19:48Z",
      "goes_newest": "2026-11-25T12:00:00Z",
-     "n_sal": 7,
-     "n_temp": 16,
-     "sig": "d7b3738d587b",
+     "n_sal": 48,
+     "n_temp": 57,
+     "sig": "17766e343f4c",
+     "v": 2
+    },
+    "08": {
+     "blended": "2026-11-26T09:19:47Z",
+     "goes_newest": "2026-11-25T12:00:00Z",
+     "n_sal": 10,
+     "n_temp": 19,
+     "sig": "ab80c02fb532",
      "v": 2
     }
    },
    "release_tag": "blend-hourly-2026-11",
-   "updated": "2026-11-26T07:33:16Z",
+   "updated": "2026-11-26T09:20:01Z",
    "url": "https://github.com/captainsforcleanwater/swfl-water-map/releases/download/blend-hourly-2026-11/swfl_blend_hourly_2026-11-26.bin.gz"
   }
  },
