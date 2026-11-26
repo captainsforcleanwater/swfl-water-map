@@ -3356,30 +3356,30 @@ time_utc,station,variable,layer,value,n,depth_m,source
 2026-11-24T21:00:00Z,usgs:255327081275900,water_temp_c,bottom,22.8,4,,
 2026-11-24T22:00:00Z,usgs:255327081275900,water_temp_c,bottom,22.7,4,,
 2026-11-24T23:00:00Z,usgs:255327081275900,water_temp_c,bottom,22.6,4,,
-2026-11-24T00:00:00Z,usgs:255432081303900,salinity_psu,bottom,20.75,4,,
-2026-11-24T01:00:00Z,usgs:255432081303900,salinity_psu,bottom,18.5,4,,
-2026-11-24T02:00:00Z,usgs:255432081303900,salinity_psu,bottom,18.25,4,,
-2026-11-24T03:00:00Z,usgs:255432081303900,salinity_psu,bottom,21.75,4,,
-2026-11-24T04:00:00Z,usgs:255432081303900,salinity_psu,bottom,27.75,4,,
-2026-11-24T05:00:00Z,usgs:255432081303900,salinity_psu,bottom,29.5,4,,
-2026-11-24T06:00:00Z,usgs:255432081303900,salinity_psu,bottom,30,4,,
-2026-11-24T07:00:00Z,usgs:255432081303900,salinity_psu,bottom,30,4,,
-2026-11-24T08:00:00Z,usgs:255432081303900,salinity_psu,bottom,30,4,,
-2026-11-24T09:00:00Z,usgs:255432081303900,salinity_psu,bottom,30,4,,
-2026-11-24T10:00:00Z,usgs:255432081303900,salinity_psu,bottom,27.5,4,,
-2026-11-24T11:00:00Z,usgs:255432081303900,salinity_psu,bottom,24.5,4,,
-2026-11-24T12:00:00Z,usgs:255432081303900,salinity_psu,bottom,21.5,4,,
-2026-11-24T13:00:00Z,usgs:255432081303900,salinity_psu,bottom,19,4,,
-2026-11-24T14:00:00Z,usgs:255432081303900,salinity_psu,bottom,17.5,4,,
-2026-11-24T15:00:00Z,usgs:255432081303900,salinity_psu,bottom,16.5,4,,
-2026-11-24T16:00:00Z,usgs:255432081303900,salinity_psu,bottom,15.5,4,,
-2026-11-24T17:00:00Z,usgs:255432081303900,salinity_psu,bottom,16,4,,
-2026-11-24T18:00:00Z,usgs:255432081303900,salinity_psu,bottom,20.25,4,,
-2026-11-24T19:00:00Z,usgs:255432081303900,salinity_psu,bottom,27.25,4,,
-2026-11-24T20:00:00Z,usgs:255432081303900,salinity_psu,bottom,29.25,4,,
-2026-11-24T21:00:00Z,usgs:255432081303900,salinity_psu,bottom,30,4,,
-2026-11-24T22:00:00Z,usgs:255432081303900,salinity_psu,bottom,29,4,,
-2026-11-24T23:00:00Z,usgs:255432081303900,salinity_psu,bottom,28.5,4,,
+2026-11-24T00:00:00Z,usgs:255432081303900,salinity_psu,bottom,20.765,4,,PSS-78 from conductance
+2026-11-24T01:00:00Z,usgs:255432081303900,salinity_psu,bottom,18.673,4,,PSS-78 from conductance
+2026-11-24T02:00:00Z,usgs:255432081303900,salinity_psu,bottom,18.196,4,,PSS-78 from conductance
+2026-11-24T03:00:00Z,usgs:255432081303900,salinity_psu,bottom,21.524,4,,PSS-78 from conductance
+2026-11-24T04:00:00Z,usgs:255432081303900,salinity_psu,bottom,27.624,4,,PSS-78 from conductance
+2026-11-24T05:00:00Z,usgs:255432081303900,salinity_psu,bottom,29.545,4,,PSS-78 from conductance
+2026-11-24T06:00:00Z,usgs:255432081303900,salinity_psu,bottom,30.052,4,,PSS-78 from conductance
+2026-11-24T07:00:00Z,usgs:255432081303900,salinity_psu,bottom,30.215,4,,PSS-78 from conductance
+2026-11-24T08:00:00Z,usgs:255432081303900,salinity_psu,bottom,30.251,4,,PSS-78 from conductance
+2026-11-24T09:00:00Z,usgs:255432081303900,salinity_psu,bottom,30.233,4,,PSS-78 from conductance
+2026-11-24T10:00:00Z,usgs:255432081303900,salinity_psu,bottom,27.447,4,,PSS-78 from conductance
+2026-11-24T11:00:00Z,usgs:255432081303900,salinity_psu,bottom,24.602,4,,PSS-78 from conductance
+2026-11-24T12:00:00Z,usgs:255432081303900,salinity_psu,bottom,21.336,4,,PSS-78 from conductance
+2026-11-24T13:00:00Z,usgs:255432081303900,salinity_psu,bottom,18.929,4,,PSS-78 from conductance
+2026-11-24T14:00:00Z,usgs:255432081303900,salinity_psu,bottom,17.535,4,,PSS-78 from conductance
+2026-11-24T15:00:00Z,usgs:255432081303900,salinity_psu,bottom,16.491,4,,PSS-78 from conductance
+2026-11-24T16:00:00Z,usgs:255432081303900,salinity_psu,bottom,15.569,4,,PSS-78 from conductance
+2026-11-24T17:00:00Z,usgs:255432081303900,salinity_psu,bottom,15.72,4,,PSS-78 from conductance
+2026-11-24T18:00:00Z,usgs:255432081303900,salinity_psu,bottom,20.194,4,,PSS-78 from conductance
+2026-11-24T19:00:00Z,usgs:255432081303900,salinity_psu,bottom,27.194,4,,PSS-78 from conductance
+2026-11-24T20:00:00Z,usgs:255432081303900,salinity_psu,bottom,29.238,4,,PSS-78 from conductance
+2026-11-24T21:00:00Z,usgs:255432081303900,salinity_psu,bottom,29.69,4,,PSS-78 from conductance
+2026-11-24T22:00:00Z,usgs:255432081303900,salinity_psu,bottom,29.346,4,,PSS-78 from conductance
+2026-11-24T23:00:00Z,usgs:255432081303900,salinity_psu,bottom,28.52,4,,PSS-78 from conductance
 2026-11-24T00:00:00Z,usgs:255432081303900,water_temp_c,bottom,24.4,4,,
 2026-11-24T01:00:00Z,usgs:255432081303900,water_temp_c,bottom,24.23,4,,
 2026-11-24T02:00:00Z,usgs:255432081303900,water_temp_c,bottom,24.12,4,,
