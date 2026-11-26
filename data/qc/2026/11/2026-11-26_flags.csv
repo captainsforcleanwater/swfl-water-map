@@ -1,1 +1,6 @@
 time_utc,station_uid,variable,depth_tag,sensor,depth_m,value,flag,tests
+2026-11-26T03:30:00Z,usgs:02297460,spec_cond_us_cm,surface,TOP,,12500,3,spike
+2026-11-26T02:45:00Z,usgs:251253080320100,salinity_psu,bottom,BOTTOM,,23,3,spike
+2026-11-26T03:00:00Z,usgs:251253080320100,salinity_psu,bottom,BOTTOM,,25,3,spike
+2026-11-26T02:45:00Z,usgs:251253080320100,spec_cond_us_cm,bottom,BOTTOM,,35800,3,spike
+2026-11-26T03:00:00Z,usgs:251253080320100,spec_cond_us_cm,bottom,BOTTOM,,39000,3,spike
