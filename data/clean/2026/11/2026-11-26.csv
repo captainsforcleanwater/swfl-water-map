@@ -2414,6 +2414,8 @@ time_utc,station,variable,layer,value,n,depth_m,source
 2026-11-26T21:00:00Z,erddap-secoora:new-pass-bridge,water_temp_c,surface,23.12,6,0,
 2026-11-26T22:00:00Z,erddap-secoora:new-pass-bridge,water_temp_c,surface,23.08,6,0,
 2026-11-26T23:00:00Z,erddap-secoora:new-pass-bridge,water_temp_c,surface,23.02,6,0,
+2026-11-26T23:00:00Z,erddap-secoora:sanibel-dock,salinity_psu,surface,30.82,2,0,
+2026-11-26T23:00:00Z,erddap-secoora:sanibel-dock,water_temp_c,surface,22.74,2,0,
 2026-11-26T06:00:00Z,ndbc:RKQF1,salinity_psu,bottom,34.3,1,1.9,
 2026-11-26T07:00:00Z,ndbc:RKQF1,salinity_psu,bottom,34.525,4,1.9,
 2026-11-26T00:00:00Z,ndbc:RKQF1,salinity_psu,surface,31.625,4,1.4,
