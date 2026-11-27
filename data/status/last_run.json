@@ -1,66 +1,66 @@
 {
  "files_changed": {
   "data/sensors/2026/11/2026-11-27_coops.csv": {
-   "new": 54,
-   "rows": 279
+   "new": 51,
+   "rows": 330
   },
   "data/sensors/2026/11/2026-11-27_erddap-gcoos.csv": {
    "new": 54,
-   "rows": 216
+   "rows": 270
   },
   "data/sensors/2026/11/2026-11-27_erddap-secoora.csv": {
-   "new": 206,
-   "rows": 832
+   "new": 136,
+   "rows": 968
   },
   "data/sensors/2026/11/2026-11-27_ndbc.csv": {
-   "new": 8,
-   "rows": 66
+   "new": 16,
+   "rows": 82
   },
   "data/sensors/2026/11/2026-11-27_usgs.csv": {
-   "new": 496,
-   "rows": 2245
+   "new": 404,
+   "rows": 2649
   }
  },
- "finished": "2026-11-27T09:19:32Z",
+ "finished": "2026-11-27T11:02:50Z",
  "sensor_window": [
-  "2026-11-26T09:18:17Z",
-  "2026-11-27T09:18:17Z"
+  "2026-11-26T11:01:49Z",
+  "2026-11-27T11:01:49Z"
  ],
  "sources": {
   "coops": {
    "errors": {},
-   "readings": 720,
-   "seconds": 0.2,
+   "readings": 717,
+   "seconds": 0.6,
    "stations_queried": 3,
    "stations_reporting": 3
   },
   "erddap": {
    "errors": {},
-   "readings": 2817,
-   "seconds": 71.9,
+   "readings": 2774,
+   "seconds": 57.3,
    "stations_queried": 58,
    "stations_reporting": 51
   },
   "goes19": {
    "fatal": "404 Client Error: 404 for url: https://cwcgom.aoml.noaa.gov/erddap/griddap/goes19SSThourly.csv?time",
-   "seconds": 1.2,
+   "seconds": 1.3,
    "store": "release"
   },
   "ndbc": {
    "errors": {},
-   "readings": 182,
-   "seconds": 0.6,
+   "readings": 184,
+   "seconds": 0.8,
    "stations_queried": 2,
    "stations_reporting": 1
   },
   "usgs": {
    "errors": {},
-   "readings": 5957,
-   "seconds": 2.0,
+   "readings": 5913,
+   "seconds": 1.7,
    "stations_queried": 24,
    "stations_reporting": 19
   }
  },
- "started": "2026-11-27T09:18:16Z",
- "total_readings": 9676
+ "started": "2026-11-27T11:01:48Z",
+ "total_readings": 9588
 }
