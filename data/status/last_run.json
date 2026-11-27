@@ -1,66 +1,78 @@
 {
  "files_changed": {
-  "data/sensors/2026/11/2026-11-26_coops.csv": {
-   "new": 27,
-   "rows": 720
-  },
   "data/sensors/2026/11/2026-11-26_erddap-gcoos.csv": {
    "new": 27,
-   "rows": 607
+   "rows": 634
   },
   "data/sensors/2026/11/2026-11-26_erddap-secoora.csv": {
-   "new": 28,
-   "rows": 2256
+   "new": 72,
+   "rows": 2328
   },
   "data/sensors/2026/11/2026-11-26_ndbc.csv": {
-   "new": 8,
-   "rows": 186
+   "new": 6,
+   "rows": 192
   },
   "data/sensors/2026/11/2026-11-26_usgs.csv": {
-   "new": 204,
-   "rows": 5989
+   "new": 155,
+   "rows": 6144
+  },
+  "data/sensors/2026/11/2026-11-27_coops.csv": {
+   "new": 45,
+   "rows": 45
+  },
+  "data/sensors/2026/11/2026-11-27_erddap-secoora.csv": {
+   "new": 28,
+   "rows": 28
+  },
+  "data/sensors/2026/11/2026-11-27_ndbc.csv": {
+   "new": 10,
+   "rows": 10
+  },
+  "data/sensors/2026/11/2026-11-27_usgs.csv": {
+   "new": 205,
+   "rows": 205
   }
  },
- "finished": "2026-11-27T00:05:22Z",
+ "finished": "2026-11-27T01:30:03Z",
  "sensor_window": [
-  "2026-11-26T00:04:15Z",
-  "2026-11-27T00:04:15Z"
+  "2026-11-26T01:28:51Z",
+  "2026-11-27T01:28:51Z"
  ],
  "sources": {
   "coops": {
    "errors": {},
-   "readings": 717,
-   "seconds": 0.3,
+   "readings": 720,
+   "seconds": 0.4,
    "stations_queried": 3,
    "stations_reporting": 3
   },
   "erddap": {
    "errors": {},
-   "readings": 2776,
-   "seconds": 63.5,
+   "readings": 2748,
+   "seconds": 69.2,
    "stations_queried": 58,
    "stations_reporting": 51
   },
   "goes19": {
    "fatal": "404 Client Error: 404 for url: https://cwcgom.aoml.noaa.gov/erddap/griddap/goes19SSThourly.csv?time",
-   "seconds": 1.2,
+   "seconds": 1.3,
    "store": "release"
   },
   "ndbc": {
    "errors": {},
-   "readings": 184,
-   "seconds": 0.4,
+   "readings": 190,
+   "seconds": 0.7,
    "stations_queried": 2,
    "stations_reporting": 1
   },
   "usgs": {
    "errors": {},
-   "readings": 5925,
-   "seconds": 2.1,
+   "readings": 5965,
+   "seconds": 1.7,
    "stations_queried": 24,
    "stations_reporting": 19
   }
  },
- "started": "2026-11-27T00:04:14Z",
- "total_readings": 9602
+ "started": "2026-11-27T01:28:49Z",
+ "total_readings": 9623
 }
