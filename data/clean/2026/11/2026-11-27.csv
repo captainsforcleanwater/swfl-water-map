@@ -1,0 +1,27 @@
+time_utc,station,variable,layer,value,n,depth_m,source
+2026-11-27T00:00:00Z,coops:8723970,water_temp_c,surface,24.52,5,,
+2026-11-27T00:00:00Z,coops:8724580,water_temp_c,surface,24.68,5,,
+2026-11-27T00:00:00Z,coops:8725520,water_temp_c,surface,23.5,5,,
+2026-11-27T00:00:00Z,erddap-gcoos:USF_COMPS_C13,salinity_psu,surface,36.5,1,0,erddap-secoora:42023-c13-wfs-south-buoy-50m-
+2026-11-27T00:00:00Z,erddap-gcoos:USF_COMPS_C13,water_temp_c,surface,25.66,1,0,erddap-secoora:42023-c13-wfs-south-buoy-50m-
+2026-11-27T00:00:00Z,erddap-gcoos:USF_COMPS_C22,salinity_psu,surface,36.38,1,0,erddap-secoora:42026-c22-loop-current-pressu
+2026-11-27T00:00:00Z,erddap-gcoos:USF_COMPS_C22,water_temp_c,surface,26.73,1,0,erddap-secoora:42026-c22-loop-current-pressu
+2026-11-27T00:00:00Z,erddap-secoora:c27-water-velocity-wfs-south-buo,salinity_psu,bottom,36.89,1,19,
+2026-11-27T00:00:00Z,erddap-secoora:c27-water-velocity-wfs-south-buo,salinity_psu,mid,36.82,1,10,
+2026-11-27T00:00:00Z,erddap-secoora:c27-water-velocity-wfs-south-buo,salinity_psu,surface,36.84,1,1,
+2026-11-27T00:00:00Z,erddap-secoora:c27-water-velocity-wfs-south-buo,water_temp_c,bottom,24.81,1,19,
+2026-11-27T00:00:00Z,erddap-secoora:c27-water-velocity-wfs-south-buo,water_temp_c,mid,24.81,1,10,
+2026-11-27T00:00:00Z,erddap-secoora:c27-water-velocity-wfs-south-buo,water_temp_c,surface,24.78,1,1,
+2026-11-27T00:00:00Z,usgs:022908295,salinity_psu,surface,0.1,1,,
+2026-11-27T00:00:00Z,usgs:022908295,water_temp_c,surface,23.2,1,,
+2026-11-27T00:00:00Z,usgs:02290878,salinity_psu,mid,17,1,,
+2026-11-27T00:00:00Z,usgs:02290878,water_temp_c,mid,23.2,1,,
+2026-11-27T00:00:00Z,usgs:02290930,salinity_psu,surface,24.354,2,,PSS-78 from conductance
+2026-11-27T00:00:00Z,usgs:02290930,water_temp_c,surface,23.45,2,,
+2026-11-27T00:00:00Z,usgs:251253080320100,salinity_psu,bottom,8.25,2,,
+2026-11-27T00:00:00Z,usgs:251253080320100,water_temp_c,bottom,23.75,2,,
+2026-11-27T00:00:00Z,usgs:255138081321701,salinity_psu,bottom,33.248,1,,PSS-78 from conductance
+2026-11-27T00:00:00Z,usgs:255138081321701,salinity_psu,surface,33,1,,
+2026-11-27T00:00:00Z,usgs:255138081321701,water_temp_c,bottom,23.2,1,,
+2026-11-27T00:00:00Z,usgs:255151080371501,salinity_psu,surface,0.2,2,,
+2026-11-27T00:00:00Z,usgs:255151080371501,water_temp_c,surface,23.5,2,,
