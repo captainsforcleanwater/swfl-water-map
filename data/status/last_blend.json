@@ -15,47 +15,45 @@
    "time": 0
   },
   "files_changed": {
-   "data/clean/2026/11/2026-11-26.csv": 3475,
-   "data/clean/2026/11/2026-11-27.csv": 3420,
-   "data/clean/stations.csv": 84,
-   "data/qc/2026/11/2026-11-27_flags.csv": 46
+   "data/clean/2026/11/2026-11-27.csv": 3468,
+   "data/clean/stations.csv": 84
   },
-  "good": 98109,
+  "good": 98479,
   "holds": {
    "erddap-secoora:gov-nps-ever-hcef1": "Highway Creek: offset from neighbouring stations grew to about +4 C in November 2026, day and night alike, the largest in 18 months of record. Held while CFCW reviews docs/florida_bay_offsets.md."
   },
-  "hourly_values": 28737,
+  "hourly_values": 28799,
   "merge_checks": {
    "erddap-gcoos:USF_COMPS_C13 + erddap-secoora:42023-c13-wfs-south-buoy-50m-": {
     "agree": true,
     "salinity": {
-     "hours": 185,
+     "hours": 186,
      "median_abs_diff": 0.0
     },
     "temp": {
-     "hours": 185,
+     "hours": 186,
      "median_abs_diff": 0.0
     }
    },
    "erddap-gcoos:USF_COMPS_C13 + erddap-secoora:c13-water-velocity-wfs-south-buo": {
     "agree": true,
     "salinity": {
-     "hours": 185,
+     "hours": 186,
      "median_abs_diff": 0.0
     },
     "temp": {
-     "hours": 185,
+     "hours": 186,
      "median_abs_diff": 0.0
     }
    },
    "erddap-gcoos:USF_COMPS_C22 + erddap-secoora:42026-c22-loop-current-pressu": {
     "agree": true,
     "salinity": {
-     "hours": 190,
+     "hours": 191,
      "median_abs_diff": 0.0
     },
     "temp": {
-     "hours": 190,
+     "hours": 191,
      "median_abs_diff": 0.0
     }
    },
@@ -90,7 +88,7 @@
    }
   },
   "neighbor_flags": {},
-  "raw_readings": 88637,
+  "raw_readings": 88971,
   "salinity_from_conductance_replacing_whole_psu": [
    "usgs:02290930 (surface)",
    "usgs:250802081035500 (surface)",
@@ -100,22 +98,22 @@
    "usgs:255534081324000 (bottom)",
    "usgs:255726081303700 (bottom)"
   ],
-  "seconds": 4.5,
+  "seconds": 2.7,
   "stale_stations": [],
   "suspect": 217
  },
  "errors": {},
- "finished": "2026-11-27T23:07:57Z",
- "hours_blended": 24,
+ "finished": "2026-11-28T00:00:20Z",
+ "hours_blended": 2,
  "hours_considered": 121,
- "hours_to_blend": 24,
- "now": "2026-11-27T23:06:39Z",
+ "hours_to_blend": 2,
+ "now": "2026-11-27T23:59:59Z",
  "out_of_time": false,
- "seconds": 77.1,
- "started": "2026-11-27T23:06:39Z",
+ "seconds": 21.3,
+ "started": "2026-11-27T23:59:59Z",
  "store": "release",
  "window": [
-  "2026-11-22T22:00:00Z",
-  "2026-11-27T22:00:00Z"
+  "2026-11-22T23:00:00Z",
+  "2026-11-27T23:00:00Z"
  ]
 }
