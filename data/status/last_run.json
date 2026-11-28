@@ -1,48 +1,55 @@
 {
- "discovery": {
-  "errors": {},
-  "seconds": 26.5,
-  "stations": 101
- },
  "files_changed": {
-  "data/sensors/2026/11/2026-11-27_coops.csv": {
-   "new": 27,
-   "rows": 720
-  },
   "data/sensors/2026/11/2026-11-27_erddap-gcoos.csv": {
    "new": 27,
-   "rows": 621
+   "rows": 648
   },
   "data/sensors/2026/11/2026-11-27_erddap-secoora.csv": {
-   "new": 56,
-   "rows": 3560
+   "new": 146,
+   "rows": 3706
   },
   "data/sensors/2026/11/2026-11-27_ndbc.csv": {
-   "new": 8,
-   "rows": 186
+   "new": 6,
+   "rows": 192
   },
   "data/sensors/2026/11/2026-11-27_usgs.csv": {
-   "new": 216,
-   "rows": 5977
+   "new": 167,
+   "rows": 6144
+  },
+  "data/sensors/2026/11/2026-11-28_coops.csv": {
+   "new": 42,
+   "rows": 42
+  },
+  "data/sensors/2026/11/2026-11-28_erddap-secoora.csv": {
+   "new": 99,
+   "rows": 99
+  },
+  "data/sensors/2026/11/2026-11-28_ndbc.csv": {
+   "new": 2,
+   "rows": 2
+  },
+  "data/sensors/2026/11/2026-11-28_usgs.csv": {
+   "new": 194,
+   "rows": 194
   }
  },
- "finished": "2026-11-27T23:59:56Z",
+ "finished": "2026-11-28T01:26:09Z",
  "sensor_window": [
-  "2026-11-26T23:59:08Z",
-  "2026-11-27T23:59:08Z"
+  "2026-11-27T01:25:02Z",
+  "2026-11-28T01:25:02Z"
  ],
  "sources": {
   "coops": {
    "errors": {},
-   "readings": 720,
+   "readings": 717,
    "seconds": 0.3,
    "stations_queried": 3,
    "stations_reporting": 3
   },
   "erddap": {
    "errors": {},
-   "readings": 4181,
-   "seconds": 45.9,
+   "readings": 4137,
+   "seconds": 64.0,
    "stations_queried": 58,
    "stations_reporting": 55
   },
@@ -53,19 +60,19 @@
   },
   "ndbc": {
    "errors": {},
-   "readings": 186,
-   "seconds": 0.6,
+   "readings": 182,
+   "seconds": 0.5,
    "stations_queried": 2,
    "stations_reporting": 1
   },
   "usgs": {
    "errors": {},
-   "readings": 5977,
-   "seconds": 1.7,
+   "readings": 5954,
+   "seconds": 1.8,
    "stations_queried": 24,
    "stations_reporting": 19
   }
  },
- "started": "2026-11-27T23:58:40Z",
- "total_readings": 11064
+ "started": "2026-11-28T01:25:01Z",
+ "total_readings": 10990
 }
