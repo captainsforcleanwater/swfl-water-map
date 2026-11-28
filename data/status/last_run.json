@@ -2,67 +2,65 @@
  "files_changed": {
   "data/sensors/2026/11/2026-11-28_coops.csv": {
    "new": 30,
-   "rows": 507
+   "rows": 537
   },
   "data/sensors/2026/11/2026-11-28_erddap-gcoos.csv": {
    "new": 27,
-   "rows": 432
+   "rows": 459
   },
   "data/sensors/2026/11/2026-11-28_erddap-secoora.csv": {
-   "new": 190,
-   "rows": 2462
+   "new": 184,
+   "rows": 2646
   },
   "data/sensors/2026/11/2026-11-28_ndbc.csv": {
    "new": 8,
-   "rows": 130
+   "rows": 138
   },
   "data/sensors/2026/11/2026-11-28_usgs.csv": {
    "new": 256,
-   "rows": 4182
+   "rows": 4438
   }
  },
- "finished": "2026-11-28T16:58:43Z",
+ "finished": "2026-11-28T17:54:53Z",
  "sensor_window": [
-  "2026-11-27T16:57:29Z",
-  "2026-11-28T16:57:29Z"
+  "2026-11-27T17:53:37Z",
+  "2026-11-28T17:53:37Z"
  ],
  "sources": {
   "coops": {
    "errors": {},
-   "readings": 717,
+   "readings": 720,
    "seconds": 0.3,
    "stations_queried": 3,
    "stations_reporting": 3
   },
   "erddap": {
-   "errors": {
-    "erddap-secoora:sanibel-dock": "HTTPSConnectionPool(host='erddap.secoora.org', port=443): Max retries exceeded with url: /erddap/tabledap/sanibel-dock.csv?time,z,sea_water_practical_salinity,sea_water_temperature&time%3E=2026-11-27T"
-   },
-   "readings": 3934,
-   "seconds": 71.2,
+   "errors": {},
+   "readings": 4217,
+   "seconds": 72.5,
    "stations_queried": 58,
-   "stations_reporting": 54
+   "stations_reporting": 55
   },
   "goes19": {
    "fatal": "404 Client Error: 404 for url: https://cwcgom.aoml.noaa.gov/erddap/griddap/goes19SSThourly.csv?time",
-   "seconds": 1.1,
+   "seconds": 1.2,
    "store": "release"
   },
   "ndbc": {
    "errors": {},
    "readings": 186,
-   "seconds": 0.6,
+   "seconds": 0.5,
    "stations_queried": 2,
    "stations_reporting": 1
   },
   "usgs": {
    "errors": {},
    "readings": 5974,
-   "seconds": 1.9,
+   "seconds": 2.4,
    "stations_queried": 24,
    "stations_reporting": 19
   }
  },
- "started": "2026-11-28T16:57:27Z",
- "total_readings": 10811
+ "started": "2026-11-28T17:53:36Z",
+ "total_readings": 11097
 }
